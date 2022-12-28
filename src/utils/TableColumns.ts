@@ -1,0 +1,117 @@
+export const MarketPriceTable: any = [
+  {
+    Header: "Security",
+    accessor: "Security",
+  },
+  {
+    Header: "Bid",
+    accessor: "Bid",
+  },
+  {
+    Header: "Ask",
+    accessor: "Ask",
+  },
+  {
+    Header: "Yield",
+    accessor: "Yield",
+  },
+  {
+    Header: "Spread",
+    accessor: "Spread",
+  },
+  {
+    Header: "Age",
+    accessor: "Age",
+  },
+];
+
+export const MarketData = [
+  {
+    Security: "ARGENT 15 1/2 10/17/26",
+    Bid: "0",
+    Ask: "0",
+    Yield: "0",
+    Spread: "0",
+    Age: "+0",
+  },
+  {
+    Security: "ARUBA 6 1/2 01/31/29",
+    Bid: "109.65",
+    Ask: "110.15",
+    Yield: "4.64",
+    Spread: "93",
+    Age: "-6",
+  },
+  {
+    Security: "BELIZE 4.9375 02/20/34",
+    Bid: "52.25",
+    Ask: "52.25",
+    Yield: "12.39",
+    Spread: "1063",
+    Age: "-5",
+  },
+  {
+    Security: "CHINA 3 1/2 10/19/28",
+    Bid: "96.5",
+    Ask: "97",
+    Yield: "4.12",
+    Spread: "42",
+    Age: "-1",
+  },
+  {
+    Security: "GRENAD 7 05/12/30",
+    Bid: "86.3",
+    Ask: "86.8",
+    Yield: "9.56",
+    Spread: "877",
+    Age: "-8",
+  },
+  {
+    Security: "IRAQ 5.8 01/15/28",
+    Bid: "88.45",
+    Ask: "88.95",
+    Yield: "8.55",
+    Spread: "852",
+    Age: "+22",
+  },
+  {
+    Security: "PHILIP 3 02/01/28",
+    Bid: "91.7",
+    Ask: "92.2",
+    Yield: "4.77",
+    Spread: "100",
+    Age: "-1",
+  },
+  {
+    Security: "KOREA 3 1/2 09/20/28",
+    Bid: "94.95",
+    Ask: "95.6",
+    Yield: "4.45",
+    Spread: "73",
+    Age: "-3",
+  },
+  {
+    Security: "ADGB 3 1/8 10/11/27",
+    Bid: "95.1",
+    Ask: "95.6",
+    Yield: "4.18",
+    Spread: "38",
+    Age: "-9",
+  },
+  {
+    Security: "UKRAIN 9 3/4 11/01/28",
+    Bid: "24.3",
+    Ask: "27.8",
+    Yield: "37.57",
+    Spread: "3593",
+    Age: "+0",
+  },
+  {
+    Security: "VENZ 9 1/4 09/15/27",
+    Bid: "7.35",
+    Ask: "7.85",
+    Yield: "111",
+    Spread: "0",
+    Age: "+0",
+  },
+];

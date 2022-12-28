@@ -1,0 +1,22 @@
+.MarketMoverCard {
+  width: 48%;
+  height: 40vh;
+  display: flex;
+  justify-content: "center";
+  align-items: "center";
+  > div {
+    width: 100% !important;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    &:first-child {
+      margin-bottom: 35px;
+    }
+  }
+  .moverbody {
+    padding: 0 16px 16px;
+    @media (min-width: 1200px) {
+      padding: 0 20px 20px;
+    }
+  } 
+}

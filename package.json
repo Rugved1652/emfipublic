@@ -1,0 +1,46 @@
+{
+  "name": "emfipublicweb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@react-three/drei": "^9.46.2",
+    "@react-three/fiber": "^8.9.1",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "@types/react-table": "^7.7.12",
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.2",
+    "dompurify": "^2.4.1",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.4",
+    "framer-motion": "^7.10.3",
+    "moment": "^2.29.4",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-awesome-reveal": "^4.1.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0",
+    "react-select": "^5.6.1",
+    "react-simple-maps": "^3.0.0",
+    "react-svg-worldmap": "^2.0.0-alpha.3",
+    "react-table": "^7.8.0",
+    "recharts": "^2.1.16",
+    "sass": "^1.56.1",
+    "swiper": "^8.4.5",
+    "three": "^0.147.0",
+    "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^2.4.0",
+    "@types/react-simple-maps": "^3.0.0",
+    "@types/three": "^0.146.0"
+  }
+}

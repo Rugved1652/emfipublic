@@ -1,0 +1,36 @@
+.cardGroup {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 35px 0;
+  @media (min-width: 1200px) {
+    margin: 2.6041vw 0;
+  }
+  @media (max-width: 991px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.badgeGroup {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  @media (min-width: 1200px) {
+    padding: 20px 0;
+    gap: 1.5625vw;
+  }
+}
+.pricingPage {
+  padding: 20px 0;
+  display: block;
+  @media (min-width: 1200px) {
+    padding: 1.5625vw 0;
+  }
+  .cardGroup {
+    margin-bottom: 0 !important;
+  }
+}

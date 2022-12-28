@@ -1,0 +1,79 @@
+.listGroup {
+  // background-color: var(--white-color);
+  background-color: transparent;
+  border-radius: 24px;
+  list-style: none;
+  // padding: 20px;
+  margin: 0 0 35px 0;
+  @media (min-width: 1200px) {
+    // padding: 1.5625vw;
+    margin: 0 0 2.6041vw 0;
+  }
+  li {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: right;
+      color: var(--dark-gray-color);
+      margin-bottom: 14px;
+      @media (min-width: 1200px) {
+        font-size: 0.8333vw; 
+        margin-bottom: 1vw;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+  }
+}
+.serviceCardGroupMain {
+  margin: 35px 0;
+  @media (min-width: 1200px) {
+    margin: 2.6041vw 0;
+  }  
+  .serviceCardGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:first-child {
+      margin: 0 0 35px 0;
+      @media (min-width: 1200px) {
+        margin: 0 0 2.6041vw 0;
+      }
+    }
+    h2 {
+      padding: 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      color: var(--brand-primary);
+      // margin-bottom: 15px;
+      @media (min-width: 1200px) {
+        // margin-bottom: 0.9375vw;
+        font-size: 1.0416vw; 
+      }
+    }
+    P {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      color: var(--brand-primary);
+      margin-bottom: 0;
+      @media (min-width: 1200px) {
+        font-size: 0.8333vw; 
+      }
+    }
+    img {
+      @media (max-width: 1199px) {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+      }
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .filled {
+    transform: translate(0, 6px) scale(0.8);
+  }
+  label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 16px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: var(--formLable);
+    font-size: 12px;
+    line-height: 1;
+    /* right: 8px; */
+  }
+  input {
+    line-height: 1;
+    outline: none;
+    box-shadow: none;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    width: 100%;
+    padding: 6px 12px;
+    padding-top: 22px;
+    border: none !important;
+    border-radius: 10px !important;
+    background-color: transparent !important;
+    height: 50px;      
+    font-weight: 500;
+    color: var(--brand-primary);
+    font-size: 15px !important;
+  }
+}
+
+.inputContainer:focus-within {
+  label {
+    transform: translate(0, 4px) scale(0.8);
+    color: #909090;
+  }
+}

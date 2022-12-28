@@ -1,0 +1,87 @@
+.aboutEmfi {
+  background-color: transparent;
+  padding: 0;
+  margin: 0 0 35px 0;
+  @media (min-width: 1200px) {
+    // padding: 1.5625vw;
+    margin: 0 0 2.6041vw 0;
+  }
+  .odd {
+    flex-direction: row;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+  .even {
+    flex-direction: row-reverse;
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &Section {
+    display: flex;
+    // margin: 0 0 35px 0;
+    padding: 35px 0;
+    border-top: 1px solid #DBDEE2;
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+      // margin: 0 0 2.6041vw 0;
+      padding: 2.6041vw 0;
+    }
+    .textContainer {
+      width: 50%; 
+      @media (max-width: 767px) {
+        width: 100%;
+      }     
+      h2 {
+        padding: 0;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: left;
+        color: var(--brand-primary);
+        margin: 0 0 16px 0;
+        @media (min-width: 1200px) {
+          margin: 0 0 1vw 0;
+          font-size: 1.1458vw; 
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      P {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        color: var(--dark-gray-color);
+        margin-bottom: 14px;
+        margin-bottom: 0;
+        @media (min-width: 1200px) {
+          font-size: 0.8333vw; 
+          margin-bottom: 0.8333vw;
+        }
+      }
+    }
+    .imageContainer {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 767px) {
+        width: 100%;
+      }  
+    }    
+  }
+}
+.aboutSectionMain {
+  margin:35px 0;
+  @media (min-width: 1200px) {
+    margin:2.6041vw 0;
+  }  
+}

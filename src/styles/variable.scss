@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  --brand-primary: #071932;
+  --brand-font: "Inter", sans-serif;
+  --menu-font: "Inter", sans-serif;
+  --white-color: #ffffff;
+  --block-color: #000000;
+  --menu-bg: #071932;
+  --menu-color: #8d8d8d; 
+  --menu-color-hover: #ffffff; 
+  --gray-color:#8d8d8d;
+  --gray-color-two:#CCCCCC;
+  --dark-gray-color:#444444;
+  --black-rgb:0,0,0;
+  --priceTableBg: #f5f6f7;
+  --candidateOurvalueImgbg: #f5f6f7;
+  --checkbox-color:#071932;
+}

@@ -1,0 +1,68 @@
+.navBar {
+  background-color: #071932;
+  width: 100%;
+  z-index: 3;
+
+  &List {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: var(--menu-bg);
+  }
+  &Menu {
+    text-decoration: none;
+    list-style: none;
+    display: none;  
+    @media screen and (min-width: 991px) {
+      display: flex;
+    }
+    &Item {
+      font-weight: 500;
+      padding: 10px 10px;
+      color: var(--menu-color);
+      text-transform: capitalize;
+      font-family: var(--menu-font);
+      font-size: 14px; 
+      @media (min-width: 1200px) {
+        font-size: 0.8333vw; 
+        padding: 0.5208vw 0.7812vw;
+      }
+      &:hover {
+        color: var(--menu-color-hover);
+      }
+    }
+  } 
+  &ToggleButton {
+    background-color: #071932;
+    border: none;
+    display: flex;
+    @media screen and (min-width: 991px) {
+      display: none;
+    }
+  }
+  &LoginForm {
+    display: flex;
+    margin: 0 6px 0 auto;
+    @media screen and (min-width: 991px) {
+      margin: 0;
+    }
+  }
+}
+.mobileMenu {
+  display: block;
+  overflow: hidden;
+  height: calc(100vh - 70px);
+  width: 100%;
+  top: 70px;
+  left: 0;
+  position: fixed;
+  background-color: var(--brand-primary);
+  border-top: 1px solid var(--white-color);
+  z-index: 999;
+  padding: 10px 2px;
+  .navBarMenuItem {
+    display: flex;
+
+  } 
+}

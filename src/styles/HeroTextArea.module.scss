@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 960px) {
+    width: 50%;
+    height: 50%;
+  }
+  &Head {
+    &Text {
+      font-weight: 700;
+      padding: 0;
+      color: var(--brand-primary);
+      font-family: var(--brand-font);
+      font-size: 32px; 
+      line-height: 1.3;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom:14px;
+      @media (min-width: 1200px) {
+        font-size: 2.1875vw; 
+        margin-bottom: 1.3541vw;
+      }
+      span {
+        font-weight: 400;
+        padding: 0;
+        color: var(--brand-primary);
+        font-family: var(--brand-font);
+        font-size: 16px; 
+        line-height: 1.3;
+        margin-left: 14px;
+        @media (min-width: 1200px) {
+          font-size: 1.1458vw; 
+          margin-left: 1.3541vw;
+        }
+      }
+    }
+    &SubText {
+      font-weight: 700;
+      padding: 0;
+      color: var(--dark-gray-color);
+      font-family: var(--brand-font);
+      font-size: 16px; 
+      line-height: 1.3;
+      margin-bottom:14px;
+      @media (min-width: 1200px) {
+        font-size: 1.1458vw; 
+        margin-bottom: 1.0416vw;
+      }
+    }
+  }
+  &Para {
+    p {
+      font-weight: 400;
+      padding: 0;
+      color: var(--block-color);
+      font-family: var(--brand-font);
+      font-size: 14px; 
+      line-height: 1.5;
+      margin-bottom:14px;
+      @media (min-width: 1200px) {
+        font-size: 0.8333vw; 
+        margin-bottom: 1.0416vw;
+      }
+    }
+  }
+  &CTA {
+    font-weight: 700;
+    padding: 0;
+    color: var(--brand-primary);
+    font-family: var(--brand-font);
+    font-size: 14px; 
+    line-height: 1.5;
+    margin-bottom:14px;
+    cursor: pointer;
+    @media (min-width: 1200px) {
+      font-size: 0.8333vw; 
+      margin-bottom: 1.0416vw;
+    }
+    .readMoreIcon {
+      width: 12px;
+      height: 10px;
+      margin-right:7px ;
+      @media (min-width: 1200px) {
+        width: 0.7291vw;
+        height: 0.625vw;
+      }
+    }
+  }
+}
