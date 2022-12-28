@@ -13,9 +13,9 @@ const intelligence = (props: Props) => {
         subHeading="November 17, 2022"
         placeholder="Search by Keyword"
       />
-      <div className="intelligenceBoxCustom d-flex gap-4">
-        <AccordianComponent />
-        <AccordianComponent />
+      <div className="intelligenceBoxCustom d-flex gap-4">         
+           <AccordianComponent />
+          <AccordianComponent />
       </div>
     </div>
   );

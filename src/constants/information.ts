@@ -43,6 +43,7 @@ type OurValuesContent = {
 type AboutEmfiContent = {
   id: string;
   title: string;
+  isImage:boolean
   paragraph: string[];
   image: string;
 };
@@ -56,6 +57,7 @@ type OurClientsContent = {
 type infoSectionContent = {
   image: string;
   id: string;
+  isImage:boolean;
   title: string;
   paragraphs: string[];
 };
@@ -80,7 +82,8 @@ export const PrivacyPolicy = {
 export const AboutEmfiContent: AboutEmfiContent[] = [
   {
     id: "1",
-    title: "Why EMFI ",
+    title: "Why",
+    isImage: true ,
     paragraph: [
       "EMFI came into being in response to a market that is highly fragmented with divergent needs of onshore and offshore investors going unaddressed.",
       "Traditional banks and financial companies are heavily focused on certain segments and products or services that fit into their top down business structures.",
@@ -90,6 +93,7 @@ export const AboutEmfiContent: AboutEmfiContent[] = [
   },
   {
     id: "2",
+    isImage: false ,
     title: "Onshore Investors",
     paragraph: [
       " We deliver up-to-date market colour from major financial centers of the world to local investors who might operate in a very different context.",
@@ -100,6 +104,7 @@ export const AboutEmfiContent: AboutEmfiContent[] = [
   },
   {
     id: "3",
+    isImage: false ,
     title: "Offshore Investors",
     paragraph: [
       "We actively service high beta Latin American sovereign and quasi-sovereign market where traditional coverage is lacking at best.",
@@ -285,24 +290,26 @@ export const OurTeamContent: OurTeamContent[] = [
 
 export const infoSectionContent: infoSectionContent[] = [
   {
-    image: candidate,
     id: "1",
     title: "CANDIDATES",
+    isImage: false ,
     paragraphs: [
       "We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.",
-      "Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way. ",
-      "Does that sound like you? Discover our many career opportunities by clicking here.",
+      "Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.",
+      "Does that sound like you? Discover our many career opportunities by clicking here..",
     ],
+    image: candidate,
   },
   {
-    image: ourvalue,
-    id: "1",
+    id: "2",
+    isImage: false ,
     title: "OUR VALUES",
     paragraphs: [
       "We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
-      "We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
-      "We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.",
+      " We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
+      " We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.",
     ],
+    image: ourvalue,
   },
 ];
 

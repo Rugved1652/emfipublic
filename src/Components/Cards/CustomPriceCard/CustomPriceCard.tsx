@@ -8,7 +8,7 @@ type Props = {};
 
 const PriceCard = (props: Props) => {
   return (
-    <Flip direction={"vertical"} duration={1500}>
+    <Flip triggerOnce={true} direction={"vertical"} duration={1500}>
       <div className="border-ani">
         <span>
           <div className={styles.cardWrapper}>
