@@ -4,6 +4,7 @@ import MapContainer from "../../Containers/ChartContainer/ChartContainer";
 import styles from "../../styles/HeroSection.module.scss";
 import WorldMapChart from "../Charts/WorldMapChart/WorldMapChart";
 import LineChartComponent from "../Charts/LineChartComponent/LineChartComponent";
+import dynamic from "next/dynamic";
 
 type Props = {
   data: any;

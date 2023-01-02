@@ -16,8 +16,9 @@ import {
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
 import MapContainer from "../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
-import {AttentionSeeker, Flip, Slide} from 'react-awesome-reveal';
+import { AttentionSeeker, Flip, Slide } from "react-awesome-reveal";
 import EBondIcon from "../../Components/Icons/EBondIcon";
+import AnimationComponent from "../../Components/AnimatedComponent/AnimatedComponent";
 
 type Props = {};
 
@@ -34,6 +35,7 @@ const about = (props: Props) => {
       >
         <EBondIcon />
       </div>
+      <AnimationComponent />
       <SwiperCarousel SildeComponent={AboutHero} data={aboutHero} />
       <div className="container">
         <AboutEmfi />
@@ -48,7 +50,11 @@ const about = (props: Props) => {
           </div>
           <div className="ourClients">
             {OurClientsContent.map((client) => (
-              <PaperCard image={client.image} title={client.title} />
+              <PaperCard
+                key={client.id}
+                image={client.image}
+                title={client.title}
+              />
             ))}
           </div>
         </div>
@@ -57,20 +63,20 @@ const about = (props: Props) => {
             <h2>Our Values</h2>
           </div>
           <AttentionSeeker effect="headShake">
-          <div className="ourValue">
-            {OurValuesContent.map((client) => (
-              <div key={client.id}>
-                <Image
-                  src={client.image}
-                  alt={client.title}
-                  width={20}
-                  height={20}
-                />
-                <h5>{client.title}</h5>
-                <p>{client.content}</p>
-              </div>
-            ))}
-          </div>
+            <div className="ourValue">
+              {OurValuesContent.map((client) => (
+                <div key={client.id}>
+                  <Image
+                    src={client.image}
+                    alt={client.title}
+                    width={20}
+                    height={20}
+                  />
+                  <h5>{client.title}</h5>
+                  <p>{client.content}</p>
+                </div>
+              ))}
+            </div>
           </AttentionSeeker>
         </div>
 
@@ -95,26 +101,26 @@ const about = (props: Props) => {
           <AttentionSeeker effect="headShake">
             <div className="candidateOurvalue">
               {infoSectionContent.map((infoSection) => (
-                  <div>
-                    <div className="candidateOurvalueImg">
-                      <Image
-                        src={infoSection.image}
-                        alt={infoSection.title}
-                        width={50}
-                        height={50}
-                      />
-                    </div>
-                    <div>
-                      <h2>{infoSection.title}</h2>
-                      {infoSection.paragraphs.map((paragraph) => (
-                        <p>{paragraph}</p>
-                      ))}
-                    </div>
-                    <div>
-                      <span></span>
-                      <span></span>
-                    </div>
+                <div key={infoSection.id}>
+                  <div className="candidateOurvalueImg">
+                    <Image
+                      src={infoSection.image}
+                      alt={infoSection.title}
+                      width={50}
+                      height={50}
+                    />
                   </div>
+                  <div>
+                    <h2>{infoSection.title}</h2>
+                    {infoSection.paragraphs.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
               ))}
             </div>
           </AttentionSeeker>
@@ -125,7 +131,7 @@ const about = (props: Props) => {
           </div>
           <div className="AsSeenIn">
             {AsSeenContent.map((brand) => (
-              <Flip direction={"vertical"} duration={1500}>
+              <Flip key={brand.id} direction={"vertical"} duration={1500}>
                 <div className="border-ani">
                   <span>
                     <CustomCard className="AsSeenInCard">

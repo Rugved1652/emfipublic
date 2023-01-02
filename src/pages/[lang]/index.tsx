@@ -1,8 +1,15 @@
 import { GetServerSideProps } from "next";
+import dynamic from "next/dynamic";
 import React from "react";
 import HeroSection from "../../Components/HeroSection/HeroSection";
-import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
+const SwiperCarousel = dynamic(
+  () => import("../../Containers/SwipeCarousel/SwipeCarousel"),
+  {
+    suspense: true,
+  }
+);
 import { fetchData } from "../../Services/apiFunction";
+
 type Props = {
   chartData: any;
 };
@@ -10,7 +17,7 @@ type Props = {
 function index({ chartData }: Props) {
   console.log("res", chartData);
   return (
-    <main className="main">      
+    <main className="main">
       <SwiperCarousel
         SildeComponent={HeroSection}
         data={chartData?.data}
@@ -23,7 +30,8 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
   console.log("context", context);
   if (context.params.lang === "english") {
     const res = await fetchData("home?locale=en");
-    console.log("rswwws", res);
+    console.log("raass", res);
+    console.log("rssswss", res);
     return {
       props: {
         chartData: res,

@@ -62,6 +62,14 @@ body {
     outline-offset: 0 !important;
   }
 }
+
+.anim {
+  width: 100vw;
+  height: 99vh;
+  position: absolute;
+  top: 350px;
+}
+
 .main {
   height: calc(100vh - 70px);
   @media screen and (max-width: 991px) {
@@ -239,12 +247,12 @@ body {
     bottom: inherit !important;
     left: inherit !important;
     right: 3.6458vw !important;
-    transform: translateY(-50%) !important;   
+    transform: translateY(-50%) !important;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: auto !important;
-    display: flex;   
+    display: flex;
     @media screen and (max-width: 991px) {
       bottom: inherit !important;
       left: 50% !important;
@@ -263,7 +271,11 @@ body {
       margin: 0 0 20px auto !important;
       left: 0 !important;
       display: none;
-      &.swiper-pagination-bullet-active-prev-prev, &.swiper-pagination-bullet-active-prev, &.swiper-pagination-bullet-active-main, &.swiper-pagination-bullet-active-next, &.swiper-pagination-bullet-active-next-next {
+      &.swiper-pagination-bullet-active-prev-prev,
+      &.swiper-pagination-bullet-active-prev,
+      &.swiper-pagination-bullet-active-main,
+      &.swiper-pagination-bullet-active-next,
+      &.swiper-pagination-bullet-active-next-next {
         display: flex;
       }
       @media screen and (min-width: 768px) {
@@ -1383,11 +1395,12 @@ body .swiper {
     &:after {
       width: 100%;
     }
-    
+
     border-radius: 20px !important;
     span {
       border-radius: 20px !important;
-      .teamGroup, > div {
+      .teamGroup,
+      > div {
         border-radius: 0 !important;
       }
       &:before {
@@ -1399,9 +1412,9 @@ body .swiper {
     }
   }
 }
-canvas{
+canvas {
   position: absolute;
-  top:0;
-  left:0;
-  z-index:-1;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
