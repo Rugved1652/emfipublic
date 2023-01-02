@@ -2,6 +2,7 @@ import HeroSection from "../../Components/HeroSection/HeroSection";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, Autoplay } from "swiper";
+
 import dynamic from "next/dynamic";
 const AnimationComponent = dynamic(
   () => import("../../Components/AnimatedComponent/AnimatedComponent"),
@@ -57,8 +58,8 @@ const SwiperCarousel = ({
         modules={[Autoplay, Mousewheel, Pagination]}
       >
         {data?.map((i: any) => (
-          <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
-            <SildeComponent data={i} />
+          <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">            
+            <SildeComponent data={i} />            
           </SwiperSlide>
         ))}
       </Swiper>
