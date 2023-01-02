@@ -16,9 +16,10 @@ import {
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
 import MapContainer from "../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
-import { AttentionSeeker, Flip, Slide } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Flip, Slide } from "react-awesome-reveal";
 import EBondIcon from "../../Components/Icons/EBondIcon";
 import AnimationComponent from "../../Components/AnimatedComponent/AnimatedComponent";
+import AboutValues from "../../Containers/AboutValues/AboutValues";
 
 type Props = {};
 
@@ -62,7 +63,7 @@ const about = (props: Props) => {
           <div className="commonHeader">
             <h2>Our Values</h2>
           </div>
-          <AttentionSeeker effect="headShake">
+          <Fade triggerOnce={true} direction="up" duration={1500}>
             <div className="ourValue">
               {OurValuesContent.map((client) => (
                 <div key={client.id}>
@@ -77,7 +78,7 @@ const about = (props: Props) => {
                 </div>
               ))}
             </div>
-          </AttentionSeeker>
+          </Fade>
         </div>
 
         <div className="aboutSectionMain ourTeamMain">
@@ -97,8 +98,8 @@ const about = (props: Props) => {
             ))}
           </div>
         </div>
-        <div className="aboutSectionMain">
-          <AttentionSeeker effect="headShake">
+        {/* <div className="aboutSectionMain">
+          <Fade direction="up">
             <div className="candidateOurvalue">
               {infoSectionContent.map((infoSection) => (
                 <div key={infoSection.id}>
@@ -123,8 +124,9 @@ const about = (props: Props) => {
                 </div>
               ))}
             </div>
-          </AttentionSeeker>
-        </div>
+          </Fade>
+        </div> */}
+        <AboutValues />
         <div className="aboutSectionMain">
           <div className="commonHeader">
             <h2>As Seen In*</h2>

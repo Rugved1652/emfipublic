@@ -1,10 +1,10 @@
 import React from "react";
-import {AttentionSeeker, Flip, Slide} from 'react-awesome-reveal';
+import {AttentionSeeker, Fade} from 'react-awesome-reveal';
 type Props = {};
 
 const MapContainer = (props: Props) => {
   return (
-    <AttentionSeeker effect="headShake">
+    <Fade triggerOnce={true} direction="up" duration={1500}>
     <div className="locationGroup">
       <div className="row">
         <div className="col-sm-12 col-md-4">
@@ -16,7 +16,7 @@ const MapContainer = (props: Props) => {
         </div>
         <div className="col-sm-12 col-md-8"></div>
       </div>
-    </div></AttentionSeeker>);
+    </div></Fade>);
 };
 
 export default MapContainer;

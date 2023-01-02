@@ -7,7 +7,7 @@ import TableComponent from "../../Components/TableComponent/TableComponent";
 import styles from "../../styles/Pricing.module.scss";
 import PriceCard from "../../Components/Cards/CustomPriceCard/CustomPriceCard";
 import MarketMoverCard from "../../Components/Cards/MarketMoverCard/MarketMoverCard";
-import {AttentionSeeker, Flip, Slide} from 'react-awesome-reveal';
+import {AttentionSeeker,Fade, Flip, Slide} from 'react-awesome-reveal';
 type Props = {};
 
 const pricing = (props: Props) => {
@@ -35,9 +35,9 @@ const pricing = (props: Props) => {
       </div>
       <div className={styles.pricingPage}>
         <HeaderText />
-        <AttentionSeeker effect="headShake">
+        <Fade triggerOnce={true} direction="up" duration={1500}>
           <TableComponent />
-        </AttentionSeeker>
+        </Fade>
       </div>
       <div className={styles.pricingPage}>
         <HeaderText />
@@ -48,15 +48,15 @@ const pricing = (props: Props) => {
       </div>
       <div className={styles.pricingPage}>
         <HeaderText />
-        <AttentionSeeker effect="headShake">
+        <Fade triggerOnce={true} direction="up" duration={1500}>
           <HistoryChartContainer />
-        </AttentionSeeker>
+        </Fade>
       </div>
       <div className={styles.pricingPage}>
         <HeaderText />
-        <AttentionSeeker effect="headShake">
+        <Fade triggerOnce={true} direction="up" duration={1500}>
           <HistoryChartContainer />
-        </AttentionSeeker>
+        </Fade>
         
       </div>
     </div>

@@ -8,7 +8,7 @@ import {
   ServicesContent,
 } from "../../../constants/serviceContent";
 import Link from "next/link";
-import {AttentionSeeker, Flip, Slide} from 'react-awesome-reveal';
+import {AttentionSeeker, Flip, Slide, Fade} from 'react-awesome-reveal';
 type Props = {};
 
 const services = (props: Props) => {
@@ -21,7 +21,7 @@ const services = (props: Props) => {
       />
       <div className={styles.serviceCardGroupMain}>
         <div className={styles.serviceCardGroup}>
-        <Flip direction={"vertical"} duration={1500}>
+        <Flip triggerOnce={true} direction={"vertical"} duration={1500}>
           {ServicesContent.map((service) => (
             <div className="border-ani">
             <span>
@@ -38,7 +38,7 @@ const services = (props: Props) => {
           </Flip>
         </div>
         <div className={styles.serviceCardGroup}>
-          <Flip direction={"vertical"} duration={1500}>            
+          <Flip triggerOnce={true} direction={"vertical"} duration={1500}>            
             {ProductContent.map((product) => (
               <div className="border-ani">
               <span>
@@ -54,13 +54,13 @@ const services = (props: Props) => {
           </Flip>
         </div>
       </div>
-      <AttentionSeeker effect="headShake">
+      <Fade triggerOnce={true} direction="up" duration={1500}>
       <div className={styles.listGroup}>
         {DetailsList.map((details) => (
           <li>{details}</li>
         ))}
       </div>
-      </AttentionSeeker>
+      </Fade>
     </div>
   );
 };

@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import CustomCard from "../CustomCard/CustomCard";
 import styles from "../../../styles/MarketMoverCard.module.scss";
-import {AttentionSeeker} from 'react-awesome-reveal';
+import {AttentionSeeker, Fade} from 'react-awesome-reveal';
 type Props = {};
 
 const MarketMoverCard = (props: Props) => {
@@ -35,7 +35,7 @@ const MarketMoverCard = (props: Props) => {
   ];
   return (
     <div className={styles.MarketMoverCard}>
-       <AttentionSeeker effect="headShake">  
+       <Fade triggerOnce={true} direction="up" duration={1500}>
           <CustomCard>
             <CustomCard.Header>
               <span>US 10-Year</span>
@@ -76,7 +76,7 @@ const MarketMoverCard = (props: Props) => {
               </div>
             </CustomCard.Body>
           </CustomCard>
-        </AttentionSeeker>
+        </Fade>
     </div>
   );
 };
