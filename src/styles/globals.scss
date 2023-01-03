@@ -923,6 +923,7 @@ body .swiper {
             svg,
             img {
               width: 90%;
+              height: auto !important;
             }
             @media (min-width: 991px) {
               svg,
