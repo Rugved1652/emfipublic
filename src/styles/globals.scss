@@ -1549,18 +1549,14 @@ canvas {
   }
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("/vercel.svg");
-  transform: var(--bs-accordion-btn-icon-transform);
+  background-image:var(--bs-accordion-btn-active-icon1) !important;
+  background-position: center center;
 }
 
 .accordion-button::after {
-  flex-shrink: 0;
-  width: var(--bs-accordion-btn-icon-width);
-  height: var(--bs-accordion-btn-icon-width);
-  margin-left: auto;
-  content: "";
-  background-image: var(--bs-accordion-btn-icon);
-  background-repeat: no-repeat;
-  background-size: var(--bs-accordion-btn-icon-width);
-  transition: var(--bs-accordion-btn-icon-transition);
+  background-image:var(--bs-accordion-btn-icon1) !important;
+  background-position: center center;
+  width: 16px !important;
+  height: 8px !important;
+  background-size: 100% !important;
 }
