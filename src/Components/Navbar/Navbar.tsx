@@ -26,9 +26,15 @@ const NavbarComponent = (props: Props) => {
                 height={52}
               />
             </div>
-            <ul className={show ? styles.navBarMenu : `${styles.navBarMenu} ${styles.mobileMenu} ` }>
+            <ul
+              className={
+                show
+                  ? styles.navBarMenu
+                  : `${styles.navBarMenu} ${styles.mobileMenu} `
+              }
+            >
               {NavbarRoutes.map((i) => (
-                <li>
+                <li key={i.key}>
                   <Link className={styles.navBarMenuItem} href={i.path}>
                     {i.en_label}
                   </Link>
@@ -45,15 +51,15 @@ const NavbarComponent = (props: Props) => {
             >
               <Image
                 className={show ? styles.ToggleImage : styles.CloseMenu}
-                src={show ? Toggle : CloseIcon }
-                alt={show ? "menu" : "cloase" }
+                src={show ? Toggle : CloseIcon}
+                alt={show ? "menu" : "cloase"}
                 width={25}
                 height={20}
               />
             </button>
           </div>
         </div>
-      </nav>      
+      </nav>
     </>
   );
 };

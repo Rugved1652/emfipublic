@@ -3,6 +3,7 @@ import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, Autoplay } from "swiper";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 const AnimationComponent = dynamic(
   () => import("../../Components/AnimatedComponent/AnimatedComponent"),
   {
@@ -23,6 +24,9 @@ const SwiperCarousel = ({
   SildeComponent,
   className = "",
 }: Props) => {
+  const router = useRouter();
+  console.log("router", router.route === "/[lang]");
+
   return (
     <>
       <Swiper
@@ -62,7 +66,7 @@ const SwiperCarousel = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      <AnimationComponent />
+      {router.route === "/[lang]" ? <AnimationComponent /> : null}
     </>
   );
 };

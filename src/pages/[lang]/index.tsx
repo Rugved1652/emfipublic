@@ -34,7 +34,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     console.log("rssswss", res);
     return {
       props: {
-        chartData: res,
+        chartData: res || null,
       },
     };
   } else if (context.params.lang === "espanol") {

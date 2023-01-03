@@ -16,9 +16,8 @@ import {
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
 import MapContainer from "../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
-import { AttentionSeeker, Fade, Flip, Slide } from "react-awesome-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 import EBondIcon from "../../Components/Icons/EBondIcon";
-import AnimationComponent from "../../Components/AnimatedComponent/AnimatedComponent";
 import AboutValues from "../../Containers/AboutValues/AboutValues";
 
 type Props = {};
@@ -36,7 +35,6 @@ const about = (props: Props) => {
       >
         <EBondIcon />
       </div>
-      <AnimationComponent />
       <SwiperCarousel SildeComponent={AboutHero} data={aboutHero} />
       <div className="container">
         <AboutEmfi />
@@ -151,5 +149,13 @@ const about = (props: Props) => {
     </>
   );
 };
+
+export async function getStaticProps(context: any) {
+  // const res = await fetchData("about")
+  // console.log(res)
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
 
 export default about;

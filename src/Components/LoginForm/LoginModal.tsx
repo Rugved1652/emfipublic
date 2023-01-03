@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useOnClickOutside } from "../../hooks/useOnclickOutSide";
 import LoginIcon from "../Icons/LoginIcon";
 import FloatModal from "../FloatModal/FloatModal";
 import styles from "../../styles/LoginForm.module.scss";
+import Router, { useRouter } from "next/router";
 
 type Props = {};
 
@@ -15,13 +16,33 @@ function LoginModal({}: Props) {
     setfill(false);
   });
   const [fill, setfill] = useState(false);
+  const [lang, setLang] = useState("English");
+  const router = useRouter();
+
+  console.log("router", router);
+  const handleLanguage = (lang: string) => {
+    console.log(router.asPath);
+    if (lang === "English") {
+      // Router.push()
+      setLang("Espanol");
+    } else {
+      setLang("English");
+    }
+  };
 
   return (
     <>
       <div className={styles.loginForm}>
-        <a href="javascript:void(0);" className={styles.lanText}>
-          Espanol
-        </a>
+        <span
+          onClick={
+            lang === "English"
+              ? () => handleLanguage("Espanol")
+              : () => handleLanguage("English")
+          }
+          className={styles.lanText}
+        >
+          {lang === "English" ? "Espanol" : "English"}
+        </span>
 
         <div
           className={styles.loginFormButton}
