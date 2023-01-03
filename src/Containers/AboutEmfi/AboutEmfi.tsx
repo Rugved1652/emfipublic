@@ -10,7 +10,6 @@ type Props = {
 };
 
 const AboutEmfi = ({ aboutData }: Props) => {
-  console.log("props", { aboutData });
   return (
     <div className={styles.aboutEmfi}>
       <div>
