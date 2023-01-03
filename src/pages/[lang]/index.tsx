@@ -33,7 +33,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     const res = await fetchData("home?locale=en");
     return {
       props: {
-        chartData: res.data || null,
+        chartData: res,
       },
     };
   } else if (context.params.lang === "espanol") {
