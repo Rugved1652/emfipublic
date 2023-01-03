@@ -12,9 +12,11 @@ const AboutHero = ({ image, data }: Props) => {
   console.log(data);
   return (
     <div className={styles.textContainer}>
-      <EBondIcon />
-      <div dangerouslySetInnerHTML={{ __html: data.data }}></div>
-      {image ? <div></div> : null}
+      {
+        data.data.map((i)=>(
+            <p>{i}</p>
+        ))
+      }
     </div>
   );
 };

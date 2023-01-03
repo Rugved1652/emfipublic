@@ -4,7 +4,7 @@ import CustomCard from "../../Components/Cards/CustomCard/CustomCard";
 import AboutHero from "../../Components/HeroSection/AboutHero";
 import PaperCard from "../../Components/Cards/PaperCard/PaperCard";
 import TeamMemberCard from "../../Components/Cards/TeamMemberCard/TeamMemberCard";
-import { aboutHero } from "../../constants/aboutContent";
+import { aboutHero, aboutHeroInformation } from "../../constants/aboutContent";
 import {
   AsSeenContent,
   AsSeenContextText,
@@ -35,7 +35,7 @@ const about = (props: Props) => {
       >
         <EBondIcon />
       </div>
-      <SwiperCarousel SildeComponent={AboutHero} data={aboutHero} />
+      <SwiperCarousel SildeComponent={AboutHero} data={aboutHeroInformation} />
       <div className="container">
         <AboutEmfi />
         <div className="aboutSectionMain ourClientsMain">
