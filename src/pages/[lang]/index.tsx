@@ -2,6 +2,7 @@ import { GetServerSideProps } from "next";
 import dynamic from "next/dynamic";
 import React from "react";
 import HeroSection from "../../Components/HeroSection/HeroSection";
+
 const SwiperCarousel = dynamic(
   () => import("../../Containers/SwipeCarousel/SwipeCarousel"),
   {
@@ -17,12 +18,14 @@ type Props = {
 function index({ chartData }: Props) {
   console.log("res", chartData);
   return (
-    <main className="main">
+    <>
+    <main className="main homePage">      
       <SwiperCarousel
         SildeComponent={HeroSection}
         data={chartData?.data}
       ></SwiperCarousel>
     </main>
+    </>
   );
 }
 
