@@ -20,8 +20,11 @@ import { Fade, Flip } from "react-awesome-reveal";
 import EBondIcon from "../../Components/Icons/EBondIcon";
 import AboutValues from "../../Containers/AboutValues/AboutValues";
 import { fetchData } from "../../Services/apiFunction";
+import { aboutData } from "../../types/types";
 
-type Props = {};
+type Props = {
+  aboutData: aboutData;
+};
 
 const about = ({ aboutData }: any) => {
   console.log("props", { aboutData });
@@ -39,10 +42,10 @@ const about = ({ aboutData }: any) => {
       </div>
       <SwiperCarousel SildeComponent={AboutHero} data={aboutHeroInformation} />
       <div className="container">
-        <AboutEmfi />
+        <AboutEmfi aboutData={aboutData.aboutData.about_data} />
         <div className="aboutSectionMain ourClientsMain">
           <div className="commonHeader">
-            <h2>Our Clients</h2>
+            <h2>{aboutData.aboutData?.our_clients?.title}</h2>
             <p>
               EMFI aims to create superior value for our clients who are either
               professional clients or <br /> eligible counterparties. EMFI does
@@ -98,34 +101,6 @@ const about = ({ aboutData }: any) => {
             ))}
           </div>
         </div>
-        {/* <div className="aboutSectionMain">
-          <Fade direction="up">
-            <div className="candidateOurvalue">
-              {infoSectionContent.map((infoSection) => (
-                <div key={infoSection.id}>
-                  <div className="candidateOurvalueImg">
-                    <Image
-                      src={infoSection.image}
-                      alt={infoSection.title}
-                      width={50}
-                      height={50}
-                    />
-                  </div>
-                  <div>
-                    <h2>{infoSection.title}</h2>
-                    {infoSection.paragraphs.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
-                  </div>
-                  <div>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Fade>
-        </div> */}
         <AboutValues />
         <div className="aboutSectionMain">
           <div className="commonHeader">
@@ -155,15 +130,12 @@ const about = ({ aboutData }: any) => {
 export async function getStaticPaths() {
   return {
     paths: [{ params: { lang: "english" } }, { params: { lang: "espanol" } }],
-    fallback: false, // can also be true or 'blocking'
+    fallback: false,
   };
 }
-
-// `getStaticPaths` requires using `getStaticProps`
 export async function getStaticProps(context: any) {
   const res = await fetchData(`about/${context.params.lang}`);
   return {
-    // Passed to the page component as props
     props: {
       aboutData: {
         aboutData: res.data,
