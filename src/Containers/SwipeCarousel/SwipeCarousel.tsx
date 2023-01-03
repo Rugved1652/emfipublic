@@ -26,7 +26,6 @@ const SwiperCarousel = ({
   className = "",
 }: Props) => {
   const router = useRouter();
-  console.log("router", router.route === "/[lang]");
 
   return (
     <>
@@ -62,8 +61,8 @@ const SwiperCarousel = ({
         modules={[Autoplay, Mousewheel, Pagination]}
       >
         {data?.map((i: any) => (
-          <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">            
-            <SildeComponent data={i} />            
+          <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
+            <SildeComponent data={i} />
           </SwiperSlide>
         ))}
       </Swiper>

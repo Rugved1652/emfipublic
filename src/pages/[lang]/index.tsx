@@ -16,28 +16,24 @@ type Props = {
 };
 
 function index({ chartData }: Props) {
-  console.log("res", chartData);
   return (
     <>
-    <main className="main homePage">      
-      <SwiperCarousel
-        SildeComponent={HeroSection}
-        data={chartData?.data}
-      ></SwiperCarousel>
-    </main>
+      <main className="main homePage">
+        <SwiperCarousel
+          SildeComponent={HeroSection}
+          data={chartData}
+        ></SwiperCarousel>
+      </main>
     </>
   );
 }
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  console.log("context", context);
   if (context.params.lang === "english") {
     const res = await fetchData("home?locale=en");
-    console.log("raass", res);
-    console.log("rssswss", res);
     return {
       props: {
-        chartData: res || null,
+        chartData: res.data || null,
       },
     };
   } else if (context.params.lang === "espanol") {

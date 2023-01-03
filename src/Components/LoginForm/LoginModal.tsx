@@ -19,9 +19,7 @@ function LoginModal({}: Props) {
   const [lang, setLang] = useState("English");
   const router = useRouter();
 
-  console.log("router", router);
   const handleLanguage = (lang: string) => {
-    console.log(router.asPath);
     if (lang === "English") {
       // Router.push()
       setLang("Espanol");

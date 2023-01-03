@@ -44,7 +44,6 @@ const Points = () => {
   });
 
   const img = useLoader(THREE.TextureLoader, "/circle.png");
-  console.log(img);
   const count = 120;
   const sep = 2;
   let positions = useMemo(() => {
@@ -57,7 +56,6 @@ const Points = () => {
         positions.push(x, z, y);
       }
     }
-    console.log("positions", positions);
     return new Float32Array(positions);
   }, [count, sep, graph]);
 
@@ -76,7 +74,7 @@ const Points = () => {
       <pointsMaterial
         attach="material"
         map={img}
-        color={0xDBDEE2}
+        color={0xdbdee2}
         size={0.18}
         sizeAttenuation
         transparent={true}

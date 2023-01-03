@@ -19,10 +19,12 @@ import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
 import { Fade, Flip } from "react-awesome-reveal";
 import EBondIcon from "../../Components/Icons/EBondIcon";
 import AboutValues from "../../Containers/AboutValues/AboutValues";
+import { fetchData } from "../../Services/apiFunction";
 
 type Props = {};
 
-const about = (props: Props) => {
+const about = ({ aboutData }: any) => {
+  console.log("props", { aboutData });
   return (
     <>
       <div
@@ -150,11 +152,23 @@ const about = (props: Props) => {
   );
 };
 
-export async function getStaticProps(context: any) {
-  // const res = await fetchData("about")
-  // console.log(res)
+export async function getStaticPaths() {
   return {
-    props: {}, // will be passed to the page component as props
+    paths: [{ params: { lang: "english" } }, { params: { lang: "espanol" } }],
+    fallback: false, // can also be true or 'blocking'
+  };
+}
+
+// `getStaticPaths` requires using `getStaticProps`
+export async function getStaticProps(context: any) {
+  const res = await fetchData(`about/${context.params.lang}`);
+  return {
+    // Passed to the page component as props
+    props: {
+      aboutData: {
+        aboutData: res.data,
+      },
+    },
   };
 }
 
