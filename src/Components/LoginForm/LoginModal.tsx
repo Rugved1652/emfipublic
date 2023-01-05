@@ -21,12 +21,28 @@ function LoginModal({}: Props) {
 
   const handleLanguage = (lang: string) => {
     if (lang === "English") {
-      // Router.push()
       setLang("Espanol");
+      localStorage.setItem("locale", "Espanol");
+      // router.push('')
     } else {
       setLang("English");
+      localStorage.setItem("locale", "English");
     }
   };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const langValue = localStorage.getItem("locale");
+      if (langValue) {
+        setLang(langValue);
+      } else {
+        setLang("English");
+        localStorage.setItem("locale", "English");
+      }
+    }
+  }, []);
+
+  console.log("lang", lang);
 
   return (
     <>
@@ -34,8 +50,8 @@ function LoginModal({}: Props) {
         <span
           onClick={
             lang === "English"
-              ? () => handleLanguage("Espanol")
-              : () => handleLanguage("English")
+              ? () => handleLanguage("English")
+              : () => handleLanguage("Espanol")
           }
           className={styles.lanText}
         >

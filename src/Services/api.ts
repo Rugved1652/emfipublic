@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "https://soc-uat.emfi.uk/api/",
+  baseURL: "http://192.168.29.43:3000/api/",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",

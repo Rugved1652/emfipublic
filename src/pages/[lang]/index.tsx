@@ -33,14 +33,14 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     const res = await fetchData("home?locale=en");
     return {
       props: {
-        chartData: res,
+        chartData: res || null,
       },
     };
   } else if (context.params.lang === "espanol") {
     const res = await fetchData("home?locale=es");
     return {
       props: {
-        chartData: res,
+        chartData: res || null,
       },
     };
   } else {
@@ -49,7 +49,7 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
     };
     return {
       props: {
-        chartData: res.data,
+        chartData: res || null,
       },
     };
   }

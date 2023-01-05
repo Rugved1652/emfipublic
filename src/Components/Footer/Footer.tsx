@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FooterRoutes } from "../../constants/routes";
 import styles from "../../styles/Footer.module.scss";
-import {Fade} from 'react-awesome-reveal';
+import { Fade } from "react-awesome-reveal";
 type Props = {};
 
 const Footer = (props: Props) => {
@@ -21,6 +21,7 @@ const Footer = (props: Props) => {
                     <ul className={styles.sectionList}>
                       {FooterRoutes.Products.Routes.map((i) => (
                         <li
+                          key={i.id}
                           className={`${styles.sectionListItem} ${styles.eIcon}`}
                         >
                           <Link href={i.Link} title="">
@@ -39,9 +40,7 @@ const Footer = (props: Props) => {
                     <ul className={styles.sectionList}>
                       {FooterRoutes.Services.Routes.map((i) => (
                         <li className={styles.sectionListItem} key={i.id}>
-                          <Link href={i.Link}>
-                            {i.lable}
-                          </Link>
+                          <Link href={i.Link}>{i.lable}</Link>
                         </li>
                       ))}
                     </ul>
@@ -89,7 +88,7 @@ const Footer = (props: Props) => {
               <div className={styles.footerBottom}>
                 <ul className={styles.footerBottomSection}>
                   {FooterRoutes.Social.Routes.map((i) => (
-                    <li className={styles.footericon}>
+                    <li key={i.id} className={styles.footericon}>
                       <a href="javascript:void(0);" title="">
                         <i.icon />
                       </a>

@@ -4,15 +4,7 @@ import CustomCard from "../../Components/Cards/CustomCard/CustomCard";
 import AboutHero from "../../Components/HeroSection/AboutHero";
 import PaperCard from "../../Components/Cards/PaperCard/PaperCard";
 import TeamMemberCard from "../../Components/Cards/TeamMemberCard/TeamMemberCard";
-import { aboutHero, aboutHeroInformation } from "../../constants/aboutContent";
-import {
-  AsSeenContent,
-  AsSeenContextText,
-  infoSectionContent,
-  OurClientsContent,
-  OurTeamContent,
-  OurValuesContent,
-} from "../../constants/information";
+import { aboutHeroInformation } from "../../constants/aboutContent";
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
 import MapContainer from "../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
@@ -43,14 +35,14 @@ const about = ({ aboutData }: any) => {
       </div>
       <SwiperCarousel SildeComponent={AboutHero} data={aboutHeroInformation} />
       <div className="container">
-        <AboutEmfi aboutData={aboutData.aboutData.about_data} />
+        <AboutEmfi aboutData={aboutData?.aboutData?.about_data} />
         <div className="aboutSectionMain ourClientsMain">
           <div className="commonHeader">
-            <h2>{aboutData.aboutData?.our_clients?.title}</h2>
+            <h2>{aboutData?.aboutData?.our_clients?.title}</h2>
             <p>
-              {aboutData.aboutData.our_clients.desc.slice(0, 90)}
+              {aboutData?.aboutData?.our_clients?.desc.slice(0, 90)}
               <br />
-              {aboutData.aboutData.our_clients.desc.slice(90)}
+              {aboutData?.aboutData?.our_clients?.desc.slice(90)}
             </p>
           </div>
           <div className="ourClients">
@@ -67,11 +59,11 @@ const about = ({ aboutData }: any) => {
         </div>
         <div className="aboutSectionMain">
           <div className="commonHeader">
-            <h2>{aboutData.aboutData?.our_values?.title}</h2>
+            <h2>{aboutData?.aboutData?.our_values?.title}</h2>
           </div>
           <Fade triggerOnce={true} direction="up" duration={1500}>
             <div className="ourValue">
-              {aboutData.aboutData?.our_values?.data.map(
+              {aboutData?.aboutData?.our_values?.data.map(
                 (client: any, index: any) => (
                   <div key={index}>
                     <Image
@@ -91,7 +83,7 @@ const about = ({ aboutData }: any) => {
 
         <div className="aboutSectionMain ourTeamMain">
           <div className="commonHeader">
-            <h2>{aboutData.aboutData?.our_team?.title}</h2>
+            <h2>{aboutData?.aboutData?.our_team?.title}</h2>
           </div>
           <div className="ourTeam">
             {aboutData.aboutData?.our_team?.data.map((teamMember: any) => (
@@ -109,7 +101,7 @@ const about = ({ aboutData }: any) => {
         <AboutValues />
         <div className="aboutSectionMain">
           <div className="commonHeader">
-            <h2>{aboutData.aboutData?.as_seen_on?.title}</h2>
+            <h2>{aboutData?.aboutData?.as_seen_on?.title}</h2>
           </div>
           <div className="AsSeenIn">
             {aboutData.aboutData.as_seen_on?.data.map(
@@ -123,7 +115,9 @@ const about = ({ aboutData }: any) => {
                     <span>
                       <CustomCard className="AsSeenInCard">
                         <Image
-                          src={greyImage === index ? brand.image1 : brand.image}
+                          src={
+                            greyImage === index ? brand?.image1 : brand?.image
+                          }
                           alt={"img"}
                           width={280}
                           height={100}
@@ -136,10 +130,10 @@ const about = ({ aboutData }: any) => {
             )}
           </div>
           <p className="AsSeenInText">
-            {aboutData.aboutData?.as_seen_on?.desc}
+            {aboutData?.aboutData?.as_seen_on?.desc}
           </p>
         </div>
-        <MapContainer data={aboutData.aboutData?.locations} />
+        <MapContainer data={aboutData?.aboutData?.locations} />
       </div>
     </>
   );
@@ -156,7 +150,7 @@ export async function getStaticProps(context: any) {
   return {
     props: {
       aboutData: {
-        aboutData: res,
+        aboutData: res || null,
       },
     },
   };
