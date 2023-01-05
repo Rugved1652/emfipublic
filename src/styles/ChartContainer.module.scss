@@ -45,6 +45,10 @@
     border-radius: 0 0 20px 20px;
     min-height: calc(100% - 50px);
     padding: 10px 0;
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+    }
     @media screen and (min-width: 992px) {
       min-height: calc(100% - 3.6458vw);
       padding: 1.0416vw 0;
@@ -68,7 +72,7 @@
     line-height: 1.3;
     margin: 3px 0;
     @media (min-width: 1200px) {
-      font-size: 0.8333vw; 
+      font-size: 0.7291vw; 
     }
     &.PriceOne {
       color: var(--brand-primary);
