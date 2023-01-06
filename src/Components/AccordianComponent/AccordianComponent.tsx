@@ -3,6 +3,7 @@ import { Accordion } from "react-bootstrap";
 import AccordianItemComponent from "./AccordianItemComponent.tsx/AccordianItemComponent";
 import { Fade } from "react-awesome-reveal";
 import InfiniteScroll from "react-infinite-scroll-component";
+
 type Props = {};
 
 const AccordianComponent = (props: any) => {

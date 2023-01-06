@@ -1,7 +1,7 @@
 import React from "react";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 type Props = {
-  data: any;
+  data?: any;
 };
 
 const MapContainer = ({ data }: Props) => {

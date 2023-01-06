@@ -1,5 +1,4 @@
 import React from "react";
-import HeroSearch from "../../../../Components/HeroSearch/HeroSearch";
 import ProductHero from "../../../../Components/HeroSection/ProductHero";
 import { eBondContent } from "../../../../constants/information";
 import MapContainer from "../../../../Containers/MapContainer/MapContainer";

@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import React from "react";
 import LineChartComponent from "../../Charts/LineChartComponent/LineChartComponent";
 
 type Props = {};
 
 const AccordianItemComponent = (props: Props) => {
+  const Router = useRouter();
   return (
     <div>
       <div>
@@ -17,7 +19,14 @@ const AccordianItemComponent = (props: Props) => {
           perferendis enim. Illo sapiente labore illum incidunt fuga maiores
           nihil iusto recusandae.
         </p>
-        <button> Continue Reading</button>
+        <button
+          onClick={() => {
+            Router.push("/english/intelligence/details/abc");
+          }}
+        >
+          {" "}
+          Continue Reading
+        </button>
       </div>
       <div></div>
     </div>

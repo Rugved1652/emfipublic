@@ -27,8 +27,8 @@ const intelligence = ({
         placeholder="Search by Keyword"
       />
       <div className="intelligenceBoxCustom d-flex gap-4">
-        <AccordianComponent />
-        <AccordianComponent />
+        <AccordianComponent data={otherReports} />
+        <AccordianComponent data={specialReports} />
       </div>
     </div>
   );
