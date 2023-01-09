@@ -5,6 +5,7 @@ import { Mousewheel, Pagination, Autoplay } from "swiper";
 
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import ParticalBg from "../../Components/ParticalBg/ParticalBg";
 const AnimationComponent = dynamic(
   () => import("../../Components/AnimatedComponent/AnimatedComponent"),
   {
@@ -63,10 +64,11 @@ const SwiperCarousel = ({
         {data?.map((i: any) => (
           <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
             <SildeComponent data={i} />
+            <ParticalBg />
           </SwiperSlide>
         ))}
       </Swiper>
-      {router.route === "/[lang]" ? <AnimationComponent /> : null}
+      {router.route === "/[lang]" ? null : null}
     </>
   );
 };

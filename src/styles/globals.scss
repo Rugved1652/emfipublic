@@ -1649,7 +1649,7 @@ canvas {
   animation: 0.75s cubic-bezier(1, -0.01, 0.12, 0.8) 1s 1 revealReverse forwards;
 }
 
-.animatableReverse::before {
+.animatableReverse::after {
   content: "";
   position: absolute;
   top: 0;
