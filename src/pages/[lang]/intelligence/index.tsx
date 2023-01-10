@@ -1,9 +1,9 @@
 import { GetServerSideProps } from "next";
 import React, { useState } from "react";
-import AccordianComponent from "../../Components/AccordianComponent/AccordianComponent";
-import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { fetchData } from "../../Services/apiFunction";
-import { IntelligenceData } from "../../constants/intelligenceInfo";
+import AccordianComponent from "../../../Components/AccordianComponent/AccordianComponent";
+import HeroSearch from "../../../Components/HeroSearch/HeroSearch";
+import { fetchData } from "../../../Services/apiFunction";
+import { IntelligenceData } from "../../../constants/intelligenceInfo";
 
 type Props = {
   intelligenceList: any;
@@ -17,6 +17,8 @@ const intelligence = ({
   specialReports,
 }: Props) => {
   console.log("otherReports", otherReports);
+  console.log("specialReports", specialReports);
+  console.log("intelligenceList", intelligenceList);
   const [PageNum, setPageNum] = useState(0);
   const [hasMore, setHasMore] = useState(true);
   return (
@@ -35,20 +37,17 @@ const intelligence = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  // const intelligenceList = await fetchData(
-  //   `intelligence/${context?.params.lang}`
-  // );
-  // const otherReports = await fetchData(
-  //   `intelligence/${context?.params.lang}/get-other-report?page=${context?.pageNum}`
-  // );
-  // const specialReports = await fetchData(
-  //   `intelligence/${context?.params.lang}/get-spacial-report?page=${context?.pageNum}`
-  // );
+  console.log(context);
+  let otherReports = await fetchData(
+    `intelligence/${context?.params.lang}/get-other-report?page=1`
+  );
+  let specialReports = await fetchData(
+    `intelligence/${context?.params.lang}/get-spacial-report?page=1`
+  );
   return {
     props: {
-      intelligenceList: null,
-      otherReports: IntelligenceData?.data,
-      specialReports: IntelligenceData?.data,
+      otherReports: otherReports,
+      specialReports: specialReports,
     },
   };
 };

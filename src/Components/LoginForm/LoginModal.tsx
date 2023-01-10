@@ -42,8 +42,6 @@ function LoginModal({}: Props) {
     }
   }, []);
 
-  console.log("lang", lang);
-
   return (
     <>
       <div className={styles.loginForm}>

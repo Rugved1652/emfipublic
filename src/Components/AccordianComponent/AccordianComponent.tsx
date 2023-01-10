@@ -4,15 +4,17 @@ import AccordianItemComponent from "./AccordianItemComponent.tsx/AccordianItemCo
 import { Fade } from "react-awesome-reveal";
 import InfiniteScroll from "react-infinite-scroll-component";
 
-type Props = {};
+type Props = {
+  data: any;
+};
 
-const AccordianComponent = (props: any) => {
+const AccordianComponent = ({ data }: any) => {
   const [sliders, setSlider] = useState([1, 2, 3, 4, 5]);
   const getMoreData = () => {
-    console.log("sliders", sliders);
     setSlider((prev: any) => [...prev, ...Array.from(Array(5).keys())]);
   };
 
+  console.log(data.data.sliders);
   return (
     <>
       <Accordion
@@ -25,15 +27,19 @@ const AccordianComponent = (props: any) => {
           next={() => getMoreData()}
           hasMore={true}
         >
-          {sliders.map((i: any, index: any) => (
-            <Fade triggerOnce={true} direction="up" duration={1500}>
+          {data?.data?.sliders.map((i: any, index: any) => (
+            <Fade key={index} triggerOnce={true} direction="up" duration={1500}>
               <Accordion.Item
                 className="accordionItems"
                 eventKey={String(index)}
               >
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
+                <Accordion.Header>{i.report_title}</Accordion.Header>
                 <Accordion.Body>
-                  <AccordianItemComponent />
+                  <AccordianItemComponent
+                    reportId={i.slider_data.id}
+                    reportSlug={i.slider_data.report_slug}
+                    data={i.description}
+                  />
                 </Accordion.Body>
               </Accordion.Item>
             </Fade>

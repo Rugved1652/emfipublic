@@ -4,7 +4,7 @@ import LineChartComponent from "../../Charts/LineChartComponent/LineChartCompone
 
 type Props = {};
 
-const AccordianItemComponent = (props: Props) => {
+const AccordianItemComponent = ({ data, reportSlug, reportId }: any) => {
   const Router = useRouter();
   return (
     <div>
@@ -12,19 +12,14 @@ const AccordianItemComponent = (props: Props) => {
         <div className="mb-4" style={{ width: "100%", height: "40vh" }}>
           <LineChartComponent />
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolores
-          ipsa nam. Voluptates facere sapiente nisi magnam ex veniam nemo
-          tempore temporibus sunt dolore eum laudantium expedita error,
-          perferendis enim. Illo sapiente labore illum incidunt fuga maiores
-          nihil iusto recusandae.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: data }}></div>
         <button
           onClick={() => {
-            Router.push("/english/intelligence/details/abc");
+            Router.push(
+              `/english/intelligence/details/${reportSlug}?id=${reportId}`
+            );
           }}
         >
-          {" "}
           Continue Reading
         </button>
       </div>

@@ -3,7 +3,9 @@ import axiosClient from "./api";
 export const fetchData = async (url: string) => {
   try {
     const res = await axiosClient.get(url);
-    return res.data.data;
+    console.log(res.data, "res");
+    const data = await res.data;
+    return data;
   } catch (error: any) {
     console.log(error.res);
     return error.res;

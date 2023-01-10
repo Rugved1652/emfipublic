@@ -1,7 +1,8 @@
 import axios from "axios";
 
+console.log(process.env.BASE_URL);
 const axiosClient = axios.create({
-  baseURL: "http://192.168.29.43:3000/api/",
+  baseURL: `${process.env.BASE_URL}/api/`,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
@@ -13,8 +14,8 @@ axiosClient.interceptors.response.use(
     return response;
   },
   function (error: any) {
-    let res = error.response;
-
+    let res = error;
+    console.log(res, "err");
     return Promise.reject(error);
   }
 );
@@ -24,6 +25,7 @@ axiosClient.interceptors.request.use(
     return request;
   },
   function (error) {
+    // console.log(res, "err");
     return Promise.reject(error);
   }
 );

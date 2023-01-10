@@ -4,15 +4,23 @@ import styles from "../../../../../styles/Details.module.scss";
 import LinkedInIconWhite from "../../../../../Components/Icons/LinkedInIconWhite";
 import MessageIconWhite from "../../../../../Components/Icons/MessageIconWhite";
 import Link from "next/link";
-type Props = {};
+import { GetServerSideProps } from "next";
+import { fetchData } from "../../../../../Services/apiFunction";
+type Props = {
+  blogPost: any;
+  blogPostList: any;
+};
 
-const index = (props: Props) => {
+const index = ({ blogPost, blogPostList }: Props) => {
+  console.log(blogPost);
+  console.log(blogPostList);
   return (
     <div className="container">
       <HeroSearch
         heading="Angola"
         subHeading="April 2023"
         placeholder="Search"
+        data={blogPostList}
       />
       <div className={styles.inteligenceDetailsGroup}>
         <div className="row">
@@ -21,7 +29,7 @@ const index = (props: Props) => {
           </div>
           <div className="col-md-12 col-lg-4 col-xl-3 ">
             <button className={styles.downloadReport}>
-              Download Report{" "}
+              Download Report
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -89,6 +97,22 @@ const index = (props: Props) => {
       </div>
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (context: any) => {
+  console.log("context", context);
+  let blogPost = await fetchData(
+    `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
+  );
+  let blogPostList = await fetchData(
+    `/api/intelligence/${context?.params.lang}}`
+  );
+  return {
+    props: {
+      blogPost: blogPost,
+      blogPostList: blogPostList,
+    },
+  };
 };
 
 export default index;

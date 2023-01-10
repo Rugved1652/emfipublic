@@ -28,8 +28,6 @@ const ProductHero = ({ image, data }: Props) => {
     }, 4800);
   }, []);
 
-  console.log(div1?.current?.style?.width);
-
   return (
     <div>
       <div className="wrapperAnimation">
