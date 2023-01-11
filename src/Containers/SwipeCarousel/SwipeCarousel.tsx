@@ -18,6 +18,7 @@ type Props = {
   data?: any;
   children?: any;
   className?: string;
+  page: string;
 };
 
 const SwiperCarousel = ({
@@ -25,6 +26,7 @@ const SwiperCarousel = ({
   data,
   SildeComponent,
   className = "",
+  page,
 }: Props) => {
   const router = useRouter();
 
@@ -40,12 +42,11 @@ const SwiperCarousel = ({
           sensitivity: 1,
           releaseOnEdges: true,
         }}
-        autoplay={false}
-        // {
-        //   delay: 5000,
-        //   disableOnInteraction: false,
-        // }
-
+        speed={1}
+        autoplay={{
+          delay: 10500,
+          disableOnInteraction: false,
+        }}
         className={`vh-100 home-slider ${className}`}
         pagination={{
           clickable: true,
@@ -61,13 +62,16 @@ const SwiperCarousel = ({
         }}
         modules={[Autoplay, Mousewheel, Pagination]}
       >
-        {data?.map((i: any) => (
+        {data?.map((i: any, index: number) => (
           <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
-            <SildeComponent data={i} />
-            <ParticalBg />
+            <SildeComponent
+              data={i}
+              isProductHero={page === "product" && index === 0 ? true : false}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
+      <ParticalBg />
       {router.route === "/[lang]" ? null : null}
     </>
   );

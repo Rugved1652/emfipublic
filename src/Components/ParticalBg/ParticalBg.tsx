@@ -8,7 +8,14 @@ export default function TParticles() {
   };
 
   return (
-    <div>
+    <div
+      style={{
+        position: "fixed",
+        zIndex: "-15",
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
       <Particles
         init={particlesInit}
         options={{

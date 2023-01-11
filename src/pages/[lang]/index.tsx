@@ -16,12 +16,13 @@ type Props = {
 };
 
 function index({ chartData }: Props) {
+  console.log("chartData", chartData);
   return (
     <>
       <main className="main homePage">
         <SwiperCarousel
           SildeComponent={HeroSection}
-          data={chartData}
+          data={chartData?.data}
         ></SwiperCarousel>
       </main>
     </>

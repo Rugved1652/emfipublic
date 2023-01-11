@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AccordianComponent from "../../../Components/AccordianComponent/AccordianComponent";
 import HeroSearch from "../../../Components/HeroSearch/HeroSearch";
 import { fetchData } from "../../../Services/apiFunction";
@@ -16,6 +16,8 @@ const intelligence = ({
   otherReports,
   specialReports,
 }: Props) => {
+  useEffect(() => {}, []);
+
   console.log("otherReports", otherReports);
   console.log("specialReports", specialReports);
   console.log("intelligenceList", intelligenceList);
@@ -37,17 +39,20 @@ const intelligence = ({
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  console.log(context);
   let otherReports = await fetchData(
     `intelligence/${context?.params.lang}/get-other-report?page=1`
   );
   let specialReports = await fetchData(
     `intelligence/${context?.params.lang}/get-spacial-report?page=1`
   );
+  let intelligenceList = await fetchData(
+    `intelligence/${context?.params.lang}`
+  );
   return {
     props: {
       otherReports: otherReports,
       specialReports: specialReports,
+      intelligenceList: intelligenceList || null,
     },
   };
 };

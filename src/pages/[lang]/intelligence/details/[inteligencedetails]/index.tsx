@@ -6,21 +6,25 @@ import MessageIconWhite from "../../../../../Components/Icons/MessageIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
 import { fetchData } from "../../../../../Services/apiFunction";
+import moment from "moment";
 type Props = {
   blogPost: any;
-  blogPostList: any;
+  blogPostList?: any;
 };
 
 const index = ({ blogPost, blogPostList }: Props) => {
+  console.log(blogPostList?.data?.reports_list);
   console.log(blogPost);
-  console.log(blogPostList);
   return (
     <div className="container">
       <HeroSearch
         heading="Angola"
-        subHeading="April 2023"
+        subHeading={moment(blogPostList?.data?.last_report_date).format(
+          "MM/DD/YYYY"
+        )}
         placeholder="Search"
-        data={blogPostList}
+        searchKeyname="title"
+        data={blogPostList?.data?.reports_list}
       />
       <div className={styles.inteligenceDetailsGroup}>
         <div className="row">
@@ -83,7 +87,7 @@ const index = ({ blogPost, blogPostList }: Props) => {
                         viewBox="0 0 16 16"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
                         />
                       </svg>
@@ -101,16 +105,16 @@ const index = ({ blogPost, blogPostList }: Props) => {
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
   console.log("context", context);
-  let blogPost = await fetchData(
-    `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
-  );
-  let blogPostList = await fetchData(
-    `/api/intelligence/${context?.params.lang}}`
-  );
+  // let blogPost = await fetchData(
+  //   `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
+  // );
+  let blogPostList = await fetchData(`intelligence/espanol`);
+  console.log("blogPostList", blogPostList);
+  // console.log("blogPost", blogPost);
   return {
     props: {
-      blogPost: blogPost,
-      blogPostList: blogPostList,
+      // blogPost: blogPost || null,
+      blogPostList: blogPostList || null,
     },
   };
 };

@@ -14,7 +14,7 @@ const AccordianComponent = ({ data }: any) => {
     setSlider((prev: any) => [...prev, ...Array.from(Array(5).keys())]);
   };
 
-  console.log(data.data.sliders);
+  // console.log(data.data.sliders);
   return (
     <>
       <Accordion

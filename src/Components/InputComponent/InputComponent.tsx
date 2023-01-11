@@ -4,12 +4,19 @@ import SearchIcon from "../Icons/SearchIcon";
 
 type Props = {
   placeholder: string;
+  handleChange?: Function;
 };
 
-const InputComponent = ({ placeholder }: Props) => {
+const InputComponent = ({ placeholder, handleChange = () => {} }: Props) => {
   return (
     <div className={styles.inputContainer}>
-      <input type="text" placeholder={placeholder} name="" id="" />
+      <input
+        onChange={(e) => handleChange(e)}
+        type="text"
+        placeholder={placeholder}
+        name=""
+        id=""
+      />
       <button>
         <SearchIcon />
       </button>

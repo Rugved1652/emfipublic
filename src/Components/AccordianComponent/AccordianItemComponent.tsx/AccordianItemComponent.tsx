@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import LineChartComponent from "../../Charts/LineChartComponent/LineChartComponent";
@@ -13,15 +14,11 @@ const AccordianItemComponent = ({ data, reportSlug, reportId }: any) => {
           <LineChartComponent />
         </div>
         <div dangerouslySetInnerHTML={{ __html: data }}></div>
-        <button
-          onClick={() => {
-            Router.push(
-              `/english/intelligence/details/${reportSlug}?id=${reportId}`
-            );
-          }}
+        <Link
+          href={`/english/intelligence/details/${reportSlug}?id=${reportId}`}
         >
           Continue Reading
-        </button>
+        </Link>
       </div>
       <div></div>
     </div>

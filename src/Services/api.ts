@@ -15,7 +15,7 @@ axiosClient.interceptors.response.use(
   },
   function (error: any) {
     let res = error;
-    console.log(res, "err");
+    console.log(res, "reser");
     return Promise.reject(error);
   }
 );

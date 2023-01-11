@@ -1,88 +1,140 @@
-import Image from "next/image";
-import React, { useRef, useState, useEffect } from "react";
-import { Fade, Slide } from "react-awesome-reveal";
-import WavyText from "../WavyText/WavyText";
+import React, { useState, useEffect } from "react";
+import EBondIcon from "../Icons/EBondIcon";
+import EMFILogo from "../Icons/EMFILogo";
 
 type Props = {
   image?: string;
   data?: any;
+  isProductHero?: boolean;
 };
 
-const ProductHero = ({ image, data }: Props) => {
-  const div1: any = useRef();
-  const div2: any = useRef();
-  const div3: any = useRef();
+const ProductHero = ({ image, data, isProductHero }: Props) => {
+  const [slide, setSlide] = useState(0);
+  const [first, setFirst] = useState(0);
+  const [second, setSecond] = useState(0);
+  const [third, setThird] = useState(0);
+  const [forth, setForth] = useState(0);
 
-  const [first, setfirst] = useState(0);
-  const [second, setsecond] = useState(0);
-  const [third, setthird] = useState(0);
   useEffect(() => {
+    setSlide(0);
     setTimeout(() => {
-      setfirst(1);
-    }, 800);
+      setFirst(1);
+    }, 100);
     setTimeout(() => {
-      setsecond(1);
-    }, 2800);
+      setSecond(1);
+    }, 2100);
     setTimeout(() => {
-      setthird(1);
-    }, 4800);
-  }, []);
+      setThird(1);
+    }, 4100);
+    setTimeout(() => {
+      setForth(1);
+    }, 6100);
+    setTimeout(() => {
+      setFirst(0);
+      setSecond(0);
+      setThird(0);
+      setForth(0);
+      setSlide(1);
+    }, 10499);
+  }, [slide]);
 
   return (
     <div>
       <div className="wrapperAnimation">
         <div id="wrapper">
-          {first ? (
-            <div style={{ display: "flex" }}>
-              <div
-                className="heading animatable"
-                style={{ position: "relative" }}
-              >
-                <p style={{ visibility: "hidden", position: "absolute" }}>
-                  EMERGENING
-                </p>{" "}
-                <div className="textAnimation">EMERGENING</div>
-              </div>
-            </div>
-          ) : null}
-          {second ? (
-            <div style={{ display: "flex" }}>
-              <div
-                className="heading animatableReverse"
-                style={{ position: "relative" }}
-              >
-                <p style={{ visibility: "hidden", position: "absolute" }}>
-                  EMERGENING
-                </p>{" "}
-                <div className="textAnimationReverse">EMERGENING</div>
-              </div>
-            </div>
-          ) : null}
-
-          {/* {second ? (
-            <div style={{ display: "flex" }}>
-              <div className="heading animatable">
-                <p style={{ visibility: "hidden", position: "relative" }}>
-                  EMERGENING
-                </p>{" "}
-                <div className="textAnimation" style={{ position: "absolute" }}>
-                  EMERGENING
+          {isProductHero ? (
+            <>
+              {first ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatable"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data.slideText}
+                    </p>
+                    <div className="textAnimation">
+                      <EBondIcon />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ) : null}
-          {third ? (
-            <div style={{ display: "flex" }}>
-              <div className="heading animatable">
-                <p style={{ visibility: "hidden", position: "relative" }}>
-                  EMERGENING
-                </p>{" "}
-                <div className="textAnimation" style={{ position: "absolute" }}>
-                  EMERGENING
+              ) : null}
+              {second ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatableReverse"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data.slideText} <EMFILogo />
+                    </p>
+                    <div className="textAnimationReverse">
+                      {data.slideText} <EMFILogo />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ) : null} */}
+              ) : null}
+            </>
+          ) : (
+            <>
+              {first ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatable"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data.slideText1}
+                    </p>
+                    <div className="textAnimation"> {data.slideText1}</div>
+                  </div>
+                </div>
+              ) : null}
+              {second ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatableReverse"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data.slideText2}
+                    </p>
+                    <div className="textAnimationReverse">
+                      {data.slideText2}
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {third ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatable"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data?.slideText3}
+                    </p>
+                    <div className="textAnimation"> {data?.slideText3}</div>
+                  </div>
+                </div>
+              ) : null}
+              {forth ? (
+                <div style={{ display: "flex" }}>
+                  <div
+                    className="heading animatableReverse"
+                    style={{ position: "relative" }}
+                  >
+                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                      {data.slideText4}
+                    </p>
+                    <div className="textAnimationReverse">
+                      {data.slideText4}
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+            </>
+          )}
         </div>
       </div>
     </div>
