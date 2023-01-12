@@ -4,8 +4,22 @@ import TextAreaInputComponent from "../../Components/InputComponent/TextAreaComp
 import TextInputComponent from "../../Components/InputComponent/TextInputComponent";
 import SelectComponent from "../../Components/SelectComponent/SelectComponent";
 import { fetchData } from "../../Services/apiFunction";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
 
 const Contact = ({ contactDetails }: any) => {
+  const validationSchema = yup.object().shape({
+    firstName: yup.string().required("Required"),
+    email: yup.string().email().required("Required"),
+  });
+
+  const handleSubmitFun = (data: any) => {
+    console.log(data);
+  };
+
+  const { register, handleSubmit, errors } = useForm();
+
   console.log(contactDetails?.data.contact?.organization);
 
   return (
@@ -15,26 +29,48 @@ const Contact = ({ contactDetails }: any) => {
         subHeading="How Can We Help You"
         placeholder={""}
       />
-      <div className="contactMain">
+      <form onSubmit={handleSubmit(handleSubmitFun)} className="contactMain">
         <div className="contactGroup">
           <TextInputComponent
             label={contactDetails?.data.contact?.first_name}
+            register={register}
+            inputRef="firstName"
           />
-          <TextInputComponent label={contactDetails?.data.contact?.last_name} />
+          <TextInputComponent
+            register={register}
+            inputRef="firstName2"
+            label={contactDetails?.data.contact?.last_name}
+          />
         </div>
         <div className="contactGroup">
           <TextInputComponent
+            register={register}
+            inputRef="firstName3"
             label={contactDetails?.data.contact?.organization}
           />
-          <TextInputComponent label={contactDetails?.data.contact?.country} />
+          <TextInputComponent
+            register={register}
+            inputRef="firstName4"
+            label={contactDetails?.data.contact?.country}
+          />
         </div>
         <div className="contactGroup">
-          <TextInputComponent label={contactDetails?.data.contact?.phone} />
-          <TextInputComponent label={contactDetails?.data.contact?.email} />
+          <TextInputComponent
+            register={register}
+            inputRef="firstName4"
+            label={contactDetails?.data.contact?.phone}
+          />
+          <TextInputComponent
+            register={register}
+            inputRef="firstName4"
+            label={contactDetails?.data.contact?.email}
+          />
         </div>
         <div className="contactGroup">
-          <SelectComponent label="buisness" />
-          <SelectComponent label="sub" />
+          <SelectComponent
+            label={contactDetails?.data.contact?.business_unit}
+          />
+          <SelectComponent label={contactDetails?.data.contact?.subject} />
         </div>
         <div className="contactGroup textareaGroup">
           <TextAreaInputComponent
@@ -62,9 +98,11 @@ const Contact = ({ contactDetails }: any) => {
               No file selected
             </span>
           </div>
-          <button className="submitButton">Send</button>
+          <button type="submit" className="submitButton">
+            {contactDetails?.data.contact?.send}
+          </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

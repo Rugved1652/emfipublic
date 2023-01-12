@@ -12,6 +12,7 @@ import { Fade, Flip } from "react-awesome-reveal";
 import AboutValues from "../../Containers/AboutValues/AboutValues";
 import { fetchData } from "../../Services/apiFunction";
 import { aboutData } from "../../types/types";
+import ProductHero from "../../Components/HeroSection/ProductHero";
 
 type Props = {
   aboutData: aboutData;
@@ -24,7 +25,7 @@ const About = ({ aboutData }: any) => {
     <>
       <SwiperCarousel
         page="about"
-        SildeComponent={AboutHero}
+        SildeComponent={ProductHero}
         data={aboutHeroInformation}
       />
       <div className="container">

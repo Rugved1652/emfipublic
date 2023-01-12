@@ -27,34 +27,31 @@ export const aboutHero = [
 export const aboutHeroInformation = [
   {
     id: "1",
-    data: ["WE ARE", "EMERGING", "FINANCE"],
+    slideText1: "We are",
+    slideText2: "emerging",
+    slideText3: "finance",
   },
   {
     id: "2",
-    data: [
-      "We are on a mission",
-      "to responsibly democratize",
-      "access to financial markets",
-      "via emerging technologies",
-    ],
+    slideText1: "We are on a mission",
+    slideText2: "to responsibly democratize",
+    slideText3: "access to financial markets",
+    slideText4: "via emerging technologies",
   },
   {
     id: "3",
-    data: [
-      "We are",
-      "an intelligence & technology",
-      "driven investment firm",
-      "based in London",
-    ],
+    slideText1: "We are",
+    slideText2: "an intelligence & technology",
+    slideText3: "driven investment firm",
+    slideText4: "based in London",
+    data: [],
   },
   {
     id: "4",
-    data: [
-      "We provide",
-      "asset & wealth management,",
-      "execution, settlements, custody",
-      "and related investment services",
-    ],
+    slideText1: "We provide",
+    slideText2: "asset & wealth management,",
+    slideText3: "execution, settlements, custody",
+    slideText4: "and related investment services",
   },
 ];
 

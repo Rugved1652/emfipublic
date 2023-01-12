@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
+    "@hookform/resolvers": "^2.9.10",
     "@react-three/drei": "^9.46.2",
     "@react-three/fiber": "^8.9.2",
     "@types/node": "18.11.9",
@@ -28,11 +29,13 @@
     "react-awesome-reveal": "^4.1.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.41.5",
     "react-infinite-scroll-component": "^6.1.0",
     "react-select": "^5.6.1",
     "react-simple-maps": "^3.0.0",
     "react-svg-worldmap": "^2.0.0-alpha.3",
     "react-table": "^7.8.0",
+    "react-toastify": "^9.1.1",
     "react-tsparticles": "^2.7.1",
     "recharts": "^2.1.16",
     "sass": "^1.56.1",
@@ -40,7 +43,8 @@
     "three": "^0.147.0",
     "three-stdlib": "^2.21.1",
     "tsparticles": "^2.7.1",
-    "typescript": "4.9.3"
+    "typescript": "4.9.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/dompurify": "^2.4.0",

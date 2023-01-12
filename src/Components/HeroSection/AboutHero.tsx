@@ -7,6 +7,7 @@ type Props = {
 };
 
 const AboutHero = ({ image, data }: Props) => {
+  console.log(data);
   return (
     <div className={styles.textContainer}>
       {data.data.map((i: any) => (
