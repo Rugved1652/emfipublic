@@ -3,7 +3,7 @@ import styles from "../../styles/InputComponent.module.scss";
 import SearchIcon from "../Icons/SearchIcon";
 
 type Props = {
-  placeholder: string;
+  placeholder?: string;
   handleChange?: Function;
 };
 

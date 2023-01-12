@@ -20,7 +20,7 @@ const TextAreaInputComponent = ({ label, setText }: Props) => {
         rows={4}
       ></textarea>
       <label className={first ? styles.filled : ""} htmlFor={""}>
-        Label
+        {label}
       </label>
     </div>
   );
