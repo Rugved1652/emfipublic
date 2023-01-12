@@ -50,17 +50,16 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                   <div
                     className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo}`}
                   >
-                    <p className={styles.eSliderSliderText}>
-                      {data.slideText}
-                    </p>
+                    <p className={styles.eSliderSliderText}>{data.slideText}</p>
                     <div className="textAnimation">
                       <div className={styles.textAnimation}>
-                      <Image
-                        src={data.Productimage}
-                        width={200}
-                        height={200}
-                        alt={"sss"}
-                      />
+                        <Image
+                          src={data.Productimage}
+                          width={200}
+                          height={200}
+                          alt={"sss"}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -68,10 +67,10 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
               {second ? (
                 <div className={styles.dFlex}>
                   <div
-                  className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
+                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
                   >
                     <p className={styles.eSliderSliderText}>
-                      {data.slideText} <EMFILogo isBlue />
+                      {data.slideText} <EMFILogo />
                     </p>
                     <div className={styles.textAnimationReverse}>
                       {data.slideText} <EMFILogo />
@@ -84,17 +83,23 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
             <>
               {first ? (
                 <div className={styles.dFlex}>
-                  <div className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}>
+                  <div
+                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}
+                  >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText1}
                     </p>
-                    <div className={styles.textAnimation}>{data.slideText1}</div>
+                    <div className={styles.textAnimation}>
+                      {data.slideText1}
+                    </div>
                   </div>
                 </div>
               ) : null}
               {second ? (
                 <div className={styles.dFlex}>
-                  <div className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}>
+                  <div
+                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}
+                  >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText2}
                     </p>
@@ -106,17 +111,24 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
               ) : null}
               {third ? (
                 <div className={styles.dFlex}>
-                  <div className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}>
+                  <div
+                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}
+                  >
                     <p className={styles.eSliderSliderText}>
                       {data?.slideText3}
                     </p>
-                    <div className={styles.textAnimation}> {data?.slideText3}</div>
+                    <div className={styles.textAnimation}>
+                      {" "}
+                      {data?.slideText3}
+                    </div>
                   </div>
                 </div>
               ) : null}
               {forth ? (
                 <div className={styles.dFlex}>
-                  <div  className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}>
+                  <div
+                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}
+                  >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText4}
                     </p>
