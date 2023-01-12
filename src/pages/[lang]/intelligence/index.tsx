@@ -11,7 +11,7 @@ type Props = {
   specialReports: any;
 };
 
-const intelligence = ({
+const Intelligence = ({
   intelligenceList,
   otherReports,
   specialReports,
@@ -57,4 +57,4 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
   };
 };
 
-export default intelligence;
+export default Intelligence;

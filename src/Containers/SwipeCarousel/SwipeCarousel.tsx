@@ -18,7 +18,7 @@ type Props = {
   data?: any;
   children?: any;
   className?: string;
-  page: string;
+  page?: string;
 };
 
 const SwiperCarousel = ({

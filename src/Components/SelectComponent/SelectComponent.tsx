@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import Select from "react-select";
 
-export default function SelectComponent() {
+type SelectComponent = {
+  label: string;
+};
+
+export default function SelectComponent({ label }: SelectComponent) {
   const [selectedOption, setSelectedOption] = useState("none");
   const options = [
     { value: "none", label: "Empty" },
@@ -22,14 +26,13 @@ export default function SelectComponent() {
 
   return (
     <div className="selectGroup">
-      <label className="selectlable">Business Unit</label>
+      <label className="selectlable">{label}</label>
       <Select
         options={options}
         onChange={handleTypeSelect}
         value={options.filter(function (option) {
           return option.value === selectedOption;
         })}
-        // label="Single select"
       />
     </div>
   );

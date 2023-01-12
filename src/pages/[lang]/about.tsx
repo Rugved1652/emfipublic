@@ -17,12 +17,16 @@ type Props = {
   aboutData: aboutData;
 };
 
-const about = ({ aboutData }: any) => {
+const About = ({ aboutData }: any) => {
   const [greyImage, setGreyImage] = useState(-1);
 
   return (
     <>
-      <SwiperCarousel SildeComponent={AboutHero} data={aboutHeroInformation} />
+      <SwiperCarousel
+        page="about"
+        SildeComponent={AboutHero}
+        data={aboutHeroInformation}
+      />
       <div className="container">
         <AboutEmfi aboutData={aboutData?.data?.about_data} />
         <div className="aboutSectionMain ourClientsMain">
@@ -137,4 +141,4 @@ export async function getStaticProps(context: any) {
   };
 }
 
-export default about;
+export default About;
