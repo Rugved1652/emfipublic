@@ -25,10 +25,57 @@ export default function TParticles() {
           },
           background: {
             color: {
-              value: "#F5F6F7",
+              value: "",
             },
           },
-          fpsLimit: 60,
+          fpsLimit:0,
+          
+          particles: {
+            number: {
+              value: 60,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            color: {
+              value: "#071932",
+            },
+            shape: {
+              type: "circle",
+              stroke: { width: 0, color: "#071932" },
+              polygon: { nb_sides: 5 },
+              image: { src: "", width: 100, height: 100 }
+            },
+            opacity: {
+              value: { min: 0.1, max: 0.8 },              
+            },
+            size: {
+              value: { min: 1, max: 3 },
+            },
+            links: {
+              enable: true,
+              distance: 150,
+              color: "#071932",
+              opacity: 0.4,
+              width: 1
+            },
+            move: {              
+              enable: true,
+              speed: 4,
+              direction: "none",
+              random: true,
+              straight: false,
+              outModes: {
+                default: "out",
+            },
+              
+            },
+            collisions: {
+              enable: true,
+            },           
+            
+          },
           interactivity: {
             detectsOn: "canvas",
             events: {
@@ -38,64 +85,31 @@ export default function TParticles() {
               },
               onHover: {
                 enable: true,
-                mode: "grab",
+                mode: "repulse",
               },
               resize: true,
             },
             modes: {
+              grab: { 
+                distance: 400, 
+                links: { opacity: 1 } 
+              },
               bubble: {
                 distance: 400,
                 duration: 2,
-                opacity: 0.8,
+                opacity: 8,
                 size: 40,
-              },
-              push: {
-                quantity: 1,
+                speed: 3
               },
               repulse: {
                 distance: 200,
                 duration: 0.4,
               },
-            },
-          },
-          particles: {
-            color: {
-              value: "#000",
-            },
-            links: {
-              color: "#74f5f6",
-              distance: 150,
-              enable: true,
-              opacity: 1,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outMode: "out",
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800,
+              push: {
+                particles_nb: 4,
               },
-              value: 80,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              random: true,
-              value: 5,
+              remove: { particles_nb: 2 },
+              
             },
           },
           detectRetina: true,

@@ -1,0 +1,150 @@
+.eSliderMain {
+  padding-top: 16vh;
+  text-align: center;
+  .dFlex {
+    display: flex;
+  }
+  .pRelative {
+    position: relative;
+  }
+  .eSliderSliderText {
+    visibility: hidden;
+    position: absolute;
+  }
+  .textAnimation {
+    animation: textSlide 2s;
+    animation-delay: 2s;
+  }
+  
+  .animatable {
+    position: relative;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: 0.75s cubic-bezier(1, -0.01, 0.12, 0.8) 1s 1 reveal forwards;
+  }
+  .eLogo {
+    height: 230px;
+    svg {
+      height: 200px;
+    }
+  }
+  .eLogoText {
+    .textAnimationReverse {
+      font-size: 52px;
+      text-transform: uppercase;
+      color: var(--brand-primary);
+      line-height: 1.25;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @media (min-width: 1200px) {
+        font-size: 4.1666vw;
+      }      
+    }
+    svg {
+      height: 52px;
+      width: auto;
+      margin-left: 16px !important; 
+      @media (min-width: 1200px) {
+        height: 3.5vw;
+      }
+    }
+  }
+  .animatable::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--brand-primary);
+    padding: inherit;
+    animation: 0.75s cubic-bezier(1, -0.01, 0.12, 0.8) 1.75s 1 hideBlack forwards;
+  }
+  
+  @keyframes reveal {
+    from {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  @keyframes hideBlack {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    to {
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+  }
+  @keyframes textSlide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .textAnimationReverse,.textAnimation {
+      font-size: 29px;
+      text-transform: uppercase;
+      line-height: 1.25;
+      color: var(--brand-primary);
+      @media (min-width: 1200px) {
+        font-size: 2.03125vw;
+      } 
+  }
+  .textAnimationReverse {
+    animation: textSlideReverse 2s;
+    animation-delay: 2s;
+  }
+  
+  .animatableReverse {
+    position: relative;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    animation: 0.75s cubic-bezier(1, -0.01, 0.12, 0.8) 1s 1 revealReverse forwards;
+  }
+  
+  .animatableReverse::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--brand-primary);
+    padding: inherit;
+    animation: 0.75s cubic-bezier(1, -0.01, 0.12, 0.8) 1.75s 1 hideBlackReverse
+      forwards;
+  }
+
+  @keyframes revealReverse {
+    from {
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+      // clip-path: polygon(0% 100%, 0% 100%, 0% 0%, 0% 0%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+
+  @keyframes hideBlackReverse {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+      // clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    }
+  }
+  @keyframes textSlideReverse {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
