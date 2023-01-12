@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import EBondIcon from "../Icons/EBondIcon";
 import EMFILogo from "../Icons/EMFILogo";
-
+import styles from "../../styles/ProductHero.module.scss";
 type Props = {
   image?: string;
   data?: any;
@@ -39,36 +39,34 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
   }, [slide]);
 
   return (
-    <div>
+    <div className={styles.eSliderMain}>
       <div className="wrapperAnimation">
         <div id="wrapper">
           {isProductHero ? (
             <>
               {first ? (
-                <div style={{ display: "flex" }}>
+                <div className={styles.dFlex}>
                   <div
-                    className="heading animatable"
-                    style={{ position: "relative" }}
+                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo}`}
                   >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                    <p className={styles.eSliderSliderText}>
                       {data.slideText}
                     </p>
-                    <div className="textAnimation">
+                    <div className={styles.textAnimation}>
                       <EBondIcon />
                     </div>
                   </div>
                 </div>
               ) : null}
               {second ? (
-                <div style={{ display: "flex" }}>
+                <div className={styles.dFlex}>
                   <div
-                    className="heading animatableReverse"
-                    style={{ position: "relative" }}
+                  className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
                   >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
-                      {data.slideText} <EMFILogo />
+                    <p className={styles.eSliderSliderText}>
+                      {data.slideText} <EMFILogo isBlue />
                     </p>
-                    <div className="textAnimationReverse">
+                    <div className={styles.textAnimationReverse}>
                       {data.slideText} <EMFILogo />
                     </div>
                   </div>
@@ -78,56 +76,44 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
           ) : (
             <>
               {first ? (
-                <div style={{ display: "flex" }}>
-                  <div
-                    className="heading animatable"
-                    style={{ position: "relative" }}
-                  >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                <div className={styles.dFlex}>
+                  <div className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}>
+                    <p className={styles.eSliderSliderText}>
                       {data.slideText1}
                     </p>
-                    <div className="textAnimation"> {data.slideText1}</div>
+                    <div className={styles.textAnimation}>{data.slideText1}</div>
                   </div>
                 </div>
               ) : null}
               {second ? (
-                <div style={{ display: "flex" }}>
-                  <div
-                    className="heading animatableReverse"
-                    style={{ position: "relative" }}
-                  >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                <div className={styles.dFlex}>
+                  <div className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}>
+                    <p className={styles.eSliderSliderText}>
                       {data.slideText2}
                     </p>
-                    <div className="textAnimationReverse">
+                    <div className={styles.textAnimationReverse}>
                       {data.slideText2}
                     </div>
                   </div>
                 </div>
               ) : null}
               {third ? (
-                <div style={{ display: "flex" }}>
-                  <div
-                    className="heading animatable"
-                    style={{ position: "relative" }}
-                  >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                <div className={styles.dFlex}>
+                  <div className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}>
+                    <p className={styles.eSliderSliderText}>
                       {data?.slideText3}
                     </p>
-                    <div className="textAnimation"> {data?.slideText3}</div>
+                    <div className={styles.textAnimation}> {data?.slideText3}</div>
                   </div>
                 </div>
               ) : null}
               {forth ? (
-                <div style={{ display: "flex" }}>
-                  <div
-                    className="heading animatableReverse"
-                    style={{ position: "relative" }}
-                  >
-                    <p style={{ visibility: "hidden", position: "absolute" }}>
+                <div className={styles.dFlex}>
+                  <div  className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}>
+                    <p className={styles.eSliderSliderText}>
                       {data.slideText4}
                     </p>
-                    <div className="textAnimationReverse">
+                    <div className={styles.textAnimationReverse}>
                       {data.slideText4}
                     </div>
                   </div>
