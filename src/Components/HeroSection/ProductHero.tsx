@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import EBondIcon from "../Icons/EBondIcon";
 import EMFILogo from "../Icons/EMFILogo";
@@ -54,7 +55,12 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                       {data.slideText}
                     </p>
                     <div className="textAnimation">
-                      <EBondIcon />
+                      <Image
+                        src={data.Productimage}
+                        width={200}
+                        height={200}
+                        alt={"sss"}
+                      />
                     </div>
                   </div>
                 </div>

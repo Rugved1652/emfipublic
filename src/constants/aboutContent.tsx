@@ -1,3 +1,5 @@
+import EBondIcon from "../Assets/ebonds.svg";
+
 export const aboutHero = [
   {
     id: "1",
@@ -59,7 +61,7 @@ export const ebondHeroInformation = [
   {
     id: "1",
     slideText: "Powered by",
-    Productimage: "",
+    Productimage: "/ebonds.svg",
     emfiLogo: "",
   },
   {
@@ -89,11 +91,9 @@ export const ebondHeroInformation = [
 export const eWealthHeroInformation = [
   {
     id: "1",
-    slideText1: "WE ARE",
-    slideText2: "EMERGING",
-    slideText3: "FINANCE",
-    image: "",
-    data: ["WE ARE", "EMERGING", "FINANCE"],
+    slideText: "Powered by",
+    Productimage: "/ewealth.svg",
+    emfiLogo: "",
   },
   {
     id: "2",
@@ -121,10 +121,9 @@ export const eWealthHeroInformation = [
 export const eFundHeroInformation = [
   {
     id: "1",
-    slideText1: "WE ARE",
-    slideText2: "EMERGING",
-    slideText3: "FINANCE",
-    image: "",
+    slideText: "Powered by",
+    Productimage: "/efunds.svg",
+    emfiLogo: "",
   },
   {
     id: "2",
@@ -152,10 +151,9 @@ export const eFundHeroInformation = [
 export const eIntelHeroInformation = [
   {
     id: "1",
-    slideText1: "WE ARE",
-    slideText2: "EMERGING",
-    slideText3: "FINANCE",
-    image: "",
+    slideText: "Powered by",
+    Productimage: "/eintel.svg",
+    emfiLogo: "",
   },
   {
     id: "2",
@@ -183,7 +181,9 @@ export const eIntelHeroInformation = [
 export const ebondHeroInformationES = [
   {
     id: "1",
-    data: ["WE ARE", "EMERGING", "FINANCE"],
+    slideText: "Powered by",
+    Productimage: "/ebonds.svg",
+    emfiLogo: "",
   },
   {
     id: "2",
@@ -217,7 +217,9 @@ export const ebondHeroInformationES = [
 export const eWealthHeroInformationEs = [
   {
     id: "1",
-    data: ["WE ARE", "EMERGING", "FINANCE"],
+    slideText: "Powered by",
+    Productimage: "/ebonds.svg",
+    emfiLogo: "",
   },
   {
     id: "2",
