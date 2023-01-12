@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import CustomCard from "../../Components/Cards/CustomCard/CustomCard";
-import AboutHero from "../../Components/HeroSection/AboutHero";
 import PaperCard from "../../Components/Cards/PaperCard/PaperCard";
 import TeamMemberCard from "../../Components/Cards/TeamMemberCard/TeamMemberCard";
 import { aboutHeroInformation } from "../../constants/aboutContent";

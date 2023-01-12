@@ -1,13 +1,13 @@
 .footer {
-  background: url("../assets/footer-img/footer-bg.svg") no-repeat top right;
-  background-size:100%;
+  background: url("../Assets/footer-img/footer-bg.svg") no-repeat top right;
+  background-size: 100%;
   min-height: 346px;
   padding: 48px 0 0;
   position: relative;
   z-index: 9;
   @media screen and (min-width: 567px) {
-    background-size:cover;
-    padding: 7.8125vw 0 1.8229vw
+    background-size: cover;
+    padding: 7.8125vw 0 1.8229vw;
   }
   .footerBgColor {
     background-color: var(--brand-primary);
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;          
+    align-items: flex-start;
     &List {
       margin: 0;
       padding: 0;
@@ -25,13 +25,13 @@
           font-weight: 400;
           color: var(--white-color);
           text-transform: capitalize;
-          font-size: 13px; 
+          font-size: 13px;
           margin-bottom: 12px;
           display: block;
           @media (min-width: 992px) {
             font-size: 0.7291vw;
-            margin-bottom: 0.9375vw; 
-          }          
+            margin-bottom: 0.9375vw;
+          }
           svg {
             height: 13px;
             @media (min-width: 992px) {
@@ -41,7 +41,7 @@
           &.eIcon {
             margin-bottom: 10px;
             @media (min-width: 992px) {
-              margin-bottom: 0.78125vw; 
+              margin-bottom: 0.78125vw;
             }
           }
           &:hover {
@@ -59,13 +59,13 @@
       font-weight: 500;
       color: var(--white-color);
       text-transform: capitalize;
-      font-size: 14px; 
+      font-size: 14px;
       margin-bottom: 16px;
       @media (min-width: 992px) {
         font-size: 0.8333vw;
-        margin-bottom: 1.0416vw; 
+        margin-bottom: 1.0416vw;
       }
-    } 
+    }
   }
   .footerBottom {
     display: flex;
@@ -78,9 +78,9 @@
     margin: 0;
     padding: 0;
     justify-content: flex-end;
-    margin-bottom:16px ;
+    margin-bottom: 16px;
     @media (min-width: 992px) {
-      margin-bottom:1.5625vw;
+      margin-bottom: 1.5625vw;
     }
     @media (max-width: 1199px) {
       justify-content: center;
@@ -105,7 +105,7 @@
         margin-right: 1.0416vw;
       }
       &:last-child {
-        margin-right:0;
+        margin-right: 0;
       }
       &:hover {
         background-color: var(--brand-primary);
@@ -121,7 +121,7 @@
     text-align: right;
     font-weight: 400;
     color: var(--white-color);
-    font-size: 10px; 
+    font-size: 10px;
     margin-bottom: 0;
     line-height: 26px;
     @media (max-width: 1199px) {

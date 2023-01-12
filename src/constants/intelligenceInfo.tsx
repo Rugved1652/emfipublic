@@ -1558,7 +1558,7 @@ export const IntelligenceData: any = {
       {
         report_title: "Plummeting Reserves",
         description:
-          '<p>International reserves declined 30.1% MoM in November 2021, reaching a new record low of USD 1,6 bn.</p>\r\n\r\n<p></p>\r\n\r\n<p>The current international reserves would cover only less than a month of imports.</p>\r\n\r\n<p></p>\r\n\r\n<p>The Central Bank <a href="https://www.cbsl.gov.lk/en/news/expected-foreign-exchange-inflows-and-official-reserve-position">stated</a> that it is taking actions to boost the official reserve assets to above USD 3 bn by the end of the year.</p>\r\n\r\n<p></p>\r\n\r\n<p>Overall economic mismanagement during 2021 led to a GDP contraction of 1.54% for Q3-2021.</p>\r\n',
+          '<p>International reserves declined 30.1% MoM in November 2021, reaching a new record low of USD 1,6 bn.</p>\r\n\r\n<p></p>\r\n\r\n<p>The current international reserves would cover only less than a month of imports.</p>\r\n\r\n<p></p>\r\n\r\n<p>The Central Bank <a href="https://www.cbsl.gov.lk/en/news/expected-foreign-exchange-inflows-and-official-reserve-position">stated</a> that it is taking actions to boost the official reserve Assets to above USD 3 bn by the end of the year.</p>\r\n\r\n<p></p>\r\n\r\n<p>Overall economic mismanagement during 2021 led to a GDP contraction of 1.54% for Q3-2021.</p>\r\n',
         title: "Sri Lanka",
         display_date: "2021-12-23",
         display_title_first: "SRILAN 6 3/4 04/18/28",
