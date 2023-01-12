@@ -14,6 +14,7 @@ module.exports = {
       },
       env_production: {
         NODE_ENV: "production",
+        BASE_URL: "https://nodepublic.emfi.uk",
       },
       error_file: "logs/err.log",
       out_file: "logs/out.log",
