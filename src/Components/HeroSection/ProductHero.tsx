@@ -7,9 +7,10 @@ type Props = {
   image?: string;
   data?: any;
   isProductHero?: boolean;
+  isAbout?: boolean;
 };
 
-const ProductHero = ({ image, data, isProductHero }: Props) => {
+const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
   const [slide, setSlide] = useState(0);
   const [first, setFirst] = useState(0);
   const [second, setSecond] = useState(0);
@@ -48,7 +49,8 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
               {first ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo}`}
+                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo} ${ isAbout ? styles.aboutPage : '123'}`}
+                    
                   >
                     <p className={styles.eSliderSliderText}>{data.slideText}</p>
                     <div className="textAnimation">
