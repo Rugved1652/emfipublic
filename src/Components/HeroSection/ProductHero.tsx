@@ -322,6 +322,11 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               )}
             </>
           ) : (
+            // <></>
+
+            //  {
+            //   isAbo
+            //  }
             <>
               {first ? (
                 <div className={styles.dFlex}>
