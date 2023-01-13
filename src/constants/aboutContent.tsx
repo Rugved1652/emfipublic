@@ -62,7 +62,7 @@ export const ebondHeroInformation = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/ebonds.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",
@@ -93,7 +93,7 @@ export const eWealthHeroInformation = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/ewealth.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",
@@ -123,7 +123,7 @@ export const eFundHeroInformation = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/efunds.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",
@@ -153,7 +153,7 @@ export const eIntelHeroInformation = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/eintel.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",
@@ -183,7 +183,7 @@ export const ebondHeroInformationES = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/ebonds.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",
@@ -219,7 +219,7 @@ export const eWealthHeroInformationEs = [
     id: "1",
     slideText: "Powered by",
     Productimage: "/ebonds.svg",
-    emfiLogo: "",
+    emfiLogo: "/emfi-logo-blue.svg",
   },
   {
     id: "2",

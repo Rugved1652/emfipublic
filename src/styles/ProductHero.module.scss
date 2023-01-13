@@ -1,8 +1,15 @@
 .eSliderMain {
   padding-top: 16vh;
   text-align: center;
+  #wrapper *{
+    margin: 0 !important; 
+  }
+  .marginZero {
+    margin: 0 !important;
+  }
   .dFlex {
     display: flex;
+    margin: 0 !important;
   }
   .pRelative {
     position: relative;
@@ -10,6 +17,7 @@
   .eSliderSliderText {
     visibility: hidden;
     position: absolute;
+    margin: 0 !important;
   }
   .textAnimation {
     animation: textSlide 2s;
@@ -23,8 +31,9 @@
   }
   .eLogo {
     height: 230px;
-    svg {
+    svg, img {
       height: 200px;
+      width: auto;
     }
   }
   .eLogoText {
@@ -40,7 +49,7 @@
         font-size: 4.1666vw;
       }      
     }
-    svg {
+    svg, img {
       height: 52px;
       width: auto;
       margin-left: 16px !important; 
@@ -91,6 +100,7 @@
       text-transform: uppercase;
       line-height: 1.25;
       color: var(--brand-primary);
+      margin: 8px 0;
       @media (min-width: 1200px) {
         font-size: 2.03125vw;
       } 

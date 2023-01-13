@@ -42,7 +42,7 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
   return (
     <div className={styles.eSliderMain}>
       <div className="wrapperAnimation">
-        <div id="wrapper">
+        <div id="wrapper" className={styles.marginZero}>
           {isProductHero ? (
             <>
               {first ? (
@@ -57,7 +57,7 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                           src={data.Productimage}
                           width={200}
                           height={200}
-                          alt={"sss"}
+                          alt={"E logo image"}
                         />
                       </div>
                     </div>
@@ -70,10 +70,20 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                     className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
                   >
                     <p className={styles.eSliderSliderText}>
-                      {data.slideText} <EMFILogo />
+                      {data.slideText} <Image
+                          src={data.emfiLogo}
+                          width={200}
+                          height={200}
+                          alt={"EMFI logo"}
+                        /> 
                     </p>
                     <div className={styles.textAnimationReverse}>
-                      {data.slideText} <EMFILogo />
+                      {data.slideText}  <Image
+                          src={data.emfiLogo}
+                          width={200}
+                          height={200}
+                          alt={"EMFI logo"}
+                        /> 
                     </div>
                   </div>
                 </div>
