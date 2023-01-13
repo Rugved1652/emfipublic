@@ -6,7 +6,7 @@ import styles from "../../styles/ProductHero.module.scss";
 type Props = {
   image?: string;
   data?: any;
-  isProductHero?: boolean;
+  isProductHero?: boolean | null;
   isAbout?: boolean;
 };
 
@@ -44,7 +44,7 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
     <div className={styles.eSliderMain}>
       <div className="wrapperAnimation">
         <div id="wrapper" className={styles.marginZero}>
-          {isProductHero ? (
+          {isProductHero === true ? (
             <>
               {first ? (
                 <div className={styles.dFlex}>
@@ -96,7 +96,7 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
                 </div>
               ) : null}
             </>
-          ) : (
+          ) : isProductHero === false ? (
             <>
               {first ? (
                 <div className={styles.dFlex}>
@@ -164,6 +164,89 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
                 </div>
               ) : null}
             </>
+          ) : null}
+
+          {isAbout ? (
+            <>
+              {first ? (
+                <div className={styles.dFlex}>
+                  <div
+                    className={`${styles.heading} ${styles.animatable} ${
+                      styles.pRelative
+                    }  ${styles.eLogo} ${isAbout ? styles.aboutPage : ""} `}
+                  >
+                    <p className={styles.eSliderSliderText}>
+                      {data.slideText1}
+                    </p>
+                    <div className="textAnimation">
+                      <div className={styles.textAnimation}>
+                        {data.slideText1}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {second ? (
+                <div className={styles.dFlex}>
+                  <div
+                    className={`${styles.heading} ${styles.animatableReverse} ${
+                      styles.pRelative
+                    } ${styles.eLogoText} ${isAbout ? styles.aboutPage : ""}`}
+                  >
+                    <p className={styles.eSliderSliderText}>
+                      {data.slideText2}
+                    </p>
+                    <div className={styles.textAnimationReverse}>
+                      {data.slideText2}
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {third ? (
+                <div className={styles.dFlex}>
+                  <div
+                    className={`${styles.heading} ${styles.animatableReverse} ${
+                      styles.pRelative
+                    } ${styles.eLogoText} ${isAbout ? styles.aboutPage : ""}`}
+                  >
+                    <p className={styles.eSliderSliderText}>
+                      {data.slideText3}
+                    </p>
+                    <div className={styles.textAnimationReverse}>
+                      {data.slideText3}
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {forth ? (
+                <div className={styles.dFlex}>
+                  <div
+                    className={`${styles.heading} ${styles.animatableReverse} ${
+                      styles.pRelative
+                    } ${styles.eLogoText} ${isAbout ? styles.aboutPage : ""}`}
+                  >
+                    <p className={styles.eSliderSliderText}>
+                      <Image
+                        src={data.Productimage}
+                        width={200}
+                        height={200}
+                        alt={"E logo image"}
+                      />
+                    </p>
+                    <div className={styles.textAnimationReverse}>
+                      <Image
+                        src={data.Productimage}
+                        width={200}
+                        height={200}
+                        alt={"E logo image"}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <></>
           )}
         </div>
       </div>

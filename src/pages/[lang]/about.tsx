@@ -23,7 +23,7 @@ const About = ({ aboutData }: any) => {
   return (
     <>
       <SwiperCarousel
-        page="about"
+        page="aboutPage"
         SildeComponent={ProductHero}
         data={aboutHeroInformation}
       />

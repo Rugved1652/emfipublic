@@ -30,7 +30,31 @@ const index = ({ blogPost, blogPostList }: Props) => {
         <div className="row">
           <div className="col-md-12 col-lg-8 col-xl-9">
             <div className={styles.inteligenceDetails}>
-              <h3>{blogPost?.data?.report_rows?.report_title}</h3>
+              {/* <h3>{blogPost?.data?.report_rows?.report_title}</h3> */}
+              <div>
+                {blogPost?.data?.report_data?.report_bullet_desc?.map(
+                  (i: any) => (
+                    <>
+                      <h3>{i.title}</h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: i.description }}
+                      />
+                    </>
+                  )
+                )}
+              </div>
+              <div>
+                {blogPost?.data?.report_data?.reports_translations?.map(
+                  (i: any) => (
+                    <>
+                      <h3>{i.title}</h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: i.long_description }}
+                      />
+                    </>
+                  )
+                )}
+              </div>
             </div>
           </div>
           <div className="col-md-12 col-lg-4 col-xl-3 ">

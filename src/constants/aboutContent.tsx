@@ -32,6 +32,7 @@ export const aboutHeroInformation = [
     slideText1: "We are",
     slideText2: "emerging",
     slideText3: "finance",
+    Productimage: "/emfi-logo-blue.svg",
   },
   {
     id: "2",

@@ -67,8 +67,8 @@ const SwiperCarousel = ({
           <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
             <SildeComponent
               data={i}
-              isProductHero={page === "product" && index === 0 ? true : false}
-              isAbout={page === "aboutPage" ? true : false}
+              isProductHero={page === "product" && index === 0 ? true : null}
+              isAbout={page === "aboutPage" && index === 0 ? true : false}
             />
           </SwiperSlide>
         ))}
