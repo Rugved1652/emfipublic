@@ -12,7 +12,7 @@ export const IntelligenceData: any = {
     },
     sliders: [
       {
-        report_title: "Running Out of Energy",
+        report_title: "Running Out of Energ",
         description:
           '<p align="left">The main Turkish electricity transmission company cut the power supply for industrial zones last week after Iran announced a short-term halt of its natural gas exports.</p>\r\n\r\n<p align="left">99% of the natural gas demand in Turkey is met through imports, with Iran being one of its main suppliers alongside Russia, Azerbaijan, and Algeria.</p>\r\n\r\n<p align="left">The halt in supply came at the worst time possible, in the middle of the demand spike caused by the cold winter weather.</p>\r\n\r\n<p>While we do not believe this event is likely to happen again, at least in the short term, it does bring into sharp relief a major weakness for Turkey that has no easy solution.</p>\r\n\r\n<p>SELL: We don&rsquo;t believe that yields sufficiently compensate for the risks arising from heterodox monetary policy and deeply negative net reserves.</p>\r\n',
         title: "Turkey",

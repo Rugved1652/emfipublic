@@ -22,7 +22,6 @@ const Contact = ({ contactDetails }: any) => {
 
   console.log(contactDetails?.data?.contact?.organization);
 
-  // console.log(Object.keys(contactDetails?.data?.businessUnits).map());
   console.log(
     Object.keys(contactDetails?.data?.businessUnits).map((key) => {
       return { value: key, label: contactDetails?.data?.businessUnits[key] };

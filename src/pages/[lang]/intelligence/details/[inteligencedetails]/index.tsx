@@ -14,7 +14,7 @@ type Props = {
 
 const index = ({ blogPost, blogPostList }: Props) => {
   console.log(blogPostList?.data?.reports_list);
-  console.log(blogPost);
+  console.log(blogPost, "blogPost");
   return (
     <div className="container">
       <HeroSearch
@@ -104,16 +104,16 @@ const index = ({ blogPost, blogPostList }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  console.log("context", context);
-  // let blogPost = await fetchData(
-  //   `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
-  // );
+  // console.log("context", context);
+  let blogPost = await fetchData(
+    `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
+  );
   let blogPostList = await fetchData(`intelligence/espanol`);
-  console.log("blogPostList", blogPostList);
+  console.log("blogPostList", blogPost);
   // console.log("blogPost", blogPost);
   return {
     props: {
-      // blogPost: blogPost || null,
+      blogPost: blogPost || null,
       blogPostList: blogPostList || null,
     },
   };
