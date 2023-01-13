@@ -18,39 +18,46 @@ const Contact = ({ contactDetails }: any) => {
     console.log(data);
   };
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
-  console.log(contactDetails?.data.contact?.organization);
+  console.log(contactDetails?.data?.contact?.organization);
+
+  // console.log(Object.keys(contactDetails?.data?.businessUnits).map());
+  console.log(
+    Object.keys(contactDetails?.data?.businessUnits).map((key) => {
+      return { value: key, label: contactDetails?.data?.businessUnits[key] };
+    })
+  );
 
   return (
     <div className="container">
       <HeroSearch
         heading="Contact Us"
         subHeading="How Can We Help You"
-        placeholder={""}
+        placeholder={null}
       />
       <form onSubmit={handleSubmit(handleSubmitFun)} className="contactMain">
         <div className="contactGroup">
           <TextInputComponent
             label={contactDetails?.data.contact?.first_name}
             register={register}
-            inputRef="firstName"
+            inputRef={contactDetails?.data.contact?.first_name}
           />
           <TextInputComponent
             register={register}
-            inputRef="firstName2"
+            inputRef={contactDetails?.data.contact?.last_name}
             label={contactDetails?.data.contact?.last_name}
           />
         </div>
         <div className="contactGroup">
           <TextInputComponent
             register={register}
-            inputRef="firstName3"
+            inputRef={contactDetails?.data.contact?.organization}
             label={contactDetails?.data.contact?.organization}
           />
           <TextInputComponent
             register={register}
-            inputRef="firstName4"
+            inputRef={contactDetails?.data.contact?.country}
             label={contactDetails?.data.contact?.country}
           />
         </div>
@@ -69,8 +76,24 @@ const Contact = ({ contactDetails }: any) => {
         <div className="contactGroup">
           <SelectComponent
             label={contactDetails?.data.contact?.business_unit}
+            data={Object.keys(contactDetails?.data?.businessUnits).map(
+              (key) => {
+                return {
+                  value: key,
+                  label: contactDetails?.data?.businessUnits[key],
+                };
+              }
+            )}
           />
-          <SelectComponent label={contactDetails?.data.contact?.subject} />
+          <SelectComponent
+            label={contactDetails?.data.contact?.subject}
+            data={Object.keys(contactDetails?.data?.subjects).map((key) => {
+              return {
+                value: key,
+                label: contactDetails?.data?.subjects[key],
+              };
+            })}
+          />
         </div>
         <div className="contactGroup textareaGroup">
           <TextAreaInputComponent

@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Logo from "../../assets/emfi-logo.svg";
+import Logo from "../../Assets/emfi-logo.svg";
 import LoginModal from "../LoginForm/LoginModal";
 import styles from "../../styles/Navbar.module.scss";
 import { useState } from "react";
 import { NavbarRoutes } from "../../constants/routes";
 import Link from "next/link";
-import Toggle from "../../assets/toggle.png";
-import CloseIcon from "../../assets/close-icon.svg";
+import Toggle from "../../Assets/toggle.png";
+import CloseIcon from "../../Assets/close-icon.svg";
 
 type Props = {};
 

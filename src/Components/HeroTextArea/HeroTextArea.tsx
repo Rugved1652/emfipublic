@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../../styles/HeroTextArea.module.scss";
-import readMoreArrow from "../../assets/read-more-arrow.png";
+import readMoreArrow from "../../Assets/read-more-arrow.png";
 import moment from "moment";
 import { sanitize } from "dompurify";
 

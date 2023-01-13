@@ -115,7 +115,7 @@ export const SalesNTradingContent: SalesNTradingContent[] = [
       "EMFI Securities provides corporate, institutional, and wealth management clients with expert advice, innovative financial solutions, outstanding execution and comprehensive access to the world's capital markets.",
       "EMFI Securities is an active participant in capital markets flow activities, including sales, trading and market-making across a range of securities.",
       "From cash equities to credit, we give our clients access to the products and liquidity they need. Not only do we help our clients to spot market trends, we also help our clients to act on them.",
-      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their assets worldwide.",
+      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their Assets worldwide.",
     ],
   },
   {
@@ -135,7 +135,7 @@ export const SalesNTradingContent: SalesNTradingContent[] = [
       "EMFI Securities provides corporate, institutional, and wealth management clients with expert advice, innovative financial solutions, outstanding execution and comprehensive access to the world's capital markets.",
       "EMFI Securities is an active participant in capital markets flow activities, including sales, trading and market-making across a range of securities.",
       "From cash equities to credit, we give our clients access to the products and liquidity they need. Not only do we help our clients to spot market trends, we also help our clients to act on them.",
-      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their assets worldwide.",
+      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their Assets worldwide.",
     ],
   },
 ];
