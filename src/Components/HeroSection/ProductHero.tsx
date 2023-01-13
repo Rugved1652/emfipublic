@@ -7,9 +7,10 @@ type Props = {
   image?: string;
   data?: any;
   isProductHero?: boolean;
+  isAbout?: boolean;
 };
 
-const ProductHero = ({ image, data, isProductHero }: Props) => {
+const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
   const [slide, setSlide] = useState(0);
   const [first, setFirst] = useState(0);
   const [second, setSecond] = useState(0);
@@ -42,13 +43,14 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
   return (
     <div className={styles.eSliderMain}>
       <div className="wrapperAnimation">
-        <div id="wrapper">
+        <div id="wrapper" className={styles.marginZero}>
           {isProductHero ? (
             <>
               {first ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo}`}
+                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo} ${ isAbout ? styles.aboutPage : '123'}`}
+                    
                   >
                     <p className={styles.eSliderSliderText}>{data.slideText}</p>
                     <div className="textAnimation">
@@ -57,7 +59,7 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                           src={data.Productimage}
                           width={200}
                           height={200}
-                          alt={"sss"}
+                          alt={"E logo image"}
                         />
                       </div>
                     </div>
@@ -70,10 +72,20 @@ const ProductHero = ({ image, data, isProductHero }: Props) => {
                     className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
                   >
                     <p className={styles.eSliderSliderText}>
-                      {data.slideText} <EMFILogo />
+                      {data.slideText} <Image
+                          src={data.emfiLogo}
+                          width={200}
+                          height={200}
+                          alt={"EMFI logo"}
+                        /> 
                     </p>
                     <div className={styles.textAnimationReverse}>
-                      {data.slideText} <EMFILogo />
+                      {data.slideText}  <Image
+                          src={data.emfiLogo}
+                          width={200}
+                          height={200}
+                          alt={"EMFI logo"}
+                        /> 
                     </div>
                   </div>
                 </div>

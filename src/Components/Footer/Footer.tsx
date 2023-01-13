@@ -25,7 +25,7 @@ const Footer = (props: Props) => {
                           className={`${styles.sectionListItem} ${styles.eIcon}`}
                         >
                           <Link href={i.Link} title="">
-                            <i.icon />
+                            <i.icon isWhite={true}/>
                           </Link>
                         </li>
                       ))}

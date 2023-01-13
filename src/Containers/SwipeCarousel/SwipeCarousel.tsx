@@ -67,6 +67,7 @@ const SwiperCarousel = ({
             <SildeComponent
               data={i}
               isProductHero={page === "product" && index === 0 ? true : false}
+              isAbout={page === "aboutPage" ? true : false}
             />
           </SwiperSlide>
         ))}
