@@ -42,11 +42,12 @@ const SwiperCarousel = ({
           sensitivity: 1,
           releaseOnEdges: true,
         }}
-        speed={1}
-        autoplay={{
-          delay: 10500,
-          disableOnInteraction: false,
-        }}
+        // speed={1}
+        // autoplay={{
+        //   delay: 10500,
+        //   disableOnInteraction: false,
+        // }}
+        autoplay={false}
         className={`vh-100 home-slider ${className}`}
         pagination={{
           clickable: true,

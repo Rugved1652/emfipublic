@@ -49,8 +49,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {first ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}  ${styles.eLogo} ${ isAbout ? styles.aboutPage : '123'}`}
-                    
+                    className={`${styles.heading} ${styles.animatable} ${
+                      styles.pRelative
+                    }  ${styles.eLogo} ${isAbout ? styles.aboutPage : ""} `}
                   >
                     <p className={styles.eSliderSliderText}>{data.slideText}</p>
                     <div className="textAnimation">
@@ -69,23 +70,27 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {second ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative} ${styles.eLogoText}`}
+                    className={`${styles.heading} ${styles.animatableReverse} ${
+                      styles.pRelative
+                    } ${styles.eLogoText} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
-                      {data.slideText} <Image
-                          src={data.emfiLogo}
-                          width={200}
-                          height={200}
-                          alt={"EMFI logo"}
-                        /> 
+                      {data.slideText}{" "}
+                      <Image
+                        src={data.emfiLogo}
+                        width={200}
+                        height={200}
+                        alt={"EMFI logo"}
+                      />
                     </p>
                     <div className={styles.textAnimationReverse}>
-                      {data.slideText}  <Image
-                          src={data.emfiLogo}
-                          width={200}
-                          height={200}
-                          alt={"EMFI logo"}
-                        /> 
+                      {data.slideText}{" "}
+                      <Image
+                        src={data.emfiLogo}
+                        width={200}
+                        height={200}
+                        alt={"EMFI logo"}
+                      />
                     </div>
                   </div>
                 </div>
@@ -96,7 +101,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {first ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}
+                    className={`${styles.heading}  ${styles.aboutPage} ${
+                      styles.animatable
+                    } ${styles.pRelative} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText1}
@@ -110,7 +117,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {second ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}
+                    className={`${styles.heading} ${styles.aboutPage} ${
+                      styles.animatableReverse
+                    } ${styles.pRelative} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText2}
@@ -124,7 +133,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {third ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatable} ${styles.pRelative}`}
+                    className={`${styles.heading}  ${styles.aboutPage} ${
+                      styles.animatable
+                    } ${styles.pRelative} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data?.slideText3}
@@ -139,7 +150,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               {forth ? (
                 <div className={styles.dFlex}>
                   <div
-                    className={`${styles.heading} ${styles.animatableReverse} ${styles.pRelative}`}
+                    className={`${styles.heading} ${styles.animatableReverse} ${
+                      styles.pRelative
+                    } ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText4}
