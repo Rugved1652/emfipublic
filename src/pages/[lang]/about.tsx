@@ -26,6 +26,7 @@ const About = ({ aboutData }: any) => {
         page="aboutPage"
         SildeComponent={ProductHero}
         data={aboutHeroInformation}
+        image={aboutHeroInformation.image}
       />
       <div className="container">
         <AboutEmfi aboutData={aboutData?.data?.about_data} />

@@ -15,6 +15,7 @@ const AnimationComponent = dynamic(
 
 type Props = {
   SildeComponent: any;
+  image?: string;
   data?: any;
   children?: any;
   className?: string;
@@ -22,6 +23,7 @@ type Props = {
 };
 
 const SwiperCarousel = ({
+  image,
   children,
   data,
   SildeComponent,
@@ -67,7 +69,9 @@ const SwiperCarousel = ({
         {data?.map((i: any, index: number) => (
           <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
             <SildeComponent
+              image={image}
               data={i}
+              page={page}
               isProductHero={
                 page === "product" && index === 0
                   ? true

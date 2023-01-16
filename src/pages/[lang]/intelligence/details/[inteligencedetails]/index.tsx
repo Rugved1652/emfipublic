@@ -7,6 +7,7 @@ import Link from "next/link";
 import { GetServerSideProps } from "next";
 import { fetchData } from "../../../../../Services/apiFunction";
 import moment from "moment";
+
 type Props = {
   blogPost: any;
   blogPostList?: any;

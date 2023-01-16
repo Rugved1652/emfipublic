@@ -22,7 +22,8 @@ const products = ({ content }: Props) => {
   return (
     <>
       <SwiperCarousel
-        data={content}
+        image={content.image}
+        data={content.data}
         SildeComponent={ProductHero}
         page={"product"}
       ></SwiperCarousel>

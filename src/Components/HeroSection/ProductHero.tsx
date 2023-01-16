@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/ProductHero.module.scss";
 type Props = {
@@ -6,9 +7,11 @@ type Props = {
   data?: any;
   isProductHero?: boolean | null;
   isAbout?: boolean;
+  page?: string;
 };
 
-const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
+const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
+  const Router = useRouter();
   const [slide, setSlide] = useState(0);
   const [first, setFirst] = useState(0);
   const [second, setSecond] = useState(0);
@@ -163,6 +166,19 @@ const ProductHero = ({ image, data, isProductHero, isAbout }: Props) => {
               ) : null}
             </>
           ) : null}
+
+          {page === "product" ? (
+            <div>
+              <Image
+                src={`/${Router?.query?.products}.svg`}
+                alt={"product"}
+                width={200}
+                height={200}
+              />
+            </div>
+          ) : (
+            <></>
+          )}
 
           {isAbout === true ? (
             <>
