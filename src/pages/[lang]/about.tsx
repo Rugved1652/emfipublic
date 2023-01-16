@@ -25,7 +25,7 @@ const About = ({ aboutData }: any) => {
       <SwiperCarousel
         page="aboutPage"
         SildeComponent={ProductHero}
-        data={aboutHeroInformation}
+        data={aboutHeroInformation.data}
         image={aboutHeroInformation.image}
       />
       <div className="container">
