@@ -27,9 +27,10 @@ const products = ({ content }: Props) => {
       <div>
         <Image
           src={`/${Router?.query?.products}.svg`}
-          alt={"product"}
+          alt={"eLogo"}
           width={200}
           height={200}
+          className="eLogoBg"
         />
       </div>
 
