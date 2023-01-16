@@ -31,30 +31,48 @@
   }
 
   .eLogo {
-    height: 230px;
+    height: 60px;
+    @media (min-width: 767px) {
+      height: 120px;
+    }
+    @media (min-width: 1200px) {
+      height: 11.9791vw;
+    }
     svg,
     img {
-      height: 200px;
+      height: 50px;
       width: auto;
+      @media (min-width: 767px) {
+        height: 100px;
+      }
+      @media (min-width: 1200px) {
+        height: 10.4166vw;
+      }
     }
   }
   .eLogoText {
     .textAnimationReverse {
-      font-size: 52px;
+      font-size: 28px;
       text-transform: uppercase;
       color: var(--brand-primary);
       line-height: 1.25;
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      @media (min-width: 767px) {
+        font-size: 42px;
+      }
       @media (min-width: 1200px) {
         font-size: 4.1666vw;
       }
     }
     svg,
     img {
-      height: 52px;
+      height: 30px;
       width: auto;
+      @media (min-width: 767px) {
+        height: 52px;
+      }
       margin-left: 16px !important;
       @media (min-width: 1200px) {
         height: 3.5vw;
@@ -101,11 +119,14 @@
   }
   .textAnimationReverse,
   .textAnimation {
-    font-size: 29px;
+    font-size: 20px;
     text-transform: uppercase;
     line-height: 1.25;
     color: var(--brand-primary);
     margin: 8px 0;
+    @media (min-width: 767px) {
+      font-size: 32px;
+    }
     @media (min-width: 1200px) {
       font-size: 2.03125vw;
     }
