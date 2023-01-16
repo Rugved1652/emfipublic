@@ -31,8 +31,9 @@ const SwiperCarousel = ({
   const router = useRouter();
 
   return (
-    <>
+    <div>
       <Swiper
+        style={{ position: "relative" }}
         spaceBetween={50}
         slidesPerView={1}
         preventClicks={false}
@@ -67,15 +68,27 @@ const SwiperCarousel = ({
           <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
             <SildeComponent
               data={i}
-              isProductHero={page === "product" && index === 0 ? true : null}
-              isAbout={page === "aboutPage" && index === 0 ? true : false}
+              isProductHero={
+                page === "product" && index === 0
+                  ? true
+                  : page === "product" && index !== 0
+                  ? false
+                  : null
+              }
+              isAbout={
+                page === "aboutPage" && index === 0
+                  ? true
+                  : page === "aboutPage" && index !== 0
+                  ? false
+                  : null
+              }
             />
           </SwiperSlide>
         ))}
       </Swiper>
       <ParticalBg />
       {router.route === "/[lang]" ? null : null}
-    </>
+    </div>
   );
 };
 

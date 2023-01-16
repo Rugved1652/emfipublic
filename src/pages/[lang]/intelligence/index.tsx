@@ -21,8 +21,10 @@ const Intelligence = ({
   console.log("otherReports", otherReports);
   console.log("specialReports", specialReports);
   console.log("intelligenceList", intelligenceList);
+
   const [PageNum, setPageNum] = useState(0);
   const [hasMore, setHasMore] = useState(true);
+
   return (
     <div className="container">
       <HeroSearch

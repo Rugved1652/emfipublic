@@ -10,17 +10,18 @@ export default function TParticles() {
   return (
     <div
       style={{
-        position: "fixed",
+        position: "absolute",
         zIndex: "-15",
         width: "100vw",
         height: "100vh",
+        top: "0",
       }}
     >
       <Particles
         init={particlesInit}
         options={{
           fullScreen: {
-            enable: true,
+            enable: false,
             zIndex: -1,
           },
           background: {
@@ -28,8 +29,8 @@ export default function TParticles() {
               value: "",
             },
           },
-          fpsLimit:0,
-          
+          fpsLimit: 0,
+
           particles: {
             number: {
               value: 60,
@@ -45,10 +46,10 @@ export default function TParticles() {
               type: "circle",
               stroke: { width: 0, color: "#071932" },
               polygon: { nb_sides: 5 },
-              image: { src: "", width: 100, height: 100 }
+              image: { src: "", width: 100, height: 100 },
             },
             opacity: {
-              value: { min: 0.1, max: 0.8 },              
+              value: { min: 0.1, max: 0.8 },
             },
             size: {
               value: { min: 1, max: 3 },
@@ -58,9 +59,9 @@ export default function TParticles() {
               distance: 150,
               color: "#071932",
               opacity: 0.4,
-              width: 1
+              width: 1,
             },
-            move: {              
+            move: {
               enable: true,
               speed: 4,
               direction: "none",
@@ -68,13 +69,11 @@ export default function TParticles() {
               straight: false,
               outModes: {
                 default: "out",
-            },
-              
+              },
             },
             collisions: {
               enable: true,
-            },           
-            
+            },
           },
           interactivity: {
             detectsOn: "canvas",
@@ -90,16 +89,16 @@ export default function TParticles() {
               resize: true,
             },
             modes: {
-              grab: { 
-                distance: 400, 
-                links: { opacity: 1 } 
+              grab: {
+                distance: 400,
+                links: { opacity: 1 },
               },
               bubble: {
                 distance: 400,
                 duration: 2,
                 opacity: 8,
                 size: 40,
-                speed: 3
+                speed: 3,
               },
               repulse: {
                 distance: 200,
@@ -109,7 +108,6 @@ export default function TParticles() {
                 particles_nb: 4,
               },
               remove: { particles_nb: 2 },
-              
             },
           },
           detectRetina: true,

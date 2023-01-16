@@ -23,7 +23,7 @@ const AccordianComponent = ({ data }: any) => {
       >
         <InfiniteScroll
           loader={<>Loading...</>}
-          dataLength={sliders.length}
+          dataLength={data?.data?.sliders.length}
           next={() => getMoreData()}
           hasMore={true}
         >
