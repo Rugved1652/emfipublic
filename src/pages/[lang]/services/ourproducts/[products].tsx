@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
 import ProductHero from "../../../../Components/HeroSection/ProductHero";
 import {
@@ -18,9 +20,19 @@ type Props = {
 };
 
 const products = ({ content }: Props) => {
+  const Router = useRouter();
   console.log("content", content);
   return (
     <>
+      <div>
+        <Image
+          src={`/${Router?.query?.products}.svg`}
+          alt={"product"}
+          width={200}
+          height={200}
+        />
+      </div>
+
       <SwiperCarousel
         image={content.image}
         data={content.data}

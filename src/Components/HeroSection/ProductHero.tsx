@@ -167,19 +167,6 @@ const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
             </>
           ) : null}
 
-          {page === "product" ? (
-            <div>
-              <Image
-                src={`/${Router?.query?.products}.svg`}
-                alt={"product"}
-                width={200}
-                height={200}
-              />
-            </div>
-          ) : (
-            <></>
-          )}
-
           {isAbout === true ? (
             <>
               {first ? (
