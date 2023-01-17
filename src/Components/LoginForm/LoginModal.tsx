@@ -16,17 +16,19 @@ function LoginModal({}: Props) {
     setfill(false);
   });
   const [fill, setfill] = useState(false);
-  const [lang, setLang] = useState("English");
+  const [lang, setLang] = useState("english");
   const router = useRouter();
-
   const handleLanguage = (lang: string) => {
-    if (lang === "English") {
-      setLang("Espanol");
-      localStorage.setItem("locale", "Espanol");
-      // router.push('')
+    if (lang === "english") {
+      setLang("espanol");
+      localStorage.setItem("locale", "espanol");
+      console.log("router", router.pathname.replace("[lang]", "espanol"));
+      router.push(`/${router.pathname.replace("[lang]", "espanol")}`);
     } else {
-      setLang("English");
-      localStorage.setItem("locale", "English");
+      setLang("english");
+      localStorage.setItem("locale", "english");
+      console.log("router", router.pathname.replace("[lang]", "english"));
+      router.push(`/${router.pathname.replace("[lang]", "english")}`);
     }
   };
 
@@ -36,8 +38,8 @@ function LoginModal({}: Props) {
       if (langValue) {
         setLang(langValue);
       } else {
-        setLang("English");
-        localStorage.setItem("locale", "English");
+        setLang("english");
+        localStorage.setItem("locale", "english");
       }
     }
   }, []);
@@ -47,13 +49,13 @@ function LoginModal({}: Props) {
       <div className={styles.loginForm}>
         <span
           onClick={
-            lang === "English"
-              ? () => handleLanguage("English")
-              : () => handleLanguage("Espanol")
+            lang === "english"
+              ? () => handleLanguage("english")
+              : () => handleLanguage("espanol")
           }
           className={styles.lanText}
         >
-          {lang === "English" ? "Espanol" : "English"}
+          {lang === "english" ? "Espanol" : "english"}
         </span>
 
         <div

@@ -6,15 +6,11 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 type Props = {
   data: any;
+  fetchMore: any;
+  hasMore: boolean;
 };
 
-const AccordianComponent = ({ data }: any) => {
-  const [sliders, setSlider] = useState([1, 2, 3, 4, 5]);
-  const getMoreData = () => {
-    setSlider((prev: any) => [...prev, ...Array.from(Array(5).keys())]);
-  };
-
-  // console.log(data.data.sliders);
+const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
   return (
     <>
       <Accordion
@@ -23,12 +19,17 @@ const AccordianComponent = ({ data }: any) => {
       >
         <InfiniteScroll
           loader={<>Loading...</>}
-          dataLength={data?.data?.sliders.length}
-          next={() => getMoreData()}
-          hasMore={true}
+          dataLength={data.length}
+          next={() => fetchMore()}
+          hasMore={hasMore}
         >
-          {data?.data?.sliders.map((i: any, index: any) => (
-            <Fade key={index} triggerOnce={true} direction="up" duration={1500}>
+          {data.map((i: any, index: any) => (
+            <Fade
+              key={i.slider_data_id}
+              triggerOnce={true}
+              direction="up"
+              duration={1500}
+            >
               <Accordion.Item
                 className="accordionItems"
                 eventKey={String(index)}
