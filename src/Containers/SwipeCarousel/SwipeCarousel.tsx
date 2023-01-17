@@ -1,17 +1,8 @@
-import HeroSection from "../../Components/HeroSection/HeroSection";
 import "swiper/css/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, Autoplay } from "swiper";
-
-import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import ParticalBg from "../../Components/ParticalBg/ParticalBg";
-const AnimationComponent = dynamic(
-  () => import("../../Components/AnimatedComponent/AnimatedComponent"),
-  {
-    suspense: true,
-  }
-);
 
 type Props = {
   SildeComponent: any;
@@ -20,6 +11,7 @@ type Props = {
   children?: any;
   className?: string;
   page?: string;
+  setImagePosition?: Function;
 };
 
 const SwiperCarousel = ({
@@ -29,6 +21,7 @@ const SwiperCarousel = ({
   SildeComponent,
   className = "",
   page,
+  setImagePosition = () => {},
 }: Props) => {
   const router = useRouter();
 
@@ -39,6 +32,15 @@ const SwiperCarousel = ({
         spaceBetween={50}
         slidesPerView={1}
         preventClicks={false}
+        onRealIndexChange={
+          page === "product"
+            ? (swiper) => {
+                swiper.realIndex === 3
+                  ? setImagePosition(true)
+                  : setImagePosition(false);
+              }
+            : () => {}
+        }
         touchStartPreventDefault={false}
         mousewheel={{
           forceToAxis: true,

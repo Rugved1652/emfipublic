@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProductHero from "../../../../Components/HeroSection/ProductHero";
 import {
   ebondHeroInformation,
@@ -20,8 +20,11 @@ type Props = {
 };
 
 const products = ({ content }: Props) => {
+  const [imagePosition, setImagePosition] = useState(false);
+
   const Router = useRouter();
   console.log("content", content);
+  console.log("imagePosition", imagePosition);
   return (
     <>
       <div>
@@ -30,7 +33,7 @@ const products = ({ content }: Props) => {
           alt={"eLogo"}
           width={200}
           height={200}
-          className="eLogoBg"
+          className={`eLogoBg ${imagePosition ? "eLogoBgHide " : ""}`}
         />
       </div>
 
@@ -39,6 +42,7 @@ const products = ({ content }: Props) => {
         data={content.data}
         SildeComponent={ProductHero}
         page={"product"}
+        setImagePosition={setImagePosition}
       ></SwiperCarousel>
       <div className="container">
         <MapContainer />
