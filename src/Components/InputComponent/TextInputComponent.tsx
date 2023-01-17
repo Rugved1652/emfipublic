@@ -12,11 +12,10 @@ type Props = {
 
 const TextInputComponent = ({ label, setText, register, inputRef }: Props) => {
   const [value, setValue] = useState(null);
-  console.log(register);
   return (
     <div className={styles.inputContainer}>
       <input
-        {...register(inputRef)}
+        {...register(inputRef, { required: true })}
         value={value ? value : ""}
         type="text"
         onChange={(e: any) => setValue(e.target.value)}
