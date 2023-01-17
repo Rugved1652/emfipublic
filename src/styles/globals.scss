@@ -1588,6 +1588,52 @@ canvas {
   padding: 5px;
   font-family: Courier;
 }
+.eLogoBg {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: auto;
+  opacity: 0;
+  -webkit-animation: e-logo-ani 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  -o-animation: e-logo-ani 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: e-logo-ani 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 10s;
+  transform-origin: 100% 100%;
+  &.lastSlide {
+    opacity: 0.4;
+    -webkit-animation: removeSlide 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    -o-animation: removeSlide 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation: removeSlide 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 7s;
+    transform-origin: 100% 100%;
+    top: 90%;
+    left: inherit;
+    right: 5%;
+    transform: translate(5%, -90%);
+  }
+  @media (min-width: 767px) {
+    height: 100px;
+  }
+  @media (min-width: 1200px) {
+    height: 10.4166vw;
+  }
+}
+@keyframes e-logo-ani {
+  0% {
+    opacity: 0; 
+    top: 25%;
+    right: 50%;
+    transform: translate(50%,-25%); 
+  }
 
-
+  100% {
+    top: 90%;
+    left:inherit;
+    right: 5%; 
+    transform: translate(5%,-90%); 
+    opacity: 0.4;
+  }
+}
 

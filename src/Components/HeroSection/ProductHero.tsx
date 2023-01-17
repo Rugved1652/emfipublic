@@ -190,7 +190,7 @@ const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
                   <div
                     className={`${styles.heading} ${styles.aboutPage} ${
                       styles.animatableReverse
-                    } ${styles.pRelative} ${isAbout ? styles.aboutPage : ""}`}
+                    } ${styles.pRelative} ${styles.aboutPageSlide} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText2}
@@ -206,7 +206,7 @@ const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
                   <div
                     className={`${styles.heading}  ${styles.aboutPage} ${
                       styles.animatable
-                    } ${styles.pRelative} ${isAbout ? styles.aboutPage : ""}`}
+                    } ${styles.pRelative}  ${styles.aboutPageSlide} ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data?.slideText3}
@@ -223,7 +223,7 @@ const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
                   <div
                     className={`${styles.heading} ${styles.animatableReverse} ${
                       styles.pRelative
-                    } ${styles.eLogoText} ${isAbout ? styles.aboutPage : ""}`}
+                    } ${styles.eLogoText}  ${styles.aboutPageImg}  ${isAbout ? styles.aboutPage : ""}`}
                   >
                     <p className={styles.eSliderSliderText}>
                       {data.slideText}{" "}
