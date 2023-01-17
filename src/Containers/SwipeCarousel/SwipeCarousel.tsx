@@ -53,7 +53,7 @@ const SwiperCarousel = ({
           disableOnInteraction: false,
         }}
         // autoplay={false}
-        className={`vh-100 home-slider ${className}`}
+        className={`vh-100 home-slider ${page === "aboutPage" ? 'about-service-slider' : '' } ${page === "product" ? 'about-service-slider' : '' } ${className}`}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -69,7 +69,7 @@ const SwiperCarousel = ({
         modules={[Autoplay, Mousewheel, Pagination]}
       >
         {data?.map((i: any, index: number) => (
-          <SwiperSlide className="min-vh-100 d-flex justify-content-center align-align-items-center">
+          <SwiperSlide className={`min-vh-100 d-flex justify-content-center align-items-center ${page === "aboutPage" ? 'align-items-start' : ''} ${page === "product" ? 'align-items-start' : '' }  ${ page === 'aboutPage' && index === 0 ?  "eSlideAboutFirst" : ""}` }>
             <SildeComponent
               image={image}
               data={i}

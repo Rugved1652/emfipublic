@@ -1,18 +1,99 @@
 .inteligenceDetailsGroup {
     margin: 30px 0;
     @media (min-width: 1200px) {
-        margin: 2.6041vw 0;
-      }
+      margin: 2.6041vw 0;
+    }
     .inteligenceDetails {
-        box-shadow: 0px 1.5px 20px 2px rgba(var(--black-rgb), 0.13);
-        background-color: var(--white-color);
-        border-radius: 24px;
-        padding: 20px;
-        margin: 0;
-        width: 100%;
+      // box-shadow: 0px 1.5px 20px 2px rgba(var(--black-rgb), 0.13);
+      // background-color: var(--white-color);
+      border-radius: 24px;
+      // padding: 20px;
+      margin: 0;
+      width: 100%;
+      @media (min-width: 1200px) {
+        // padding: 1.5625vw;
+      }
+      h3 {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        color: var(--brand-primary);
+        margin-bottom: 14px;
         @media (min-width: 1200px) {
-          padding: 1.5625vw;
+          font-size: 0.8333vw;
+          margin-bottom: 1vw;
         }
+      }
+      p {
+        font-size: 14px;
+        color: var(--dark-gray-color);
+        margin-bottom: 14;
+        text-align: justify;
+        @media (min-width: 1200px) {
+          font-size: 0.8333vw;
+        }
+      }
+      span {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        color: var(--brand-primary);
+        margin-bottom: 0;
+        @media (min-width: 1200px) {
+          font-size: 0.8333vw;
+        }
+      }
+      ul {
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+        li  {
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--gray-color-two);
+            @media (min-width: 1200px) {
+                margin-bottom: 1vw;
+                padding-bottom: 1vw;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;  
+            }
+            a {
+                padding: 0;
+                font-size: 14px;
+                font-weight: 500;
+                text-align: left;
+                color: var(--brand-primary);
+                margin-bottom: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                @media (min-width: 1200px) {
+                    font-size: 0.8333vw;
+                }
+                svg {
+                    color: var(--brand-primary);
+                    path {
+                        fill: var(--brand-primary);
+                    }
+                }
+                &:hover, &:focus  {
+                    color: var(--block-color);
+                    svg {
+                        color: var(--block-color);
+                        path {
+                            fill: var(--block-color);
+                        }
+                    }
+                }
+            }
+        }
+      }
     }
     .downloadReport {
         border: 1px solid var(--brand-primary) !important;

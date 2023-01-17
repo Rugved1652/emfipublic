@@ -42,9 +42,9 @@ const ProductHero = ({ image, data, isProductHero, isAbout, page }: Props) => {
   }, [slide]);
 
   return (
-    <div className={styles.eSliderMain}>
+    <div className={`${styles.eSliderMain} ${page === "aboutPage" ? 'eSliderAbout' : '' }`}>
       <div className="wrapperAnimation">
-        <div id="wrapper" className={styles.marginZero}>
+        <div id="wrapper" className={`${styles.marginZero} ${page === "aboutPage" ? 'eSliderAboutWrapper' : '' }`}>
           {isProductHero === true ? (
             <>
               {first ? (
