@@ -19,7 +19,7 @@ type Props = {
   content: any;
 };
 
-const products = ({ content }: Props) => {
+const Products = ({ content }: Props) => {
   const [imagePosition, setImagePosition] = useState(false);
 
   const Router = useRouter();
@@ -116,4 +116,4 @@ export async function getStaticProps({ params }: any) {
   };
 }
 
-export default products;
+export default Products;
