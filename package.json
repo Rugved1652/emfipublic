@@ -41,6 +41,7 @@
     "recharts": "^2.1.16",
     "sass": "^1.56.1",
     "swiper": "^8.4.5",
+    "swr": "^2.0.0",
     "three": "^0.147.0",
     "three-stdlib": "^2.21.1",
     "tsparticles": "^2.7.1",
