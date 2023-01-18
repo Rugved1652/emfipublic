@@ -3,7 +3,7 @@ import HeroSearch from "../../Components/HeroSearch/HeroSearch";
 import TextAreaInputComponent from "../../Components/InputComponent/TextAreaComponent";
 import TextInputComponent from "../../Components/InputComponent/TextInputComponent";
 import SelectComponent from "../../Components/SelectComponent/SelectComponent";
-import { fetchData, postData } from "../../Services/apiFunction";
+import { fetchData, postData, postDataV1 } from "../../Services/apiFunction";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
@@ -51,7 +51,7 @@ const Contact = ({ contactDetails }: any) => {
     formData.append("message", data.message);
     formData.append("file", data.file[0]);
 
-    const res = await postData(`contact/contact-form`, formData);
+    const res = await postDataV1(`/contact-form`, formData);
     notifySuccess(res?.data?.message);
     console.log("res", res);
   };

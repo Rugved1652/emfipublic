@@ -21,6 +21,7 @@ function index({ chartData }: Props) {
     <>
       <main className="main homePage">
         <SwiperCarousel
+          page="home"
           SildeComponent={HeroSection}
           data={chartData?.data}
         ></SwiperCarousel>

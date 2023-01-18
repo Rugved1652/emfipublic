@@ -18,10 +18,11 @@ const services = (props: Props) => {
           heading="Capital Market"
           placeholder="EMFI Securities Limited"
         />
-      </div>   
+      </div>
       <SwiperCarousel
+        page="service"
         data={SalesNTradingContent}
-        className={'serviceSlider'}
+        className={"serviceSlider"}
         SildeComponent={ServiceHero}
       ></SwiperCarousel>
       <div className="container">

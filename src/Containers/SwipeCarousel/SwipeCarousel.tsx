@@ -48,12 +48,14 @@ const SwiperCarousel = ({
           releaseOnEdges: true,
         }}
         // speed={1}
-        autoplay={{
-          delay: 10500,
-          disableOnInteraction: false,
-        }}
-        // autoplay={false}
-        className={`vh-100 home-slider ${page === "aboutPage" ? 'about-service-slider' : '' } ${page === "product" ? 'about-service-slider' : '' } ${className}`}
+        // autoplay={{
+        //   delay: 10500,
+        //   disableOnInteraction: false,
+        // }}
+        autoplay={false}
+        className={`vh-100 home-slider ${
+          page === "aboutPage" ? "about-service-slider" : ""
+        } ${page === "product" ? "about-service-slider" : ""} ${className}`}
         pagination={{
           clickable: true,
           dynamicBullets: true,
@@ -69,7 +71,15 @@ const SwiperCarousel = ({
         modules={[Autoplay, Mousewheel, Pagination]}
       >
         {data?.map((i: any, index: number) => (
-          <SwiperSlide className={`min-vh-100 d-flex justify-content-center align-items-center ${page === "aboutPage" ? 'align-items-start' : ''} ${page === "product" ? 'align-items-start' : '' }  ${ page === 'aboutPage' && index === 0 ?  "eSlideAboutFirst" : ""}` }>
+          <SwiperSlide
+            className={`min-vh-100 d-flex justify-content-center 
+             ${page === "aboutPage" ? "align-items-center" : ""}
+             ${page === "product" ? "align-items-start" : ""}  
+             ${page === "home" ? "align-items-center" : ""}  
+             ${page === "service" ? "align-items-center" : ""}  
+             ${page === "aboutPage" && index === 0 ? "eSlideAboutFirst" : ""} 
+             `}
+          >
             <SildeComponent
               image={image}
               data={i}
