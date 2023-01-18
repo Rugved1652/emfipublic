@@ -8,6 +8,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     // Will be available on both server and client
     baseURL: process.env.BASE_URL,
+    baseURLV1: process.env.BASE_URL_V1,
   },
 };
 

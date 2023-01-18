@@ -10,6 +10,13 @@ const axiosClient = axios.create({
     "Content-Type": "application/json",
   },
 });
+const axiosClientV1 = axios.create({
+  baseURL: `${publicRuntimeConfig.baseURL}/api/`,
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+});
 
 axiosClient.interceptors.response.use(
   function (response: any) {
