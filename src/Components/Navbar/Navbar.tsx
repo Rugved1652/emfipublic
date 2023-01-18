@@ -2,16 +2,24 @@ import Image from "next/image";
 import Logo from "../../Assets/emfi-logo.svg";
 import LoginModal from "../LoginForm/LoginModal";
 import styles from "../../styles/Navbar.module.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavbarRoutes } from "../../constants/routes";
 import Link from "next/link";
 import Toggle from "../../Assets/toggle.png";
 import CloseIcon from "../../Assets/close-icon.svg";
+import { useRouter } from "next/router";
 
 type Props = {};
 
 const NavbarComponent = (props: Props) => {
   const [show, setshow] = useState(true);
+  const [lang, setLang] = useState("english");
+
+  const Router = useRouter();
+
+  console.log(Router.query.lang, "router");
+
+  useEffect(() => {}, []);
 
   return (
     <>
@@ -35,8 +43,11 @@ const NavbarComponent = (props: Props) => {
             >
               {NavbarRoutes.map((i) => (
                 <li key={i.key}>
-                  <Link className={styles.navBarMenuItem} href={i.path}>
-                    {i.en_label}
+                  <Link
+                    className={styles.navBarMenuItem}
+                    href={Router.query.lang === "espanol" ? i.es_path : i.path}
+                  >
+                    {Router.query.lang === "espanol" ? i.es_label : i.en_label}
                   </Link>
                 </li>
               ))}

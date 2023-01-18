@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
+import { scamalertEN, scamalertES } from "../../constants/policies";
 
 type Props = {};
 
@@ -12,8 +13,7 @@ const scamalert = (props: Props) => {
           subHeading="EMFI Group"
           placeholder="Scam Alert"
         />
-        <div 
-        className="legalGroup">
+        <div className="legalGroup">
           <p>
             It has been brought to our attention that fraudsters, pretending to
             act on behalf of EMFI Securities Limited, have been contacting
@@ -103,5 +103,19 @@ const scamalert = (props: Props) => {
     </div>
   );
 };
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { lang: "english" } }, { params: { lang: "espanol" } }],
+    fallback: false,
+  };
+}
+export async function getStaticProps({ params }: any) {
+  return {
+    props: {
+      scamAlert: params?.lang === "espanol" ? scamalertES : scamalertEN,
+    },
+  };
+}
 
 export default scamalert;

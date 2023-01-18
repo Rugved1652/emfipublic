@@ -64,7 +64,7 @@ const HeroSearch = ({
                 }}
               >
                 {viewList?.map((i: any, index: any) => (
-                  <li key={index}>{i.title}</li>
+                  <li key={index}>{i[searchKeyname]}</li>
                 ))}
               </ul>
             ) : null}
