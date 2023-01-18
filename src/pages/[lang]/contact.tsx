@@ -9,6 +9,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import dynamic from "next/dynamic";
+const TestDemo = dynamic(
+  import("../../Components/AnimatedComponent/TestDemo.jsx"),
+  {
+    suspense: true,
+  }
+);
 
 const notifySuccess = (message: string) =>
   toast(message, {
@@ -73,6 +80,9 @@ const Contact = ({ contactDetails }: any) => {
 
   return (
     <div className="container">
+      <React.Suspense fallback={<></>}>
+        <TestDemo />
+      </React.Suspense>
       <ToastContainer />
       <HeroSearch
         heading={contactDetails?.data.contact?.contact_us}

@@ -4,7 +4,7 @@ import { scamalertEN, scamalertES } from "../../constants/policies";
 
 type Props = {};
 
-const scamalert = (props: Props) => {
+const scamalert = ({ scamAlert }: any) => {
   return (
     <div>
       <div className="container">
@@ -14,46 +14,9 @@ const scamalert = (props: Props) => {
           placeholder="Scam Alert"
         />
         <div className="legalGroup">
-          <p>
-            It has been brought to our attention that fraudsters, pretending to
-            act on behalf of EMFI Securities Limited, have been contacting
-            members of the public, particularly in France, fraudulently using
-            EMFI Securities Limited's name, branding and other corporate
-            identification details. We have been made aware of several cases and
-            EMFI Securities Limited has reported such cases to relevant
-            authorities, the Financial Conduct Authority in the United Kingdom
-            and the Autorité des Marchés Financiers in France.
-          </p>
-          <p>
-            EMFI Securities Limited filed a criminal complaint before the Paris
-            Public Prosecutor on February 5, 2019 on the grounds of forgery and
-            identity fraud. On November 9, 2020, EMFI Securities Limited filed
-            another criminal complaint before the Paris Criminal Court.
-          </p>
-          <p>
-            Please note that EMFI Securities Limited or any other entity of the
-            EMFI Group provides absolutely no services to retail clients. All
-            our products and services are aimed solely towards qualified
-            investors, professional clients and eligible counterparties. In any
-            event, neither EMFI Securities Limited nor any other entity of the
-            EMFI Group offer saving products to the general public in France and
-            in particular do not offer any "Livret d'Epargne 6,25%".
-          </p>
-          <p>
-            If you are contacted in relation to investment opportunities by an
-            unknown party claiming to represent EMFI Securities Limited or any
-            other entity of the EMFI Group, please be extremely vigilant. Please
-            immediately contact EMFI Securities Limited through our website to
-            confirm the legitimacy of the proposed investment.
-          </p>
-          <p>
-            In any event, EMFI Securities Limited strongly recommends that you
-            consult your own tax, legal and accounting professionals before
-            engaging in any financial transactions. Finally, if you believe that
-            you have been misled into making a fraudulent investment, EMFI
-            Securities Limited strongly suggests that you immediately contact
-            law enforcement and other regulatory authorities in your country.
-          </p>
+          {scamAlert.map((points: any) => (
+            <p>{points}</p>
+          ))}
           <h4>FRENCH</h4>
           <p>
             Il a été porté à notre connaissance que des individus se présentant
