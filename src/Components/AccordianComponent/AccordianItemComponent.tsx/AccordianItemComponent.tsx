@@ -14,7 +14,7 @@ const AccordianItemComponent = ({ data, reportSlug, reportId }: any) => {
           <LineChartComponent />
         </div>
         <div dangerouslySetInnerHTML={{ __html: data }}></div>
-        <Link
+        <Link className="intelligenceReadMore"
           href={`/english/intelligence/details/${reportSlug}?id=${reportId}`}
         >
           Continue Reading

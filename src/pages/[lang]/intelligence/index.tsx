@@ -71,7 +71,7 @@ const Intelligence = ({ intelligenceList }: Props) => {
         subHeading="November 17, 2022"
         placeholder="Search by Keyword"
       />
-      <div className="intelligenceBoxCustom d-flex gap-4">
+      <div className="intelligenceBoxCustom row">
         <AccordianComponent
           data={otherReportsData}
           fetchMore={fetchMoreOtherReports}
