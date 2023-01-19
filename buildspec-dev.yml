@@ -1,0 +1,50 @@
+version: 0.2
+   
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
+      - if [ "$AWS_REGION" = "eu-west-2" ] ; then ASSUME_ROLE_NAME="emfi-prod-ssm-ecr-assume-role" ; else ASSUME_ROLE_NAME="DockerSSMAccess" ; fi
+      - ASSUME_ROLE_ARN="arn:aws:iam::${AWS_ACCOUNT_ID}:role/$ASSUME_ROLE_NAME"
+      - TEMP_ROLE=$(aws sts assume-role --role-arn $ASSUME_ROLE_ARN --role-session-name codebuild-session)
+      - export TEMP_ROLE
+      - export AWS_ACCESS_KEY_ID=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.AccessKeyId')
+      - export AWS_SECRET_ACCESS_KEY=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SecretAccessKey')
+      - export AWS_SESSION_TOKEN=$(echo "${TEMP_ROLE}" | jq -r '.Credentials.SessionToken')
+      - export CODEBUILD_GIT_BRANCH="$(git symbolic-ref HEAD --short 2>/dev/null)"
+      - if [ "$CODEBUILD_GIT_BRANCH" = "" ] ; then export CODEBUILD_GIT_BRANCH="$(git rev-parse HEAD | xargs git name-rev | cut -d' ' -f2 | sed 's/remotes\/origin\///g')"; fi
+
+  pre_build:
+    commands:
+      - if [ "$CODEBUILD_GIT_BRANCH" = "production" ] ; then export AWS_REGION="eu-west-2" ; else export AWS_REGION="us-east-1" ; fi
+      - echo Logging in to Amazon ECR...
+      - export AWS_PARAMETER_NAME="/CodeBuild/${CODEBUILD_GIT_BRANCH}/nextjs/env.production ̰"
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com
+      - aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
+      - REPOSITORY_URI=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/nextjs
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build --build-arg AWS_PARAMETER_NAME=$AWS_PARAMETER_NAME --build-arg AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID --build-arg AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY --build-arg AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN --build-arg AWS_REGION=$AWS_REGION -t $REPOSITORY_URI:latest .
+      - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+      
+  post_build:
+    commands:
+      - echo Pushing the Docker image...
+      - docker push $REPOSITORY_URI:$IMAGE_TAG
+      - echo Writing image definitions file...
+      - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG > imageDetail.json
+      - cat imageDetail.json
+  
+artifacts:
+    files: 
+      - image*.json
+      - appspec-dev.yaml
+      - appspec-prod.yaml
+      - taskdef-dev.json
+      - taskdef-prod.json
