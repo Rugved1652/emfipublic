@@ -39,10 +39,10 @@ RUN npm install
 COPY . .
 
 # npm dev to Development the project
-RUN npm run dev
+# RUN npm run dev
 
 # npm build to Production the project
-# RUN npm run build
+RUN npm run build
 
 EXPOSE 3000
 CMD ["npm", "start"]
