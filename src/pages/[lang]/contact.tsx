@@ -80,9 +80,9 @@ const Contact = ({ contactDetails }: any) => {
 
   return (
     <div className="container">
-      <React.Suspense fallback={<></>}>
+      {/* <React.Suspense fallback={<></>}>
         <TestDemo />
-      </React.Suspense>
+      </React.Suspense> */}
       <ToastContainer />
       <HeroSearch
         heading={contactDetails?.data.contact?.contact_us}
