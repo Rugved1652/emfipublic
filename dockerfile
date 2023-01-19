@@ -38,8 +38,11 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# npm build to build the project
-RUN npm run build
+# npm dev to Development the project
+RUN npm run dev
+
+# npm build to Production the project
+# RUN npm run build
 
 EXPOSE 3000
 CMD ["npm", "start"]
