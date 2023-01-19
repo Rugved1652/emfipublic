@@ -26,6 +26,7 @@ export default function Layout({ children }: Props) {
       </React.Suspense> */}
       {children}
       <Footer />
+      <a href="" className="contact-sticky-btn" id="request_demo_btn" >Request Demo</a>
     </>
   );
 }
