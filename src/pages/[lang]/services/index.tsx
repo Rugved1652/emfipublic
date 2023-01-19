@@ -3,33 +3,49 @@ import styles from "../../../styles/Services.module.scss";
 import HeroSearch from "../../../Components/HeroSearch/HeroSearch";
 import ServiceCard from "../../../Components/Cards/ServiceCard/ServiceCard";
 import {
-  DetailsList,
-  ProductContent,
-  ServicesContent,
+  DetailsListEN,
+  DetailsListES,
+  ProductContentEN,
+  ProductContentES,
+  servicepageEN,
+  servicepageES,
+  ServicesContentEN,
+  ServicesContentES,
 } from "../../../constants/serviceContent";
 import Link from "next/link";
 import { Flip, Fade } from "react-awesome-reveal";
+import { fetchData } from "../../../Services/apiFunction";
+import { useRouter } from "next/router";
 type Props = {};
 
-const services = (props: Props) => {
+const Services = ({
+  serviceContent,
+  productContent,
+  PageInfo,
+  DetailsList,
+}: any) => {
+  const Router = useRouter();
   return (
     <div className="container">
       <HeroSearch
-        heading="EMFI GROUP"
-        subHeading="United Kingdom"
-        placeholder="Services"
+        heading={PageInfo.heading}
+        subHeading={PageInfo.subHeading}
+        placeholder={PageInfo.placeholderText}
+        data={PageInfo.serviceList}
+        searchKeyname="label"
       />
       <div className={styles.serviceCardGroupMain}>
         <div className={styles.serviceCardGroup}>
           <Flip triggerOnce={true} direction={"vertical"} duration={1500}>
-            {ServicesContent.map((service) => (
+            {serviceContent.map((service: any) => (
               <div className="border-ani">
                 <span>
-                  <Link href={service.en_link}>
+                  <Link href={service.link}>
                     <ServiceCard
                       image={service.image}
                       heading={service.heading}
                       subHeading={service.subheading}
+                      sup={service.sup}
                     />
                   </Link>
                 </span>
@@ -39,13 +55,13 @@ const services = (props: Props) => {
         </div>
         <div className={styles.serviceCardGroup}>
           <Flip triggerOnce={true} direction={"vertical"} duration={1500}>
-            {ProductContent.map((product) => (
+            {productContent.map((product: any) => (
               <div className="border-ani">
                 <span>
-                  <Link href={product.en_link}>
+                  <Link href={product.link}>
                     <ServiceCard
                       image={product.image}
-                      subHeading={product.subheading}
+                      subHeading={product.subheading}sup = {product.sup}
                     />
                   </Link>
                 </span>
@@ -56,7 +72,7 @@ const services = (props: Props) => {
       </div>
       <Fade triggerOnce={true} direction="up" duration={1500}>
         <div className={styles.listGroup}>
-          {DetailsList.map((details) => (
+          {DetailsList.map((details: string) => (
             <li>{details}</li>
           ))}
         </div>
@@ -72,11 +88,26 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async () => {
-  // const res = await fetchData("");
-  return {
-    props: {},
-  };
+export const getStaticProps = async ({ params }: any) => {
+  if (params?.lang === "espanol") {
+    return {
+      props: {
+        serviceContent: ServicesContentES,
+        productContent: ProductContentES,
+        DetailsList: DetailsListES,
+        PageInfo: servicepageES,
+      },
+    };
+  } else if (params?.lang === "english") {
+    return {
+      props: {
+        serviceContent: ServicesContentEN,
+        productContent: ProductContentEN,
+        DetailsList: DetailsListEN,
+        PageInfo: servicepageEN,
+      },
+    };
+  }
 };
 
-export default services;
+export default Services;

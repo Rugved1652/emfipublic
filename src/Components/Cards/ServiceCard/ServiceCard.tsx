@@ -6,16 +6,17 @@ type Props = {
   image: string;
   heading?: string;
   subHeading?: string;
+  sup?: string;
 };
 
-const ServiceCard = ({ image, heading, subHeading }: Props) => {
+const ServiceCard = ({ image, heading, subHeading, sup }: Props) => {
   return (
     <div className={style.ServiceCard}>
       <div>
         <Image src={image} alt="" />
       </div>
       <h2 className={style.heading}>{heading}</h2>
-      <p className={style.subHeading}>{subHeading}</p>
+      <p className={style.subHeading}>{subHeading}<sup>{sup}</sup></p>
     </div>
   );
 };

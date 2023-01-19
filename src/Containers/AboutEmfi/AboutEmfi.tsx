@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { AboutEmfiContent } from "../../constants/information";
 import styles from "../../styles/AboutEmfi.module.scss";
 import { Fade } from "react-awesome-reveal";
 import EmfiText from "../../Assets/emfi-text.svg";

@@ -53,18 +53,9 @@ const HeroSearch = ({
               handleChange={handleChange}
             />
             {viewList.length !== 0 ? (
-              <ul
-                style={{
-                  width: "100%",
-                  position: "absolute",
-                  height: "300px",
-                  overflow: "auto",
-                  background: "#ffffff",
-                  marginTop: "8px",
-                }}
-              >
+              <ul className="searchBoxList" >
                 {viewList?.map((i: any, index: any) => (
-                  <li key={index}>{i.title}</li>
+                  <li key={index}><a href="javascript:void(0);">{i[searchKeyname]}</a></li>
                 ))}
               </ul>
             ) : null}

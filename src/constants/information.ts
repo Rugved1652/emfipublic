@@ -64,7 +64,7 @@ type infoSectionContent = {
 
 export const PrivacyPolicy = {
   firstParagraph:
-    'EMFI appreciates your visit to this web site ("EMFI Website") and your interest in our services and products. Your privacy is important to us and we want you to feel comfortable visiting our site. We take care to protect your personal data collected, processed and used during visits to the EMFI Website.',
+    '11EMFI appreciates your visit to this web site ("EMFI Website") and your interest in our services and products. Your privacy is important to us and we want you to feel comfortable visiting our site. We take care to protect your personal data collected, processed and used during visits to the EMFI Website.',
   secondParagraph:
     "How we protect or use your data varies from country to country. Privacy Notices can be found for certain jurisdictions where EMFI entities process personal data. The terms of this Policy will be subject to the relevant jurisdiction-specific Privacy Notice where applicable. Please click on the jurisdiction that applies to you from the list at https://www.emfi.uk/english/privacy-policy",
   heading:

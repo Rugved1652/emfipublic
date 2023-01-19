@@ -5,6 +5,7 @@
   padding: 48px 0 0;
   position: relative;
   z-index: 9;
+  overflow: hidden;
   @media screen and (min-width: 567px) {
     background-size: cover;
     padding: 7.8125vw 0 1.8229vw;
@@ -20,23 +21,18 @@
     &List {
       margin: 0;
       padding: 0;
+      margin-bottom: 10px;
       &Item {
         a {
           font-weight: 400;
           color: var(--white-color);
           text-transform: capitalize;
           font-size: 13px;
-          margin-bottom: 12px;
+          line-height: 22px;
+          margin-bottom: 0;
           display: block;
-          @media (min-width: 992px) {
-            font-size: 0.7291vw;
-            margin-bottom: 0.9375vw;
-          }
           svg {
-            height: 13px;
-            @media (min-width: 992px) {
-              height: 0.78125vw;
-            }
+            height: 10px;
           }
           &.eIcon {
             margin-bottom: 10px;
@@ -121,9 +117,9 @@
     text-align: right;
     font-weight: 400;
     color: var(--white-color);
-    font-size: 10px;
+    font-size: 11px;
     margin-bottom: 0;
-    line-height: 26px;
+    line-height: 1.8;
     @media (max-width: 1199px) {
       text-align: center;
     }

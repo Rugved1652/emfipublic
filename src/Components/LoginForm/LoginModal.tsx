@@ -4,6 +4,7 @@ import LoginIcon from "../Icons/LoginIcon";
 import FloatModal from "../FloatModal/FloatModal";
 import styles from "../../styles/LoginForm.module.scss";
 import Router, { useRouter } from "next/router";
+import Link from "next/link";
 
 type Props = {};
 
@@ -66,12 +67,12 @@ function LoginModal({}: Props) {
           }}
         >
           <div className={styles.loginFormButton}>
-            <a
+            <Link
               className={fill ? styles.loginButton : styles.loginButtonActive}
-              href="#"
+              href="https://login.emfi.uk/"
             >
               <LoginIcon fill={fill} />
-            </a>
+            </Link>
             <FloatModal reft={buttonref} show={loginModal}>
               <div ref={refinst} className={styles.form}>
                 <input placeholder="Email" />

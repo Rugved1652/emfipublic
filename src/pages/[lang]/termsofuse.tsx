@@ -1,9 +1,10 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
+import { termofUseEN, termofUseES } from "../../constants/policies";
 
 type Props = {};
 
-const termsofuse = (props: Props) => {
+const termsofuse = ({termofuse}: any) => {
   return (
     <div className="container">
       <HeroSearch
@@ -11,8 +12,11 @@ const termsofuse = (props: Props) => {
         subHeading="EMFI group"
         placeholder="Terms of use"
       />
-      <div className="legalGroup">
-        <p>
+      <div
+        dangerouslySetInnerHTML={{ __html: termofuse }}
+        className="legalGroup"
+      >
+        {/* <p>
           EMFI appreciates your visit to this web site ("EMFI Website") and your
           interest in our services and products. Your privacy is important to us
           and we want you to feel comfortable visiting our site. We take care to
@@ -225,10 +229,22 @@ const termsofuse = (props: Props) => {
           processing of personal data as described in this notice affecting you
           can be viewed on the EMFI website at
           https://www.emfi.uk/english/privacy-policy.
-        </p>
+        </p> */}
       </div>
     </div>
   );
 };
-
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { lang: "english" } }, { params: { lang: "espanol" } }],
+    fallback: false,
+  };
+}
+export async function getStaticProps({ params }: any) {
+  return {
+    props: {
+      termofuse: params?.lang === "espanol" ? termofUseES : termofUseEN,
+    },
+  };
+}
 export default termsofuse;
