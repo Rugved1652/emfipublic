@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16
+      nodejs: 12
     commands:
       - export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
       - if [ "$AWS_REGION" = "eu-west-2" ] ; then ASSUME_ROLE_NAME="emfi-prod-ssm-ecr-assume-role" ; else ASSUME_ROLE_NAME="DockerSSMAccess" ; fi
