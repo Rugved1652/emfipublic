@@ -18,7 +18,7 @@ import { fetchData } from "../../../Services/apiFunction";
 import { useRouter } from "next/router";
 type Props = {};
 
-const services = ({
+const Services = ({
   serviceContent,
   productContent,
   PageInfo,
@@ -109,4 +109,4 @@ export const getStaticProps = async ({ params }: any) => {
   }
 };
 
-export default services;
+export default Services;

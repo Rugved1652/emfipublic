@@ -102,8 +102,7 @@ const SwiperCarousel = ({
           </SwiperSlide>
         ))}
       </Swiper>
-      <ParticalBg />
-      {router.route === "/[lang]" ? null : null}
+      {page === "aboutPage" || page === "product" ? <ParticalBg /> : null}
     </div>
   );
 };

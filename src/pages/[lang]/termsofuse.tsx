@@ -1,5 +1,6 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
+import { termofUseES } from "../../constants/policies";
 
 type Props = {};
 
@@ -11,8 +12,11 @@ const termsofuse = (props: Props) => {
         subHeading="EMFI group"
         placeholder="Terms of use"
       />
-      <div className="legalGroup">
-        <p>
+      <div
+        dangerouslySetInnerHTML={{ __html: termofUseES }}
+        className="legalGroup"
+      >
+        {/* <p>
           EMFI appreciates your visit to this web site ("EMFI Website") and your
           interest in our services and products. Your privacy is important to us
           and we want you to feel comfortable visiting our site. We take care to
@@ -225,7 +229,7 @@ const termsofuse = (props: Props) => {
           processing of personal data as described in this notice affecting you
           can be viewed on the EMFI website at
           https://www.emfi.uk/english/privacy-policy.
-        </p>
+        </p> */}
       </div>
     </div>
   );
