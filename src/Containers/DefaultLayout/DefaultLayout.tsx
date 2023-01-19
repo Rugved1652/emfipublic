@@ -14,6 +14,7 @@ export default function Layout({ children }: Props) {
       </div>
       {children}
       <Footer />
+      <a href="" className="contact-sticky-btn" id="request_demo_btn" >Request Demo</a>
     </>
   );
 }
