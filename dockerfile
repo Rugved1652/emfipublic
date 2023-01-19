@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:16.19.0
+FROM 949020832080.dkr.ecr.us-east-1.amazonaws.com/node:16-linux-amd64
 ARG AWS_REGION 
 ARG AWS_ACCESS_KEY_ID 
 ARG AWS_SECRET_ACCESS_KEY 
