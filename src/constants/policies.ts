@@ -311,7 +311,7 @@ export const regulatoryEN = `
 <p>The obligation to obtain the best possible results for our clients is referred to as our obligation of Best Execution. This policy applies only to clients classified as Professional Clients and only to dealings in Financial Instruments (each as defined in MiFID 2). </p> 
 <h4>3. OBLIGATION AND RELEVANT FACTORS</h4> 
 <p>3.1 Execution Factors</p> 
-<ul> 
+<ul class="legalGroupUl">  
   <li>a) price of execution;</li> 
   <li>b) costs payable by the client as a result of the execution;</li> 
   <li>c) the speed and / or likelihood of execution and settlement;</li> 
@@ -320,7 +320,7 @@ export const regulatoryEN = `
 </ul> 
 <p>3.2. Relative Importance of Execution Factors</p> 
 <p>When executing client orders, we will take into account the following criteria for determining the relative importance of the Execution Factors above: </p> 
-<ul> 
+<ul class="legalGroupUl"> 
   <li>a) the characteristics of the client; </li> 
   <li>b) the characteristics of the client order; </li> 
   <li>c) the characteristics of the Financial Instruments that are the subject of that order; and </li> 
@@ -331,7 +331,7 @@ export const regulatoryEN = `
 <h4>4. EXECUTION VENUES</h4> 
 <p>This execution policy contains a non-exhaustive list of the venues upon which we place significant reliance when executing client orders on your behalf for each class of Financial Instruments. These venues are used to ensure that on a consistent basis, we provide the best possible results for our clients in cases, where the best execution obligation applies. </p> 
 <p>The venues that we use include: </p> 
-<ul> 
+<ul class="legalGroupUl"> 
   <li>a) EMFI and its affiliates, where EMFI internalise client orders; </li> 
   <li>b) Regulated Markets (RM); </li> 
   <li>c) Multilateral Trading (MTFs); </li> 
@@ -353,7 +353,7 @@ export const regulatoryEN = `
 <p>The duty to provide best execution will apply where we execute orders on your behalf, including when we act as riskless principal, exercise certain discretions on your behalf (e.g. how and when to execute orders) and where we transmit orders on your behalf to a third-party broker for execution. </p> 
 <p>8.2 Request for Quote </p> <p>When we categorise you as a Professional Client, we will consider relevant FCA and European Securities and Markets Authority guidance to determine whether we are acting on your behalf and whether you are legitimately relying on us to deliver best execution in relation to your order. </p> 
 <p>In relation to a ‘Request for Quote’ order, EMFI will always apply a Four-Fold Test to determine whether there is any legitimate reliance by you. The Four-Fold Test entails consideration of the following factors: </p> 
-<ul> 
+<ul class="legalGroupUl">  
   <li>a) Who initiates the transaction: – where you initiate the transaction, it is less likely that you will be placing reliance on us. We may communicate market opportunities or indicative prices to you as part of the general relationship and we do not consider that this means that we will be deemed to have initiated the transaction;</li> 
   <li>b) Market practice and “shopping around” – where market practice suggests that you take responsibility for the pricing and other elements of the transaction it is less likely that you will be placing reliance on us; </li> 
   <li>c) Relative levels of transparency within a market – if we have ready access to prices in the market in which we operates, whereas you do not, it is more likely that you will be placing reliance on us, whereas if our access to pricing transparency is broadly equivalent, it is less likely that you will be placing reliance on us; and </li> <li>d) Information provided by us to you in our terms of business – where our arrangements and agreements with you (such as our terms of business and this policy) state the circumstances in which best execution may not be owed, it is less likely that you will be placing reliance on us. </li> 
@@ -392,7 +392,7 @@ export const regulatoryES = `
 <p>The obligation to obtain the best possible results for our clients is referred to as our obligation of Best Execution. This policy applies only to clients classified as Professional Clients and only to dealings in Financial Instruments (each as defined in MiFID 2). </p> 
 <h4>3. OBLIGATION AND RELEVANT FACTORS</h4> 
 <p>3.1 Execution Factors</p> 
-<ul> 
+<ul class="legalGroupUl"> 
   <li>a) price of execution;</li> 
   <li>b) costs payable by the client as a result of the execution;</li> 
   <li>c) the speed and / or likelihood of execution and settlement;</li> 
@@ -401,7 +401,7 @@ export const regulatoryES = `
 </ul> 
 <p>3.2. Relative Importance of Execution Factors</p> 
 <p>When executing client orders, we will take into account the following criteria for determining the relative importance of the Execution Factors above: </p> 
-<ul> 
+<ul class="legalGroupUl">  
   <li>a) the characteristics of the client; </li> 
   <li>b) the characteristics of the client order; </li> 
   <li>c) the characteristics of the Financial Instruments that are the subject of that order; and </li> 
@@ -412,7 +412,7 @@ export const regulatoryES = `
 <h4>4. EXECUTION VENUES</h4> 
 <p>This execution policy contains a non-exhaustive list of the venues upon which we place significant reliance when executing client orders on your behalf for each class of Financial Instruments. These venues are used to ensure that on a consistent basis, we provide the best possible results for our clients in cases, where the best execution obligation applies. </p> 
 <p>The venues that we use include: </p> 
-<ul> 
+<ul class="legalGroupUl">  
   <li>a) EMFI and its affiliates, where EMFI internalise client orders; </li> 
   <li>b) Regulated Markets (RM); </li> 
   <li>c) Multilateral Trading (MTFs); </li> 
@@ -434,7 +434,7 @@ export const regulatoryES = `
 <p>The duty to provide best execution will apply where we execute orders on your behalf, including when we act as riskless principal, exercise certain discretions on your behalf (e.g. how and when to execute orders) and where we transmit orders on your behalf to a third-party broker for execution. </p> 
 <p>8.2 Request for Quote </p> <p>When we categorise you as a Professional Client, we will consider relevant FCA and European Securities and Markets Authority guidance to determine whether we are acting on your behalf and whether you are legitimately relying on us to deliver best execution in relation to your order. </p> 
 <p>In relation to a ‘Request for Quote’ order, EMFI will always apply a Four-Fold Test to determine whether there is any legitimate reliance by you. The Four-Fold Test entails consideration of the following factors: </p> 
-<ul> 
+<ul class="legalGroupUl">  
   <li>a) Who initiates the transaction: – where you initiate the transaction, it is less likely that you will be placing reliance on us. We may communicate market opportunities or indicative prices to you as part of the general relationship and we do not consider that this means that we will be deemed to have initiated the transaction;</li> 
   <li>b) Market practice and “shopping around” – where market practice suggests that you take responsibility for the pricing and other elements of the transaction it is less likely that you will be placing reliance on us; </li> 
   <li>c) Relative levels of transparency within a market – if we have ready access to prices in the market in which we operates, whereas you do not, it is more likely that you will be placing reliance on us, whereas if our access to pricing transparency is broadly equivalent, it is less likely that you will be placing reliance on us; and </li> <li>d) Information provided by us to you in our terms of business – where our arrangements and agreements with you (such as our terms of business and this policy) state the circumstances in which best execution may not be owed, it is less likely that you will be placing reliance on us. </li> 
