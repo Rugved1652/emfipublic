@@ -4,10 +4,20 @@ import styles from "../../styles/HeroTextArea.module.scss";
 import readMoreArrow from "../../Assets/read-more-arrow.png";
 import moment from "moment";
 import { sanitize } from "dompurify";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 type Props = {};
 
-function HeroTextArea({ title, date, description, subHeading }: any) {
+function HeroTextArea({
+  title,
+  date,
+  description,
+  subHeading,
+  reportSlug,
+  id,
+}: any) {
+  const Router = useRouter();
   return (
     <div className={styles.hero}>
       <div className={styles.heroHead}>
@@ -20,7 +30,10 @@ function HeroTextArea({ title, date, description, subHeading }: any) {
         className={styles.heroPara}
         dangerouslySetInnerHTML={{ __html: description.slice(0, 600) + "..." }}
       ></div>
-      <div className={styles.heroCTA}>
+      <Link
+        href={`/${Router?.query.lang}/intelligence/details/${reportSlug}?id=${id}`}
+        className={styles.heroCTA}
+      >
         Read More{" "}
         <Image
           className={styles.readMoreIcon}
@@ -29,7 +42,7 @@ function HeroTextArea({ title, date, description, subHeading }: any) {
           alt="Read more"
           src={readMoreArrow}
         />
-      </div>
+      </Link>
     </div>
   );
 }
