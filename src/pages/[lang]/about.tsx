@@ -12,12 +12,28 @@ import AboutValues from "../../Containers/AboutValues/AboutValues";
 import { fetchData } from "../../Services/apiFunction";
 import { aboutData } from "../../types/types";
 import ProductHero from "../../Components/HeroSection/ProductHero";
+import {
+  AboutEmfiContent,
+  AsSeenContentES,
+  infoSectionContent,
+  OurClientsContent,
+  OurTeamContent,
+  OurValuesContent,
+} from "../../constants/information";
 
 type Props = {
   aboutData: aboutData;
 };
 
-const About = ({ aboutData }: any) => {
+const About = ({
+  ourClient,
+  ourValues,
+  OurTeamContent,
+  infoSection,
+  AsSeenContent,
+  aboutData,
+  AboutEmfiContent,
+}: any) => {
   const [greyImage, setGreyImage] = useState(-1);
 
   return (
@@ -29,7 +45,7 @@ const About = ({ aboutData }: any) => {
         image={aboutHeroInformation.image}
       />
       <div className="container">
-        <AboutEmfi aboutData={aboutData?.data?.about_data} />
+        <AboutEmfi aboutData={AboutEmfiContent} />
         <div className="aboutSectionMain ourClientsMain">
           <div className="commonHeader">
             <h2>{aboutData?.data.our_clients?.title}</h2>
@@ -40,15 +56,13 @@ const About = ({ aboutData }: any) => {
             </p>
           </div>
           <div className="ourClients">
-            {aboutData?.data.our_clients?.data.map(
-              (client: any, index: any) => (
-                <PaperCard
-                  key={index}
-                  image={client.image}
-                  title={client.title}
-                />
-              )
-            )}
+            {ourClient.map((client: any, index: any) => (
+              <PaperCard
+                key={index}
+                image={client.image}
+                title={client.title}
+              />
+            ))}
           </div>
         </div>
         <div className="aboutSectionMain">
@@ -57,20 +71,18 @@ const About = ({ aboutData }: any) => {
           </div>
           <Fade triggerOnce={true} direction="up" duration={1500}>
             <div className="ourValue">
-              {aboutData?.data.our_values?.data.map(
-                (client: any, index: any) => (
-                  <div key={index}>
-                    <Image
-                      src={client.image}
-                      alt={client.title}
-                      width={20}
-                      height={20}
-                    />
-                    <h5>{client.title}</h5>
-                    <p>{client.desc}</p>
-                  </div>
-                )
-              )}
+              {ourValues.map((client: any, index: any) => (
+                <div key={index}>
+                  <Image
+                    src={client.image}
+                    alt={client.title}
+                    width={20}
+                    height={20}
+                  />
+                  <h5>{client.title}</h5>
+                  <p>{client.content}</p>
+                </div>
+              ))}
             </div>
           </Fade>
         </div>
@@ -80,10 +92,10 @@ const About = ({ aboutData }: any) => {
             <h2>{aboutData?.data.our_team?.title}</h2>
           </div>
           <div className="ourTeam">
-            {aboutData?.data.our_team?.data.map((teamMember: any) => (
+            {OurTeamContent.map((teamMember: any) => (
               <TeamMemberCard
                 key={teamMember.id}
-                image={aboutData?.data.our_team?.image}
+                image={teamMember.image}
                 designation={teamMember.position}
                 email={teamMember?.email ? teamMember.email : null}
                 linkedIn={teamMember.linkedIn}
@@ -98,7 +110,7 @@ const About = ({ aboutData }: any) => {
             <h2>{aboutData?.data.as_seen_on?.title}</h2>
           </div>
           <div className="AsSeenIn">
-            {aboutData.data.as_seen_on?.data.map((brand: any, index: any) => (
+            {AsSeenContent.map((brand: any, index: any) => (
               <Flip key={index} direction={"vertical"} duration={1500}>
                 <div
                   className="border-ani"
@@ -108,7 +120,9 @@ const About = ({ aboutData }: any) => {
                   <span>
                     <CustomCard className="AsSeenInCard">
                       <Image
-                        src={greyImage === index ? brand?.image1 : brand?.image}
+                        src={
+                          greyImage === index ? brand.hoverImage : brand?.image
+                        }
                         alt={"img"}
                         width={280}
                         height={100}
@@ -137,6 +151,12 @@ export async function getStaticProps(context: any) {
   const res = await fetchData(`about/${context.params.lang}`);
   return {
     props: {
+      ourClient: OurClientsContent,
+      ourValues: OurValuesContent,
+      OurTeamContent: OurTeamContent,
+      infoSection: infoSectionContent,
+      AsSeenContent: AsSeenContentES,
+      AboutEmfiContent: AboutEmfiContent,
       aboutData: res || null,
     },
   };
