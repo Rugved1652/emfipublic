@@ -8,29 +8,38 @@ import Image from "next/image";
 import topArrow from "../../Assets/topArrow.svg";
 import dynamic from "next/dynamic";
 import { isEmpty } from "../../../helper";
+import DoubleLineChartComponent from "../Charts/LineChartComponent/DoubleLineChartComponent";
 
 type Props = {
   data: any;
 };
 
 const HeroSection = ({ data }: Props) => {
+  console.log("data", data);
   const [first, setfirst] = useState([]);
-  console.log(
+  // console.log(
+  //   data?.display_title_second === "" || data?.graph_type === "global"
+  //     ? []
+  //     : console.log(
+  //         "chart",
+  //         data?.title,
+  //         Object.values(data?.chart_data?.benchmark_history_data).map(
+  //           (data: any) => ...data[0]
+  //         )
+  //       )
+  // );
+
+  useEffect(() => {
     data?.display_title_second === "" || data?.graph_type === "global"
       ? []
       : console.log(
-          "chart",
-          data?.title,
-          Object.values(data?.chart_data?.benchmark_history_data).map(
-            (data: any) => data[0],
-            data[1]
+          ...Object.values(data?.chart_data?.benchmark_history_data).map(
+            (data: any) => data.map((i: any) => i)
           )
-        )
-  );
+        );
+  }, []);
 
-  useEffect(() => {});
-
-  // console.log("data", data);
+  console.log("data", data);
   return (
     <div className={styles.HeroWrapper}>
       <HeroTextArea
@@ -51,8 +60,17 @@ const HeroSection = ({ data }: Props) => {
         {data?.graph_type === "global" ? (
           <WorldMapChart chartData={data.chart_data.countries} />
         ) : null}
-        {data?.graph_type === "market_history" ? (
+
+        {data?.graph_type === "market_history" &&
+        data?.display_title_second === "" ? (
           <LineChartComponent chartData={data.chart_data?.history_data} />
+        ) : null}
+
+        {data?.graph_type === "market_history" &&
+        data?.display_title_second !== "" ? (
+          <DoubleLineChartComponent
+            chartData={data.chart_data?.benchmark_history_data}
+          />
         ) : null}
       </MapContainer>
       <div className="tilteRoundBox">

@@ -1,15 +1,11 @@
-import PensionFund from "../Assets/Aboutus/OurClientIcon/pensionfunds.svg";
-import HedgeFund from "../Assets/Aboutus/OurClientIcon/hegdefunds.svg";
-import MutualFunds from "../Assets/Aboutus/OurClientIcon/mutualfunds.svg";
-import CorporateTreasuries from "../Assets/Aboutus/OurClientIcon/corporatetreasuries.svg";
-import Fintech from "../Assets/Aboutus/OurClientIcon/fintech.svg";
-import Banks from "../Assets/Aboutus/OurClientIcon/banks.svg";
-import Brokers from "../Assets/Aboutus/OurClientIcon/brokers.svg";
-import InsuranceCompanies from "../Assets/Aboutus/OurClientIcon/insurancecompanies.svg";
-import customersuitability from "../Assets/Aboutus/OurValuesIcons/customersuitability.svg";
-import clientconfidentiality from "../Assets/Aboutus/OurValuesIcons/clientconfidentiality.svg";
-import customercomplaints from "../Assets/Aboutus/OurValuesIcons/customercomplaints.svg";
-import conflictsofinterest from "../Assets/Aboutus/OurValuesIcons/conflictsofinterest.svg";
+// import PensionFund from "../Assets/Aboutus/OurClientIcon/pensionfunds.svg";
+// import HedgeFund from "../Assets/Aboutus/OurClientIcon/hegdefunds.svg";
+// import MutualFunds from "../Assets/Aboutus/OurClientIcon/mutualfunds.svg";
+// import CorporateTreasuries from "../Assets/Aboutus/OurClientIcon/corporatetreasuries.svg";
+// import Fintech from "../Assets/Aboutus/OurClientIcon/fintech.svg";
+// import Banks from "../Assets/Aboutus/OurClientIcon/banks.svg";
+// import Brokers from "../Assets/Aboutus/OurClientIcon/brokers.svg";
+// import InsuranceCompanies from "../Assets/Aboutus/OurClientIcon/insurancecompanies.svg";
 import placeholderimg from "../Assets/Aboutus/OurTeamVectorIcons/ourteamplaceholder.svg";
 import candidate from "../Assets/Aboutus/OurTeamVectorIcons/candidates.svg";
 import ourvalue from "../Assets/Aboutus/OurTeamVectorIcons/ourvalues.svg";
@@ -43,7 +39,7 @@ type OurValuesContent = {
 type AboutEmfiContent = {
   id: string;
   title: string;
-  isImage:boolean
+  isImage: boolean;
   paragraph: string[];
   image: string;
 };
@@ -57,7 +53,7 @@ type OurClientsContent = {
 type infoSectionContent = {
   image: string;
   id: string;
-  isImage:boolean;
+  isImage: boolean;
   title: string;
   paragraphs: string[];
 };
@@ -83,17 +79,17 @@ export const AboutEmfiContent: AboutEmfiContent[] = [
   {
     id: "1",
     title: "Why",
-    isImage: true ,
+    isImage: true,
     paragraph: [
       "EMFI came into being in response to a market that is highly fragmented with divergent needs of onshore and offshore investors going unaddressed.",
       "Traditional banks and financial companies are heavily focused on certain segments and products or services that fit into their top down business structures.",
       " EMFI aims to bridge those gaps by taking a bottom up approach to identify fragments and provide customized and tailored solutions  EMFI aims to bridge those gaps by taking a bottom up approach to identify fragments and provide customized and tailored solutions to address those needs.to address those needs.",
     ],
-    image: whyEMFI,
+    image: "/whyEMFI.svg",
   },
   {
     id: "2",
-    isImage: false ,
+    isImage: false,
     title: "Onshore Investors",
     paragraph: [
       " We deliver up-to-date market colour from major financial centers of the world to local investors who might operate in a very different context.",
@@ -104,7 +100,7 @@ export const AboutEmfiContent: AboutEmfiContent[] = [
   },
   {
     id: "3",
-    isImage: false ,
+    isImage: false,
     title: "Offshore Investors",
     paragraph: [
       "We actively service high beta Latin American sovereign and quasi-sovereign market where traditional coverage is lacking at best.",
@@ -118,42 +114,42 @@ export const AboutEmfiContent: AboutEmfiContent[] = [
 export const OurClientsContent: OurClientsContent[] = [
   {
     id: "1",
-    image: PensionFund,
+    image: "/pensionfunds.svg",
     title: "Pension Funds",
   },
   {
     id: "2",
-    image: HedgeFund,
+    image: "/hegdefunds.svg",
     title: "Hedge Funds",
   },
   {
     id: "3",
-    image: MutualFunds,
+    image: "/mutualfunds.svg",
     title: "Mutual Funds",
   },
   {
     id: "4",
-    image: CorporateTreasuries,
+    image: "/corporatetreasuries.svg",
     title: "Corporate Treasuries",
   },
   {
     id: "5",
-    image: Fintech,
+    image: "/fintech.svg",
     title: "Fintech",
   },
   {
     id: "6",
-    image: Banks,
+    image: "/banks.svg",
     title: "Banks",
   },
   {
     id: "7",
-    image: Brokers,
+    image: "/brokers.svg",
     title: "Brokers",
   },
   {
     id: "8",
-    image: InsuranceCompanies,
+    image: "/insurancecompanies",
     title: "Insurance Companies",
   },
 ];
@@ -161,28 +157,28 @@ export const OurClientsContent: OurClientsContent[] = [
 export const OurValuesContent: OurValuesContent[] = [
   {
     id: "1",
-    image: customersuitability,
+    image: "/customersuitability.svg",
     content:
       "We cherish our clients and take a long term view in managing our relationships. We make sure our products and services are adequate for our clients and are sold in a way that is not detrimental to their interests.",
     title: "Customer Suitability",
   },
   {
     id: "2",
-    image: conflictsofinterest,
+    image: "/conflictsofinterest.svg",
     content:
       "We put our clients' best interests before our own and strive to identify and manage potential conflicts of interest. We never let our interests influence our advice to a client, or our dealings with them.",
     title: "Conflicts of Interest",
   },
   {
     id: "3",
-    image: clientconfidentiality,
+    image: "/clientconfidentiality.svg",
     content:
       "We never share our clients' details with anyone, unless we have their express permission to do so, or where we have a legal duty to share it with the relevant authorities.",
     title: "Client Confidentiality",
   },
   {
     id: "4",
-    image: customercomplaints,
+    image: "/customercomplaints.svg",
     content:
       "We take any and all customer complaints very seriously. We appreciate regular feedback from our clients and strive to make it right if we fail to get it right the first time around.",
     title: "Customer Complaints",
@@ -292,7 +288,7 @@ export const infoSectionContent: infoSectionContent[] = [
   {
     id: "1",
     title: "CANDIDATES",
-    isImage: false ,
+    isImage: false,
     paragraphs: [
       "We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.",
       "Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.",
@@ -302,7 +298,7 @@ export const infoSectionContent: infoSectionContent[] = [
   },
   {
     id: "2",
-    isImage: false ,
+    isImage: false,
     title: "OUR VALUES",
     paragraphs: [
       "We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
@@ -315,39 +311,46 @@ export const infoSectionContent: infoSectionContent[] = [
 
 type AsSeenContent = {
   id: string;
-  image: FunctionComponent;
+  image: string;
+  hoverImage: string;
   alt: string;
 };
 
-export const AsSeenContent: AsSeenContent[] = [
+export const AsSeenContentES: AsSeenContent[] = [
   {
     id: "1",
-    image: BloomBergBrandIcon,
+    hoverImage: "/bloombergcolor.svg",
+    image: "/bloomberggrey.svg",
     alt: "",
   },
   {
     id: "2",
-    image: ReutersIcon,
+    hoverImage: "/reuterscolor.svg",
+    image: "/reuterscolor.svg",
     alt: "",
   },
   {
     id: "3",
-    image: ChanthamIcon,
+    image: "/chanthamhousegrey.svg",
+    hoverImage: "/chanthamhousecolor.svg",
     alt: "",
   },
   {
     id: "4",
-    image: VOAIcon,
+    image: "/voagrey.svg",
+    hoverImage: "/voacolor.svg",
     alt: "",
   },
   {
     id: "5",
-    image: AljazeeraIcon,
+    image: "/aljazeeragrey.svg",
+    hoverImage: "/aljazeeracolor.svg",
     alt: "",
   },
   {
     id: "6",
-    image: France24Icon,
+    image: "/france24grey.svg",
+    hoverImage: "/france24color.svg",
     alt: "",
   },
 ];
