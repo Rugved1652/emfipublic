@@ -36,7 +36,7 @@ type SalesNTradingContent = {
 export const ServicesContentES: ServicesContent[] = [
   {
     id: "01",
-    image: SalesNTrading,
+    image: "/SalesTrading.svg",
     heading: "Sales y Trading ",
     subheading: "EMFI Securities Limited",
     sup: "2",
@@ -44,7 +44,7 @@ export const ServicesContentES: ServicesContent[] = [
   },
   {
     id: "02",
-    image: WealthManagement,
+    image: "/WealthManagement.svg",
     heading: "Gestión de patrimonios",
     subheading: "EMFI Capital Limited",
     sup: "3",
@@ -52,7 +52,7 @@ export const ServicesContentES: ServicesContent[] = [
   },
   {
     id: "03",
-    image: AssetManagement,
+    image: "/AssetManagement.svg",
     heading: "Gestión de Activos",
     subheading: "EMFI Fund SPC",
     sup: "4",
@@ -60,7 +60,7 @@ export const ServicesContentES: ServicesContent[] = [
   },
   {
     id: "04",
-    image: FintechAsAService,
+    image: "/FintechAsAService.svg",
     heading: "Fintech como-Servicio",
     subheading: "EMFI Analytics Limited",
     sup: "5",
@@ -70,7 +70,7 @@ export const ServicesContentES: ServicesContent[] = [
 export const ServicesContentEN: ServicesContent[] = [
   {
     id: "01",
-    image: SalesNTrading,
+    image: "/SalesTrading.svg",
     heading: "Sales & Trading",
     subheading: "EMFI Securities Limited",
     sup: "2",
@@ -78,7 +78,7 @@ export const ServicesContentEN: ServicesContent[] = [
   },
   {
     id: "02",
-    image: WealthManagement,
+    image: "/WealthManagement.svg",
     heading: "Wealth Management",
     subheading: "EMFI Capital Limited",
     sup: "3",
@@ -86,7 +86,7 @@ export const ServicesContentEN: ServicesContent[] = [
   },
   {
     id: "03",
-    image: AssetManagement,
+    image: "/AssetManagement.svg",
     heading: "Asset Management",
     subheading: "EMFI Fund SPC",
     sup: "4",
@@ -94,7 +94,7 @@ export const ServicesContentEN: ServicesContent[] = [
   },
   {
     id: "04",
-    image: FintechAsAService,
+    image: "/FintechAsAService.svg",
     heading: "Fintech As-A-Service",
     subheading: "EMFI Analytics Limited",
     sup: "5",
@@ -129,61 +129,61 @@ export const servicepageES = {
 export const ProductContentES: ProductContent[] = [
   {
     id: "01",
-    image: ebonds,
+    image: "/ebonds.svg",
     subheading: "EMFI Securities Limited",
     link: "/espanol/services/ourproducts/ebonds",
-    sup:"2",
+    sup: "2",
   },
   {
     id: "02",
-    image: ewealth,
+    image: "/ewealth.svg",
     subheading: "EMFI Capital Limited",
     link: "/espanol/services/ourproducts/ewealth",
-    sup:"3",
+    sup: "3",
   },
   {
     id: "03",
-    image: efund,
+    image: "/efund.svg",
     subheading: "EMFI Fund SPC",
     link: "/espanol/services/ourproducts/efund",
-    sup:"4",
+    sup: "4",
   },
   {
     id: "04",
-    image: eintel,
+    image: "/eintel.svg",
     subheading: "EMFI Analytics Limited",
     link: "/espanol/services/ourproducts/eintel",
-    sup:"5",
+    sup: "5",
   },
 ];
 export const ProductContentEN: ProductContent[] = [
   {
     id: "01",
-    image: ebonds,
+    image: "/ebonds.svg",
     subheading: "EMFI Securities Limited",
     link: "/english/services/ourproducts/ebonds",
-    sup:"2",
+    sup: "2",
   },
   {
     id: "02",
-    image: ewealth,
+    image: "/ewealth.svg",
     subheading: "EMFI Capital Limited",
     link: "/english/services/ourproducts/ewealth",
-    sup:"3",
+    sup: "3",
   },
   {
     id: "03",
-    image: efund,
+    image: "/efunds.svg",
     subheading: "EMFI Fund SPC",
     link: "/english/services/ourproducts/efund",
-    sup:"4",
+    sup: "4",
   },
   {
     id: "04",
-    image: eintel,
+    image: "/eintel.svg",
     subheading: "EMFI Analytics Limited",
     link: "/english/services/ourproducts/eintel",
-    sup:"5",
+    sup: "5",
   },
 ];
 
