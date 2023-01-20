@@ -2243,3 +2243,14 @@ canvas {
       }
     }
   }
+  body {
+    .serviceElogoBox {
+      img {
+        height: 25px !important;
+        margin-bottom: 0 !important;
+        @media (min-width: 1200px) { 
+          height: 40px !important;
+        }
+      }
+    }
+  }
