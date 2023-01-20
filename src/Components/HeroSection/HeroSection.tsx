@@ -13,9 +13,12 @@ type Props = {
 };
 
 const HeroSection = ({ data }: Props) => {
+  console.log("data", data);
   return (
     <div className={styles.HeroWrapper}>
       <HeroTextArea
+        id={data.id}
+        reportSlug={data.report_slug}
         title={data.title}
         date={data.display_date}
         graphType={data.graphType}
@@ -30,9 +33,10 @@ const HeroSection = ({ data }: Props) => {
       >
         {data?.graph_type === "global" ? (
           <WorldMapChart chartData={data.chart_data.countries} />
-        ) : (
-          <LineChartComponent />
-        )}
+        ) : null}
+        {data?.graph_type === "market_history" ? (
+          <LineChartComponent chartData={data.chart_data?.history_data} />
+        ) : null}
       </MapContainer>
       <div className="tilteRoundBox">
         <div id="circle">
@@ -58,7 +62,12 @@ const HeroSection = ({ data }: Props) => {
             <g>
               <use xlinkHref="#circlePath" fill="none" />
               <text fill="#000">
-                <textPath xlinkHref="#circlePath">U K R A I N</textPath>
+                <textPath
+                  style={{ display: "flex", justifyContent: "flex-end" }}
+                  xlinkHref="#circlePath"
+                >
+                  {data.title}
+                </textPath>
               </text>
             </g>
           </svg>
