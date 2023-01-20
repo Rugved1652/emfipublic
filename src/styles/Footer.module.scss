@@ -1,14 +1,14 @@
 .footer {
   background: url("../Assets/footer-img/footer-bg.svg") no-repeat top right;
   background-size: 100%;
-  min-height: 346px;
-  padding: 48px 0 0;
+  // min-height: 346px;
+  padding: 48px 0 20px;
   position: relative;
   z-index: 9;
   overflow: hidden;
   @media screen and (min-width: 567px) {
     background-size: cover;
-    padding: 7.8125vw 0 1.8229vw;
+    padding: 7.8125vw 0 20px;
   }
   .footerBgColor {
     background-color: var(--brand-primary);
@@ -21,7 +21,8 @@
     &List {
       margin: 0;
       padding: 0;
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
+      margin-bottom: 0px;
       &Item {
         a {
           font-weight: 400;

@@ -196,7 +196,7 @@ function LoginModal({}: Props) {
           }
           className={styles.lanText}
         >
-          {lang === "english" ? "Espanol" : "english"}
+          {lang === "english" ? "Español" : "english"}
         </span>
 
         <div

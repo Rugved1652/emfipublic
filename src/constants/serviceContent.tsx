@@ -189,7 +189,7 @@ export const ProductContentEN: ProductContent[] = [
 
 export const DetailsListEN: any[] = [
   "1. Registered in England and Wales (United Kingdom). Company number 11391808.",
-  "2. Authorised and regulated by the Financial Conduct Authority. Reference number 763979",
+  "2. Authorised and regulated by the Financial Conduct Authority. Reference number 763979.",
   "3. Authorised And Regulated By The Financial Conduct Authority. Reference Number 822389.",
   "4. Authorised By The Cayman Islands Monetary Authority. Licenced Mutual Fund Number 1664891.",
   "5. Registered In England And Wales (United Kingdom). Company Number 11380416.",
