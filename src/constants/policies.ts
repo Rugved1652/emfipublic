@@ -1,17 +1,47 @@
-export const scamalertES = [
-  "Se nos ha señalado que los estafadores, que pretenden actuar en nombre de EMFI Securities Limited, se han puesto en contacto con miembros del público, especialmente en Francia, utilizando fraudulentamente el nombre, la marca y otros detalles de identificación corporativa de EMFI Securities Limited. Se nos ha informado de varios casos y EMFI Securities Limited ha informado de dichos casos a las autoridades pertinentes, la Autoridad de Conducta Financiera en el Reino Unido y la Autorité des Marchés Financiers en Francia.",
-  "EMFI Securities Limited presentó una denuncia penal ante el Fiscal Público de París el 5 de febrero de 2019 por falsificación y fraude de identidad. El 9 de noviembre de 2020, EMFI Securities Limited presentó otra denuncia penal ante el Tribunal Penal de París.",
-  'Tenga en cuenta que EMFI Securities Limited o cualquier otra entidad del Grupo EMFI no proporciona absolutamente ningún servicio a los clientes minoristas. Todos nuestros productos y servicios están dirigidos exclusivamente a inversores calificados, clientes profesionales y contrapartes elegibles. En cualquier caso, ni EMFI Securities Limited ni ninguna otra entidad del Grupo EMFI ofrecen productos de ahorro al público en general en Francia y, en particular, no ofrecen ningún "Livret d’Epargne 6,25%".',
-  "Si una parte desconocida se comunica con usted en relación con oportunidades de inversión que afirma representar a EMFI Securities Limited o cualquier otra entidad del Grupo EMFI, esté extremadamente atento. Comuníquese de inmediato con EMFI Securities Limited a través de nuestro sitio web para confirmar la legitimidad de la inversión propuesta.",
-  "En cualquier caso, EMFI Securities Limited recomienda encarecidamente que consulte a sus propios profesionales fiscales, legales y contables antes de realizar cualquier transacción financiera. Por último, si cree que ha sido engañado para realizar una inversión fraudulenta, EMFI Securities Limited le sugiere encarecidamente que se ponga en contacto de inmediato con las autoridades policiales y otras autoridades reguladoras de su país.",
-];
-export const scamalertEN = [
-  "It has been brought to our attention that fraudsters, pretending to act on behalf of EMFI Securities Limited, have been contacting members of the public, particularly in France, fraudulently using EMFI Securities Limited’s name, branding and other corporate identification details. We have been made aware of several cases and EMFI Securities Limited has reported such cases to relevant authorities, the Financial Conduct Authority in the United Kingdom and the Autorité des Marchés Financiers in France.",
-  "EMFI Securities Limited filed a criminal complaint before the Paris Public Prosecutor on February 5, 2019 on the grounds of forgery and identity fraud. On November 9, 2020, EMFI Securities Limited filed another criminal complaint before the Paris Criminal Court",
-  'Please note that EMFI Securities Limited or any other entity of the EMFI Group provides absolutely no services to retail clients. All our products and services are aimed solely towards qualified investors, professional clients and eligible counterparties. In any event, neither EMFI Securities Limited nor any other entity of the EMFI Group offer saving products to the general public in France and in particular do not offer any "Livret d’Epargne 6,25%".',
-  "If you are contacted in relation to investment opportunities by an unknown party claiming to represent EMFI Securities Limited or any other entity of the EMFI Group, please be extremely vigilant. Please immediately contact EMFI Securities Limited through our website to confirm the legitimacy of the proposed investment.",
-  "In any event, EMFI Securities Limited strongly recommends that you consult your own tax, legal and accounting professionals before engaging in any financial transactions. Finally, if you believe that you have been misled into making a fraudulent investment, EMFI Securities Limited strongly suggests that you immediately contact law enforcement and other regulatory authorities in your country.",
-];
+export const scamalertES = `<p>Se nos ha señalado que los estafadores, que pretenden actuar en nombre de EMFI Securities Limited, se han puesto en contacto con miembros del público, especialmente en Francia, utilizando fraudulentamente el nombre, la marca y otros detalles de identificación corporativa de EMFI Securities Limited. Se nos ha informado de varios casos y EMFI Securities Limited ha informado de dichos casos a las autoridades pertinentes, la Autoridad de Conducta Financiera en el Reino Unido y la Autorité des Marchés Financiers en Francia.</p>
+
+<p>EMFI Securities Limited presentó una denuncia penal ante el Fiscal Público de París el 5 de febrero de 2019 por falsificación y fraude de identidad. El 9 de noviembre de 2020, EMFI Securities Limited presentó otra denuncia penal ante el Tribunal Penal de París.</p>
+
+<p>Tenga en cuenta que EMFI Securities Limited o cualquier otra entidad del Grupo EMFI no proporciona absolutamente ningún servicio a los clientes minoristas. Todos nuestros productos y servicios están dirigidos exclusivamente a inversores calificados, clientes profesionales y contrapartes elegibles. En cualquier caso, ni EMFI Securities Limited ni ninguna otra entidad del Grupo EMFI ofrecen productos de ahorro al público en general en Francia y, en particular, no ofrecen ningún "Livret d’Epargne 6,25%".</p>
+
+<p>Si una parte desconocida se comunica con usted en relación con oportunidades de inversión que afirma representar a EMFI Securities Limited o cualquier otra entidad del Grupo EMFI, esté extremadamente atento. Comuníquese de inmediato con EMFI Securities Limited a través de nuestro sitio web para confirmar la legitimidad de la inversión propuesta.</p>
+
+<p>En cualquier caso, EMFI Securities Limited recomienda encarecidamente que consulte a sus propios profesionales fiscales, legales y contables antes de realizar cualquier transacción financiera. Por último, si cree que ha sido engañado para realizar una inversión fraudulenta, EMFI Securities Limited le sugiere encarecidamente que se ponga en contacto de inmediato con las autoridades policiales y otras autoridades reguladoras de su país.</p>
+
+<h4>FRENCH</h4>
+
+<p>Il a été porté à notre connaissance que des individus se présentant comme représentants de la société EMFI Securities Limited ont contacté des particuliers, notamment en France, en utilisant de manière frauduleuse notre nom, notre logo et nos données d’identification commerciale. Nous avons été avertis de plusieurs cas et EMFI Securities Limited a averti les autorités compétentes, notamment la Financial Conduct Authority au Royaume-Uni et l’Autorité des Marchés Financiers en France.</p>
+
+<p>La société EMFI Securities Limited a déposé plainte auprès du Procureur de la République de Paris, le 5 février 2019, pour les faits de faux et usage de faux et d’usurpation d’identité. Le 9 novembre 2020, EMFI Securities Limited a déposé une autre plainte avec constitution de partie civile auprès du doyen des juges d’instruction de Paris.</p>
+
+<p>Veillez noter que EMFI Securities Limited ne propose pas de services financiers à destination des particuliers. Tous nos produits et services financiers sont destinés uniquement à des investisseurs qualifiés et à des clients professionnels. En tout état de cause, ni EMFI Securities Limited ni aucune autre entité du Groupe EMFI ne proposent de produits d’épargne à destination du grand public en France et notamment un "Livret d’Epargne 6,25%".</p>
+
+<p>La plus grande vigilance est recommandée si vous êtes contactés au sujet d’opportunités d’investissement par toute personne prétendant agir pour le compte d’EMFI Securities Limited ou de toute autre entité du Groupe EMFI. Veuillez contacter immédiatement EMFI Securities Limited via notre site internet pour vérifier la fiabilité de l’investissement proposé.</p>
+
+<p>D’une manière générale, EMFI Securities Limited conseille vivement de toujours consulter vos conseillers fiscaux, juridiques et comptables avant toute décision d’investissement. Enfin, si vous estimez avoir été victime d’un investissement frauduleux, EMFI Securities Limited vous invite vivement à contacter immédiatement les autorités judiciaires et prudentielles dans votre pays.</p>`;
+export const scamalertEN =`
+<p>It has been brought to our attention that fraudsters, pretending to act on behalf of EMFI Securities Limited, have been contacting members of the public, particularly in France, fraudulently using EMFI Securities Limited’s name, branding and other corporate identification details. We have been made aware of several cases and EMFI Securities Limited has reported such cases to relevant authorities, the Financial Conduct Authority in the United Kingdom and the Autorité des Marchés Financiers in France.</p>
+
+<p>EMFI Securities Limited filed a criminal complaint before the Paris Public Prosecutor on February 5, 2019 on the grounds of forgery and identity fraud. On November 9, 2020, EMFI Securities Limited filed another criminal complaint before the Paris Criminal Court.</p>
+
+<p>Please note that EMFI Securities Limited or any other entity of the EMFI Group provides absolutely no services to retail clients. All our products and services are aimed solely towards qualified investors, professional clients and eligible counterparties. In any event, neither EMFI Securities Limited nor any other entity of the EMFI Group offer saving products to the general public in France and in particular do not offer any "Livret d’Epargne 6,25%".</p>
+
+<p>If you are contacted in relation to investment opportunities by an unknown party claiming to represent EMFI Securities Limited or any other entity of the EMFI Group, please be extremely vigilant. Please immediately contact EMFI Securities Limited through our website to confirm the legitimacy of the proposed investment.</p>
+
+<p>In any event, EMFI Securities Limited strongly recommends that you consult your own tax, legal and accounting professionals before engaging in any financial transactions. Finally, if you believe that you have been misled into making a fraudulent investment, EMFI Securities Limited strongly suggests that you immediately contact law enforcement and other regulatory authorities in your country.</p>
+
+<h4>FRENCH</h4>
+
+<p>Il a été porté à notre connaissance que des individus se présentant comme représentants de la société EMFI Securities Limited ont contacté des particuliers, notamment en France, en utilisant de manière frauduleuse notre nom, notre logo et nos données d’identification commerciale. Nous avons été avertis de plusieurs cas et EMFI Securities Limited a averti les autorités compétentes, notamment la Financial Conduct Authority au Royaume-Uni et l’Autorité des Marchés Financiers en France.</p>
+
+<p>La société EMFI Securities Limited a déposé plainte auprès du Procureur de la République de Paris, le 5 février 2019, pour les faits de faux et usage de faux et d’usurpation d’identité. Le 9 novembre 2020, EMFI Securities Limited a déposé une autre plainte avec constitution de partie civile auprès du doyen des juges d’instruction de Paris.</p>
+
+<p>Veillez noter que EMFI Securities Limited ne propose pas de services financiers à destination des particuliers. Tous nos produits et services financiers sont destinés uniquement à des investisseurs qualifiés et à des clients professionnels. En tout état de cause, ni EMFI Securities Limited ni aucune autre entité du Groupe EMFI ne proposent de produits d’épargne à destination du grand public en France et notamment un "Livret d’Epargne 6,25%".</p>
+
+<p>La plus grande vigilance est recommandée si vous êtes contactés au sujet d’opportunités d’investissement par toute personne prétendant agir pour le compte d’EMFI Securities Limited ou de toute autre entité du Groupe EMFI. Veuillez contacter immédiatement EMFI Securities Limited via notre site internet pour vérifier la fiabilité de l’investissement proposé.</p>
+
+<p>D’une manière générale, EMFI Securities Limited conseille vivement de toujours consulter vos conseillers fiscaux, juridiques et comptables avant toute décision d’investissement. Enfin, si vous estimez avoir été victime d’un investissement frauduleux, EMFI Securities Limited vous invite vivement à contacter immédiatement les autorités judiciaires et prudentielles dans votre pays.</p>
+`;
 
 export const cookiespolicyEN = [
   {
@@ -19,16 +49,16 @@ export const cookiespolicyEN = [
     desc: "We use cookies to provide you with a safe, effective and user-friendly website. Please visit our Privacy Policy if you want to learn more about our privacy and cookies policy. If you do not agree to this Statement, do not proceed to further web pages of the EMFI Website.",
   },
   {
-    head: "PERFORMANCE & TRACKING COOKIES",
+    head: "Performance & tracking cookies",
     desc: "We use performance & tracking cookies to further improve our website in order to always provide you with the best possible online experience tailored to your needs. We never store any personal data which might identify you personally (such as your IP address) or as a client of EMFI.",
   },
   {
-    head: "USER PREFERENCE COOKIES",
-    desc: "User preference cookies are used to facilitate your access to emfi.uk. We use them to show you the correct EMFI homepage and language for your country and to remember these settings when you visit emfi.uk the next time.",
+    head: "User preference cookies",
+    desc: 'User preference cookies are used to facilitate your access to <a href="http://emfi.uk">emfi.uk</a>. We use them to show you the correct EMFI homepage and language for your country and to remember these settings when you visit <a href="http://emfi.uk">emfi.uk</a> the next time.',
   },
   {
-    head: "TECHNICAL COOKIES",
-    desc: "Technical cookies are strictly necessary for emfi.uk to work properly. We use them to remember your entries in a form or to provide you access to login restricted areas of the website. Technical cookies cannot be deactivated.",
+    head: "Technical cookies",
+    desc: 'Technical cookies are strictly necessary for <a href="http://emfi.uk">emfi.uk</a> to work properly. We use them to remember your entries in a form or to provide you access to login restricted areas of the website. Technical cookies cannot be deactivated.',
   },
 ];
 
@@ -40,16 +70,16 @@ export const cookiespolicyES = [
 
   {
     head: "Cookies de rendimiento y seguimiento",
-    desc: "Utilizamos cookies de rendimiento y seguimiento para mejorar aún más nuestro sitio web con el fin de proporcionarle siempre la mejor experiencia en línea posible, adaptada a sus necesidades. Nunca almacenamos datos personales que puedan identificarlo personalmente (como su dirección IP) o como cliente de EMFI..",
+    desc: "Utilizamos cookies de rendimiento y seguimiento para mejorar aún más nuestro sitio web con el fin de proporcionarle siempre la mejor experiencia en línea posible, adaptada a sus necesidades. Nunca almacenamos datos personales que puedan identificarlo personalmente (como su dirección IP) o como cliente de EMFI.",
   },
   {
     head: "Cookies de preferencia del usuario",
-    desc: "Las cookies de preferencia del usuario se utilizan para facilitar su acceso a emfi.uk. Los utilizamos para mostrarle la página de inicio y el idioma EMFI correctos para su país y para recordar estos ajustes cuando visite emfi.uk la próxima vez.",
+    desc: 'Las cookies de preferencia del usuario se utilizan para facilitar su acceso a <a href="http://emfi.uk/espanol">emfi.uk</a>. Los utilizamos para mostrarle la página de inicio y el idioma EMFI correctos para su país y para recordar estos ajustes cuando visite <a href="http://emfi.uk/espanol">emfi.uk</a> la próxima vez.',
   },
 
   {
     head: "Cookies tecnicas",
-    desc: "Las cookies técnicas son estrictamente necesarias para que emfi.uk funcione correctamente. Los usamos para recordar sus entradas en un formulario o para proporcionarle acceso a áreas de acceso restringido del sitio web. Las cookies técnicas no se pueden desactivar.",
+    desc: 'Las cookies técnicas son estrictamente necesarias para que <a href="http://emfi.uk/espanol">emfi.uk</a> funcione correctamente. Los usamos para recordar sus entradas en un formulario o para proporcionarle acceso a áreas de acceso restringido del sitio web. Las cookies técnicas no se pueden desactivar.',
   },
 ];
 
@@ -175,115 +205,262 @@ export const termofUseEN = `  <p>These Terms of Use apply to <a href="http://emf
 
 <p>Certain web pages or areas on the EMFI Website may contain additional terms, conditions, disclosures and disclaimers (collectively, the "Additional Terms"). In the event of a conflict between these Terms of Use and the Additional Terms, the Additional Terms will govern for those web pages or areas.</p>`;
 
-export const privacypolicyES = `
-<p>
-EMFI agradece su visita a este sitio web ("Sitio web de EMFI") y su interés en nuestros servicios y productos. Su privacidad es importante para nosotros y queremos que se sienta cómodo visitando nuestro sitio. Nos encargamos de proteger sus datos personales recopilados, procesados y utilizados durante las visitas al sitio web de EMFI.
-</p>
-<p>
-La forma en que protegemos o usamos sus datos varía de un país a otro. Se pueden encontrar avisos de privacidad para ciertas jurisdicciones donde las entidades de EMFI procesan datos personales. Los términos de esta Política estarán sujetos al Aviso de Privacidad correspondiente a la jurisdicción correspondiente, donde corresponda. Por favor, haga clic en la jurisdicción que se aplica a usted de la lista en https://www.emfi.uk/espanol/privacy-policy
-</p>
-<h4>
-Al acceder al sitio web de EMFI, acepta esta Política de privacidad ("Política").
-</h4>
-<p>
-Si no está de acuerdo con esta Política, no continúe con otras páginas web del sitio web de EMFI.
-</p>
-<h4>1. ¿Cuáles son el propósito y el alcance de esta Política?</h4>
-<p>
-El Grupo EMFI, sus subsidiarias y sucursales ("EMFI" o "nosotros") estamos comprometidos a proteger la información personal que recopilamos de las personas que utilizan el sitio web de EMFI. En consecuencia, EMFI ha desarrollado esta Política para describir cómo y qué tipo de datos se recopilarán de los usuarios del sitio web de EMFI y los fines para los cuales EMFI puede recopilar, compartir o divulgar los datos. EMFI también describe las precauciones razonables que se toman para mantener sus datos seguros.
-</p>
-<p>
-Esta Política se aplica a cualquier información obtenida por EMFI a través de su uso del sitio web de EMFI. No se aplica a los sitios web de Internet controlados por terceros no afiliados a EMFI a los que el sitio web de EMFI puede enlazar ("Sitios de terceros"). Revise las políticas de privacidad de los Sitios de terceros, ya que EMFI no es responsable y no tiene influencia en el contenido o las prácticas de privacidad de los Sitios de terceros.
-</p>
-<p>
-Los términos de esta Política están sujetos a cualquier término adicional de renuncias de responsabilidad u otros términos contractuales que haya firmado con EMFI, como las políticas de privacidad del cliente o avisos, y las leyes y regulaciones obligatorias aplicables.
-</p>
-<h4>
-2. ¿Qué información recopilamos de usted y con qué propósito?
-</h4>
-<p>
-Cuando visita el sitio web de EMFI, nuestro servidor web registra automáticamente los detalles de su visita (por ejemplo, su dirección IP, el sitio web desde el que nos visita, el tipo de software de navegador utilizado, las páginas del sitio web de EMFI que realmente visita, incluido el fecha y la duración de su visita).
-</p>
-<p>
-Además, recopilamos datos personales que nos proporciona a través del sitio web de EMFI, por ejemplo, cuando ingresa datos personales (por ejemplo, nombre, sexo, dirección, dirección de correo electrónico, número de teléfono / fax) en una página de registro o si se registra en un boletín electrónico.
-</p>
-<p>EMFI utilizará sus datos personales:
-
-</p>
+export const privacypolicyES = `<p>EMFI agradece su visita a este sitio web ("Sitio web de EMFI") y su interés en nuestros servicios y productos. Su privacidad es importante para nosotros y queremos que se sienta cómodo visitando nuestro sitio. Nos encargamos de proteger sus datos personales recopilados, procesados y utilizados durante las visitas al sitio web de EMFI.</p>
+<p>La forma en que protegemos o usamos sus datos varía de un país a otro. Se pueden encontrar avisos de privacidad para ciertas jurisdicciones donde las entidades de EMFI procesan datos personales. Los términos de esta Política estarán sujetos al Aviso de Privacidad correspondiente a la jurisdicción correspondiente, donde corresponda. Por favor, haga clic en la jurisdicción que se aplica a usted de la lista en <a href="https://www.emfi.uk/espanol/privacy-policy">https://www.emfi.uk/espanol/privacy-policy</a></p>
+<h4>Al acceder al sitio web de EMFI, acepta esta Política de privacidad ("Política").</h4>
+<p>Si no está de acuerdo con esta Política, no continúe con otras páginas web del sitio web de EMFI.</p>
+<h4>¿Cuáles son el propósito y el alcance de esta Política?</h4>
+<p>El Grupo EMFI, sus subsidiarias y sucursales ("EMFI" o "nosotros") estamos comprometidos a proteger la información personal que recopilamos de las personas que utilizan el sitio web de EMFI. En consecuencia, EMFI ha desarrollado esta Política para describir cómo y qué tipo de datos se recopilarán de los usuarios del sitio web de EMFI y los fines para los cuales EMFI puede recopilar, compartir o divulgar los datos. EMFI también describe las precauciones razonables que se toman para mantener sus datos seguros.</p>
+<p>Esta Política se aplica a cualquier información obtenida por EMFI a través de su uso del sitio web de EMFI. No se aplica a los sitios web de Internet controlados por terceros no afiliados a EMFI a los que el sitio web de EMFI puede enlazar ("Sitios de terceros"). Revise las políticas de privacidad de los Sitios de terceros, ya que EMFI no es responsable y no tiene influencia en el contenido o las prácticas de privacidad de los Sitios de terceros.</p>
+<p>Los términos de esta Política están sujetos a cualquier término adicional de renuncias de responsabilidad u otros términos contractuales que haya firmado con EMFI, como las políticas de privacidad del cliente o avisos, y las leyes y regulaciones obligatorias aplicables.</p>
+<h4>¿Qué información recopilamos de usted y con qué propósito?</h4>
+<p>Cuando visita el sitio web de EMFI, nuestro servidor web registra automáticamente los detalles de su visita (por ejemplo, su dirección IP, el sitio web desde el que nos visita, el tipo de software de navegador utilizado, las páginas del sitio web de EMFI que realmente visita, incluido el fecha y la duración de su visita).</p>
+<p>Además, recopilamos datos personales que nos proporciona a través del sitio web de EMFI, por ejemplo, cuando ingresa datos personales (por ejemplo, nombre, sexo, dirección, dirección de correo electrónico, número de teléfono / fax) en una página de registro o si se registra en un boletín electrónico.</p>
+<p>EMFI utilizará sus datos personales:</p>
 <ul>
-<li>
-A los fines de administración técnica, investigación y desarrollo del sitio web de EMFI,
-</li>
-<li>Para la administración y comercialización de clientes y usuarios.</li>
-<li>Para informarle sobre nuestros servicios y productos, y</li>
-<li>para los fines especificados de otra manera.</li>
+	<li>A los fines de administración técnica, investigación y desarrollo del sitio web de EMFI,</li>
+	<li>Para la administración y comercialización de clientes y usuarios.</li>
+	<li>Para informarle sobre nuestros servicios y productos, y</li>
+	<li>para los fines especificados de otra manera.</li>
 </ul>
-<p>
-EMFI respeta las leyes y regulaciones aplicables en el uso de datos personales.
-</p>
-<h4>3. ¿Cómo recopilamos y almacenamos su información?</h4>
-<p>
-EMFI utiliza tecnología de rastreo como cookies o etiquetas para recopilar la información como se describe anteriormente (consulte: "¿Qué información recopilamos de usted y con qué propósito?") Para comprender cómo los visitantes utilizan el sitio web de EMFI.
-</p>
-<p>
-La tecnología de seguimiento nos ayuda a administrar y mejorar la usabilidad del sitio web de EMFI, por ejemplo, al detectar si ha habido algún contacto entre su computadora y nosotros en el pasado e identificar las secciones más populares del sitio web de EMFI.
-</p>
-<p>
-Cuando esté disponible, el enlace "Política de cookies" en la parte inferior de la página le brinda más detalles sobre el uso de cookies de EMFI y le permite controlar qué tipos de cookies puede establecer el sitio web de EMFI en su dispositivo (conocidas como "configuraciones de cookies") . Asegúrese de establecer la configuración de cookies desactivando ciertos tipos de cookies si no está de acuerdo con su uso por parte de EMFI.
-</p>
-<p>
-Cuando guarde su configuración de cookies, también deberían aplicarse a sus futuras visitas al sitio web de EMFI. Sin embargo, por razones técnicas fuera del control de EMFI, esto no se puede garantizar. Por ejemplo, si reinicia su navegador, borra sus cookies o accede al sitio web de EMFI desde otro navegador o dispositivo, su configuración de cookies puede perderse. Para cumplir con las leyes y regulaciones aplicables, en algunos países se le puede solicitar que confirme la configuración de sus cookies cuando visite por primera vez el sitio web de EMFI. Si se encuentra en un país en el que se le solicita automáticamente que establezca la configuración de las cookies, es posible que se le solicite que las vuelva a configurar en una futura visita.
-</p>
-<p>
-En muchos casos, también puede controlar las tecnologías de seguimiento utilizando su navegador. Asegúrese de que la configuración de su navegador refleje si desea que se le avise y / o acepte tecnologías de seguimiento (como cookies) cuando sea posible. Las capacidades específicas de su navegador y las instrucciones sobre cómo usarlas generalmente se pueden encontrar en el manual o en el archivo de ayuda de su navegador.
-</p>
-<p>
-Rechazar, deshabilitar o desactivar las tecnologías de seguimiento puede resultar en una disponibilidad reducida de los servicios proporcionados por el sitio web de EMFI o es posible que algunas partes del sitio web de EMFI ya no funcionen correctamente.
-</p>
-<h4>
-4. ¿A quién revelamos su información recopilada del sitio web de EMFI?
-</h4>
-<p>
-EMFI puede divulgar su información a sus afiliados y sus agentes y proveedores externos dentro o fuera de su país de residencia para realizar servicios para EMFI y para los fines indicados anteriormente. Nuestros afiliados, agentes y proveedores externos que tienen acceso a los datos personales obtenidos a través del sitio web de EMFI están obligados a respetar la privacidad.
-</p>
-<p>
-Al transferir datos personales a nivel internacional, nos aseguramos de que cumplimos con las leyes y regulaciones aplicables, por ejemplo, mediante la celebración de acuerdos que asegurarán que los destinatarios de su información mantengan un nivel adecuado de protección de datos.
-</p>
-<p>
-También podemos divulgar su información a agencias o entidades gubernamentales, autoridades reguladoras u otras personas de acuerdo con cualquier ley, reglamento, orden judicial o solicitud oficial aplicable, o bajo cualquiera y para los fines de las pautas emitidas por autoridades regulatorias o de otro tipo, o procesos similares según lo requiera o lo permita la ley aplicable
-</p>
-<h4>
-5. ¿Qué medidas de seguridad hemos implementado para proteger su información recopilada a través del sitio web de EMFI?
-</h4>
-<p>
-EMFI ha implementado medidas de seguridad organizativas y técnicas razonables para proteger sus datos personales recopilados por EMFI a través del sitio web de EMFI contra accesos no autorizados, uso indebido, pérdida o destrucción.
-</p>
-<h4>6. ¿Cómo tratamos los mensajes electrónicos enviados hacia y desde EMFI?</h4>
-<p>
-Todos los mensajes electrónicos enviados hacia y desde EMFI se retienen automáticamente en un sistema de registro por diario que conserva el peso probatorio de los correos electrónicos. Están protegidos por medidas técnicas y organizativas razonables y solo se puede acceder a ellos en casos justificados de acuerdo con las leyes y regulaciones aplicables (por ejemplo, orden judicial, sospecha de conducta criminal, violación de obligaciones reglamentarias, incumplimiento sustancial del contrato laboral) por personas específicas Funciones (ej. Legal, Cumplimiento, Riesgo). Todos los correos electrónicos se eliminan después de que el período de retención aplicable haya expirado.
-</p>
-<h4>
-7. ¿Qué debe considerar al enviar datos a través de Internet?
-</h4>
-<p>
-En general, no se considera que Internet sea un entorno seguro, y terceros no autorizados pueden acceder a la información que se envía a través de Internet (por ejemplo, desde o hacia el sitio web de EMFI) o mediante mensajes electrónicos. . Incluso si el remitente y el destinatario se encuentran en el mismo país, la información enviada a través de Internet puede transmitirse a través de las fronteras internacionales y enviarse a un país con un nivel de protección de datos más bajo que el que existe en su país de residencia.
-</p>
-<h4>
-8. ¿Cómo tratamos la información de personas menores de 18 años?
-</h4>
-<p>
-El sitio web de EMFI no pretende recopilar datos personales de personas menores de 18 años. Las personas menores de 18 años deben recibir el permiso de sus padres o tutores legales antes de proporcionar datos personales a EMFI en el sitio web de EMFI.
-</p>
-<h4>9. ¿Cómo puedes acceder o revisar tus datos personales?</h4>
-<li>Compruebe si conservamos sus datos personales,</li>
-<li>pedirnos que le proporcionemos una copia de sus datos personales, o</li>
-<li>
-Exigirnos que corrijamos cualquiera de sus datos personales que sea inexacto.
-</li>
-<p>
-Si tiene una solicitud con respecto al procesamiento de sus datos personales, envíe un correo electrónico a la siguiente dirección: compliance@emfi.uk
-</p>
-<h4>10. Estado de este aviso de privacidad</h4>
-<p>
-Este aviso de privacidad se actualizó en diciembre de 2018. Nos reservamos el derecho de modificarlo de vez en cuando. Cualquier cambio o adición futura al procesamiento de datos personales como se describe en este aviso que le afecta puede verse en el sitio web de EMFI en https://www.emfi.uk/english/privacy-policy.
-</p>`;
+<p>EMFI respeta las leyes y regulaciones aplicables en el uso de datos personales.</p>
+<h4>¿Cómo recopilamos y almacenamos su información?</h4>
+<p>EMFI utiliza tecnología de rastreo como cookies o etiquetas para recopilar la información como se describe anteriormente (consulte: "¿Qué información recopilamos de usted y con qué propósito?") Para comprender cómo los visitantes utilizan el sitio web de EMFI.</p>
+<p>La tecnología de seguimiento nos ayuda a administrar y mejorar la usabilidad del sitio web de EMFI, por ejemplo, al detectar si ha habido algún contacto entre su computadora y nosotros en el pasado e identificar las secciones más populares del sitio web de EMFI.</p>
+<p>Cuando esté disponible, el enlace "Política de cookies" en la parte inferior de la página le brinda más detalles sobre el uso de cookies de EMFI y le permite controlar qué tipos de cookies puede establecer el sitio web de EMFI en su dispositivo (conocidas como "configuraciones de cookies") . Asegúrese de establecer la configuración de cookies desactivando ciertos tipos de cookies si no está de acuerdo con su uso por parte de EMFI.</p>
+<p>Cuando guarde su configuración de cookies, también deberían aplicarse a sus futuras visitas al sitio web de EMFI. Sin embargo, por razones técnicas fuera del control de EMFI, esto no se puede garantizar. Por ejemplo, si reinicia su navegador, borra sus cookies o accede al sitio web de EMFI desde otro navegador o dispositivo, su configuración de cookies puede perderse. Para cumplir con las leyes y regulaciones aplicables, en algunos países se le puede solicitar que confirme la configuración de sus cookies cuando visite por primera vez el sitio web de EMFI. Si se encuentra en un país en el que se le solicita automáticamente que establezca la configuración de las cookies, es posible que se le solicite que las vuelva a configurar en una futura visita.</p>
+<p>En muchos casos, también puede controlar las tecnologías de seguimiento utilizando su navegador. Asegúrese de que la configuración de su navegador refleje si desea que se le avise y / o acepte tecnologías de seguimiento (como cookies) cuando sea posible. Las capacidades específicas de su navegador y las instrucciones sobre cómo usarlas generalmente se pueden encontrar en el manual o en el archivo de ayuda de su navegador.</p>
+<p>Rechazar, deshabilitar o desactivar las tecnologías de seguimiento puede resultar en una disponibilidad reducida de los servicios proporcionados por el sitio web de EMFI o es posible que algunas partes del sitio web de EMFI ya no funcionen correctamente.</p>
+<h4>¿A quién revelamos su información recopilada del sitio web de EMFI?</h4>
+<p>EMFI puede divulgar su información a sus afiliados y sus agentes y proveedores externos dentro o fuera de su país de residencia para realizar servicios para EMFI y para los fines indicados anteriormente. Nuestros afiliados, agentes y proveedores externos que tienen acceso a los datos personales obtenidos a través del sitio web de EMFI están obligados a respetar la privacidad.</p>
+<p>Al transferir datos personales a nivel internacional, nos aseguramos de que cumplimos con las leyes y regulaciones aplicables, por ejemplo, mediante la celebración de acuerdos que asegurarán que los destinatarios de su información mantengan un nivel adecuado de protección de datos.</p>
+<p>También podemos divulgar su información a agencias o entidades gubernamentales, autoridades reguladoras u otras personas de acuerdo con cualquier ley, reglamento, orden judicial o solicitud oficial aplicable, o bajo cualquiera y para los fines de las pautas emitidas por autoridades regulatorias o de otro tipo, o procesos similares según lo requiera o lo permita la ley aplicable.</p>
+<h4>¿Qué medidas de seguridad hemos implementado para proteger su información recopilada a través del sitio web de EMFI?</h4>
+<p>EMFI ha implementado medidas de seguridad organizativas y técnicas razonables para proteger sus datos personales recopilados por EMFI a través del sitio web de EMFI contra accesos no autorizados, uso indebido, pérdida o destrucción.</p>
+<h4>¿Cómo tratamos los mensajes electrónicos enviados hacia y desde EMFI?</h4>
+<p>Todos los mensajes electrónicos enviados hacia y desde EMFI se retienen automáticamente en un sistema de registro por diario que conserva el peso probatorio de los correos electrónicos. Están protegidos por medidas técnicas y organizativas razonables y solo se puede acceder a ellos en casos justificados de acuerdo con las leyes y regulaciones aplicables (por ejemplo, orden judicial, sospecha de conducta criminal, violación de obligaciones reglamentarias, incumplimiento sustancial del contrato laboral) por personas específicas Funciones (ej. Legal, Cumplimiento, Riesgo). Todos los correos electrónicos se eliminan después de que el período de retención aplicable haya expirado.</p>
+<h4>¿Qué debe considerar al enviar datos a través de Internet?</h4>
+<p>En general, no se considera que Internet sea un entorno seguro, y terceros no autorizados pueden acceder a la información que se envía a través de Internet (por ejemplo, desde o hacia el sitio web de EMFI) o mediante mensajes electrónicos. . Incluso si el remitente y el destinatario se encuentran en el mismo país, la información enviada a través de Internet puede transmitirse a través de las fronteras internacionales y enviarse a un país con un nivel de protección de datos más bajo que el que existe en su país de residencia.</p>
+<p>Tenga en cuenta que no aceptamos ninguna responsabilidad u obligación por la seguridad de su información mientras esté en tránsito por Internet a EMFI. Para proteger su privacidad, le recordamos que puede elegir otro medio de comunicación con EMFI, si lo considera apropiado.</p>
+<h4>¿Cómo tratamos la información de personas menores de 18 años?</h4>
+<p>El sitio web de EMFI no pretende recopilar datos personales de personas menores de 18 años. Las personas menores de 18 años deben recibir el permiso de sus padres o tutores legales antes de proporcionar datos personales a EMFI en el sitio web de EMFI.</p>
+<h4>¿Cómo puedes acceder o revisar tus datos personales?</h4>
+<ul>
+	<li>Compruebe si conservamos sus datos personales,</li>
+	<li>pedirnos que le proporcionemos una copia de sus datos personales, o</li>
+	<li>Exigirnos que corrijamos cualquiera de sus datos personales que sea inexacto.</li>
+</ul>
+<p>Si tiene una solicitud con respecto al procesamiento de sus datos personales, envíe un correo electrónico a la siguiente dirección: <a href="mailto:compliance@emfi.uk">compliance@emfi.uk</a></p>
+<h4>Estado de este aviso de privacidad</h4>
+<p>Este aviso de privacidad se actualizó en diciembre de 2018. Nos reservamos el derecho de modificarlo de vez en cuando. Cualquier cambio o adición futura al procesamiento de datos personales como se describe en este aviso que le afecta puede verse en el sitio web de EMFI en <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a>.</p>`;
+
+export const privacypolicyEN = `
+<p>EMFI appreciates your visit to this web site ("EMFI Website") and your interest in our services and products. Your privacy is important to us and we want you to feel comfortable visiting our site. We take care to protect your personal data collected, processed and used during visits to the EMFI Website.</p>
+<p>How we protect or use your data varies from country to country. Privacy Notices can be found for certain jurisdictions where EMFI entities process personal data. The terms of this Policy will be subject to the relevant jurisdiction-specific Privacy Notice where applicable. Please click on the jurisdiction that applies to you from the list at <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a></p>
+<h4>By accessing the EMFI Website you accept this Privacy Policy ("Policy").</h4>
+<p>If you do not agree to this Policy, do not proceed to further web pages of the EMFI Website.</p>
+<h4>What are the purpose and the scope of this Policy?</h4>
+<p>EMFI Group, its subsidiaries and branches ("EMFI" or "we") are committed to safeguarding the personal information that we collect from individuals who use the EMFI Website. Accordingly, EMFI has developed this Policy to describe how and what type of data will be collected from users of the EMFI Website and the purposes for which EMFI may collect, share or disclose the data. EMFI also outlines reasonable precautions which are taken to keep your data secure.</p>
+<p>This Policy applies to any information obtained by EMFI through your use of the EMFI Website. It is not applicable to any Internet websites controlled by third parties not affiliated with EMFI that the EMFI Website may link to ("Third Party Sites"). Please review the privacy policies of Third Party Sites as EMFI is not responsible for and has no influence on the content or the privacy practices of Third Party Sites.</p>
+<p>The terms of this Policy are subject to any additional terms of disclaimers or other contractual terms you have entered into with EMFI such as client privacy policies or notices, and any applicable mandatory laws and regulations.</p>
+<h4>What information do we collect from you and for what purpose?</h4>
+<p>When you visit the EMFI Website, our web server automatically records details about your visit (for example, your IP address, the web site from which you visit us, the type of browser software used, the EMFI Website pages that you actually visit including the date and the duration of your visit).</p>
+<p>In addition, we collect personal data which you provide through the EMFI Website, for example when you enter personal details (e.g. name, gender, address, e-mail address, phone/fax number) on a registration page or if you sign up for an email newsletter.</p>
+<p>EMFI will use your personal data:</p>
+<ul>
+	<li>for the purposes of technical administration and research &amp; development of the EMFI Website,</li>
+	<li>for customer and user administration and marketing,</li>
+	<li>to inform you about our services and products, and</li>
+	<li>for such purposes as otherwise specified.</li>
+</ul>
+<p>EMFI respects applicable laws and regulations in its use of personal data.</p>
+<h4>How do we collect and store information from you?</h4>
+<p>EMFI uses tracking technology such as cookies or tags to gather information as outlined above (see: "What information do we collect from you and for what purpose?") to understand how visitors use the EMFI Website.</p>
+<p>Tracking technology helps us manage and improve the usability of the EMFI Website, for example by detecting whether there has been any contact between your computer and us in the past and to identify the most popular sections of the EMFI Website.</p>
+<p>Where available, the “Cookies Policy” link at the bottom of the page gives you more details about EMFI’s use of cookies, and lets you control which types of cookies the EMFI Website may set on your device (known as your “cookie settings”). Please ensure that you set your cookie settings by un-ticking certain types of cookies if you do not consent to their use by EMFI.</p>
+<p>When you save your cookie settings, they should also apply to your future visits to the EMFI Website. However, for technical reasons beyond EMFI’s control, this cannot be guaranteed. For example, if you reset your browser, delete your cookies or access the EMFI website from another browser or device your cookie settings may be lost. To comply with applicable laws and regulations, in some countries you may be asked to confirm your cookie settings when you first visit the EMFI Website. If you are in a country where you are automatically required to set your cookie settings, you may be asked to set them again on a future visit.</p>
+<p>In many cases you can also control tracking technologies using your browser. Please ensure that your browser setting reflects whether you wish to be warned about and/or accept tracking technologies (such as cookies) where possible. The specific capabilities of your browser and instructions on how to use them can usually be found in the manual or help file of your browser.</p>
+<p>Refusing, disabling or deactivating of tracking technologies may result in a reduced availability of the services provided by the EMFI Website or parts of the EMFI Website may no longer function correctly.</p>
+<h4>To whom do we disclose your information collected from the EMFI Website?</h4>
+<p>EMFI may disclose your information to its affiliates and their agents and third-party providers inside or outside your country of residence to perform services for EMFI and for the purposes stated above. Our affiliates, agents and third-party providers who have access to personal data obtained through the EMFI Website are obliged to respect privacy.</p>
+<p>When transferring personal data internationally we make sure that we comply with applicable laws and regulations, for example, by entering into agreements which will ensure that the recipients of your information maintain an adequate level of data protection.</p>
+<p>We may also disclose your information to governmental agencies or entities, regulatory authorities, or other persons in line with any applicable law, regulations, court order or official request, or under any and for the purposes of any guidelines issued by regulatory or other authorities, or similar processes as either required or permitted by applicable law.</p>
+<h4>What security measures have we implemented to protect your information collected through the EMFI Website?</h4>
+<p>EMFI has implemented reasonable technical and organisational security measures to protect your personal data collected by EMFI via the EMFI Website against unauthorized access, misuse, loss or destruction.</p>
+<h4>How do we treat electronic messages sent to and from EMFI?</h4>
+<p>All electronic messages sent to and from EMFI are automatically retained in a journaling system which preserves the evidential weight of the e-mails. They are protected by reasonable technical and organisational measures and may only be accessed in justified cases in line with applicable laws and regulations (e.g. court order, suspicion of criminal conduct, violation of regulatory obligations, material breach of employment contract) by specific persons in defined functions (e.g. Legal, Compliance, Risk). All emails are disposed of after the applicable retention period has expired.</p>
+<h4>What should you consider when sending data over the Internet?</h4>
+<p>The Internet is generally not regarded as a secure environment, and information sent via the Internet (such as to or from the EMFI Website or via electronic message) may be accessed by unauthorized third parties, potentially leading to disclosures, changes in content or technical failures. Even if both sender and receiver are located in the same country, information sent via the Internet may be transmitted across international borders and be forwarded to a country with a lower data protection level than exists in your country of residence.</p>
+<p>Please note that we accept no responsibility or liability for the security of your information whilst in transit over the Internet to EMFI. In order to protect your privacy, we would like to remind you that you may choose another means of communication with EMFI, where you deem it appropriate.</p>
+<h4>How do we deal with information from individuals under the age of 18?</h4>
+<p>The EMFI Website does not seek to collect personal data from individuals under the age of 18. Individuals under the age of 18 should receive permission from their parent or legal guardian before providing any personal data to EMFI on the EMFI Website.</p>
+<h4>How can you access or review your personal data?</h4>
+<ul>
+	<li>check whether we hold your personal data,</li>
+	<li>ask us to provide you with a copy of your personal data, or</li>
+	<li>require us to correct any of your personal data that is inaccurate.</li>
+</ul>
+<p>Should you have a request regarding the processing of your personal data please send an email to the following address: <a href="mailto:compliance@emfi.uk">compliance@emfi.uk</a></p>
+<h4>Status of this privacy notice</h4>
+<p>This privacy notice was updated in December 2018. We reserve the right to amend it from time to time. Any future changes or additions to the processing of personal data as described in this notice affecting you can be viewed on the EMFI website at <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a>.</p>`;
+export const regulatoryEN = `
+<h4>1. BACKGROUND</h4> 
+<p>This document sets out the execution policy and approach to providing best execution for EMFI Securities Limited (‘EMFI’, “we” or “us”, “our”), as required by the Markets in Financial Instrument Directive 2014/65/EU (including any applicable Level 2 provisions) (“MiFID 2”) as implemented by the UK Financial Conduct Authority (FCA) in its Handbook. This document forms part of our terms of business with you as our client (“you”, “your” “yours”).</p> 
+<h4>2. PURPOSE AND SCOPE</h4> 
+<p>MiFID 2 requires us to take all “sufficient” steps to obtain, when executing client orders, the best possible results for our clients, taking into account price, costs, speed, likelihood of execution, and settlement, size, nature or any other consideration relevant to the execution of the order. However please see the section on client instructions.</p> 
+<p>The obligation to obtain the best possible results for our clients is referred to as our obligation of Best Execution. This policy applies only to clients classified as Professional Clients and only to dealings in Financial Instruments (each as defined in MiFID 2). </p> 
+<h4>3. OBLIGATION AND RELEVANT FACTORS</h4> 
+<p>3.1 Execution Factors</p> 
+<ul> 
+  <li>a) price of execution;</li> 
+  <li>b) costs payable by the client as a result of the execution;</li> 
+  <li>c) the speed and / or likelihood of execution and settlement;</li> 
+  <li>d) the order size;</li> 
+  <li>e) the impact of the order on market prices of displaying the order and or executing an order or part of the order; Costs, meaning explicit costs such as fees, commissions and implicit costs such as market impact</li> 
+</ul> 
+<p>3.2. Relative Importance of Execution Factors</p> 
+<p>When executing client orders, we will take into account the following criteria for determining the relative importance of the Execution Factors above: </p> 
+<ul> 
+  <li>a) the characteristics of the client; </li> 
+  <li>b) the characteristics of the client order; </li> 
+  <li>c) the characteristics of the Financial Instruments that are the subject of that order; and </li> 
+  <li>d) the characteristics of the execution venues to which that order can be directed. </li> 
+</ul> 
+<p>Subject to any specific instructions from you, taking into account the criteria above, we will generally regard net price (net price is the total price paid by the client, net of client commission and fees), followed by speed and or likelihood of execution as the most important factors in the execution of a client order.</p> 
+<p>However, there may be circumstances where the other execution factors should be prioritised above price. We reserve the right to exercise a degree of discretion in how to apply the Execution Factors. This may result in a range of different approaches to executing a client order based on our commercial judgement in the context of relevant available market information and what is in the best interests of our clients.</p> 
+<h4>4. EXECUTION VENUES</h4> 
+<p>This execution policy contains a non-exhaustive list of the venues upon which we place significant reliance when executing client orders on your behalf for each class of Financial Instruments. These venues are used to ensure that on a consistent basis, we provide the best possible results for our clients in cases, where the best execution obligation applies. </p> 
+<p>The venues that we use include: </p> 
+<ul> 
+  <li>a) EMFI and its affiliates, where EMFI internalise client orders; </li> 
+  <li>b) Regulated Markets (RM); </li> 
+  <li>c) Multilateral Trading (MTFs); </li> 
+  <li>d) Organised Trading Facilities (OTFs); </li> 
+  <li>e) Market makers and other liquidity providers; and </li> 
+  <li>f) Non-EEA entities performing similar functions to the above. </li> 
+</ul> 
+<p>Venues may include venues of which we are a direct member or participant and venues we access through third party brokers or dealers.</p> 
+<h4>5. CHOICE OF EXECUTION VENUE</h4> 
+<p>For certain Financial Instruments, our choice of venue may be constrained by the fact that there may only be one venue where a client order can be executed due to the nature of the order, specific instruction(s) or specific requirements. Where a Financial Instrument is only tradable on one venue/market, the only execution factor we will consider is the speed and or likelihood of execution unless a specific instruction indicates otherwise. </p> 
+<p>For some Financial Instruments, we may execute certain orders for you using smart order routing technology, which has been selected and reviewed to ensure that we obtain, on a consistent basis, the best possible outcome for you as our client.</p> 
+<p>Where the Financial Instrument trades on a RM, MTF with the appropriate liquidity, we will aim to execute client orders on such venues, but where the characteristics of the financial instrument or applicable execution factors are deemed appropriate, we may execute client orders outside of these venues. This will be on the basis of having express prior consent from you. </p> 
+<h4>6. SELECTION AND MONITORING </h4> 
+<p>Venues are selected and reviewed based on a number of factors, but primarily to ensure that clients have access to the relevant sources of liquidity. </p> 
+<h4>7. EXECUTING ORDERS OUTSIDE A TRADING VENEUE </h4> 
+<p>As noted above, we may execute an order outside a RM, MTF and OTF. In cases where we execute orders outside an RM, MTF or OTF additional risks such as counterparty risk might exist. </p> 
+<h4>8. ORDER EXECUTION ON BEHALF OF A CLIENT</h4> 
+<p>8.1 Overview </p> 
+<p>The duty to provide best execution will apply where we execute orders on your behalf, including when we act as riskless principal, exercise certain discretions on your behalf (e.g. how and when to execute orders) and where we transmit orders on your behalf to a third-party broker for execution. </p> 
+<p>8.2 Request for Quote </p> <p>When we categorise you as a Professional Client, we will consider relevant FCA and European Securities and Markets Authority guidance to determine whether we are acting on your behalf and whether you are legitimately relying on us to deliver best execution in relation to your order. </p> 
+<p>In relation to a ‘Request for Quote’ order, EMFI will always apply a Four-Fold Test to determine whether there is any legitimate reliance by you. The Four-Fold Test entails consideration of the following factors: </p> 
+<ul> 
+  <li>a) Who initiates the transaction: – where you initiate the transaction, it is less likely that you will be placing reliance on us. We may communicate market opportunities or indicative prices to you as part of the general relationship and we do not consider that this means that we will be deemed to have initiated the transaction;</li> 
+  <li>b) Market practice and “shopping around” – where market practice suggests that you take responsibility for the pricing and other elements of the transaction it is less likely that you will be placing reliance on us; </li> 
+  <li>c) Relative levels of transparency within a market – if we have ready access to prices in the market in which we operates, whereas you do not, it is more likely that you will be placing reliance on us, whereas if our access to pricing transparency is broadly equivalent, it is less likely that you will be placing reliance on us; and </li> <li>d) Information provided by us to you in our terms of business – where our arrangements and agreements with you (such as our terms of business and this policy) state the circumstances in which best execution may not be owed, it is less likely that you will be placing reliance on us. </li> 
+</ul> 
+<p>Where we conclude based on the above factors that you are not legitimately relying on us, this Execution Policy will not apply. Notwithstanding this, even in cases where best execution does not apply, we will always act in your best interests and we are committed to providing an efficient, professional, transparent level of client service. </p> 
+<h4>9. ORDER CAPTURE</h4> 
+<p>We will endeavour to execute an order received by you in a prompt, fair and expeditious manner, taking reasonable steps that are designed to ensure that potential conflicts of interest are managed effectively. Where there is a lapse of time between our first quote and your acceptance of the order which causes delay or where market conditions change; we will still be within our rights to execute the order; provided that the quote is not manifestly out of date and that it would have met the best execution requirements. </p> 
+<h4>10. ORDER HANDLING </h4> 
+<p>We record and execute otherwise comparable orders sequentially and timed to coincide with receipt of the order unless the characteristics of the order or market conditions make it impractical to do so, or if our duty to act in our client’s interests demand otherwise. Orders received in different media will not be treated as comparable. </p> <h4>11. ORDER AGGREGATION AND ALLOCATION </h4> 
+<p>Depending upon the circumstances, market conditions and order size, we may aggregate your order with those of our other clients or with our own transactions.</p> 
+<p>We will pursue this approach where we reasonably believe that it is in the overall best interests of our clients to do so. This means that whilst it is unlikely to work overall to your disadvantage, on occasions, aggregation may result in you obtaining a less favourable price in relation to a particular order. </p> 
+<p>In the case of such aggregated orders being partially executed, we will allocate the executed orders in accordance with our order allocation policy.</p> 
+<h4>12. SPECIFIC CLIENT INSTRUCTIONS </h4> 
+<p>Where you provide us with specific instructions in relation to your entire order, or any aspect of your order, for example a preferred execution venue, 
+we will execute your order in accordance with your instructions. Our best execution obligation will be satisfied by executing the order in accordance with your specific instruction(s). Where the specific instruction covers only part of the order, best execution will continue to apply to the remaining part(s) of the order not covered by your specific instruction(s). </p> 
+<p>You should be aware that where you provide us with specific instructions in relation to the execution of your order, you may prevent us from following some or all of the steps in our Execution Policy to obtain the best possible result for you in respect to those aspects affected by your instructions. </p> 
+<p>While we take all reasonable steps based on the resources available to us and depending upon the market conditions and circumstances as then prevalent to enable us to provide best possible results to you, we cannot guarantee that we will always be able to provide best execution to each and every order executed on your behalf particularly where you give us specific instructions as to all or part of your order. </p> 
+<h4>13. EMFI’s COMMITMENT</h4> 
+<p>EMFI’s commitment to provide you with Best Execution does not mean that we owe you any fiduciary responsibility over and above the specific regulatory obligations placed upon us or as may be otherwise contracted between us.</p> 
+<p>Where we transmit your orders to other authorised firms for execution, we are not required to duplicate efforts, but we will take steps to assess whether such brokers achieve the best possible result for you. </p> 
+<h4>14. CLIENT CONSENT</h4> 
+<p>Under MiFID 2 we are required to obtain your consent to our Execution Policy. We would consider you have provided your consent when you give us an order after receipt of this policy. </p> 
+<p>We are however required to obtain your express prior consent for execution of your order outside a RM, MTF and OTF and for exercising our judgement in the matter of publishing the Limit Orders as described above. We therefore request you to please provide such consent by signing the attached acknowledgement and consents and returning it to us. </p> 
+<p>We are required to publish limit orders given by you should we not be able to execute your order immediately. Please sign and return the attached acknowledgement to confirm that you agree that when you place a limit order with us that is not immediately executable, we are authorised to exercise our discretion to not publish such an order to a regulated market or MTF. </p> 
+<h4>15. CONFLICTS OF INTEREST </h4> 
+<p>EMFI will ensure any potential conflicts of interest, such as internalising a client order, executing orders through an affiliate or the selection of third-party broker, are reviewed as a part of the order execution governance framework to ensure that we consistently obtain the best result for the client and that EMFI are complying with EMFI’s Conflicts of Interest Policy. </p> 
+<h4>16. MONITORING AND REVIEW </h4> 
+<p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p>
+<p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>
+`
+export const regulatoryES = `
+<h4>1. BACKGROUND</h4> 
+<p>This document sets out the execution policy and approach to providing best execution for EMFI Securities Limited (‘EMFI’, “we” or “us”, “our”), as required by the Markets in Financial Instrument Directive 2014/65/EU (including any applicable Level 2 provisions) (“MiFID 2”) as implemented by the UK Financial Conduct Authority (FCA) in its Handbook. This document forms part of our terms of business with you as our client (“you”, “your” “yours”).</p> 
+<h4>2. PURPOSE AND SCOPE</h4> 
+<p>MiFID 2 requires us to take all “sufficient” steps to obtain, when executing client orders, the best possible results for our clients, taking into account price, costs, speed, likelihood of execution, and settlement, size, nature or any other consideration relevant to the execution of the order. However please see the section on client instructions.</p> 
+<p>The obligation to obtain the best possible results for our clients is referred to as our obligation of Best Execution. This policy applies only to clients classified as Professional Clients and only to dealings in Financial Instruments (each as defined in MiFID 2). </p> 
+<h4>3. OBLIGATION AND RELEVANT FACTORS</h4> 
+<p>3.1 Execution Factors</p> 
+<ul> 
+  <li>a) price of execution;</li> 
+  <li>b) costs payable by the client as a result of the execution;</li> 
+  <li>c) the speed and / or likelihood of execution and settlement;</li> 
+  <li>d) the order size;</li> 
+  <li>e) the impact of the order on market prices of displaying the order and or executing an order or part of the order; Costs, meaning explicit costs such as fees, commissions and implicit costs such as market impact</li> 
+</ul> 
+<p>3.2. Relative Importance of Execution Factors</p> 
+<p>When executing client orders, we will take into account the following criteria for determining the relative importance of the Execution Factors above: </p> 
+<ul> 
+  <li>a) the characteristics of the client; </li> 
+  <li>b) the characteristics of the client order; </li> 
+  <li>c) the characteristics of the Financial Instruments that are the subject of that order; and </li> 
+  <li>d) the characteristics of the execution venues to which that order can be directed. </li> 
+</ul> 
+<p>Subject to any specific instructions from you, taking into account the criteria above, we will generally regard net price (net price is the total price paid by the client, net of client commission and fees), followed by speed and or likelihood of execution as the most important factors in the execution of a client order.</p> 
+<p>However, there may be circumstances where the other execution factors should be prioritised above price. We reserve the right to exercise a degree of discretion in how to apply the Execution Factors. This may result in a range of different approaches to executing a client order based on our commercial judgement in the context of relevant available market information and what is in the best interests of our clients.</p> 
+<h4>4. EXECUTION VENUES</h4> 
+<p>This execution policy contains a non-exhaustive list of the venues upon which we place significant reliance when executing client orders on your behalf for each class of Financial Instruments. These venues are used to ensure that on a consistent basis, we provide the best possible results for our clients in cases, where the best execution obligation applies. </p> 
+<p>The venues that we use include: </p> 
+<ul> 
+  <li>a) EMFI and its affiliates, where EMFI internalise client orders; </li> 
+  <li>b) Regulated Markets (RM); </li> 
+  <li>c) Multilateral Trading (MTFs); </li> 
+  <li>d) Organised Trading Facilities (OTFs); </li> 
+  <li>e) Market makers and other liquidity providers; and </li> 
+  <li>f) Non-EEA entities performing similar functions to the above. </li> 
+</ul> 
+<p>Venues may include venues of which we are a direct member or participant and venues we access through third party brokers or dealers.</p> 
+<h4>5. CHOICE OF EXECUTION VENUE</h4> 
+<p>For certain Financial Instruments, our choice of venue may be constrained by the fact that there may only be one venue where a client order can be executed due to the nature of the order, specific instruction(s) or specific requirements. Where a Financial Instrument is only tradable on one venue/market, the only execution factor we will consider is the speed and or likelihood of execution unless a specific instruction indicates otherwise. </p> 
+<p>For some Financial Instruments, we may execute certain orders for you using smart order routing technology, which has been selected and reviewed to ensure that we obtain, on a consistent basis, the best possible outcome for you as our client.</p> 
+<p>Where the Financial Instrument trades on a RM, MTF with the appropriate liquidity, we will aim to execute client orders on such venues, but where the characteristics of the financial instrument or applicable execution factors are deemed appropriate, we may execute client orders outside of these venues. This will be on the basis of having express prior consent from you. </p> 
+<h4>6. SELECTION AND MONITORING </h4> 
+<p>Venues are selected and reviewed based on a number of factors, but primarily to ensure that clients have access to the relevant sources of liquidity. </p> 
+<h4>7. EXECUTING ORDERS OUTSIDE A TRADING VENEUE </h4> 
+<p>As noted above, we may execute an order outside a RM, MTF and OTF. In cases where we execute orders outside an RM, MTF or OTF additional risks such as counterparty risk might exist. </p> 
+<h4>8. ORDER EXECUTION ON BEHALF OF A CLIENT</h4> 
+<p>8.1 Overview </p> 
+<p>The duty to provide best execution will apply where we execute orders on your behalf, including when we act as riskless principal, exercise certain discretions on your behalf (e.g. how and when to execute orders) and where we transmit orders on your behalf to a third-party broker for execution. </p> 
+<p>8.2 Request for Quote </p> <p>When we categorise you as a Professional Client, we will consider relevant FCA and European Securities and Markets Authority guidance to determine whether we are acting on your behalf and whether you are legitimately relying on us to deliver best execution in relation to your order. </p> 
+<p>In relation to a ‘Request for Quote’ order, EMFI will always apply a Four-Fold Test to determine whether there is any legitimate reliance by you. The Four-Fold Test entails consideration of the following factors: </p> 
+<ul> 
+  <li>a) Who initiates the transaction: – where you initiate the transaction, it is less likely that you will be placing reliance on us. We may communicate market opportunities or indicative prices to you as part of the general relationship and we do not consider that this means that we will be deemed to have initiated the transaction;</li> 
+  <li>b) Market practice and “shopping around” – where market practice suggests that you take responsibility for the pricing and other elements of the transaction it is less likely that you will be placing reliance on us; </li> 
+  <li>c) Relative levels of transparency within a market – if we have ready access to prices in the market in which we operates, whereas you do not, it is more likely that you will be placing reliance on us, whereas if our access to pricing transparency is broadly equivalent, it is less likely that you will be placing reliance on us; and </li> <li>d) Information provided by us to you in our terms of business – where our arrangements and agreements with you (such as our terms of business and this policy) state the circumstances in which best execution may not be owed, it is less likely that you will be placing reliance on us. </li> 
+</ul> 
+<p>Where we conclude based on the above factors that you are not legitimately relying on us, this Execution Policy will not apply. Notwithstanding this, even in cases where best execution does not apply, we will always act in your best interests and we are committed to providing an efficient, professional, transparent level of client service. </p> 
+<h4>9. ORDER CAPTURE</h4> 
+<p>We will endeavour to execute an order received by you in a prompt, fair and expeditious manner, taking reasonable steps that are designed to ensure that potential conflicts of interest are managed effectively. Where there is a lapse of time between our first quote and your acceptance of the order which causes delay or where market conditions change; we will still be within our rights to execute the order; provided that the quote is not manifestly out of date and that it would have met the best execution requirements. </p> 
+<h4>10. ORDER HANDLING </h4> 
+<p>We record and execute otherwise comparable orders sequentially and timed to coincide with receipt of the order unless the characteristics of the order or market conditions make it impractical to do so, or if our duty to act in our client’s interests demand otherwise. Orders received in different media will not be treated as comparable. </p> <h4>11. ORDER AGGREGATION AND ALLOCATION </h4> 
+<p>Depending upon the circumstances, market conditions and order size, we may aggregate your order with those of our other clients or with our own transactions.</p> 
+<p>We will pursue this approach where we reasonably believe that it is in the overall best interests of our clients to do so. This means that whilst it is unlikely to work overall to your disadvantage, on occasions, aggregation may result in you obtaining a less favourable price in relation to a particular order. </p> 
+<p>In the case of such aggregated orders being partially executed, we will allocate the executed orders in accordance with our order allocation policy.</p> 
+<h4>12. SPECIFIC CLIENT INSTRUCTIONS </h4> 
+<p>Where you provide us with specific instructions in relation to your entire order, or any aspect of your order, for example a preferred execution venue, 
+we will execute your order in accordance with your instructions. Our best execution obligation will be satisfied by executing the order in accordance with your specific instruction(s). Where the specific instruction covers only part of the order, best execution will continue to apply to the remaining part(s) of the order not covered by your specific instruction(s). </p> 
+<p>You should be aware that where you provide us with specific instructions in relation to the execution of your order, you may prevent us from following some or all of the steps in our Execution Policy to obtain the best possible result for you in respect to those aspects affected by your instructions. </p> 
+<p>While we take all reasonable steps based on the resources available to us and depending upon the market conditions and circumstances as then prevalent to enable us to provide best possible results to you, we cannot guarantee that we will always be able to provide best execution to each and every order executed on your behalf particularly where you give us specific instructions as to all or part of your order. </p> 
+<h4>13. EMFI’s COMMITMENT</h4> 
+<p>EMFI’s commitment to provide you with Best Execution does not mean that we owe you any fiduciary responsibility over and above the specific regulatory obligations placed upon us or as may be otherwise contracted between us.</p> 
+<p>Where we transmit your orders to other authorised firms for execution, we are not required to duplicate efforts, but we will take steps to assess whether such brokers achieve the best possible result for you. </p> 
+<h4>14. CLIENT CONSENT</h4> 
+<p>Under MiFID 2 we are required to obtain your consent to our Execution Policy. We would consider you have provided your consent when you give us an order after receipt of this policy. </p> 
+<p>We are however required to obtain your express prior consent for execution of your order outside a RM, MTF and OTF and for exercising our judgement in the matter of publishing the Limit Orders as described above. We therefore request you to please provide such consent by signing the attached acknowledgement and consents and returning it to us. </p> 
+<p>We are required to publish limit orders given by you should we not be able to execute your order immediately. Please sign and return the attached acknowledgement to confirm that you agree that when you place a limit order with us that is not immediately executable, we are authorised to exercise our discretion to not publish such an order to a regulated market or MTF. </p> 
+<h4>15. CONFLICTS OF INTEREST </h4> 
+<p>EMFI will ensure any potential conflicts of interest, such as internalising a client order, executing orders through an affiliate or the selection of third-party broker, are reviewed as a part of the order execution governance framework to ensure that we consistently obtain the best result for the client and that EMFI are complying with EMFI’s Conflicts of Interest Policy. </p> 
+<h4>16. MONITORING AND REVIEW </h4> 
+<p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p>
+<p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>`
