@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroTextArea from "../HeroTextArea/HeroTextArea";
 import MapContainer from "../../Containers/ChartContainer/ChartContainer";
 import styles from "../../styles/HeroSection.module.scss";
@@ -7,13 +7,30 @@ import LineChartComponent from "../Charts/LineChartComponent/LineChartComponent"
 import Image from "next/image";
 import topArrow from "../../Assets/topArrow.svg";
 import dynamic from "next/dynamic";
+import { isEmpty } from "../../../helper";
 
 type Props = {
   data: any;
 };
 
 const HeroSection = ({ data }: Props) => {
-  console.log("data", data);
+  const [first, setfirst] = useState([]);
+  console.log(
+    data?.display_title_second === "" || data?.graph_type === "global"
+      ? []
+      : console.log(
+          "chart",
+          data?.title,
+          Object.values(data?.chart_data?.benchmark_history_data).map(
+            (data: any) => data[0],
+            data[1]
+          )
+        )
+  );
+
+  useEffect(() => {});
+
+  // console.log("data", data);
   return (
     <div className={styles.HeroWrapper}>
       <HeroTextArea

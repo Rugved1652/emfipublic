@@ -66,12 +66,12 @@ const LineChartComponent = ({ chartData }: any) => {
         <AreaChart
           width={730}
           height={250}
-          data={data}
+          data={chartData}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis
             tickLine={false}
-            dataKey="name"
+            dataKey="created_format"
             style={{
               fontSize: "13px",
               fontFamily: "Inter",
@@ -118,7 +118,7 @@ const LineChartComponent = ({ chartData }: any) => {
           </defs>
           <Area
             type="monotone"
-            dataKey="pv"
+            dataKey="last_price"
             stroke="var(--brand-primary)"
             fillOpacity={1}
             fill="url(#colorUv)"
