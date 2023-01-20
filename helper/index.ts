@@ -12,3 +12,10 @@ export function search(array: any[], key: string, prop: string) {
   const searchResault = array.filter((i: any) => i[prop].includes(key));
   return searchResault;
 }
+
+export function isEmpty(obj: any) {
+  if (obj) {
+    return Object.keys(obj).length === 0;
+  }
+  return false;
+}
