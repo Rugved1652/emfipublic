@@ -6,9 +6,9 @@ const nextConfig = {
     domains: ["uat.emfi.uk"],
   },
   publicRuntimeConfig: {
-    // Will be available on both server and client
     baseURL: process.env.BASE_URL,
     baseURLV1: process.env.BASE_URL_V1,
+    baseURLV2: process.env.BASE_URL_V2,
   },
 };
 

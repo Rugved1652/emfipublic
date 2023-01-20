@@ -17,6 +17,15 @@ export const axiosClientV1 = axios.create({
     "Content-Type": "application/json",
   },
 });
+export const axiosClientV2 = axios.create({
+  baseURL: `${publicRuntimeConfig.baseURLV2}/`,
+  headers: {
+    // Accept: "*/*",
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    "x-requested-with": "XMLHttpRequest",
+  },
+});
 
 axiosClient.interceptors.response.use(
   function (response: any) {
@@ -38,6 +47,16 @@ axiosClientV1.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+axiosClientV2.interceptors.response.use(
+  function (response: any) {
+    return response;
+  },
+  function (error: any) {
+    let res = error;
+    console.log(res, "reser");
+    return Promise.reject(error);
+  }
+);
 
 axiosClient.interceptors.request.use(
   function (request) {
@@ -49,6 +68,15 @@ axiosClient.interceptors.request.use(
   }
 );
 axiosClientV1.interceptors.request.use(
+  function (request) {
+    return request;
+  },
+  function (error) {
+    // console.log(res, "err");
+    return Promise.reject(error);
+  }
+);
+axiosClientV2.interceptors.request.use(
   function (request) {
     return request;
   },

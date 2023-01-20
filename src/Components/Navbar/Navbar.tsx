@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "../../Assets/emfi-logo.svg";
-import LoginModal from "../LoginForm/LoginModal";
+// import LoginModal from "../LoginForm/LoginModal";
 import styles from "../../styles/Navbar.module.scss";
 import { useEffect, useState } from "react";
 import { NavbarRoutes } from "../../constants/routes";
@@ -8,6 +8,10 @@ import Link from "next/link";
 import Toggle from "../../Assets/toggle.png";
 import CloseIcon from "../../Assets/close-icon.svg";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+const LoginModal = dynamic(import("../../Components/LoginForm/LoginModal"), {
+  suspense: true,
+});
 
 type Props = {};
 

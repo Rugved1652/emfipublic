@@ -39,7 +39,7 @@ const Contact = ({ contactDetails }: any) => {
       .number()
       .typeError("Valid Number Required")
       .required("Phone Number Required"),
-    email: yup.string().email().required("Organization Name Required"),
+    email: yup.string().email().required("Email Name Required"),
     business_unit: yup.string().required("Buisness Unit Required"),
     subject: yup.string().required("Subject Requiredd"),
     message: yup.string().required("Message Required"),

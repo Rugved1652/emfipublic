@@ -142,8 +142,8 @@ const Footer = (props: Props) => {
                 </ul>
                 <p className={styles.footerText}>
                   {Router.query.lang === "espanol"
-                    ? FooterRoutes.Social.footerTextEN
-                    : FooterRoutes.Social.footerTextES}
+                    ? FooterRoutes.Social.footerTextES
+                    : FooterRoutes.Social.footerTextEN}
                 </p>
               </div>
             </div>

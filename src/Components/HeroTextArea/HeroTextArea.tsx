@@ -18,7 +18,7 @@ function HeroTextArea({ title, date, description, subHeading }: any) {
       </div>
       <div
         className={styles.heroPara}
-        dangerouslySetInnerHTML={{ __html: description }}
+        dangerouslySetInnerHTML={{ __html: description.slice(0, 600) + "..." }}
       ></div>
       <div className={styles.heroCTA}>
         Read More{" "}
