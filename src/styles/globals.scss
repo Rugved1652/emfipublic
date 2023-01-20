@@ -626,6 +626,9 @@ body .swiper {
   ul {
     list-style: disc;
     padding-left: 2rem;
+    &.legalGroupUl {
+      list-style: none;
+    }
     li {
       padding: 0;
       font-size: 14px;
@@ -2229,6 +2232,14 @@ canvas {
     border-color: #F8D7DA !important;
     color: #721C24 !important;
     .Toastify__progress-bar-theme--light {
-      background: #721C24 !important;
+      background: var(--white-color) !important; 
+    }
+    .Toastify__close-button--light {
+      color: #721C24 !important;
+      opacity: 1 !important;
+      svg {
+        color: #721C24 !important;
+        fill: #721C24 !important;
+      }
     }
   }
