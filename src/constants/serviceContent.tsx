@@ -24,6 +24,7 @@ type ProductContent = {
   image: string;
   subheading: string;
   link: string;
+  sup: string;
 };
 
 type SalesNTradingContent = {
@@ -37,7 +38,7 @@ export const ServicesContentES: ServicesContent[] = [
     id: "01",
     image: SalesNTrading,
     heading: "Sales y Trading ",
-    subheading: "EMFI Securities Limited 2",
+    subheading: "EMFI Securities Limited",
     sup: "2",
     link: "/espanol/services/ourservices/securities",
   },
@@ -45,7 +46,7 @@ export const ServicesContentES: ServicesContent[] = [
     id: "02",
     image: WealthManagement,
     heading: "Gestión de patrimonios",
-    subheading: "EMFI Capital Limited 3",
+    subheading: "EMFI Capital Limited",
     sup: "3",
     link: "/espanol/services/ourservices/wealth",
   },
@@ -53,7 +54,7 @@ export const ServicesContentES: ServicesContent[] = [
     id: "03",
     image: AssetManagement,
     heading: "Gestión de Activos",
-    subheading: "EMFI Fund SPC 4",
+    subheading: "EMFI Fund SPC",
     sup: "4",
     link: "/espanol/services/ourservices/capital",
   },
@@ -61,7 +62,7 @@ export const ServicesContentES: ServicesContent[] = [
     id: "04",
     image: FintechAsAService,
     heading: "Fintech como-Servicio",
-    subheading: "EMFI Analytics Limited 5",
+    subheading: "EMFI Analytics Limited",
     sup: "5",
     link: "/espanol/services/ourservices/fintech",
   },
@@ -71,7 +72,7 @@ export const ServicesContentEN: ServicesContent[] = [
     id: "01",
     image: SalesNTrading,
     heading: "Sales & Trading",
-    subheading: "EMFI Securities Limited 2",
+    subheading: "EMFI Securities Limited",
     sup: "2",
     link: "/english/services/ourservices/securities",
   },
@@ -79,7 +80,7 @@ export const ServicesContentEN: ServicesContent[] = [
     id: "02",
     image: WealthManagement,
     heading: "Wealth Management",
-    subheading: "EMFI Capital Limited 3",
+    subheading: "EMFI Capital Limited",
     sup: "3",
     link: "/english/services/ourservices/wealth",
   },
@@ -87,7 +88,7 @@ export const ServicesContentEN: ServicesContent[] = [
     id: "03",
     image: AssetManagement,
     heading: "Asset Management",
-    subheading: "EMFI Fund SPC 4",
+    subheading: "EMFI Fund SPC",
     sup: "4",
     link: "/english/services/ourservices/capital",
   },
@@ -95,7 +96,7 @@ export const ServicesContentEN: ServicesContent[] = [
     id: "04",
     image: FintechAsAService,
     heading: "Fintech As-A-Service",
-    subheading: "EMFI Analytics Limited 5",
+    subheading: "EMFI Analytics Limited",
     sup: "5",
     link: "/english/services/ourservices/fintech",
   },
@@ -129,52 +130,60 @@ export const ProductContentES: ProductContent[] = [
   {
     id: "01",
     image: ebonds,
-    subheading: "EMFI Securities Limited 2",
+    subheading: "EMFI Securities Limited",
     link: "/espanol/services/ourproducts/ebonds",
+    sup:"2",
   },
   {
     id: "02",
     image: ewealth,
-    subheading: "EMFI Securities Limited 3",
+    subheading: "EMFI Capital Limited",
     link: "/espanol/services/ourproducts/ewealth",
+    sup:"3",
   },
   {
     id: "03",
     image: efund,
-    subheading: "EMFI Securities Limited 4",
+    subheading: "EMFI Fund SPC",
     link: "/espanol/services/ourproducts/efund",
+    sup:"4",
   },
   {
     id: "04",
     image: eintel,
-    subheading: "EMFI Securities Limited 5",
+    subheading: "EMFI Analytics Limited",
     link: "/espanol/services/ourproducts/eintel",
+    sup:"5",
   },
 ];
 export const ProductContentEN: ProductContent[] = [
   {
     id: "01",
     image: ebonds,
-    subheading: "EMFI Securities Limited 2",
+    subheading: "EMFI Securities Limited",
     link: "/english/services/ourproducts/ebonds",
+    sup:"2",
   },
   {
     id: "02",
     image: ewealth,
-    subheading: "EMFI Securities Limited 3",
+    subheading: "EMFI Capital Limited",
     link: "/english/services/ourproducts/ewealth",
+    sup:"3",
   },
   {
     id: "03",
     image: efund,
-    subheading: "EMFI Securities Limited 4",
+    subheading: "EMFI Fund SPC",
     link: "/english/services/ourproducts/efund",
+    sup:"4",
   },
   {
     id: "04",
     image: eintel,
-    subheading: "EMFI Securities Limited 5",
+    subheading: "EMFI Analytics Limited",
     link: "/english/services/ourproducts/eintel",
+    sup:"5",
   },
 ];
 

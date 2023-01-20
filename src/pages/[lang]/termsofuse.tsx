@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { termofUseES } from "../../constants/policies";
+import { termofUseEN, termofUseES } from "../../constants/policies";
 
 type Props = {};
 
-const termsofuse = (props: Props) => {
+const termsofuse = ({termofuse}: any) => {
   return (
     <div className="container">
       <HeroSearch
@@ -13,7 +13,7 @@ const termsofuse = (props: Props) => {
         placeholder="Terms of use"
       />
       <div
-        dangerouslySetInnerHTML={{ __html: termofUseES }}
+        dangerouslySetInnerHTML={{ __html: termofuse }}
         className="legalGroup"
       >
         {/* <p>
@@ -234,5 +234,17 @@ const termsofuse = (props: Props) => {
     </div>
   );
 };
-
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { lang: "english" } }, { params: { lang: "espanol" } }],
+    fallback: false,
+  };
+}
+export async function getStaticProps({ params }: any) {
+  return {
+    props: {
+      termofuse: params?.lang === "espanol" ? termofUseES : termofUseEN,
+    },
+  };
+}
 export default termsofuse;

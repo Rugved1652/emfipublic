@@ -1,4 +1,5 @@
-import Script from "next/script";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { ReactNode } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
@@ -15,18 +16,24 @@ type Props = {
 };
 
 export default function Layout({ children }: Props) {
+  const Router = useRouter();
+  console.log(Router);
+
   return (
     <>
       <div className="">
-        <Script src="../../WaveScript/index.js"></Script> <Navbar />
+       <Navbar />
       </div>
-      <canvas id="waves"></canvas>
+      {/* <canvas id="waves"></canvas> */}
       {/* <React.Suspense fallback={<></>}>
         <TestDemo />
       </React.Suspense> */}
       {children}
       <Footer />
-      <a href="" className="contact-sticky-btn" id="request_demo_btn" >Request Demo</a>
+      {
+        Router?.pathname !== "/[lang]/contact" ? 
+        <Link href={`/${Router.query.lang}/contact`} className="contact-sticky-btn" id="request_demo_btn" >Request Demo</Link> : null
+      }
     </>
   );
 }

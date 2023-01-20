@@ -1,4 +1,4 @@
-FROM 949020832080.dkr.ecr.us-east-1.amazonaws.com/node:16-linux-arm64-v8
+FROM 949020832080.dkr.ecr.us-east-1.amazonaws.com/node:16-linux-amd64
 ARG AWS_REGION 
 ARG AWS_ACCESS_KEY_ID 
 ARG AWS_SECRET_ACCESS_KEY 
@@ -8,6 +8,7 @@ ARG AWS_PARAMETER_NAME
 # Create app directory
 WORKDIR /usr/src/app
 RUN mkdir /usr/src/app/logs/
+
 # copy package.json AND package-lock.json files
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
@@ -16,7 +17,7 @@ RUN apt-get update -y && \
     apt-get install curl -y
 
 #  Installing aws cli 
-RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip" && \
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
     unzip awscliv2.zip && \
     ./aws/install
 
@@ -37,7 +38,10 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# npm build to build the project
+# npm dev to Development the project
+# RUN npm run dev
+
+# npm build to Production the project
 RUN npm run build
 
 EXPOSE 3000

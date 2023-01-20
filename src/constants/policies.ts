@@ -53,649 +53,127 @@ export const cookiespolicyES = [
   },
 ];
 
-export const termofUseEN = `  <p>
-EMFI appreciates your visit to this web site ("EMFI Website") and your
-interest in our services and products. Your privacy is important to us
-and we want you to feel comfortable visiting our site. We take care to
-protect your personal data collected, processed and used during visits
-to the EMFI Website.
-</p>
-<p>
-How we protect or use your data varies from country to country.
-Privacy Notices can be found for certain jurisdictions where EMFI
-entities process personal data. The terms of this Policy will be
-subject to the relevant jurisdiction-specific Privacy Notice where
-applicable. Please click on the jurisdiction that applies to you from
-the list at https://www.emfi.uk/english/privacy-policy
-</p>
-<h4>
-By accessing the EMFI Website you accept this Privacy Policy
-("Policy").
-</h4>
-<p>
-If you do not agree to this Policy, do not proceed to further web
-pages of the EMFI Website.
-</p>
-<h4>1. What are the purpose and the scope of this Policy?</h4>
-<p>
-EMFI Group, its subsidiaries and branches ("EMFI" or "we") are
-committed to safeguarding the personal information that we collect
-from individuals who use the EMFI Website. Accordingly, EMFI has
-developed this Policy to describe how and what type of data will be
-collected from users of the EMFI Website and the purposes for which
-EMFI may collect, share or disclose the data. EMFI also outlines
-reasonable precautions which are taken to keep your data secure.
-</p>
-<p>
-This Policy applies to any information obtained by EMFI through your
-use of the EMFI Website. It is not applicable to any Internet websites
-controlled by third parties not affiliated with EMFI that the EMFI
-Website may link to ("Third Party Sites"). Please review the privacy
-policies of Third Party Sites as EMFI is not responsible for and has
-no influence on the content or the privacy practices of Third Party
-Sites.
-</p>
-<p>
-The terms of this Policy are subject to any additional terms of
-disclaimers or other contractual terms you have entered into with EMFI
-such as client privacy policies or notices, and any applicable
-mandatory laws and regulations.
-</p>
-<h4>
-2. What information do we collect from you and for what purpose?
-</h4>
-<p>
-When you visit the EMFI Website, our web server automatically records
-details about your visit (for example, your IP address, the web site
-from which you visit us, the type of browser software used, the EMFI
-Website pages that you actually visit including the date and the
-duration of your visit).
-</p>
-<p>
-In addition, we collect personal data which you provide through the
-EMFI Website, for example when you enter personal details (e.g. name,
-gender, address, e-mail address, phone/fax number) on a registration
-page or if you sign up for an email newsletter.
-</p>
-<p>EMFI will use your personal data:</p>
-<ul>
-<li>
-  for the purposes of technical administration and research &
-  development of the EMFI Website,
-</li>
-<li>for customer and user administration and marketing,</li>
-<li>to inform you about our services and products, and</li>
-<li>for such purposes as otherwise specified.</li>
-</ul>
-<p>
-EMFI respects applicable laws and regulations in its use of personal
-data.
-</p>
-<h4>3. How do we collect and store information from you?</h4>
-<p>
-EMFI uses tracking technology such as cookies or tags to gather
-information as outlined above (see: "What information do we collect
-from you and for what purpose?") to understand how visitors use the
-EMFI Website.
-</p>
-<p>
-Tracking technology helps us manage and improve the usability of the
-EMFI Website, for example by detecting whether there has been any
-contact between your computer and us in the past and to identify the
-most popular sections of the EMFI Website.
-</p>
-<p>
-Where available, the “Cookies Policy” link at the bottom of the page
-gives you more details about EMFI’s use of cookies, and lets you
-control which types of cookies the EMFI Website may set on your device
-(known as your “cookie settings”). Please ensure that you set your
-cookie settings by un-ticking certain types of cookies if you do not
-consent to their use by EMFI.
-</p>
-<p>
-When you save your cookie settings, they should also apply to your
-future visits to the EMFI Website. However, for technical reasons
-beyond EMFI’s control, this cannot be guaranteed. For example, if you
-reset your browser, delete your cookies or access the EMFI website
-from another browser or device your cookie settings may be lost. To
-comply with applicable laws and regulations, in some countries you may
-be asked to confirm your cookie settings when you first visit the EMFI
-Website. If you are in a country where you are automatically required
-to set your cookie settings, you may be asked to set them again on a
-future visit.
-</p>
-<p>
-In many cases you can also control tracking technologies using your
-browser. Please ensure that your browser setting reflects whether you
-wish to be warned about and/or accept tracking technologies (such as
-cookies) where possible. The specific capabilities of your browser and
-instructions on how to use them can usually be found in the manual or
-help file of your browser.
-</p>
-<p>
-Refusing, disabling or deactivating of tracking technologies may
-result in a reduced availability of the services provided by the EMFI
-Website or parts of the EMFI Website may no longer function correctly.
-</p>
-<h4>
-4. To whom do we disclose your information collected from the EMFI
-Website?
-</h4>
-<p>
-EMFI may disclose your information to its affiliates and their agents
-and third-party providers inside or outside your country of residence
-to perform services for EMFI and for the purposes stated above. Our
-affiliates, agents and third-party providers who have access to
-personal data obtained through the EMFI Website are obliged to respect
-privacy.
-</p>
-<p>
-When transferring personal data internationally we make sure that we
-comply with applicable laws and regulations, for example, by entering
-into agreements which will ensure that the recipients of your
-information maintain an adequate level of data protection.
-</p>
-<p>
-We may also disclose your information to governmental agencies or
-entities, regulatory authorities, or other persons in line with any
-applicable law, regulations, court order or official request, or under
-any and for the purposes of any guidelines issued by regulatory or
-other authorities, or similar processes as either required or
-permitted by applicable law.
-</p>
-<h4>
-5. What security measures have we implemented to protect your
-information collected through the EMFI Website?
-</h4>
-<p>
-EMFI has implemented reasonable technical and organisational security
-measures to protect your personal data collected by EMFI via the EMFI
-Website against unauthorized access, misuse, loss or destruction.
-</p>
-<h4>6. How do we treat electronic messages sent to and from EMFI?</h4>
-<p>
-All electronic messages sent to and from EMFI are automatically
-retained in a journaling system which preserves the evidential weight
-of the e-mails. They are protected by reasonable technical and
-organisational measures and may only be accessed in justified cases in
-line with applicable laws and regulations (e.g. court order, suspicion
-of criminal conduct, violation of regulatory obligations, material
-breach of employment contract) by specific persons in defined
-functions (e.g. Legal, Compliance, Risk). All emails are disposed of
-after the applicable retention period has expired.
-</p>
-<h4>
-7. What should you consider when sending data over the Internet?
-</h4>
-<p>
-The Internet is generally not regarded as a secure environment, and
-information sent via the Internet (such as to or from the EMFI Website
-or via electronic message) may be accessed by unauthorized third
-parties, potentially leading to disclosures, changes in content or
-technical failures. Even if both sender and receiver are located in
-the same country, information sent via the Internet may be transmitted
-across international borders and be forwarded to a country with a
-lower data protection level than exists in your country of residence.
-</p>
-<h4>
-8. How do we deal with information from individuals under the age of
-18?
-</h4>
-<p>
-The EMFI Website does not seek to collect personal data from
-individuals under the age of 18. Individuals under the age of 18
-should receive permission from their parent or legal guardian before
-providing any personal data to EMFI on the EMFI Website.
-</p>
-<h4>9. How can you access or review your personal data?</h4>
-<ul>
-<li>check whether we hold your personal data,</li>
-<li>ask us to provide you with a copy of your personal data, or</li>
-<li>
-  require us to correct any of your personal data that is inaccurate.
-</li>
-</ul>
-<p>
-Should you have a request regarding the processing of your personal
-data please send an email to the following address: compliance@emfi.uk
-</p>
-<h4>10. Status of this privacy notice</h4>
-<p>
-This privacy notice was updated in December 2018. We reserve the right
-to amend it from time to time. Any future changes or additions to the
-processing of personal data as described in this notice affecting you
-can be viewed on the EMFI website at
-https://www.emfi.uk/english/privacy-policy.
-</p>`;
+export const termofUseES = `  <p>Estos Términos de uso se aplican a <a href="http://emfi.uk/espanol">emfi.uk</a>, así como a otros sitios afiliados, servicios digitales o aplicaciones en los que aparece un enlace a estos Términos de uso (colectivamente, el "Sitio web EMFI") y se aplican a todos los visitantes. Estos Términos de uso y cualquier otro término que aparezca en la página desde la que se lo dirigió a estos Términos de uso rigen el uso que usted hace del sitio web de EMFI. Al acceder al sitio web de EMFI, usted acepta estar legalmente obligado por los Términos de uso vigentes. Consulte también la información legal adicional pertinente aplicable a su país.</p>
 
-export const privacypolicyEN = `
-<p>
-EMFI appreciates your visit to this web site ("EMFI Website") and your
-interest in our services and products. Your privacy is important to us
-and we want you to feel comfortable visiting our site. We take care to
-protect your personal data collected, processed and used during visits
-to the EMFI Website.
-</p>
-<p>
-How we protect or use your data varies from country to country.
-Privacy Notices can be found for certain jurisdictions where EMFI
-entities process personal data. The terms of this Policy will be
-subject to the relevant jurisdiction-specific Privacy Notice where
-applicable. Please click on the jurisdiction that applies to you from
-the list at https://www.emfi.uk/english/privacy-policy
-</p>
-<h4>
-By accessing the EMFI Website you accept this Privacy Policy
-("Policy").
-</h4>
-<p>
-If you do not agree to this Policy, do not proceed to further web
-pages of the EMFI Website.
-</p>
-<h4>1. What are the purpose and the scope of this Policy?</h4>
-<p>
-EMFI Group, its subsidiaries and branches ("EMFI" or "we") are
-committed to safeguarding the personal information that we collect
-from individuals who use the EMFI Website. Accordingly, EMFI has
-developed this Policy to describe how and what type of data will be
-collected from users of the EMFI Website and the purposes for which
-EMFI may collect, share or disclose the data. EMFI also outlines
-reasonable precautions which are taken to keep your data secure.
-</p>
-<p>
-This Policy applies to any information obtained by EMFI through your
-use of the EMFI Website. It is not applicable to any Internet websites
-controlled by third parties not affiliated with EMFI that the EMFI
-Website may link to ("Third Party Sites"). Please review the privacy
-policies of Third Party Sites as EMFI is not responsible for and has
-no influence on the content or the privacy practices of Third Party
-Sites.
-</p>
-<p>
-The terms of this Policy are subject to any additional terms of
-disclaimers or other contractual terms you have entered into with EMFI
-such as client privacy policies or notices, and any applicable
-mandatory laws and regulations.
-</p>
-<h4>
-2. What information do we collect from you and for what purpose?
-</h4>
-<p>
-When you visit the EMFI Website, our web server automatically records
-details about your visit (for example, your IP address, the web site
-from which you visit us, the type of browser software used, the EMFI
-Website pages that you actually visit including the date and the
-duration of your visit).
-</p>
-<p>
-In addition, we collect personal data which you provide through the
-EMFI Website, for example when you enter personal details (e.g. name,
-gender, address, e-mail address, phone/fax number) on a registration
-page or if you sign up for an email newsletter.
-</p>
-<p>EMFI will use your personal data:</p>
-<ul>
-<li>
-  for the purposes of technical administration and research &
-  development of the EMFI Website,
-</li>
-<li>for customer and user administration and marketing,</li>
-<li>to inform you about our services and products, and</li>
-<li>for such purposes as otherwise specified.</li>
-</ul>
-<p>
-EMFI respects applicable laws and regulations in its use of personal
-data.
-</p>
-<h4>3. How do we collect and store information from you?</h4>
-<p>
-EMFI uses tracking technology such as cookies or tags to gather
-information as outlined above (see: "What information do we collect
-from you and for what purpose?") to understand how visitors use the
-EMFI Website.
-</p>
-<p>
-Tracking technology helps us manage and improve the usability of the
-EMFI Website, for example by detecting whether there has been any
-contact between your computer and us in the past and to identify the
-most popular sections of the EMFI Website.
-</p>
-<p>
-Where available, the “Cookies Policy” link at the bottom of the page
-gives you more details about EMFI’s use of cookies, and lets you
-control which types of cookies the EMFI Website may set on your device
-(known as your “cookie settings”). Please ensure that you set your
-cookie settings by un-ticking certain types of cookies if you do not
-consent to their use by EMFI.
-</p>
-<p>
-When you save your cookie settings, they should also apply to your
-future visits to the EMFI Website. However, for technical reasons
-beyond EMFI’s control, this cannot be guaranteed. For example, if you
-reset your browser, delete your cookies or access the EMFI website
-from another browser or device your cookie settings may be lost. To
-comply with applicable laws and regulations, in some countries you may
-be asked to confirm your cookie settings when you first visit the EMFI
-Website. If you are in a country where you are automatically required
-to set your cookie settings, you may be asked to set them again on a
-future visit.
-</p>
-<p>
-In many cases you can also control tracking technologies using your
-browser. Please ensure that your browser setting reflects whether you
-wish to be warned about and/or accept tracking technologies (such as
-cookies) where possible. The specific capabilities of your browser and
-instructions on how to use them can usually be found in the manual or
-help file of your browser.
-</p>
-<p>
-Refusing, disabling or deactivating of tracking technologies may
-result in a reduced availability of the services provided by the EMFI
-Website or parts of the EMFI Website may no longer function correctly.
-</p>
-<h4>
-4. To whom do we disclose your information collected from the EMFI
-Website?
-</h4>
-<p>
-EMFI may disclose your information to its affiliates and their agents
-and third-party providers inside or outside your country of residence
-to perform services for EMFI and for the purposes stated above. Our
-affiliates, agents and third-party providers who have access to
-personal data obtained through the EMFI Website are obliged to respect
-privacy.
-</p>
-<p>
-When transferring personal data internationally we make sure that we
-comply with applicable laws and regulations, for example, by entering
-into agreements which will ensure that the recipients of your
-information maintain an adequate level of data protection.
-</p>
-<p>
-We may also disclose your information to governmental agencies or
-entities, regulatory authorities, or other persons in line with any
-applicable law, regulations, court order or official request, or under
-any and for the purposes of any guidelines issued by regulatory or
-other authorities, or similar processes as either required or
-permitted by applicable law.
-</p>
-<h4>
-5. What security measures have we implemented to protect your
-information collected through the EMFI Website?
-</h4>
-<p>
-EMFI has implemented reasonable technical and organisational security
-measures to protect your personal data collected by EMFI via the EMFI
-Website against unauthorized access, misuse, loss or destruction.
-</p>
-<h4>6. How do we treat electronic messages sent to and from EMFI?</h4>
-<p>
-All electronic messages sent to and from EMFI are automatically
-retained in a journaling system which preserves the evidential weight
-of the e-mails. They are protected by reasonable technical and
-organisational measures and may only be accessed in justified cases in
-line with applicable laws and regulations (e.g. court order, suspicion
-of criminal conduct, violation of regulatory obligations, material
-breach of employment contract) by specific persons in defined
-functions (e.g. Legal, Compliance, Risk). All emails are disposed of
-after the applicable retention period has expired.
-</p>
-<h4>
-7. What should you consider when sending data over the Internet?
-</h4>
-<p>
-The Internet is generally not regarded as a secure environment, and
-information sent via the Internet (such as to or from the EMFI Website
-or via electronic message) may be accessed by unauthorized third
-parties, potentially leading to disclosures, changes in content or
-technical failures. Even if both sender and receiver are located in
-the same country, information sent via the Internet may be transmitted
-across international borders and be forwarded to a country with a
-lower data protection level than exists in your country of residence.
-</p>
-<h4>
-8. How do we deal with information from individuals under the age of
-18?
-</h4>
-<p>
-The EMFI Website does not seek to collect personal data from
-individuals under the age of 18. Individuals under the age of 18
-should receive permission from their parent or legal guardian before
-providing any personal data to EMFI on the EMFI Website.
-</p>
-<h4>9. How can you access or review your personal data?</h4>
-<li>check whether we hold your personal data,</li>
-<li>ask us to provide you with a copy of your personal data, or</li>
-<li>
-require us to correct any of your personal data that is inaccurate.
-</li>
-<p>
-Should you have a request regarding the processing of your personal
-data please send an email to the following address: compliance@emfi.uk
-</p>
-<h4>10. Status of this privacy notice</h4>
-<p>
-This privacy notice was updated in December 2018. We reserve the right
-to amend it from time to time. Any future changes or additions to the
-processing of personal data as described in this notice affecting you
-can be viewed on the EMFI website at
-https://www.emfi.uk/english/privacy-policy.
-</p>`;
+<p>Estos Términos de uso, así como la información y los materiales contenidos en el sitio web de EMFI están sujetos a cambios en cualquier momento y de vez en cuando, sin previo aviso. EMFI puede agregar características o eliminar características del sitio web de EMFI en cualquier momento y de vez en cuando a nuestro exclusivo criterio. El acceso continuado al sitio web de EMFI después de cualquier modificación en estos Términos de uso constituirá su aceptación de los Términos de uso modificados. Si no acepta estar sujeto a estos Términos de uso, no use el sitio web de EMFI.</p>
 
-export const termofUseES = `  <p>
-EMFI appreciates your visit to this web site ("EMFI Website") and your
-interest in our services and products. Your privacy is important to us
-and we want you to feel comfortable visiting our site. We take care to
-protect your personal data collected, processed and used during visits
-to the EMFI Website.
-</p>
-<p>
-How we protect or use your data varies from country to country.
-Privacy Notices can be found for certain jurisdictions where EMFI
-entities process personal data. The terms of this Policy will be
-subject to the relevant jurisdiction-specific Privacy Notice where
-applicable. Please click on the jurisdiction that applies to you from
-the list at https://www.emfi.uk/english/privacy-policy
-</p>
-<h4>
-By accessing the EMFI Website you accept this Privacy Policy
-("Policy").
-</h4>
-<p>
-If you do not agree to this Policy, do not proceed to further web
-pages of the EMFI Website.
-</p>
-<h4>1. What are the purpose and the scope of this Policy?</h4>
-<p>
-EMFI Group, its subsidiaries and branches ("EMFI" or "we") are
-committed to safeguarding the personal information that we collect
-from individuals who use the EMFI Website. Accordingly, EMFI has
-developed this Policy to describe how and what type of data will be
-collected from users of the EMFI Website and the purposes for which
-EMFI may collect, share or disclose the data. EMFI also outlines
-reasonable precautions which are taken to keep your data secure.
-</p>
-<p>
-This Policy applies to any information obtained by EMFI through your
-use of the EMFI Website. It is not applicable to any Internet websites
-controlled by third parties not affiliated with EMFI that the EMFI
-Website may link to ("Third Party Sites"). Please review the privacy
-policies of Third Party Sites as EMFI is not responsible for and has
-no influence on the content or the privacy practices of Third Party
-Sites.
-</p>
-<p>
-The terms of this Policy are subject to any additional terms of
-disclaimers or other contractual terms you have entered into with EMFI
-such as client privacy policies or notices, and any applicable
-mandatory laws and regulations.
-</p>
-<h4>
-2. What information do we collect from you and for what purpose?
-</h4>
-<p>
-When you visit the EMFI Website, our web server automatically records
-details about your visit (for example, your IP address, the web site
-from which you visit us, the type of browser software used, the EMFI
-Website pages that you actually visit including the date and the
-duration of your visit).
-</p>
-<p>
-In addition, we collect personal data which you provide through the
-EMFI Website, for example when you enter personal details (e.g. name,
-gender, address, e-mail address, phone/fax number) on a registration
-page or if you sign up for an email newsletter.
-</p>
-<p>EMFI will use your personal data:</p>
-<ul>
-<li>
-  for the purposes of technical administration and research &
-  development of the EMFI Website,
-</li>
-<li>for customer and user administration and marketing,</li>
-<li>to inform you about our services and products, and</li>
-<li>for such purposes as otherwise specified.</li>
-</ul>
-<p>
-EMFI respects applicable laws and regulations in its use of personal
-data.
-</p>
-<h4>3. How do we collect and store information from you?</h4>
-<p>
-EMFI uses tracking technology such as cookies or tags to gather
-information as outlined above (see: "What information do we collect
-from you and for what purpose?") to understand how visitors use the
-EMFI Website.
-</p>
-<p>
-Tracking technology helps us manage and improve the usability of the
-EMFI Website, for example by detecting whether there has been any
-contact between your computer and us in the past and to identify the
-most popular sections of the EMFI Website.
-</p>
-<p>
-Where available, the “Cookies Policy” link at the bottom of the page
-gives you more details about EMFI’s use of cookies, and lets you
-control which types of cookies the EMFI Website may set on your device
-(known as your “cookie settings”). Please ensure that you set your
-cookie settings by un-ticking certain types of cookies if you do not
-consent to their use by EMFI.
-</p>
-<p>
-When you save your cookie settings, they should also apply to your
-future visits to the EMFI Website. However, for technical reasons
-beyond EMFI’s control, this cannot be guaranteed. For example, if you
-reset your browser, delete your cookies or access the EMFI website
-from another browser or device your cookie settings may be lost. To
-comply with applicable laws and regulations, in some countries you may
-be asked to confirm your cookie settings when you first visit the EMFI
-Website. If you are in a country where you are automatically required
-to set your cookie settings, you may be asked to set them again on a
-future visit.
-</p>
-<p>
-In many cases you can also control tracking technologies using your
-browser. Please ensure that your browser setting reflects whether you
-wish to be warned about and/or accept tracking technologies (such as
-cookies) where possible. The specific capabilities of your browser and
-instructions on how to use them can usually be found in the manual or
-help file of your browser.
-</p>
-<p>
-Refusing, disabling or deactivating of tracking technologies may
-result in a reduced availability of the services provided by the EMFI
-Website or parts of the EMFI Website may no longer function correctly.
-</p>
-<h4>
-4. To whom do we disclose your information collected from the EMFI
-Website?
-</h4>
-<p>
-EMFI may disclose your information to its affiliates and their agents
-and third-party providers inside or outside your country of residence
-to perform services for EMFI and for the purposes stated above. Our
-affiliates, agents and third-party providers who have access to
-personal data obtained through the EMFI Website are obliged to respect
-privacy.
-</p>
-<p>
-When transferring personal data internationally we make sure that we
-comply with applicable laws and regulations, for example, by entering
-into agreements which will ensure that the recipients of your
-information maintain an adequate level of data protection.
-</p>
-<p>
-We may also disclose your information to governmental agencies or
-entities, regulatory authorities, or other persons in line with any
-applicable law, regulations, court order or official request, or under
-any and for the purposes of any guidelines issued by regulatory or
-other authorities, or similar processes as either required or
-permitted by applicable law.
-</p>
-<h4>
-5. What security measures have we implemented to protect your
-information collected through the EMFI Website?
-</h4>
-<p>
-EMFI has implemented reasonable technical and organisational security
-measures to protect your personal data collected by EMFI via the EMFI
-Website against unauthorized access, misuse, loss or destruction.
-</p>
-<h4>6. How do we treat electronic messages sent to and from EMFI?</h4>
-<p>
-All electronic messages sent to and from EMFI are automatically
-retained in a journaling system which preserves the evidential weight
-of the e-mails. They are protected by reasonable technical and
-organisational measures and may only be accessed in justified cases in
-line with applicable laws and regulations (e.g. court order, suspicion
-of criminal conduct, violation of regulatory obligations, material
-breach of employment contract) by specific persons in defined
-functions (e.g. Legal, Compliance, Risk). All emails are disposed of
-after the applicable retention period has expired.
-</p>
-<h4>
-7. What should you consider when sending data over the Internet?
-</h4>
-<p>
-The Internet is generally not regarded as a secure environment, and
-information sent via the Internet (such as to or from the EMFI Website
-or via electronic message) may be accessed by unauthorized third
-parties, potentially leading to disclosures, changes in content or
-technical failures. Even if both sender and receiver are located in
-the same country, information sent via the Internet may be transmitted
-across international borders and be forwarded to a country with a
-lower data protection level than exists in your country of residence.
-</p>
-<h4>
-8. How do we deal with information from individuals under the age of
-18?
-</h4>
-<p>
-The EMFI Website does not seek to collect personal data from
-individuals under the age of 18. Individuals under the age of 18
-should receive permission from their parent or legal guardian before
-providing any personal data to EMFI on the EMFI Website.
-</p>
-<h4>9. How can you access or review your personal data?</h4>
-<ul>
-<li>check whether we hold your personal data,</li>
-<li>ask us to provide you with a copy of your personal data, or</li>
-<li>
-  require us to correct any of your personal data that is inaccurate.
-</li>
-</ul>
-<p>
-Should you have a request regarding the processing of your personal
-data please send an email to the following address: compliance@emfi.uk
-</p>
-<h4>10. Status of this privacy notice</h4>
-<p>
-This privacy notice was updated in December 2018. We reserve the right
-to amend it from time to time. Any future changes or additions to the
-processing of personal data as described in this notice affecting you
-can be viewed on the EMFI website at
-https://www.emfi.uk/english/privacy-policy.
-</p>`;
+<h4>Acceso sujeto a restricciones locales</h4>
+
+<p>El sitio web de EMFI y toda la información y funcionalidades incluidas en ellos no están dirigidos ni destinados a ser utilizados por ninguna persona residente o ubicada en ninguna jurisdicción donde (1) la distribución de dicha información o funcionalidad sea contraria a las leyes de dicha jurisdicción; o (2) dicha distribución está prohibida sin la obtención de las licencias o autorizaciones necesarias por parte de la sucursal, subsidiaria o filial de EMFI correspondiente y no se han obtenido dichas licencias o autorizaciones.</p>
+
+<h4>Servicios y Productos</h4>
+
+<p>Los productos y servicios que se muestran en el sitio web de EMFI pueden no ser elegibles para la venta o estar disponibles para los residentes de ciertos países o ciertas categorías de inversores. Consulte los términos y condiciones aplicables, como las restricciones de ventas o las notas clave específicas para obtener más información. Todos los materiales, información o informes publicados, distribuidos o puestos a disposición en el sitio web de EMFI se publican con fines informativos y están sujetos a cambios en cualquier momento sin previo aviso. No tienen en cuenta los objetivos de inversión específicos, la situación financiera o las necesidades particulares de ningún destinatario específico y no deben interpretarse como una solicitud, oferta o recomendación para comprar o vender valores, inversiones u otros instrumentos financieros, para efectuar transacciones o para concluir cualquier acto legal de cualquier tipo que sea. A menos que se especifique lo contrario, toda la información de precios es solo indicativa. No se proporciona ninguna representación o garantía, ya sea expresa o implícita, en relación con la precisión, integridad o fiabilidad de los materiales, ni son una declaración completa de los valores, mercados o desarrollos a los que se hace referencia en este documento. Los materiales no deben ser considerados por los destinatarios como un sustituto del ejercicio de su propio juicio. Cualquier opinión está sujeta a cambios sin previo aviso y puede diferir o ser contraria a las opiniones expresadas por otras áreas comerciales o grupos de EMFI como resultado del uso de diferentes supuestos y criterios. EMFI no tiene ninguna obligación de actualizar o mantener al día la información contenida en este documento ni de eliminar información desactualizada del sitio web de EMFI o de marcar expresamente que está desactualizada.</p>
+
+<h4>Sin ofertas</h4>
+
+<p>Toda la información y los materiales publicados, distribuidos o de otro modo disponibles en el sitio web de EMFI se brindan con fines informativos, solo para su uso personal no comercial. Ninguna información o material publicado en el sitio web de EMFI constituye una solicitud, una oferta o una recomendación para comprar o vender cualquier instrumento de inversión, para llevar a cabo cualquier transacción o para concluir cualquier acto legal de ningún tipo. EMFI no brinda asesoría legal, impositiva o de inversión a través del sitio web de EMFI y nada de lo aquí contenido debe interpretarse como asesoramiento financiero, legal, impositivo o de otro tipo. EMFI no representa que los valores o servicios discutidos sean adecuados para cualquier inversor. No se deben realizar inversiones u otras decisiones basadas únicamente en los contenidos o la información que se encuentra en el sitio web de EMFI. Al tomar una decisión sobre sus inversiones, debe buscar el asesoramiento de un asesor financiero profesional o un experto calificado.</p>
+
+<h4>Actuación</h4>
+
+<p>El rendimiento futuro de una inversión no puede deducirse del valor de mercado anterior, es decir, el valor de una inversión puede disminuir o aumentar. Una inversión también puede perder valor debido a cambios en las tasas de cambio. EMFI no puede garantizar que cualquier capital invertido mantendrá o aumentará su valor.</p>
+
+<h4>Declaraciones prospectivas</h4>
+
+<p>El sitio web de EMFI puede contener declaraciones que constituyen "declaraciones prospectivas". Si bien estas declaraciones prospectivas pueden representar el juicio de EMFI y las expectativas futuras, una serie de riesgos, incertidumbres y otros factores importantes podrían causar que los desarrollos y resultados reales difieran materialmente de las expectativas de EMFI. EMFI no tiene la obligación (y renuncia expresamente a tal obligación) de actualizar o modificar sus declaraciones prospectivas, ya sea como resultado de nueva información, eventos futuros o de otro tipo.</p>
+
+<h4>Sin garantía</h4>
+
+<p>Su uso del sitio web de EMFI es bajo su propio riesgo. El sitio web de EMFI, junto con todo el contenido, la información y los materiales contenidos en él, se proporciona "tal cual" y "según disponibilidad", sin ninguna representación o garantía de ningún tipo. Cualquier material, información o contenido al que se acceda, descargue u obtenga mediante el uso del sitio web de EMFI se realiza bajo su propio riesgo y EMFI no es responsable por ningún daño a sus sistemas informáticos o pérdida de datos que resulte de la descarga de dicho material. EMFI y sus afiliados expresamente renuncian a todas las representaciones o garantías de cualquier tipo, ya sean expresas o implícitas, con respecto al sitio web de EMFI, y todos los materiales, información, contenido y funcionalidades contenidas en este documento, incluyendo pero no limitado a garantías de título, no infracción , comerciabilidad o adecuación para un propósito particular. Sin limitar lo anterior, EMFI no garantiza la precisión, puntualidad, integridad, seguridad, confiabilidad o disponibilidad del sitio web de EMFI o la información o los resultados obtenidos del uso del sitio web de EMFI, o que el sitio web de EMFI estará disponible en todo momento, o está libre de virus o sin errores.</p>
+
+<h4>Ninguna responsabilidad</h4>
+
+<p>En la máxima medida permitida por la ley, en ningún caso EMFI o nuestros afiliados, ni ninguno de nuestros directores, empleados, contratistas, proveedores de servicios o agentes tendrán responsabilidad alguna con respecto a cualquier persona por cualquier pérdida, responsabilidad, costo o reclamo directo o indirecto. , gastos o daños de cualquier tipo, ya sea por contrato o por agravio, incluyendo negligencia, o de otro modo, que surjan o estén relacionados con el uso de todo o parte del sitio web de EMFI, o cualquier enlace a sitios web de terceros. Usted es el único responsable de adquirir y mantener dichos dispositivos y equipos electrónicos que pueden manejar y le permitirán acceder y usar el sitio web de EMFI y tomar medidas adecuadas y adecuadas de seguridad de datos de acuerdo con las buenas prácticas de la industria para protegerse contra el fraude o cibercompetencia,ataques de forma continua (por ejemplo, mediante el uso de las versiones más recientes del navegador e instalación de parches de seguridad recomendados y programas antivirus y cortafuegos actualizados). EMFI específicamente se exime de toda responsabilidad por cualquier alteración del sistema informático de un usuario por parte de terceros no autorizados, o por pérdidas o responsabilidades sufridas por cualquier usuario que surjan de virus o ataques de piratas informáticos.</p>
+
+<p>En ningún caso EMFI o nuestros afiliados, ni ninguno de nuestros funcionarios, directores, empleados, contratistas, proveedores de servicios o agentes serán responsables por ningún daño incidental, especial, punitivo o consecuente, independientemente de las causas que surjan del uso del sitio web EMFI, su contenido, o la imposibilidad de usar el sitio web de EMFI.</p>
+
+<p>Esta exención de responsabilidad se aplica a todos y cada uno de los daños y perjuicios, incluidos los causados por la falta de rendimiento, error, omisión, interrupción, eliminación, defecto, retraso en la operación o transmisión, virus informático, falla de la línea de comunicación, robo, destrucción o acceso no autorizado, ya sea por incumplimiento de contrato, conducta dolosa, negligencia o bajo cualquier otra causa de acción.</p>
+
+<h4>Enlaces</h4>
+
+<p>El sitio web de EMFI puede contener contenido de terceros o enlaces a sitios web de terceros. Estos contenidos y enlaces se proporcionan únicamente para su comodidad e información. EMFI no tiene control sobre, no asume ninguna responsabilidad y no garantiza ni representa el contenido o sitios web de terceros, incluidos, entre otros, la precisión, el contenido, la calidad o la puntualidad. EMFI no será responsable por el contenido de terceros o sitios web o sitios web que vinculen o enlacen el sitio web de EMFI.</p>
+
+<h4>Marcadores sociales</h4>
+
+<p>El sitio web de EMFI puede contener marcadores sociales que son identificables por medio de sus respectivos botones. Los marcadores sociales permiten a los usuarios de ciertas plataformas de redes sociales publicar enlaces a páginas web de EMFI seleccionadas en sus cuentas de redes sociales para marcarlos o compartirlos con sus contactos de redes sociales. Si usa marcadores sociales, enviará datos de identificación personal a la plataforma de redes sociales correspondiente. Cualquier comentario o actividad llevado a cabo o llevado a cabo personas que usan marcadores sociales no es controlado, endosado o monitoreado por EMFI y EMFI no será responsable o responsable de los mismos. Las personas que comparten las comunicaciones de EMFI a través de los marcadores sociales no están autorizadas para hablar o representar a EMFI, y sus puntos de vista y opiniones deben considerarse estrictamente propios y no de EMFI. Además, las disposiciones de estos Términos de uso relacionadas con los Enlaces también se aplican a los marcadores sociales.</p>
+
+<h4>Derechos de propiedad intelectual</h4>
+
+<p>EMFI, o el tercero propietario correspondiente, conserva todos los derechos, títulos e intereses (incluidos los derechos de autor, marcas comerciales, patentes, así como cualquier otro derecho de propiedad intelectual u otro) en toda la información y contenido (incluidos todos los textos, datos, gráficos y logotipos ) en el sitio web de EMFI. Las páginas y / o secciones individuales del sitio web de EMFI pueden imprimirse solo para uso personal o interno, y siempre que dichas copias impresas conserven todos los avisos de derechos de autor u otros avisos de propiedad. Todos los usuarios no deben, sin limitación, modificar, copiar, transmitir, distribuir, mostrar, ejecutar, reproducir, publicar, licenciar, enmarcar, crear trabajos derivados, transferir o usar de cualquier otra forma, ya sea en su totalidad o en parte, cualquier información, texto, gráficos, imágenes, video clips, directorios, bases de datos, listados o software obtenidos del sitio web de EMFI para fines comerciales o públicos, sin el permiso previo por escrito de EMFI. Recuperación sistemática del contenido del sitio web de EMFI para crear o compilar, directa o indirectamente, una colección, compilación, base de datos o directorio (ya sea a través de robots, arañas, dispositivos automáticos o procesos manuales) o crear enlaces al sitio web de EMFI sin el permiso previo por escrito de EMFI está estrictamente prohibido. El logotipo de EMFI y EMFI se encuentran entre las marcas registradas y no registradas de EMFI. Otras marcas pueden ser marcas registradas de sus respectivos dueños. Con excepción de lo mencionado anteriormente, no puede usar ninguna marca comercial de EMFI para ningún propósito sin el permiso previo por escrito de EMFI.</p>
+
+<h4>Comunicación electrónica (E-Mail)</h4>
+
+<p>Internet es un medio accesible universalmente. Los mensajes ordinarios de correo electrónico enviados a través de Internet no son confidenciales ni seguros. Pueden ser fácilmente accesibles por terceros y pueden implicar una cantidad considerable de peligro y riesgo, incluyendo: (a) falta de confidencialidad (los correos electrónicos y sus archivos adjuntos pueden leerse y / o monitorearse sin detección); (b) manipulación o falsificación de la dirección del remitente o del contenido del correo electrónico (o del archivo adjunto) (por ejemplo, cambio de la (s) dirección (es) del remitente o detalles); (c) interrupciones del sistema y otros errores de transmisión, que pueden causar correos electrónicos y. sus archivos adjuntos serán retrasados, mutilados, enviados incorrectamente y eliminados; (d) los virus, gusanos, caballos de Troya, etc. pueden propagarse sin ser detectados por terceros y pueden causar daños considerables; y (e) intercepción por terceros.</p>
+
+<p>Por lo tanto, se recomienda comunicarse con EMFI utilizando un canal seguro si dicho canal es provisto por EMFI. En ningún caso debe usar un correo electrónico ordinario para transmitir información personal o confidencial, como cualquier información relacionada con la cuenta.</p>
+
+<p>A menos que se indique lo contrario, EMFI no acepta ninguna orden o instrucción enviada por correo electrónico o cualquier otro sistema de mensajería electrónica. EMFI no será responsable ante usted ni ante terceros por los daños ocasionados en relación con los mensajes enviados a EMFI mediante correo electrónico ordinario o cualquier otro sistema de mensajería electrónica.</p>
+
+<h4>Política de privacidad</h4>
+
+<p>EMFI ha establecido una Política de privacidad, modificada de vez en cuando, que explica cómo se recopilan los datos personales en el sitio web de EMFI y cómo se usan. La Política de privacidad es parte de estos Términos de uso y se incorpora aquí como referencia.</p>
+
+<h4>Cláusula de separabilidad</h4>
+
+<p>En la medida en que cualquier disposición de estos Términos de uso sea encontrada por un tribunal o autoridad competente como inválida, ilegal o inaplicable en cualquier jurisdicción, dicha disposición se considerará separada de estos Términos de uso, pero dicha determinación no afectará al validez, legalidad o exigibilidad del resto de estos Términos de uso en esa jurisdicción, ni afectará la validez, legalidad o aplicabilidad de estos Términos de uso en ninguna otra jurisdicción.</p>
+
+<h4>Conflicto con términos adicionales</h4>
+
+<p>Ciertas páginas web o áreas en el sitio web de EMFI pueden contener términos, condiciones, divulgaciones y renuncias adicionales (colectivamente, los "Términos adicionales"). En caso de conflicto entre estos Términos de uso y los Términos adicionales, los Términos adicionales regirán para esas páginas web o áreas.</p>`;
+
+export const termofUseEN = `  <p>These Terms of Use apply to <a href="http://emfi.uk">emfi.uk</a> as well as any other affiliated sites, digital services, or applications on which a link to these Terms of Use appears (collectively, the "EMFI Website") and apply to all visitors. These Terms of Use and any other terms that appear on the page from which you were directed to these Terms of Use govern your use of the EMFI Website. By accessing the EMFI Website, you agree to be legally bound by the Terms of Use then in effect. Please also refer to the relevant additional legal information applicable to your country.</p>
+<p>These Terms of Use as well as the information and materials contained in the EMFI Website are subject to change at any time and from time to time, without notice. EMFI may add features to or remove features from the EMFI Website at any time and from time to time in our sole discretion. Continued access to the EMFI Website following any modification in these Terms of Use will constitute your acceptance of the Terms of Use as modified. If you do not agree to be bound by these Terms of Use, do not use the EMFI Website.</p>
+<h4>Access Subject to Local Restrictions</h4>
+<p>The EMFI Website and all information and functionalities contained within them are not directed at or intended for use by any person resident or located in any jurisdiction where (1) the distribution of such information or functionality is contrary to the laws of such jurisdiction; or (2) such distribution is prohibited without obtaining the necessary licenses or authorizations by the relevant branch, subsidiary or affiliate office of EMFI and such licenses or authorizations have not been obtained.</p>
+<h4>Services and Products</h4>
+<p>Products and services displayed on the EMFI Website may not be eligible for sale or available to residents of certain countries or certain categories of investors. Please consult the applicable terms and conditions such as sales restrictions or key specific notes for further information. Any materials, information or reports published, distributed or otherwise made available on the EMFI Website is published for information purposes and is subject to change at any time without notice. They have no regard to the specific investment objectives, financial situation or particular needs of any specific recipient and should not be construed as a solicitation, offer or recommendation, to buy or sell any securities, investment or other financial instruments, to effect any transactions or to conclude any legal act of any kind whatsoever. Unless specifically stated otherwise, all price information is indicative only. No representation or warranty, either express or implied, is provided in relation to the accuracy, completeness or reliability of the materials, nor are they a complete statement of the securities, markets or developments referred to herein. The materials should not be regarded by recipients as a substitute for the exercise of their own judgment. Any opinions are subject to change without notice and may differ or be contrary to opinions expressed by other business areas or groups of EMFI as a result of using different assumptions and criteria. EMFI is not under any obligation to update or keep current the information contained herein nor to remove any outdated information from the EMFI Website or to expressly mark it as being outdated.</p>
+<h4>No Offer</h4>
+<p>All information and materials published, distributed or otherwise made available on the EMFI Website are provided for informational purposes, for your noncommercial, personal use only. No information or materials published on the EMFI Website constitutes a solicitation, an offer, or a recommendation to buy or sell any investment instruments, to effect any transactions, or to conclude any legal act of any kind whatsoever. EMFI does not provide investment, legal or tax advice through the EMFI Website and nothing herein should be construed as being financial, legal, tax or other advice. EMFI does not represent that any securities or services discussed are suitable for any investor. No investment or other decisions should be made solely based on the contents or information found on the EMFI Website. When making a decision about your investments, you should seek the advice of a professional financial advisor or qualified expert.</p>
+<h4>Performance</h4>
+<p>The future performance of an investment cannot be deduced from previous market value, i.e. the value of an investment may fall as well as rise. An investment may also lose value due to changes in rates of foreign exchange. EMFI cannot guarantee that any capital invested will maintain or increase in value.</p>
+<h4>Forward Looking Statements</h4>
+<p>The EMFI Website may contain statements that constitute "forward looking statements". While these forward looking statements may represent EMFI\'s judgment and future expectations, a number of risks, uncertainties and other important factors could cause actual developments and results to differ materially from EMFI\'s expectations. EMFI is under no obligation to (and expressly disclaims any such obligation to) update or alter its forward looking statements whether as a result of new information, future events, or otherwise.</p>
+<h4>No Warranty</h4>
+<p>Your use of the EMFI Website is at your own risk. The EMFI Website, together with all content, information and materials contained therein, is provided "as is" and "as available", without any representations or warranties of any kind. Any materials, information or content accessed, downloaded or otherwise obtained through the use of the EMFI Website is done at your own risk and EMFI is not responsible for any damage to your computer systems or loss of data that results from the download of such material. EMFI and its affiliates expressly disclaim all representations or warranties of any kind, whether express or implied, with respect to the EMFI Website, and all materials, information, content and functionalities contained herein, including but not limited to warranties of title, non-infringement, merchantability or fitness for a particular purpose. Without limiting the foregoing, EMFI does not warrant the accuracy, timeliness, completeness, security, reliability or availability of the EMFI Website or the information or results obtained from use of the EMFI Website, or that the EMFI Website will be available at all times, or is virus-free or error-free.</p>
+<h4>No Liability</h4>
+
+<p>To the fullest extent permitted by law, in no event shall EMFI or our affiliates, or any of our directors, employees, contractors, service providers or agents have any liability whatsoever to any person for any direct or indirect loss, liability, cost, claim, expense or damage of any kind, whether in contract or in tort, including negligence, or otherwise, arising out of or related to the use of all or part of the EMFI Website, or any links to third party websites. You are solely responsible for acquiring and maintaining such electronic devices and equipment that can handle and will allow you to access and use the EMFI Website and for taking adequate and appropriate data security measures in accordance with good industry practice to protect yourself against fraud or cyber-attacks on a continuous basis (e.g. by using the most recent browser versions, and installing recommended security patches and up-to-date anti-virus programs and firewalls). EMFI specifically disclaims all liability for any tampering with any user\'s computer system by unauthorized parties, or for losses or liabilities suffered by any user arising from viruses or attacks by hackers.</p>
+
+<p>In no event will EMFI or our affiliates, or any of our officers, directors, employees, contractors, service providers or agents be liable for any incidental, special, punitive or consequential damages howsoever caused arising out of the use of the EMFI Website, its content, or the inability to use the EMFI Website.</p>
+
+<p>This disclaimer of liability applies to any and all damages or injury, including those caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, communication line failure, theft, destruction, or unauthorized access, whether for breach of contract, tortious behavior, negligence or under any other cause of action.</p>
+
+<h4>Links</h4>
+
+<p>The EMFI Website may contain third party content or links to third party websites. These content and links are provided solely for your convenience and information. EMFI has no control over, does not assume any responsibility for and does not make any warranties or representations as to, any third party content or websites, including but not limited to, the accuracy, subject matter, quality or timeliness. EMFI shall have no liability for third party content or websites or websites linking to or framing the EMFI Website.</p>
+
+<h4>Social Bookmarks</h4>
+
+<p>The EMFI Website may contain social bookmarks which are identifiable by means of their respective buttons. Social bookmarks allow users of certain social media platforms to post links to selected EMFI web pages on their social media accounts in order to bookmark them or share them with their social media contacts. If you use social bookmarks, you will be sending personal identifying data to the respective social media platform. Any comments or activity made by or carried out by persons using social bookmarks is not controlled, endorsed or monitored by EMFI and EMFI shall not be responsible or liable for such. Persons who share EMFI communications via social bookmarks are not authorized to speak for or represent EMFI and their views and opinions must be regarded as strictly their own and not EMFI\'s. In addition, the provisions in these Terms of Use relating to Links also apply to social bookmarks.</p>
+
+<h4>Intellectual Property Rights</h4>
+
+<p>EMFI, or the applicable third party owner, retains all right, title and interest (including copyrights, trademarks, patents, as well as any other intellectual property or other right) in all information and content (including all text, data, graphics and logos) on the EMFI Website. Individual pages and/or sections of the EMFI Website may be printed for personal or internal use only, and provided that such printouts retain all applicable copyright or other proprietary notices. All users must not, without limitation, modify, copy, transmit, distribute, display, perform, reproduce, publish, license, frame, create derivative works from, transfer or otherwise use in any other way, whether in whole or in part, any information, text, graphics, images, video clips, directories, databases, listings or software obtained from the EMFI Website for commercial or public purposes, without the prior written permission of EMFI. Systematic retrieval of content from the EMFI Website to create or compile, directly or indirectly, a collection, compilation, database or directory (whether through robots, spiders, automatic devices or manual processes) or creating links to the EMFI Website without the prior written permission from EMFI is strictly prohibited. The EMFI logo and EMFI are among the registered and unregistered trademarks of EMFI. Other marks may be trademarks of their respective owners. Except as noted above, you may not use any trademarks of EMFI for any purpose without the prior written permission of EMFI.</p>
+
+<h4>Electronic Communication (E-Mail)</h4>
+
+<p>The Internet is a universally accessible medium. Ordinary e-mail messages sent over the Internet are neither confidential nor secure. They may be easily accessible by third parties and may entail a considerable amount of danger and risk including: (a) lack of confidentiality (e-mails and their attachments can be read and/or monitored without detection); (b) manipulation or falsification of the sender\'s address or of the e-mail\'s (or attachment\'s) content (e.g. changing the sender\'s address(es) or details); (c) system outages and other transmission errors, which can cause e-mails and. their attachments to be delayed, mutilated, misrouted and deleted; (d) viruses, worms, Trojan horses etc. may be spread undetected by third parties and may cause considerable damage; and (e) interception by third parties.</p>
+
+<p>You are therefore recommended to communicate with EMFI by using a secure channel if such channel is provided by EMFI. In no event should you use ordinary E-mail to transmit personal or confidential information such as any account related data.</p>
+
+<p>Unless explicitly stated otherwise, EMFI does not accept any orders or instructions sent by E-mail or any other electronic messaging system. EMFI shall not be liable to you or anybody else for any damages incurred in connection with any messages sent to EMFI using ordinary E-mail or any other electronic messaging system.</p>
+
+<h4>Privacy Policy</h4>
+
+<p>EMFI has established a Privacy Policy, as modified from time to time, which explains how personal data is collected on the EMFI Website and used. The Privacy Policy is part of these Terms of Use and is incorporated herein by reference.</p>
+
+<h4>Severability Clause</h4>
+
+<p>To the extent that any provision of these Terms of Use is found by any competent court or authority to be invalid, unlawful or unenforceable in any jurisdiction, that provision shall be deemed to be severed from these Terms of Use but such finding shall not affect the validity, lawfulness or enforceability of the remainder of these Terms of Use in that jurisdiction, nor shall it affect the validity, lawfulness or enforceability of these Terms of Use in any other jurisdiction.</p>
+
+<h4>Conflict with Additional Terms</h4>
+
+<p>Certain web pages or areas on the EMFI Website may contain additional terms, conditions, disclosures and disclaimers (collectively, the "Additional Terms"). In the event of a conflict between these Terms of Use and the Additional Terms, the Additional Terms will govern for those web pages or areas.</p>`;
 
 export const privacypolicyES = `
 <p>

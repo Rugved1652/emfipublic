@@ -1,0 +1,40 @@
+{
+    "family": "emfi-dev-nextjs",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::949020832080:role/emfi-dev-task-execution-role",
+    "containerDefinitions": [
+      {
+        "name": "emfi-dev-nextjs",
+        "image": "<IMAGE>",
+        "portMappings": [
+            {
+              "hostPort": 3000,
+              "protocol": "tcp",
+              "containerPort": 3000
+            }
+          ],
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "/ecs/emfi-dev-nextjs",
+            "awslogs-region": "us-east-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        },
+        "linuxParameters": {
+          "initProcessEnabled": true
+        },
+        "essential": true
+      }
+    ],
+    "taskRoleArn": "arn:aws:iam::949020832080:role/emfi-dev-task-execution-role",
+    "compatibilities": [
+      "EC2",
+      "FARGATE"
+    ],
+    "requiresCompatibilities": [
+      "FARGATE"
+    ],
+    "memory": "1024",
+    "cpu": "512"
+  }

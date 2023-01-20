@@ -25,10 +25,10 @@
       font-family: var(--menu-font);
       font-size: 14px; 
       @media (min-width: 1200px) {
-        font-size: 0.8333vw; 
+        font-size: 15px; 
         padding: 0.5208vw 0.7812vw;
       }
-      &:hover {
+      &:hover,  &.active {
         color: var(--menu-color-hover);
       }
     }

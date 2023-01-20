@@ -44,7 +44,8 @@ const Services = ({
                     <ServiceCard
                       image={service.image}
                       heading={service.heading}
-                      subHeading={service.en_heading}
+                      subHeading={service.subheading}
+                      sup={service.sup}
                     />
                   </Link>
                 </span>
@@ -60,7 +61,7 @@ const Services = ({
                   <Link href={product.link}>
                     <ServiceCard
                       image={product.image}
-                      subHeading={product.subheading}
+                      subHeading={product.subheading}sup = {product.sup}
                     />
                   </Link>
                 </span>

@@ -11,6 +11,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { postDataV2 } from "../../Services/apiFunction";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 type Props = {};
 
@@ -206,12 +207,12 @@ function LoginModal({}: Props) {
           }}
         >
           <div className={styles.loginFormButton}>
-            <a
+            <Link
               className={fill ? styles.loginButton : styles.loginButtonActive}
-              href="#"
+              href="https://login.emfi.uk/"
             >
               <LoginIcon fill={fill} />
-            </a>
+            </Link>
             <FloatModal reft={buttonref} show={loginModal}>
               <div ref={refinst} className={styles.form}>
                 {!waitOTP ? (
