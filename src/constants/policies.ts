@@ -392,48 +392,7 @@ we will execute your order in accordance with your instructions. Our best execut
 <h4>16. MONITORING AND REVIEW </h4> 
 <p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p>
 <p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>
-<<<<<<< HEAD
 `;
-export const regulatoryES = `<div class="infoblock"><p><strong>1. BACKGROUND</strong></p> <p>This document sets out the execution policy and approach to providing best execution for EMFI Securities Limited (‘EMFI’, “we” or “us”, “our”), as required by the Markets in Financial Instrument Directive 2014/65/EU (including any applicable Level 2 provisions) (“MiFID 2”) as implemented by the UK Financial Conduct Authority (FCA) in its Handbook. This document forms part of our terms of business with you as our client (“you”, “your” “yours”).</p> <p><strong>2. PURPOSE AND SCOPE</strong></p> <p>MiFID 2 requires us to take all “sufficient” steps to obtain, when executing client orders, the best possible results for our clients, taking into account price, costs, speed, likelihood of execution, and settlement, size, nature or any other consideration relevant to the execution of the order. However please see the section on client instructions.</p> <p>The obligation to obtain the best possible results for our clients is referred to as our obligation of Best Execution. This policy applies only to clients classified as Professional Clients and only to dealings in Financial Instruments (each as defined in MiFID 2). </p> <p><strong>3. OBLIGATION AND RELEVANT FACTORS</strong></p> <p>3.1 Execution Factors</p> <ul> <li>a) price of execution;</li> <li>b) costs payable by the client as a result of the execution;</li> <li>c) the speed and / or likelihood of execution and settlement;</li> <li>d) the order size;</li> <li>e) the impact of the order on market prices of displaying the order and or executing an order or part of the order; Costs, meaning explicit costs such as fees, commissions and implicit costs such as market impact</li> </ul> <p>3.2. Relative Importance of Execution Factors</p> <p>When executing client orders, we will take into account the following criteria for determining the relative importance of the Execution Factors above: </p> <ul> <li>a) the characteristics of the client; </li> <li>b) the characteristics of the client order; </li> <li>c) the characteristics of the Financial Instruments that are the subject of that order; and </li> <li>d) the characteristics of the execution venues to which that order can be directed. </li> </ul> <p>Subject to any specific instructions from you, taking into account the criteria above, we will generally regard net price (net price is the total price paid by the client, net of client commission and fees), followed by speed and or likelihood of execution as the most important factors in the execution of a client order.</p> <p>However, there may be circumstances where the other execution factors should be prioritised above price. We reserve the right to exercise a degree of discretion in how to apply the Execution Factors. This may result in a range of different approaches to executing a client order based on our commercial judgement in the context of relevant available market information and what is in the best interests of our clients.</p> <p><strong>4. EXECUTION VENUES</strong></p> <p>This execution policy contains a non-exhaustive list of the venues upon which we place significant reliance when executing client orders on your behalf for each class of Financial Instruments. These venues are used to ensure that on a consistent basis, we provide the best possible results for our clients in cases, where the best execution obligation applies. </p> <p>The venues that we use include: </p> <ul> <li>a) EMFI and its affiliates, where EMFI internalise client orders; </li> <li>b) Regulated Markets (RM); </li> <li>c) Multilateral Trading (MTFs); </li> <li>d) Organised Trading Facilities (OTFs); </li> <li>e) Market makers and other liquidity providers; and </li> <li>f) Non-EEA entities performing similar functions to the above. </li> </ul> <p>Venues may include venues of which we are a direct member or participant and venues we access through third party brokers or dealers.</p> <p><strong>5. CHOICE OF EXECUTION VENUE</strong></p> <p>For certain Financial Instruments, our choice of venue may be constrained by the fact that there may only be one venue where a client order can be executed due to the nature of the order, specific instruction(s) or specific requirements. Where a Financial Instrument is only tradable on one venue/market, the only execution factor we will consider is the speed and or likelihood of execution unless a specific instruction indicates otherwise. </p> <p>For some Financial Instruments, we may execute certain orders for you using smart order routing technology, which has been selected and reviewed to ensure that we obtain, on a consistent basis, the best possible outcome for you as our client.</p> <p>Where the Financial Instrument trades on a RM, MTF with the appropriate liquidity, we will aim to execute client orders on such venues, but where the characteristics of the financial instrument or applicable execution factors are deemed appropriate, we may execute client orders outside of these venues. This will be on the basis of having express prior consent from you. </p> <p><strong>6. SELECTION AND MONITORING </strong></p> <p>Venues are selected and reviewed based on a number of factors, but primarily to ensure that clients have access to the relevant sources of liquidity. </p> <p><strong>7. EXECUTING ORDERS OUTSIDE A TRADING VENEUE </strong></p> <p>As noted above, we may execute an order outside a RM, MTF and OTF. In cases where we execute orders outside an RM, MTF or OTF additional risks such as counterparty risk might exist. </p> <p><strong>8. ORDER EXECUTION ON BEHALF OF A CLIENT</strong></p> <p>8.1 Overview </p> <p>The duty to provide best execution will apply where we execute orders on your behalf, including when we act as riskless principal, exercise certain discretions on your behalf (e.g. how and when to execute orders) and where we transmit orders on your behalf to a third-party broker for execution. </p> <p>8.2 Request for Quote </p> <p>When we categorise you as a Professional Client, we will consider relevant FCA and European Securities and Markets Authority guidance to determine whether we are acting on your behalf and whether you are legitimately relying on us to deliver best execution in relation to your order. </p> <p>In relation to a ‘Request for Quote’ order, EMFI will always apply a Four-Fold Test to determine whether there is any legitimate reliance by you. The Four-Fold Test entails consideration of the following factors: </p> <ul> <li>a) Who initiates the transaction: – where you initiate the transaction, it is less likely that you will be placing reliance on us. We may communicate market opportunities or indicative prices to you as part of the general relationship and we do not consider that this means that we will be deemed to have initiated the transaction;</li> <li>b) Market practice and “shopping around” – where market practice suggests that you take responsibility for the pricing and other elements of the transaction it is less likely that you will be placing reliance on us; </li> <li>c) Relative levels of transparency within a market – if we have ready access to prices in the market in which we operates, whereas you do not, it is more likely that you will be placing reliance on us, whereas if our access to pricing transparency is broadly equivalent, it is less likely that you will be placing reliance on us; and </li> <li>d) Information provided by us to you in our terms of business – where our arrangements and agreements with you (such as our terms of business and this policy) state the circumstances in which best execution may not be owed, it is less likely that you will be placing reliance on us. </li> </ul> <p>Where we conclude based on the above factors that you are not legitimately relying on us, this Execution Policy will not apply. Notwithstanding this, even in cases where best execution does not apply, we will always act in your best interests and we are committed to providing an efficient, professional, transparent level of client service. </p> <p><strong>9. ORDER CAPTURE</strong></p> <p>We will endeavour to execute an order received by you in a prompt, fair and expeditious manner, taking reasonable steps that are designed to ensure that potential conflicts of interest are managed effectively. Where there is a lapse of time between our first quote and your acceptance of the order which causes delay or where market conditions change; we will still be within our rights to execute the order; provided that the quote is not manifestly out of date and that it would have met the best execution requirements. </p> <p><strong>10. ORDER HANDLING </strong></p> <p>We record and execute otherwise comparable orders sequentially and timed to coincide with receipt of the order unless the characteristics of the order or market conditions make it impractical to do so, or if our duty to act in our client’s interests demand otherwise. Orders received in different media will not be treated as comparable. </p> <p><strong>11. ORDER AGGREGATION AND ALLOCATION </strong></p> <p>Depending upon the circumstances, market conditions and order size, we may aggregate your order with those of our other clients or with our own transactions.</p> <p>We will pursue this approach where we reasonably believe that it is in the overall best interests of our clients to do so. This means that whilst it is unlikely to work overall to your disadvantage, on occasions, aggregation may result in you obtaining a less favourable price in relation to a particular order. </p> <p>In the case of such aggregated orders being partially executed, we will allocate the executed orders in accordance with our order allocation policy.</p> <p><strong>12. SPECIFIC CLIENT INSTRUCTIONS </strong></p> <p>Where you provide us with specific instructions in relation to your entire order, or any aspect of your order, for example a preferred execution venue, 
-we will execute your order in accordance with your instructions. Our best execution obligation will be satisfied by executing the order in accordance with your specific instruction(s). Where the specific instruction covers only part of the order, best execution will continue to apply to the remaining part(s) of the order not covered by your specific instruction(s). </p> <p>You should be aware that where you provide us with specific instructions in relation to the execution of your order, you may prevent us from following some or all of the steps in our Execution Policy to obtain the best possible result for you in respect to those aspects affected by your instructions. </p> <p>While we take all reasonable steps based on the resources available to us and depending upon the market conditions and circumstances as then prevalent to enable us to provide best possible results to you, we cannot guarantee that we will always be able to provide best execution to each and every order executed on your behalf particularly where you give us specific instructions as to all or part of your order. </p> <p></p> <p><strong>13. EMFI’s COMMITMENT</strong></p> <p>EMFI’s commitment to provide you with Best Execution does not mean that we owe you any fiduciary responsibility over and above the specific regulatory obligations placed upon us or as may be otherwise contracted between us.</p> <p>Where we transmit your orders to other authorised firms for execution, we are not required to duplicate efforts, but we will take steps to assess whether such brokers achieve the best possible result for you. </p> <p><strong>14. CLIENT CONSENT</strong></p> <p>Under MiFID 2 we are required to obtain your consent to our Execution Policy. We would consider you have provided your consent when you give us an order after receipt of this policy. </p> <p>We are however required to obtain your express prior consent for execution of your order outside a RM, MTF and OTF and for exercising our judgement in the matter of publishing the Limit Orders as described above. We therefore request you to please provide such consent by signing the attached acknowledgement and consents and returning it to us. </p> <p>We are required to publish limit orders given by you should we not be able to execute your order immediately. Please sign and return the attached acknowledgement to confirm that you agree that when you place a limit order with us that is not immediately executable, we are authorised to exercise our discretion to not publish such an order to a regulated market or MTF. </p> <p><strong>15. CONFLICTS OF INTEREST </strong></p> <p>EMFI will ensure any potential conflicts of interest, such as internalising a client order, executing orders through an affiliate or the selection of third-party broker, are reviewed as a part of the order execution governance framework to ensure that we consistently obtain the best result for the client and that EMFI are complying with EMFI’s Conflicts of Interest Policy. </p> <p><strong>16. MONITORING AND REVIEW </strong></p> <p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p><p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p></div>`;
-
-export const LegalHeroSearchES: HeroSearchInfo = {
-  heading: "Legales",
-  subHeading: "Grupo EMFI",
-  placeholderText: "Alerta De Estafas",
-  serviceList: [
-    { label: "Términos De Uso", value: 1 },
-    { label: "Política De Privacidad", value: 2 },
-    { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
-  ],
-};
-export const LegalHerosearchEN: HeroSearchInfo = {
-  heading: "Legal",
-  subHeading: "EMFI Group",
-  placeholderText: "Scam Alert",
-  serviceList: [
-    { label: "Terms of Use", value: 1 },
-    { label: "Privacy Policy", value: 2 },
-    { label: "Cookies Policy", value: 3 },
-    { label: "Scam Alert", value: 4 },
-  ],
-};
-
-type HeroSearchInfo = {
-  heading: string;
-  subHeading: string;
-  placeholderText?: string;
-  serviceList: any[];
-};
-
-// Legal
-// Términos De Uso
-// Política De Privacidad
-// Política De Cookies
-// Alerta De Estafas
-=======
-`
 export const regulatoryES = `
 <h4>1. BACKGROUND</h4> 
 <p>This document sets out the execution policy and approach to providing best execution for EMFI Securities Limited (‘EMFI’, “we” or “us”, “our”), as required by the Markets in Financial Instrument Directive 2014/65/EU (including any applicable Level 2 provisions) (“MiFID 2”) as implemented by the UK Financial Conduct Authority (FCA) in its Handbook. This document forms part of our terms of business with you as our client (“you”, “your” “yours”).</p> 
@@ -513,5 +472,40 @@ we will execute your order in accordance with your instructions. Our best execut
 <p>EMFI will ensure any potential conflicts of interest, such as internalising a client order, executing orders through an affiliate or the selection of third-party broker, are reviewed as a part of the order execution governance framework to ensure that we consistently obtain the best result for the client and that EMFI are complying with EMFI’s Conflicts of Interest Policy. </p> 
 <h4>16. MONITORING AND REVIEW </h4> 
 <p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p>
-<p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>`
->>>>>>> e3c77ac6221d88ab0ceccda98a5196c2901aa571
+<p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>`;
+
+export const LegalHeroSearchES: HeroSearchInfo = {
+  heading: "Legales",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Alerta De Estafas",
+  serviceList: [
+    { label: "Términos De Uso", value: 1 },
+    { label: "Política De Privacidad", value: 2 },
+    { label: "Política De Cookies", value: 3 },
+    { label: " Alerta De Estafas", value: 4 },
+  ],
+};
+export const LegalHerosearchEN: HeroSearchInfo = {
+  heading: "Legal",
+  subHeading: "EMFI Group",
+  placeholderText: "Scam Alert",
+  serviceList: [
+    { label: "Terms of Use", value: 1 },
+    { label: "Privacy Policy", value: 2 },
+    { label: "Cookies Policy", value: 3 },
+    { label: "Scam Alert", value: 4 },
+  ],
+};
+
+type HeroSearchInfo = {
+  heading: string;
+  subHeading: string;
+  placeholderText?: string;
+  serviceList: any[];
+};
+
+// Legal
+// Términos De Uso
+// Política De Privacidad
+// Política De Cookies
+// Alerta De Estafas

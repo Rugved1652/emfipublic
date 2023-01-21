@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { privacypolicyEN, privacypolicyES } from "../../constants/policies";
+import HeroSearch from "../../../Components/HeroSearch/HeroSearch";
+import { privacypolicyEN, privacypolicyES } from "../../../constants/policies";
 
 type Props = {};
 
