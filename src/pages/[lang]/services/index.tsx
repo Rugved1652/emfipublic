@@ -59,8 +59,8 @@ const Services = ({
             {productContent.map((product: any) => (
               <div className="border-ani">
                 <span>
-                  <Link href={product.link}>
-                    <ServiceCard
+                  <Link href={product.link} className="serviceElogoBox">
+                    <ServiceCard                     
                       image={product.image}
                       subHeading={product.subheading}
                       sup={product.sup}

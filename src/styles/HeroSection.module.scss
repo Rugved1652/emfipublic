@@ -4,11 +4,13 @@
   padding: 50px 12px 0;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
   gap: 20px;
   position: relative;
+  margin-bottom: 25px !important;
   @media screen and (max-width: 991px) {
     height: fit-content;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 768px) {
     max-width: 720px;

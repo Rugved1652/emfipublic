@@ -123,7 +123,7 @@ export const FooterRoutes = {
         id: "fintechasaservices",
         en_Link: "/english/services/ourservices/salesntrading",
         es_Link: "/espanol/services/ourservices/salesntrading",
-        en_label: "Fintech as-a Services",
+        en_label: "Fintech as-a-Services",
         es_label: "Fintech como-Servicio",
       },
     ],
@@ -225,8 +225,8 @@ export const FooterRoutes = {
       },
     ],
     footerTextEN:
-      "© 2022 EMFI Group Limited. All Rights Reserved. 25-26 Dering St, Mayfair, London W1S 1AW, United Kingdom. Intended For Professional Clients Only. Not Suitable For Retail Clients. Not Intended For Nor A Solicitation Of Any Offer Of Service To US Persons.",
+      "© 2023 EMFI Group Limited. All Rights Reserved. 25-26 Dering St, Mayfair, London W1S 1AW, United Kingdom. Intended For Professional Clients Only. Not Suitable For Retail Clients. Not Intended For Nor A Solicitation Of Any Offer Of Service To US Persons.",
     footerTextES:
-      "© 2023 EMFI Group Limited. Todos los derechos reservados. 25-26 Dering St, Mayfair, London W1S 1AW, United Kingdom. Sólo para clientes profesionales. No es adecuado para clientes minoristas. No está destinado ni a solicitar una oferta de servicio a personas estadounidenses",
+      "© 2023 EMFI Group Limited. Todos los derechos reservados. 25-26 Dering St, Mayfair, London W1S 1AW, United Kingdom. Sólo para clientes profesionales. No es adecuado para clientes minoristas. No está destinado ni a solicitar una oferta de servicio a personas estadounidenses.",
   },
 };
