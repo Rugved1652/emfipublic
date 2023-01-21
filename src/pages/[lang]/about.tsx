@@ -13,12 +13,17 @@ import { fetchData } from "../../Services/apiFunction";
 import { aboutData } from "../../types/types";
 import ProductHero from "../../Components/HeroSection/ProductHero";
 import {
-  AboutEmfiContent,
+  AboutEmfiContentEN,
+  AboutEmfiContentES,
   AsSeenContentES,
-  infoSectionContent,
-  OurClientsContent,
-  OurTeamContent,
-  OurValuesContent,
+  infoSectionContentEN,
+  infoSectionContentES,
+  OurClientsContentEN,
+  OurClientsContentES,
+  OurTeamContentEN,
+  OurTeamContentES,
+  OurValuesContentEN,
+  OurValuesContentES,
 } from "../../constants/information";
 
 type Props = {
@@ -104,7 +109,7 @@ const About = ({
             ))}
           </div>
         </div>
-        <AboutValues />
+        <AboutValues infoSectionContent={infoSection} />
         <div className="aboutSectionMain">
           <div className="commonHeader">
             <h2>{aboutData?.data.as_seen_on?.title}</h2>
@@ -151,12 +156,26 @@ export async function getStaticProps(context: any) {
   const res = await fetchData(`about/${context.params.lang}`);
   return {
     props: {
-      ourClient: OurClientsContent,
-      ourValues: OurValuesContent,
-      OurTeamContent: OurTeamContent,
-      infoSection: infoSectionContent,
-      AsSeenContent: AsSeenContentES,
-      AboutEmfiContent: AboutEmfiContent,
+      ourClient:
+        context.params.lang === "espanol"
+          ? OurClientsContentES
+          : OurClientsContentEN,
+      ourValues:
+        context.params.lang === "espanol"
+          ? OurValuesContentES
+          : OurValuesContentEN,
+      OurTeamContent:
+        context.params.lang === "espanol" ? OurTeamContentES : OurTeamContentEN,
+      infoSection:
+        context.params.lang === "espanol"
+          ? infoSectionContentEN
+          : infoSectionContentEN,
+      AsSeenContent:
+        context.params.lang === "espanol" ? AsSeenContentES : AsSeenContentES,
+      AboutEmfiContent:
+        context.params.lang === "espanol"
+          ? AboutEmfiContentES
+          : AboutEmfiContentEN,
       aboutData: res || null,
     },
   };

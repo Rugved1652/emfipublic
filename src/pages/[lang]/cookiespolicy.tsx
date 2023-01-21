@@ -1,14 +1,30 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { cookiespolicyEN, cookiespolicyES } from "../../constants/policies";
+import {
+  cookiespolicyEN,
+  cookiespolicyES,
+  LegalHerosearchEN,
+  LegalHeroSearchES,
+} from "../../constants/policies";
+import { HeroSearchInfo } from "../../constants/serviceContent";
 
-const cookiespolicy = ({ cookiespolicy }: any) => {
+type Props = {
+  cookiespolicy: any[];
+  LegalHeroSearch: HeroSearchInfo;
+  SaveBtnText: string;
+};
+
+const cookiespolicy = ({
+  cookiespolicy,
+  LegalHeroSearch,
+  SaveBtnText,
+}: Props) => {
   return (
     <div className="container">
       <HeroSearch
-        heading="Legal"
-        subHeading="EMFI Group"
-        placeholder="Cookies Policy"
+        heading={LegalHeroSearch.heading}
+        subHeading={LegalHeroSearch.subHeading}
+        placeholder={LegalHeroSearch.placeholderText}
       />
       <div className="legalGroup">
         {cookiespolicy.map((cookie: any) => (
@@ -16,18 +32,18 @@ const cookiespolicy = ({ cookiespolicy }: any) => {
             {cookie.head ? (
               <div className="checkGroup">
                 <div className="checkGroupbox">
-                  <input type="checkbox" name="" id="one" />
+                  <input type="checkbox" name="" id={cookie.id} />
                   <span className="chk-check"></span>
                 </div>
-                <label htmlFor="one" className="chk-check">
-                  {cookie.head}
+                <label htmlFor={cookie.id} className="chk-check">
+                  <div dangerouslySetInnerHTML={{ __html: cookie.head }} />
                 </label>
               </div>
-            ) : null}
-            <p>{cookie.desc}</p>
+            ) : null}{" "}
+            <div dangerouslySetInnerHTML={{ __html: cookie.desc }} />
           </>
         ))}
-        <button>Save</button>
+        <button>{SaveBtnText}</button>
       </div>
     </div>
   );
@@ -44,6 +60,9 @@ export async function getStaticProps({ params }: any) {
     props: {
       cookiespolicy:
         params?.lang === "espanol" ? cookiespolicyES : cookiespolicyEN,
+      LegalHeroSearch:
+        params?.lang === "espanol" ? LegalHeroSearchES : LegalHerosearchEN,
+      SaveBtnText: params?.lang === "espanol" ? "Envio" : "Save",
     },
   };
 }

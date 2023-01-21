@@ -1,22 +1,34 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { scamalertEN, scamalertES } from "../../constants/policies";
+import {
+  LegalHerosearchEN,
+  LegalHeroSearchES,
+  scamalertEN,
+  scamalertES,
+} from "../../constants/policies";
+import { HeroSearchInfo } from "../../constants/serviceContent";
 
-type Props = {};
+type Props = {
+  scamAlert: string;
+  LegalHeroSearch: HeroSearchInfo;
+};
 
-const scamalert = ({ scamAlert }: any) => {
+const scamalert = ({ scamAlert, LegalHeroSearch }: Props) => {
   return (
     <div>
       <div className="container">
         <HeroSearch
-          heading="LEGAL"
-          subHeading="EMFI Group"
-          placeholder="Scam Alert"
+          heading={LegalHeroSearch.heading}
+          subHeading={LegalHeroSearch.subHeading}
+          placeholder={LegalHeroSearch.placeholderText}
+          data={LegalHeroSearch.serviceList}
+          searchKeyname="label"
         />
         <div className="legalGroup">
-          {scamAlert.map((points: any) => (
-            <p>{points}</p>
-          ))}
+          <div
+            dangerouslySetInnerHTML={{ __html: scamAlert }}
+            className="legalGroup"
+          />
           <h4>FRENCH</h4>
           <p>
             Il a été porté à notre connaissance que des individus se présentant
@@ -77,6 +89,8 @@ export async function getStaticProps({ params }: any) {
   return {
     props: {
       scamAlert: params?.lang === "espanol" ? scamalertES : scamalertEN,
+      LegalHeroSearch:
+        params?.lang === "espanol" ? LegalHeroSearchES : LegalHerosearchEN,
     },
   };
 }

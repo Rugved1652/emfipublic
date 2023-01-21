@@ -134,8 +134,8 @@ export const FooterRoutes = {
     Routes: [
       {
         id: "policydocuments",
-        en_Link: "/english/privacypolicy",
-        es_Link: "/",
+        en_Link: "/english/policydocuments",
+        es_Link: "/espanol/policydocuments",
         en_label: "Policy Documents",
         es_label: "Documentos De Póliza",
       },

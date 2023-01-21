@@ -221,7 +221,7 @@ function LoginModal({}: Props) {
                       style={{
                         display: "flex",
                         maxWidth: "240px",
-                        // overflow: "hidden",
+                        overflow: "clip",
                       }}
                     >
                       <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
-import { privacypolicyES } from "../../constants/policies";
+import { privacypolicyEN, privacypolicyES } from "../../constants/policies";
 
 type Props = {};
 
@@ -30,7 +30,7 @@ export async function getStaticProps({ params }: any) {
   return {
     props: {
       privacypolicy:
-        params?.lang === "espanol" ? privacypolicyES : privacypolicyES,
+        params?.lang === "espanol" ? privacypolicyES : privacypolicyEN,
     },
   };
 }

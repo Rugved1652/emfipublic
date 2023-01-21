@@ -1,11 +1,3 @@
-import SalesNTrading from "../Assets/SalesTrading.svg";
-import WealthManagement from "../Assets/WealthManagement.svg";
-import AssetManagement from "../Assets/AssetManagement.svg";
-import FintechAsAService from "../Assets/FintechAsAService.svg";
-import ebonds from "../Assets/ebondsblue.svg";
-import ewealth from "../Assets/ewealthblue.svg";
-import efund from "../Assets/efundsblue.svg";
-import eintel from "../Assets/eintelblue.svg";
 import ourservices from "../Assets/SalesNTrading/ourservice.svg";
 import ourapproch from "../Assets/SalesNTrading/ouraproach.svg";
 import ourclients from "../Assets/SalesNTrading/ourclients.svg";
@@ -102,30 +94,6 @@ export const ServicesContentEN: ServicesContent[] = [
   },
 ];
 
-export const servicepageEN = {
-  heading: "EMFI Group",
-  subHeading: "United Kingdom",
-  placeholderText: "Services",
-  serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
-  ],
-};
-
-export const servicepageES = {
-  heading: "Grupo EMFI",
-  subHeading: "Reino Unido",
-  placeholderText: "Servicios",
-  serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
-  ],
-};
-
 export const ProductContentES: ProductContent[] = [
   {
     id: "01",
@@ -143,7 +111,7 @@ export const ProductContentES: ProductContent[] = [
   },
   {
     id: "03",
-    image: "/efund.svg",
+    image: "/efunds.svg",
     subheading: "EMFI Fund SPC",
     link: "/espanol/services/ourproducts/efund",
     sup: "4",
@@ -362,3 +330,34 @@ export const SalesNTradingContent: SalesNTradingContent[] = [
     ],
   },
 ];
+
+export type HeroSearchInfo = {
+  heading: string;
+  subHeading: string;
+  placeholderText?: string;
+  serviceList: any[];
+};
+
+export const servicepageES: HeroSearchInfo = {
+  heading: "Grupo EMFI",
+  subHeading: "Reino Unido",
+  placeholderText: "Servicios",
+  serviceList: [
+    { label: "EMFI Securities Limited 2", value: 1 },
+    { label: "EMFI Capital Limited 3", value: 2 },
+    { label: "EMFI Fund SPC 4", value: 3 },
+    { label: "EMFI Analytics Limited 5", value: 4 },
+  ],
+};
+
+export const servicepageEN = {
+  heading: "EMFI Group",
+  subHeading: "United Kingdom",
+  placeholderText: "Services",
+  serviceList: [
+    { label: "EMFI Securities Limited 2", value: 1 },
+    { label: "EMFI Capital Limited 3", value: 2 },
+    { label: "EMFI Fund SPC 4", value: 3 },
+    { label: "EMFI Analytics Limited 5", value: 4 },
+  ],
+};

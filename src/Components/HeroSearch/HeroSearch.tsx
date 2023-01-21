@@ -7,9 +7,10 @@ import { useOnClickOutside } from "../../hooks/useOnclickOutSide";
 type Props = {
   heading: string;
   subHeading: string;
-  placeholder: string | null;
+  placeholder?: string | null;
   data?: any;
   searchKeyname?: string;
+  sup?: string;
 };
 
 const HeroSearch = ({
@@ -18,6 +19,7 @@ const HeroSearch = ({
   placeholder,
   data,
   searchKeyname = "",
+  sup,
 }: Props) => {
   const [viewList, setViewList] = useState([]);
   const [searchValue, setSearchValue] = useState("");
@@ -42,7 +44,10 @@ const HeroSearch = ({
   return (
     <div className={styles.HeroSearchWrapper}>
       <div>
-        <h3>{heading}</h3>
+        <h3>
+          {heading}
+          {sup ? <sup>{sup}</sup> : ""}
+        </h3>
         <h4>{subHeading}</h4>
       </div>
       <div ref={refinst} style={{ width: "50%" }}>
@@ -53,9 +58,11 @@ const HeroSearch = ({
               handleChange={handleChange}
             />
             {viewList.length !== 0 ? (
-              <ul className="searchBoxList" >
+              <ul className="searchBoxList">
                 {viewList?.map((i: any, index: any) => (
-                  <li key={index}><a href="javascript:void(0);">{i[searchKeyname]}</a></li>
+                  <li key={index}>
+                    <a href="javascript:void(0);">{i[searchKeyname]}</a>
+                  </li>
                 ))}
               </ul>
             ) : null}

@@ -33,6 +33,7 @@ const Services = ({
         placeholder={PageInfo.placeholderText}
         data={PageInfo.serviceList}
         searchKeyname="label"
+        sup="1"
       />
       <div className={styles.serviceCardGroupMain}>
         <div className={styles.serviceCardGroup}>
@@ -61,7 +62,8 @@ const Services = ({
                   <Link href={product.link}>
                     <ServiceCard
                       image={product.image}
-                      subHeading={product.subheading}sup = {product.sup}
+                      subHeading={product.subheading}
+                      sup={product.sup}
                     />
                   </Link>
                 </span>
