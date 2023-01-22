@@ -51,13 +51,13 @@ function LoginModal({}: Props) {
     if (lang === "english") {
       setLang("espanol");
       localStorage.setItem("locale", "espanol");
-      console.log("router", router.pathname.replace("[lang]", "espanol"));
-      router.push(`/${router.pathname.replace("[lang]", "espanol")}`);
+      console.log("router", router.asPath.replace("[lang]", "espanol"));
+      router.push(`/${router.asPath.replace("english", "espanol")}`);
     } else {
       setLang("english");
       localStorage.setItem("locale", "english");
-      console.log("router", router.pathname.replace("[lang]", "english"));
-      router.push(`/${router.pathname.replace("[lang]", "english")}`);
+      console.log("router", router.asPath.replace("espanol", "english"));
+      router.push(`/${router.asPath.replace("espanol", "english")}`);
     }
   };
 
@@ -217,40 +217,56 @@ function LoginModal({}: Props) {
               <div ref={refinst} className={styles.form}>
                 {!waitOTP ? (
                   <form onSubmit={handleSubmit(formSubmit)}>
-                    <div
-                      style={{
-                        display: "flex",
-                        maxWidth: "240px",
-                        overflow: "clip",
-                      }}
-                    >
-                      <div>
-                        <input {...register("email")} placeholder="Email" />
-
-                        <a>Forget Password ?</a>
-                      </div>
-                      <div>
-                        <span onClick={() => setEmail(0)}>Back</span>
-                        <input
-                          {...register("password")}
-                          placeholder="Password"
-                        />
-                        <button
-                          type={!email ? "button" : "submit"}
-                          onClick={() => setEmail(1)}
+                    <div>
+                      <div
+                        style={{
+                          display: "flex",
+                          maxWidth: "332px",
+                          overflow: "hidden",
+                          // gap: "16px",
+                        }}
+                      >
+                        <div
+                          className={email ? "change" : "back"}
+                          style={{
+                            display: "flex",
+                            maxWidth: "300px",
+                            transition: "all 0.8s ease-in-out",
+                            // gap: "16px",
+                          }}
                         >
-                          {!email
-                            ? `next`
-                            : `  ${waitAuth ? "auth from mobile" : "submit"}`}
-                        </button>
-                        <span onClick={() => sendOTP(middledata)}>
-                          send OTP
-                        </span>
-                        <span onClick={() => formSubmit(middledata)}>
-                          resend Auth
-                        </span>
-                        <a>Forget Password ?</a>
+                          <div>
+                            <input
+                              style={{ width: "300px" }}
+                              {...register("email")}
+                              placeholder="Email"
+                            />
+
+                            <a>Forget Password ?</a>
+                          </div>
+                          <div>
+                            <span onClick={() => setEmail(0)}>Back</span>
+                            <input
+                              style={{ width: "300px" }}
+                              {...register("password")}
+                              placeholder="Password"
+                            />
+                          </div>
+                        </div>
                       </div>
+                      <button
+                        type={!email ? "button" : "submit"}
+                        onClick={() => setEmail(1)}
+                      >
+                        {!email
+                          ? `next`
+                          : `  ${waitAuth ? "auth from mobile" : "submit"}`}
+                      </button>
+                      <span onClick={() => sendOTP(middledata)}>send OTP</span>
+                      <span onClick={() => formSubmit(middledata)}>
+                        resend Auth
+                      </span>
+                      <a>Forget Password ?</a>
                     </div>
                   </form>
                 ) : (

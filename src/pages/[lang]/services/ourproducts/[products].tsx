@@ -5,24 +5,30 @@ import { Flip } from "react-awesome-reveal";
 import CustomCard from "../../../../Components/Cards/CustomCard/CustomCard";
 import ProductHero from "../../../../Components/HeroSection/ProductHero";
 import {
-  ebondHeroInformation,
+  AsSeenContentEN,
+  AsSeenContentES,
+} from "../../../../constants/globalContent";
+import {
+  ebondHeroInformationEN,
   ebondHeroInformationES,
-  eFundHeroInformation,
-  eFundHeroInformationEs,
-  eIntelHeroInformation,
-  eIntelHeroInformationEs,
-  eWealthHeroInformation,
-  eWealthHeroInformationEs,
-} from "../../../../constants/aboutContent";
-import { AsSeenContentES } from "../../../../constants/information";
+  eFundHeroInformationEN,
+  eFundHeroInformationES,
+  eIntelHeroInformationEN,
+  eIntelHeroInformationES,
+  eWealthHeroInformationEN,
+  eWealthHeroInformationES,
+} from "../../../../constants/productDetailsContent";
+import AsSeenIn from "../../../../Containers/AsSeenIn/AsSeenIn";
+
 import MapContainer from "../../../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../../../Containers/SwipeCarousel/SwipeCarousel";
 
 type Props = {
   content: any;
+  AsSeenContent: AsSeenSection;
 };
 
-const Products = ({ content }: Props) => {
+const Products = ({ content, AsSeenContent }: Props) => {
   const [imagePosition, setImagePosition] = useState(false);
   const [greyImage, setGreyImage] = useState(-1);
 
@@ -49,40 +55,7 @@ const Products = ({ content }: Props) => {
         setImagePosition={setImagePosition}
       ></SwiperCarousel>
       <div className="container">
-        <div className="aboutSectionMain">
-          <div className="commonHeader">
-            <h2>{"As Seen In*"}</h2>
-          </div>
-          <div className="AsSeenIn">
-            {AsSeenContentES.map((brand: any, index: any) => (
-              <Flip key={index} direction={"vertical"} duration={1500}>
-                <div
-                  className="border-ani"
-                  onMouseEnter={() => setGreyImage(index)}
-                  onMouseLeave={() => setGreyImage(-1)}
-                >
-                  <span>
-                    <CustomCard className="AsSeenInCard">
-                      <Image
-                        src={
-                          greyImage === index ? brand.hoverImage : brand?.image
-                        }
-                        alt={"img"}
-                        width={280}
-                        height={100}
-                      />
-                    </CustomCard>
-                  </span>
-                </div>
-              </Flip>
-            ))}
-          </div>
-          <p className="AsSeenInText">
-            {
-              "*And other news media outlets. All logos and trademarks are property of their respective owners and used here for identification purposes only. Use of these logos and trademarks does not imply endorsement by the logo and trademark owners in any way. Please visit respective websites for further information."
-            }
-          </p>
-        </div>
+        <AsSeenIn AsSeenContent={AsSeenContent} />
         <MapContainer />
       </div>
     </>
@@ -110,19 +83,21 @@ export async function getStaticProps({ params }: any) {
   console.log(params);
 
   let content: any;
+  let AsSeenContent =
+    params?.lang === "espanol" ? AsSeenContentES : AsSeenContentEN;
   if (params?.lang === "english") {
     switch (params?.products) {
       case "ebonds":
-        content = ebondHeroInformation;
+        content = ebondHeroInformationEN;
         break;
       case "ewealth":
-        content = eWealthHeroInformation;
+        content = eWealthHeroInformationEN;
         break;
       case "efund":
-        content = eFundHeroInformation;
+        content = eFundHeroInformationEN;
         break;
       case "eintel":
-        content = eIntelHeroInformation;
+        content = eIntelHeroInformationEN;
         break;
       default:
         content = {};
@@ -134,13 +109,13 @@ export async function getStaticProps({ params }: any) {
         content = ebondHeroInformationES;
         break;
       case "ewealth":
-        content = eWealthHeroInformationEs;
+        content = eWealthHeroInformationES;
         break;
       case "efund":
-        content = eFundHeroInformationEs;
+        content = eFundHeroInformationES;
         break;
       case "eintel":
-        content = eIntelHeroInformationEs;
+        content = eIntelHeroInformationES;
         break;
       default:
         content = {};
@@ -150,7 +125,7 @@ export async function getStaticProps({ params }: any) {
 
   return {
     // Passed to the page component as props
-    props: { content: content },
+    props: { content: content, AsSeenContent: AsSeenContent },
   };
 }
 

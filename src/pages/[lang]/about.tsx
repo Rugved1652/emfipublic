@@ -1,46 +1,49 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import CustomCard from "../../Components/Cards/CustomCard/CustomCard";
+import React from "react";
 import PaperCard from "../../Components/Cards/PaperCard/PaperCard";
 import TeamMemberCard from "../../Components/Cards/TeamMemberCard/TeamMemberCard";
-import { aboutHeroInformation } from "../../constants/aboutContent";
+import { OurTeamEN, OurTeamES } from "../../constants/aboutContent";
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
-import MapContainer from "../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
-import { Fade, Flip } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import AboutValues from "../../Containers/AboutValues/AboutValues";
 import { fetchData } from "../../Services/apiFunction";
-import { aboutData } from "../../types/types";
 import ProductHero from "../../Components/HeroSection/ProductHero";
 import {
   AboutEmfiContentEN,
   AboutEmfiContentES,
-  AsSeenContentES,
   infoSectionContentEN,
   infoSectionContentES,
-  OurClientsContentEN,
-  OurClientsContentES,
-  OurTeamContentEN,
-  OurTeamContentES,
-  OurValuesContentEN,
-  OurValuesContentES,
-} from "../../constants/information";
+  OurClientsEN,
+  OurClientsES,
+  OurValuesEN,
+  OurValuesES,
+} from "../../constants/aboutContent";
+import AsSeenIn from "../../Containers/AsSeenIn/AsSeenIn";
+import { aboutHeroInformation } from "../../constants/productDetailsContent";
+import {
+  AsSeenContentEN,
+  AsSeenContentES,
+} from "../../constants/globalContent";
+import MapContainer from "../../Containers/MapContainer/MapContainer";
 
 type Props = {
-  aboutData: aboutData;
+  ourClient: OurClientsSection;
+  ourValues: OurValuesSection;
+  OurTeam: OurTeamSection;
+  infoSection: infoSectionContent[];
+  AsSeenContent: AsSeenSection;
+  AboutEmfiContent: AboutEmfiContent;
 };
 
 const About = ({
   ourClient,
   ourValues,
-  OurTeamContent,
+  OurTeam,
   infoSection,
   AsSeenContent,
-  aboutData,
   AboutEmfiContent,
-}: any) => {
-  const [greyImage, setGreyImage] = useState(-1);
-
+}: Props) => {
   return (
     <>
       <SwiperCarousel
@@ -53,15 +56,15 @@ const About = ({
         <AboutEmfi aboutData={AboutEmfiContent} />
         <div className="aboutSectionMain ourClientsMain">
           <div className="commonHeader">
-            <h2>{aboutData?.data.our_clients?.title}</h2>
+            <h2>{ourClient.title}</h2>
             <p>
-              {aboutData?.data.our_clients?.desc.slice(0, 90)}
+              {ourClient.desc.slice(0, 90)}
               <br />
-              {aboutData?.data.our_clients?.desc.slice(90)}
+              {ourClient.desc.slice(90)}
             </p>
           </div>
           <div className="ourClients">
-            {ourClient.map((client: any, index: any) => (
+            {ourClient.OurClients.map((client: any, index: any) => (
               <PaperCard
                 key={index}
                 image={client.image}
@@ -72,20 +75,20 @@ const About = ({
         </div>
         <div className="aboutSectionMain">
           <div className="commonHeader">
-            <h2>{aboutData?.data.our_values?.title}</h2>
+            <h2>{ourValues.title}</h2>
           </div>
           <Fade triggerOnce={true} direction="up" duration={1500}>
             <div className="ourValue">
-              {ourValues.map((client: any, index: any) => (
+              {ourValues.ourValues.map((value: any, index: any) => (
                 <div key={index}>
                   <Image
-                    src={client.image}
-                    alt={client.title}
+                    src={value.image}
+                    alt={value.title}
                     width={20}
                     height={20}
                   />
-                  <h5>{client.title}</h5>
-                  <p>{client.content}</p>
+                  <h5>{value.title}</h5>
+                  <p>{value.content}</p>
                 </div>
               ))}
             </div>
@@ -94,53 +97,24 @@ const About = ({
 
         <div className="aboutSectionMain ourTeamMain">
           <div className="commonHeader">
-            <h2>{aboutData?.data.our_team?.title}</h2>
+            <h2>{OurTeam.title}</h2>
           </div>
           <div className="ourTeam">
-            {OurTeamContent.map((teamMember: any) => (
+            {OurTeam.data.map((teamMember) => (
               <TeamMemberCard
                 key={teamMember.id}
-                image={teamMember.image}
+                image={OurTeam.image}
                 designation={teamMember.position}
-                email={teamMember?.email ? teamMember.email : null}
-                linkedIn={teamMember.linkedIn}
+                email={"/content"}
+                linkedIn={teamMember.linkedinUrl}
                 name={teamMember.name}
               />
             ))}
           </div>
         </div>
         <AboutValues infoSectionContent={infoSection} />
-        <div className="aboutSectionMain">
-          <div className="commonHeader">
-            <h2>{aboutData?.data.as_seen_on?.title}</h2>
-          </div>
-          <div className="AsSeenIn">
-            {AsSeenContent.map((brand: any, index: any) => (
-              <Flip key={index} direction={"vertical"} duration={1500}>
-                <div
-                  className="border-ani"
-                  onMouseEnter={() => setGreyImage(index)}
-                  onMouseLeave={() => setGreyImage(-1)}
-                >
-                  <span>
-                    <CustomCard className="AsSeenInCard">
-                      <Image
-                        src={
-                          greyImage === index ? brand.hoverImage : brand?.image
-                        }
-                        alt={"img"}
-                        width={280}
-                        height={100}
-                      />
-                    </CustomCard>
-                  </span>
-                </div>
-              </Flip>
-            ))}
-          </div>
-          <p className="AsSeenInText">{aboutData?.data.as_seen_on?.desc}</p>
-        </div>
-        <MapContainer data={aboutData?.data.locations} />
+        <AsSeenIn AsSeenContent={AsSeenContent} />
+        <MapContainer />
       </div>
     </>
   );
@@ -157,26 +131,19 @@ export async function getStaticProps(context: any) {
   return {
     props: {
       ourClient:
-        context.params.lang === "espanol"
-          ? OurClientsContentES
-          : OurClientsContentEN,
-      ourValues:
-        context.params.lang === "espanol"
-          ? OurValuesContentES
-          : OurValuesContentEN,
-      OurTeamContent:
-        context.params.lang === "espanol" ? OurTeamContentES : OurTeamContentEN,
+        context.params.lang === "espanol" ? OurClientsES : OurClientsEN,
+      ourValues: context.params.lang === "espanol" ? OurValuesES : OurValuesEN,
+      OurTeam: context.params.lang === "espanol" ? OurTeamES : OurTeamEN,
       infoSection:
         context.params.lang === "espanol"
-          ? infoSectionContentEN
+          ? infoSectionContentES
           : infoSectionContentEN,
       AsSeenContent:
-        context.params.lang === "espanol" ? AsSeenContentES : AsSeenContentES,
+        context.params.lang === "espanol" ? AsSeenContentES : AsSeenContentEN,
       AboutEmfiContent:
         context.params.lang === "espanol"
           ? AboutEmfiContentES
           : AboutEmfiContentEN,
-      aboutData: res || null,
     },
   };
 }

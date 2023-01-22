@@ -1,5 +1,7 @@
+import { Wrapper } from "@googlemaps/react-wrapper";
 import React from "react";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import SimpleMap from "./MapWrapper";
 type Props = {
   data?: any;
 };
@@ -9,7 +11,7 @@ const MapContainer = ({ data }: Props) => {
     <Fade triggerOnce={true} direction="up" duration={1500}>
       <div className="locationGroup">
         <div className="row">
-          <div className="col-sm-12 col-md-4">
+          <div className="col-sm-12 col-md-3">
             <h2>{data?.title}</h2>
             <h3>{data?.subTitle}</h3>
             <h3>EMFI Securities Limited</h3>
@@ -25,7 +27,12 @@ const MapContainer = ({ data }: Props) => {
             <a href={`tel:${data?.tel}`}>{data?.tel}</a>
             <a href={`mailto:${data?.mailto}`}>{data?.mailto}</a>
           </div>
-          <div className="col-sm-12 col-md-8"></div>
+          <div className="col-sm-12 col-md-9">
+            {" "}
+            {/* <Wrapper }> */}
+            <SimpleMap />
+            {/* </Wrapper> */}
+          </div>
         </div>
       </div>
     </Fade>

@@ -7,7 +7,7 @@ import ParticalBg from "../../Components/ParticalBg/ParticalBg";
 type Props = {
   SildeComponent: any;
   image?: string;
-  data?: any;
+  data?: any[];
   children?: any;
   className?: string;
   page?: string;
@@ -24,7 +24,7 @@ const SwiperCarousel = ({
   setImagePosition = () => {},
 }: Props) => {
   const router = useRouter();
-
+  console.log("data", data);
   return (
     <div>
       <Swiper

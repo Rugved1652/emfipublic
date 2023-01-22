@@ -1,0 +1,142 @@
+"filename", "language", "TypeScript", "JSON", "JavaScript", "SCSS", "TypeScript React", "XML", "JavaScript React", "YAML", "Docker", "comment", "blank", "total"
+"c:\Users\PHPDots\Desktop\emfi-nextjs\Dockerfile", "Docker", 0, 0, 0, 0, 0, 0, 0, 0, -19, -14, -6, -39
+"c:\Users\PHPDots\Desktop\emfi-nextjs\appspec-dev.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 9
+"c:\Users\PHPDots\Desktop\emfi-nextjs\buildspec-dev.yml", "YAML", 0, 0, 0, 0, 0, 0, 0, 46, 0, 0, 4, 50
+"c:\Users\PHPDots\Desktop\emfi-nextjs\helper\index.ts", "TypeScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\next.config.js", "JavaScript", 0, 0, 2, 0, 0, 0, 0, 0, 0, -1, 0, 1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\package-lock.json", "JSON", 0, 310, 0, 0, 0, 0, 0, 0, 0, 0, 0, 310
+"c:\Users\PHPDots\Desktop\emfi-nextjs\package.json", "JSON", 0, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\AssetManagement.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\FintechAsAService.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\Group 10808.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\SalesTrading.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\WealthManagement.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\aljazeeracolor.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\aljazeeragrey.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\banks.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\bloombergcolor.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\bloomberggrey.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\brokers.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\candidates.svg", "XML", 0, 0, 0, 0, 0, 86, 0, 0, 0, 0, 1, 87
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\chanthamhousecolor.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\chanthamhousegrey.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\clientconfidentiality.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\conflictsofinterest.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\corporatetreasuries.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\customercomplaints.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\customersuitability.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ebonds copy.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ebondsblue.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\efunds copy.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\efundsblue.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\eintel copy.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\eintelblue.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\email.svg", "XML", 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 1, 5
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ewealth copy.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ewealthblue.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\fintech.svg", "XML", 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 1, 11
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\france24color.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\france24grey.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\hegdefunds.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\insurancecompanies.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\mutualfunds.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\offshoreinvestors.svg", "XML", 0, 0, 0, 0, 0, 43, 0, 0, 0, 0, 1, 44
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\onshoreinvestors.svg", "XML", 0, 0, 0, 0, 0, 147, 0, 0, 0, 0, 1, 148
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ouraproach.svg", "XML", 0, 0, 0, 0, 0, 230, 0, 0, 0, 0, 1, 231
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ourclients.svg", "XML", 0, 0, 0, 0, 0, 137, 0, 0, 0, 0, 1, 138
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ourservice.svg", "XML", 0, 0, 0, 0, 0, 224, 0, 0, 0, 0, 1, 225
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ourteamplaceholder.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\ourvalues.svg", "XML", 0, 0, 0, 0, 0, 49, 0, 0, 0, 0, 1, 50
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\pensionfunds.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\reuterscolor.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\reutersgrey.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 1, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\voacolor.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\voagrey.svg", "XML", 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\public\whyemfi.svg", "XML", 0, 0, 0, 0, 0, 62, 0, 0, 0, 0, 1, 63
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\Group 10808.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\aljazeera color.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\aljazeera grey.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\bloomberg color.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\bloomberg grey.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\chantham house color.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\chantham house grey.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\france 24 color.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\france 24 grey.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\reuters color.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\voa color.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\As seen in\voa grey.svg", "XML", 0, 0, 0, 0, 0, -3, 0, 0, 0, 0, -1, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurTeamVectorIcons\candidates.svg", "XML", 0, 0, 0, 0, 0, -86, 0, 0, 0, 0, -1, -87
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurTeamVectorIcons\email.svg", "XML", 0, 0, 0, 0, 0, -4, 0, 0, 0, 0, -1, -5
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurTeamVectorIcons\ourvalues.svg", "XML", 0, 0, 0, 0, 0, -49, 0, 0, 0, 0, -1, -50
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurValuesIcons\clientconfidentiality.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurValuesIcons\conflictsofinterest.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurValuesIcons\customercomplaints.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\Aboutus\OurValuesIcons\customersuitability.svg", "XML", 0, 0, 0, 0, 0, -6, 0, 0, 0, 0, -1, -7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\SalesNTrading\ouraproach.svg", "XML", 0, 0, 0, 0, 0, -230, 0, 0, 0, 0, -1, -231
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\SalesNTrading\ourclients.svg", "XML", 0, 0, 0, 0, 0, -137, 0, 0, 0, 0, -1, -138
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Assets\SalesNTrading\ourservice.svg", "XML", 0, 0, 0, 0, 0, -224, 0, 0, 0, 0, -1, -225
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\AccordianComponent\AccordianComponent.tsx", "TypeScript React", 0, 0, 0, 0, 3, 0, 0, 0, 0, -1, -1, 1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\AnimatedComponent\TestDemo.jsx", "JavaScript React", 0, 0, 0, 0, 0, 0, 130, 0, 0, 26, 18, 174
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\Cards\ServiceCard\ServiceCard.tsx", "TypeScript React", 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\Charts\LineChartComponent\DoubleLineChartComponent.tsx", "TypeScript React", 0, 0, 0, 0, 139, 0, 0, 0, 0, 2, 6, 147
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\Charts\LineChartComponent\LineChartComponent.tsx", "TypeScript React", 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, -2, 34
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\Footer\Footer.tsx", "TypeScript React", 0, 0, 0, 0, 46, 0, 0, 0, 0, 0, 1, 47
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\HeroSearch\HeroSearch.tsx", "TypeScript React", 0, 0, 0, 0, -2, 0, 0, 0, 0, 0, 0, -2
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\HeroSection\HeroSection.tsx", "TypeScript React", 0, 0, 0, 0, 29, 0, 0, 0, 0, 11, 4, 44
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\HeroTextArea\HeroTextArea.tsx", "TypeScript React", 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 13
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\LoginForm\LoginModal.tsx", "TypeScript React", 0, 0, 0, 0, 210, 0, 0, 0, 0, 1, 12, 223
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Components\Navbar\Navbar.tsx", "TypeScript React", 0, 0, 0, 0, 11, 0, 0, 0, 0, 1, 3, 15
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\AboutEmfi\AboutEmfi.tsx", "TypeScript React", 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\AboutValues\AboutValues.tsx", "TypeScript React", 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 1, 24
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\AsSeenIn\AsSeenIn.tsx", "TypeScript React", 0, 0, 0, 0, 35, 0, 0, 0, 0, 0, 0, 35
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\DefaultLayout\DefaultLayout.tsx", "TypeScript React", 0, 0, 0, 0, 15, 0, 0, 0, 0, 5, 0, 20
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\MapContainer\MapContainer.tsx", "TypeScript React", 0, 0, 0, 0, 5, 0, 0, 0, 0, 2, 0, 7
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\MapContainer\MapWrapper.tsx", "TypeScript React", 0, 0, 0, 0, 23, 0, 0, 0, 0, 1, 4, 28
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Containers\SwipeCarousel\SwipeCarousel.tsx", "TypeScript React", 0, 0, 0, 0, 7, 0, 0, 0, 0, 3, -1, 9
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Services\api.ts", "TypeScript", 50, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 54
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\Services\apiFunction.ts", "TypeScript", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\WaveScript\index.js", "JavaScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\aboutContent.ts", "TypeScript", 460, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 468
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\aboutContent.tsx", "TypeScript React", 0, 0, 0, 0, -325, 0, 0, 0, 0, 0, -11, -336
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\globalContent.ts", "TypeScript", 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 88
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\information.ts", "TypeScript", -400, 0, 0, 0, 0, 0, 0, 0, 0, 0, -20, -420
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\intelligenceInfo.tsx", "TypeScript React", 0, 0, 0, 0, -2126, 0, 0, 0, 0, 0, -1, -2127
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\policies.ts", "TypeScript", 422, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 505
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\productDetailsContent.ts", "TypeScript", 326, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 335
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\routes.ts", "TypeScript", 32, 0, 0, 0, 0, 0, 0, 0, 0, 5, 2, 39
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\serviceContent.ts", "TypeScript", 164, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 169
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\serviceContent.tsx", "TypeScript React", 0, 0, 0, 0, -134, 0, 0, 0, 0, 0, -8, -142
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\serviceDetailsContent.ts", "TypeScript", 332, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 340
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\constants\slidesInformation.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\about.tsx", "TypeScript React", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, -1, 6
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\contact.tsx", "TypeScript React", 0, 0, 0, 0, 7, 0, 0, 0, 0, 3, 0, 10
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\cookiespolicy.tsx", "TypeScript React", 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 2, 8
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\index.tsx", "TypeScript React", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\intelligence\[details]\[inteligencedetails]\index.tsx", "TypeScript React", 0, 0, 0, 0, 142, 0, 0, 0, 0, 3, 5, 150
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\intelligence\[details]\index.tsx", "TypeScript React", 0, 0, 0, 0, 70, 0, 0, 0, 0, 0, 5, 75
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\intelligence\details\[inteligencedetails]\index.tsx", "TypeScript React", 0, 0, 0, 0, -142, 0, 0, 0, 0, -3, -5, -150
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\intelligence\details\index.tsx", "TypeScript React", 0, 0, 0, 0, -42, 0, 0, 0, 0, 0, -4, -46
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\intelligence\index.tsx", "TypeScript React", 0, 0, 0, 0, 35, 0, 0, 0, 0, 8, 4, 47
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\policydocuments.tsx", "TypeScript React", 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 5, 39
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\privacypolicy.tsx", "TypeScript React", 0, 0, 0, 0, -229, 0, 0, 0, 0, 0, -4, -233
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\privacypolicy\[privacypolicy]\index.tsx", "TypeScript React", 0, 0, 0, 0, 19, 0, 0, 0, 0, 59, 5, 83
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\privacypolicy\index.tsx", "TypeScript React", 0, 0, 0, 0, 34, 0, 0, 0, 0, 0, 5, 39
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\scamalert.tsx", "TypeScript React", 0, 0, 0, 0, -10, 0, 0, 0, 0, 0, 1, -9
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\services\index.tsx", "TypeScript React", 0, 0, 0, 0, 34, 0, 0, 0, 0, -1, 0, 33
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\services\ourproducts\[products].tsx", "TypeScript React", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 1, 13
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\services\ourservices\[services].tsx", "TypeScript React", 0, 0, 0, 0, 87, 0, 0, 0, 0, 2, 2, 91
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\[lang]\termsofuse.tsx", "TypeScript React", 0, 0, 0, 0, -197, 0, 0, 0, 0, 214, -1, 16
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\pages\index.tsx", "TypeScript React", 0, 0, 0, 0, 2, 0, 0, 0, 0, 3, 1, 6
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\Details.module.scss", "SCSS", 0, 0, 0, 77, 0, 0, 0, 0, 0, 4, 0, 81
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\Footer.module.scss", "SCSS", 0, 0, 0, -6, 0, 0, 0, 0, 0, 2, 0, -4
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\HeroSection.module.scss", "SCSS", 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\InputComponent.module.scss", "SCSS", 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\LoginForm.module.scss", "SCSS", 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 19
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\ServiceCard.module.scss", "SCSS", 0, 0, 0, -6, 0, 0, 0, 0, 0, 0, 0, -6
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\Services.module.scss", "SCSS", 0, 0, 0, 19, 0, 0, 0, 0, 0, 1, 0, 20
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\globals.scss", "SCSS", 0, 0, 0, 621, 0, 0, 0, 0, 0, 4, 6, 631
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\inteligenceCountry.module.scss", "SCSS", 0, 0, 0, 253, 0, 0, 0, 0, 0, 4, 2, 259
+"c:\Users\PHPDots\Desktop\emfi-nextjs\src\styles\variable.scss", "SCSS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2
+"c:\Users\PHPDots\Desktop\emfi-nextjs\taskdef-dev.json", "JSON", 0, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40
+"c:\Users\PHPDots\Desktop\emfi-nextjs\type.d.ts", "TypeScript", 76, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 82
+"Total", "-", 1583, 361, 2, 982, -2119, 364, 130, 55, -19, 349, 185, 1873

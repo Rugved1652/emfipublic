@@ -11,11 +11,11 @@ import moment from "moment";
 type Props = {
   blogPost: any;
   blogPostList?: any;
+  recentReport: any;
 };
 
-const index = ({ blogPost, blogPostList }: Props) => {
-  console.log(blogPostList?.data?.reports_list);
-  console.log(blogPost, "blogPost");
+const index = ({ blogPost, blogPostList, recentReport }: Props) => {
+  console.log(recentReport, "recentReport");
   return (
     <div className="container">
       <HeroSearch
@@ -86,13 +86,16 @@ const index = ({ blogPost, blogPostList }: Props) => {
               className={`${styles.recentGroup} ${styles.inteligenceDetailSidebar}`}
             >
               <h3>Recent</h3>
-              {Array.from(Array(3).keys()).map((key) => (
+              {recentReport.data.latest_report.map((report: any) => (
                 <Link
-                  href="/english/intelligence/details/abcx"
+                  key={report.id}
+                  href={`/english/intelligence/details/${report.report_slug}?id=${report.id}`}
                   className={styles.recentGroup}
                 >
-                  <p>Country Report: Test</p>
-                  <span>November 2023</span>
+                  <p>{report.report_ttl}</p>
+                  <span>
+                    {moment(report.report_date).format("MMMM DD, YYYY")}
+                  </span>
                 </Link>
               ))}
             </div>
@@ -131,17 +134,16 @@ const index = ({ blogPost, blogPostList }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  // console.log("context", context);
   let blogPost = await fetchData(
     `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
   );
+  let recentReport = await fetchData(`home/latest-report-list`);
   let blogPostList = await fetchData(`intelligence/espanol`);
-  console.log("blogPostList", blogPost);
-  // console.log("blogPost", blogPost);
   return {
     props: {
       blogPost: blogPost || null,
       blogPostList: blogPostList || null,
+      recentReport: recentReport,
     },
   };
 };

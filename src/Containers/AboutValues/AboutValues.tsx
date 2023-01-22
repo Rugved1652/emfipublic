@@ -1,18 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import { infoSectionContentEN } from "../../constants/information";
 import styles from "../../styles/AboutEmfi.module.scss";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 import EmfiText from "../../Assets/emfi-text.svg";
+
 type Props = {
-  infoSectionContent: any;
+  infoSectionContent: infoSectionContent[];
 };
 
-const AboutValues = (infoSectionContent: Props) => {
+const AboutValues = ({ infoSectionContent }: Props) => {
   return (
     <div className={styles.aboutEmfi}>
       <div>
-        {infoSectionContentEN.map((content, index) => (
+        {infoSectionContent.map((content, index) => (
           <Fade
             className={styles.aboutEmfiSection}
             triggerOnce={true}

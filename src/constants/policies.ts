@@ -159,7 +159,6 @@ export const termofUseES = `  <p>Estos Términos de uso se aplican a <a href="ht
 <h4>Conflicto con términos adicionales</h4>
 
 <p>Ciertas páginas web o áreas en el sitio web de EMFI pueden contener términos, condiciones, divulgaciones y renuncias adicionales (colectivamente, los "Términos adicionales"). En caso de conflicto entre estos Términos de uso y los Términos adicionales, los Términos adicionales regirán para esas páginas web o áreas.</p>`;
-
 export const termofUseEN = `  <p>These Terms of Use apply to <a href="http://emfi.uk">emfi.uk</a> as well as any other affiliated sites, digital services, or applications on which a link to these Terms of Use appears (collectively, the "EMFI Website") and apply to all visitors. These Terms of Use and any other terms that appear on the page from which you were directed to these Terms of Use govern your use of the EMFI Website. By accessing the EMFI Website, you agree to be legally bound by the Terms of Use then in effect. Please also refer to the relevant additional legal information applicable to your country.</p>
 <p>These Terms of Use as well as the information and materials contained in the EMFI Website are subject to change at any time and from time to time, without notice. EMFI may add features to or remove features from the EMFI Website at any time and from time to time in our sole discretion. Continued access to the EMFI Website following any modification in these Terms of Use will constitute your acceptance of the Terms of Use as modified. If you do not agree to be bound by these Terms of Use, do not use the EMFI Website.</p>
 <h4>Access Subject to Local Restrictions</h4>
@@ -262,7 +261,6 @@ export const privacypolicyES = `<p>EMFI agradece su visita a este sitio web ("Si
 <p>Si tiene una solicitud con respecto al procesamiento de sus datos personales, envíe un correo electrónico a la siguiente dirección: <a href="mailto:compliance@emfi.uk">compliance@emfi.uk</a></p>
 <h4>Estado de este aviso de privacidad</h4>
 <p>Este aviso de privacidad se actualizó en diciembre de 2018. Nos reservamos el derecho de modificarlo de vez en cuando. Cualquier cambio o adición futura al procesamiento de datos personales como se describe en este aviso que le afecta puede verse en el sitio web de EMFI en <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a>.</p>`;
-
 export const privacypolicyEN = `
 <p>EMFI appreciates your visit to this web site ("EMFI Website") and your interest in our services and products. Your privacy is important to us and we want you to feel comfortable visiting our site. We take care to protect your personal data collected, processed and used during visits to the EMFI Website.</p>
 <p>How we protect or use your data varies from country to country. Privacy Notices can be found for certain jurisdictions where EMFI entities process personal data. The terms of this Policy will be subject to the relevant jurisdiction-specific Privacy Notice where applicable. Please click on the jurisdiction that applies to you from the list at <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a></p>
@@ -312,6 +310,7 @@ export const privacypolicyEN = `
 <p>Should you have a request regarding the processing of your personal data please send an email to the following address: <a href="mailto:compliance@emfi.uk">compliance@emfi.uk</a></p>
 <h4>Status of this privacy notice</h4>
 <p>This privacy notice was updated in December 2018. We reserve the right to amend it from time to time. Any future changes or additions to the processing of personal data as described in this notice affecting you can be viewed on the EMFI website at <a href="https://www.emfi.uk/english/privacy-policy">https://www.emfi.uk/english/privacy-policy</a>.</p>`;
+
 export const regulatoryEN = `
 <h4>1. BACKGROUND</h4> 
 <p>This document sets out the execution policy and approach to providing best execution for EMFI Securities Limited (‘EMFI’, “we” or “us”, “our”), as required by the Markets in Financial Instrument Directive 2014/65/EU (including any applicable Level 2 provisions) (“MiFID 2”) as implemented by the UK Financial Conduct Authority (FCA) in its Handbook. This document forms part of our terms of business with you as our client (“you”, “your” “yours”).</p> 
@@ -503,9 +502,3 @@ type HeroSearchInfo = {
   placeholderText?: string;
   serviceList: any[];
 };
-
-// Legal
-// Términos De Uso
-// Política De Privacidad
-// Política De Cookies
-// Alerta De Estafas

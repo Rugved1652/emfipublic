@@ -17,17 +17,6 @@ type Props = {
 const HeroSection = ({ data }: Props) => {
   console.log("data", data);
   const [first, setfirst] = useState([]);
-  // console.log(
-  //   data?.display_title_second === "" || data?.graph_type === "global"
-  //     ? []
-  //     : console.log(
-  //         "chart",
-  //         data?.title,
-  //         Object.values(data?.chart_data?.benchmark_history_data).map(
-  //           (data: any) => ...data[0]
-  //         )
-  //       )
-  // );
 
   useEffect(() => {
     data?.display_title_second === "" || data?.graph_type === "global"

@@ -2,29 +2,43 @@ import React from "react";
 import HeroSearch from "../../../../Components/HeroSearch/HeroSearch";
 import ServiceHero from "../../../../Components/HeroSection/ServiceHero";
 import {
-  capitalContent,
-  fintechContent,
-  SalesNTradingContent,
-  securitiesContent,
-  wealthContent,
-} from "../../../../constants/serviceContent";
+  AnalyticslEN,
+  AnalyticslES,
+  CapitalEN,
+  CapitalES,
+  CapitalpageEN,
+  CapitalpageES,
+  fintechpageEN,
+  fintechpageES,
+  FundsEN,
+  FundsES,
+  securitiesEN,
+  securitiesES,
+  SecuritiespageEN,
+  SecuritiespageES,
+} from "../../../../constants/serviceDetailsContent";
 import MapContainer from "../../../../Containers/MapContainer/MapContainer";
 import SwiperCarousel from "../../../../Containers/SwipeCarousel/SwipeCarousel";
-type Props = {};
+type Props = {
+  content: any;
+  servicePageInfo: HeroSearchInfo;
+};
 
-const Services = ({ content }: any) => {
+const Services = ({ content, servicePageInfo }: Props) => {
   return (
     <>
       <div className="container">
         <HeroSearch
-          subHeading="EMFI Securities Limited"
-          heading="Capital Market"
-          placeholder="EMFI Securities Limited"
+          subHeading={servicePageInfo.subHeading}
+          heading={servicePageInfo.heading}
+          placeholder={servicePageInfo.placeholderText}
+          data={servicePageInfo.serviceList}
+          searchKeyname={"label"}
         />
       </div>
       <SwiperCarousel
         page="service"
-        data={SalesNTradingContent}
+        data={content}
         className={"serviceSlider"}
         SildeComponent={ServiceHero}
       ></SwiperCarousel>
@@ -53,49 +67,58 @@ export async function getStaticPaths() {
 
 // `getStaticPaths` requires using `getStaticProps`
 export async function getStaticProps({ params }: any) {
-  console.log(params);
-
   let content: any;
+  let servicePageInfo: any;
   if (params?.lang === "english") {
-    switch (params?.products) {
+    switch (params.services) {
       case "securities":
-        content = securitiesContent;
+        content = securitiesEN;
+        servicePageInfo = SecuritiespageEN;
         break;
       case "wealth":
-        content = wealthContent;
+        content = CapitalEN;
+        servicePageInfo = CapitalpageEN;
         break;
       case "fintech":
-        content = fintechContent;
+        content = AnalyticslEN;
+        servicePageInfo = fintechpageEN;
         break;
       case "capital":
-        content = capitalContent;
+        content = FundsEN;
+        servicePageInfo = CapitalpageEN;
         break;
       default:
-        content = {};
+        content = [];
+        servicePageInfo = {};
         break;
     }
   } else if (params?.lang === "espanol") {
-    switch (params?.products) {
+    switch (params.services) {
       case "securities":
-        content = securitiesContent;
+        content = securitiesES;
+        servicePageInfo = SecuritiespageES;
         break;
       case "wealth":
-        content = wealthContent;
+        content = CapitalES;
+        servicePageInfo = CapitalpageES;
         break;
       case "fintech":
-        content = fintechContent;
+        content = AnalyticslES;
+        servicePageInfo = fintechpageES;
         break;
       case "capital":
-        content = capitalContent;
+        content = FundsES;
+        servicePageInfo = CapitalpageES;
         break;
       default:
-        content = {};
+        content = [];
+        servicePageInfo = {};
         break;
     }
   }
   return {
     // Passed to the page component as props
-    props: { content: content },
+    props: { content: content, servicePageInfo: servicePageInfo },
   };
 }
 

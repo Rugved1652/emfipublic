@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import LinkedInIconWhite from "../../Icons/LinkedInIconWhite";
 import MessageIconWhite from "../../Icons/MessageIconWhite";
-import {AttentionSeeker, Flip, Slide} from 'react-awesome-reveal';
+import { AttentionSeeker, Flip, Slide } from "react-awesome-reveal";
 type Props = {
   image: string;
   designation: string;
-  email: string;
+  email: string | null;
   linkedIn: string;
   name: string;
 };
