@@ -86,8 +86,6 @@ export async function getStaticPaths() {
 
 // `getStaticPaths` requires using `getStaticProps`
 export async function getStaticProps({ params }: any) {
-  console.log(params);
-
   let content: any;
   const AsSeenContent: any =
     params?.lang === "espanol" ? AsSeenContentES : AsSeenContentEN;

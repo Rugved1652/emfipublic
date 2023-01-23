@@ -4,6 +4,10 @@ import React, { ReactNode } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import dynamic from "next/dynamic";
+import {
+  ReequestDemoTextEN,
+  ReequestDemoTextES,
+} from "../../constants/globalContent";
 // import TestDemo from "../../Components/AnimatedComponent/TestDemo.jsx";
 const TestDemo = dynamic(
   import("../../Components/AnimatedComponent/TestDemo.jsx"),
@@ -22,7 +26,7 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <div className="">
-       <Navbar />
+        <Navbar />
       </div>
       {/* <canvas id="waves"></canvas> */}
       {/* <React.Suspense fallback={<></>}>
@@ -30,10 +34,17 @@ export default function Layout({ children }: Props) {
       </React.Suspense> */}
       {children}
       <Footer />
-      {
-        Router?.pathname !== "/[lang]/contact" ? 
-        <Link href={`/${Router.query.lang}/contact`} className="contact-sticky-btn" id="request_demo_btn" >Request Demo</Link> : null
-      }
+      {Router?.pathname !== "/[lang]/contact" ? (
+        <Link
+          href={`/${Router.query.lang}/contact`}
+          className="contact-sticky-btn"
+          id="request_demo_btn"
+        >
+          {Router.query.lang === "espanol"
+            ? ReequestDemoTextES
+            : ReequestDemoTextEN}
+        </Link>
+      ) : null}
     </>
   );
 }

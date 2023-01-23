@@ -28,7 +28,7 @@ const HeroSection = ({ data }: Props) => {
         );
   }, []);
 
-  console.log("data", data);
+  console.log("Graph", data);
   return (
     <div className={styles.HeroWrapper}>
       <HeroTextArea
@@ -39,6 +39,7 @@ const HeroSection = ({ data }: Props) => {
         graphType={data.graphType}
         description={data.description}
         subHeading={data.report_title}
+        formatType={data.format_type}
       />
       <MapContainer
         country={data.title}

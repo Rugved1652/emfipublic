@@ -10,6 +10,7 @@ import { useForm } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import dynamic from "next/dynamic";
+import { min } from "moment";
 const TestDemo = dynamic(
   import("../../Components/AnimatedComponent/TestDemo.jsx"),
   {
@@ -31,18 +32,34 @@ const notifySuccess = (message: string) =>
 
 const Contact = ({ contactDetails }: any) => {
   const validationSchema = yup.object().shape({
-    first_name: yup.string().required("First Name Required"),
-    last_name: yup.string().required("Last Name Required"),
+    first_name: yup
+      .string()
+      .required("First Name Required")
+      .min(2, "The First name must be at least 2 characters."),
+    last_name: yup
+      .string()
+      .required("Last Name Required")
+      .min(2, "The Last name must be at least 2 characters."),
     organization: yup.string().required("Organization Name Required"),
-    country: yup.string().required("Country Name Required"),
+    country: yup
+      .string()
+      .required("Country Name Required")
+      .min(2, "The Country name must be at least 2 characters."),
     phone: yup
       .number()
-      .typeError("Valid Number Required")
+      .typeError("The phone must be a number.")
       .required("Phone Number Required"),
-    email: yup.string().email().required("Email Name Required"),
+    email: yup
+      .string()
+      .email()
+      .typeError("The email must be a valid email address.")
+      .required("Email Name Required"),
     business_unit: yup.string().required("Buisness Unit Required"),
     subject: yup.string().required("Subject Requiredd"),
-    message: yup.string().required("Message Required"),
+    message: yup
+      .string()
+      .min(5, "The message must be at least 5 characters.")
+      .required("Message Required"),
   });
 
   const handleSubmitFun = async (data: any) => {
@@ -74,7 +91,9 @@ const Contact = ({ contactDetails }: any) => {
     const arrayOfError = Object.values(errors);
     console.log("arrayOfError", arrayOfError);
     if (Object.keys(errors).length !== 0) {
-      arrayOfError.map((error: any) => notifySuccess(error.message));
+      arrayOfError
+        .slice(0, 1)
+        .map((error: any) => notifySuccess(error.message));
     }
   }, [errors]);
 

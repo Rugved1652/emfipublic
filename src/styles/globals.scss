@@ -76,11 +76,24 @@ body {
   }
 }
 
+.map {
+  position: relative;
+}
+
+.mapTooltip {
+  position: absolute;
+  top: 100;
+  font-size: 14px;
+  width: 125px;
+  background-color: #fff;
+  color: #000;
+}
+
 .change {
   transform: translateX(-100%);
 }
 .back {
-  transform: translateX(-0%);
+  transform: translateX(0%);
 }
 
 * {
