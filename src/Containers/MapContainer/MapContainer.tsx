@@ -7,11 +7,12 @@ type Props = {
 };
 
 const MapContainer = ({ data }: Props) => {
-  return (
-    <Fade triggerOnce={true} direction="up" duration={1500}>
+  return (    
       <div className="locationGroup">
         <div className="row">
           <div className="col-sm-12 col-md-3">
+          <Fade triggerOnce={true} direction="left" damping={0.1}>
+            <div>
             <h2>{data?.title}</h2>
             <h3>{data?.subTitle}</h3>
             <h3>EMFI Securities Limited</h3>
@@ -26,16 +27,19 @@ const MapContainer = ({ data }: Props) => {
 
             <a href={`tel:${data?.tel}`}>{data?.tel}</a>
             <a href={`mailto:${data?.mailto}`}>{data?.mailto}</a>
+            </div>
+            </Fade>
           </div>
           <div className="col-sm-12 col-md-9">
             {" "}
             {/* <Wrapper }> */}
-            <SimpleMap cordinates={data.cordinate} />
+            <Fade triggerOnce={true} direction="right" duration={700} >
+              <SimpleMap cordinates={data.cordinate} />
+            </Fade>
             {/* </Wrapper> */}
           </div>
         </div>
-      </div>
-    </Fade>
+      </div>    
   );
 };
 

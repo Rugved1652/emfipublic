@@ -4,7 +4,7 @@ import React from "react";
 import HeroSearch from "../../../../Components/HeroSearch/HeroSearch";
 import { fetchData } from "../../../../Services/apiFunction";
 import styles from "../../../../styles/inteligenceCountry.module.scss";
-
+import { Fade } from "react-awesome-reveal";
 type Props = {};
 
 const index = ({ blogPostList, PostbyCountries }: any) => {
@@ -18,43 +18,26 @@ const index = ({ blogPostList, PostbyCountries }: any) => {
         searchKeyname="title"
         data={blogPostList?.data?.reports_list}
       />
-      <div className="d-flex gap-5" style={{ margin: "30px 0" }}>
-        <div className=" col-lg-10">
+      <div className="row" style={{ margin: "30px 0" }}>
+        <div className="col-md-12 col-lg-8 col-xl-9">
           {PostbyCountries.data.reports_list.map((post: any) => (
-            <li
-              key={post.id}
-              style={{
-                listStyle: "none",
-                border: "1px solid #F5F6F7",
-                borderRadius: "24px",
-                color: "white",
-              }}
-            >
-              <Link
-                style={{ textDecoration: "none" }}
-                href={`/english/intelligence/details/${post.report_slug}?id=${post.id}`}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    listStyle: "none",
-                    border: "1px solid #F5F6F7",
-                    borderRadius: "24px",
-                    backgroundColor: "white",
-                    padding: "30px 20px",
-                    color: "#444444",
-                  }}
-                >
+             <Fade
+             key={post.id}
+             triggerOnce={true}
+             direction="up"
+             duration={1500}
+             className="afterLoginResearch"
+           >
+            <div>
+              <Link href={`/english/intelligence/details/${post.report_slug}?id=${post.id}`}>
                   <p>{post.report_slug}</p>
                   <span>April 27, 2021</span>
-                </div>
               </Link>
-            </li>
+            </div>
+            </Fade>
           ))}
         </div>
-        <div className=" col-lg-2">
+        <div className="col-md-12 col-lg-4 col-xl-3">
           <div
             className={`${styles.countryGroup} ${styles.inteligenceDetailSidebar}`}
           >

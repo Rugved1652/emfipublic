@@ -4,6 +4,7 @@ type Props = {};
 
 const LinkedInIconWhite = (props: Props) => {
   return (
+    <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fuat.emfi.uk%2Fenglish%2Fresearch%2Fdetails%2Fone-step-at-a-time-1521">
     <svg
       id="linkedin"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +27,7 @@ const LinkedInIconWhite = (props: Props) => {
         transform="translate(6 6)"
         fill="#fdfdfd"
       />
-    </svg>
+    </svg></a>
   );
 };
 

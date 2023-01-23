@@ -34,6 +34,19 @@
           font-size: 0.8333vw;
         }
       }
+      a {
+        font-size: 14px;
+        color: var(--brand-primary);
+        margin-bottom: 14;
+        text-align: justify;
+       font-weight: 600;
+        @media (min-width: 1200px) {
+          font-size: 0.8333vw;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
       span {
         padding: 0;
         font-size: 14px;
@@ -153,6 +166,7 @@
             margin-bottom: 14px;
             padding-bottom: 14px;
             border-bottom: 1px solid var(--gray-color-two);
+            display: block;
             cursor: pointer;
             @media (min-width: 1200px) {
                 margin-bottom: 1vw;
@@ -242,9 +256,13 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            svg {
+            a {
               margin-right: 20px;
               cursor: pointer;
+              svg {
+                width: 28px;
+                height: 28px;
+              }
               &:last-child {
                 margin-right: 0;
               }

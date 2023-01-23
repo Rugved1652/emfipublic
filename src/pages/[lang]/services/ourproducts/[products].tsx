@@ -33,7 +33,7 @@ const Products = ({ content, AsSeenContent }: Props) => {
     title: "London",
     cordinate: { lat: -0.1479572, long: 51.514359 },
     mailto: "contact@emfi.uk",
-    tel: "+442039833634",
+    tel: "+44 20 3983 3634",
   };
   const [imagePosition, setImagePosition] = useState(false);
   const [greyImage, setGreyImage] = useState(-1);

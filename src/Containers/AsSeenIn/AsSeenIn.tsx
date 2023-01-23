@@ -16,7 +16,7 @@ const AsSeenIn = ({ AsSeenContent }: Props) => {
       </div>
       <div className="AsSeenIn">
         {AsSeenContent.data.map((brand: any, index: any) => (
-          <Flip key={index} direction={"vertical"} duration={1500}>
+          <Flip className="AsSeenInLogoBox" key={index} direction={"vertical"} duration={1500}>
             <div
               className="border-ani"
               onMouseEnter={() => setGreyImage(index)}

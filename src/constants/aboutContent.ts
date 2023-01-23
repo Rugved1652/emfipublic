@@ -196,7 +196,7 @@ export const OurValuesES: OurValuesSection = {
   ],
 };
 export const OurValuesEN: OurValuesSection = {
-  title: "OurValues",
+  title: "Our Values",
   ourValues: [
     {
       id: "1",
@@ -417,23 +417,17 @@ export const OurTeamEN: OurTeamSection = {
 export const infoSectionContentEN: infoSectionContent[] = [
   {
     id: "1",
-    title: "CANDIDATES",
+    title: "Candidates",
     isImage: false,
-    paragraphs: [
-      "We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.",
-      "Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.",
-      "Does that sound like you? Discover our many career opportunities by clicking here..",
-    ],
     image: "/candidates.svg",
+    content: `<p>We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.</p><p>Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.</p><p>Does that sound like you? Discover our many career opportunities by clicking <a href='http://web.emfi.local/english/contact/careers'>here</a>.</p>`
   },
   {
     id: "2",
     isImage: false,
-    title: "OUR VALUES",
-    paragraphs: [
-      "We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
-      " We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.",
-      " We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.",
+    title: "Our Values",
+    content: [
+      "<p><b>Health and safety</b><br>We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.</p><p><b>Equal opportunity</b><br>We do not tolerate any kind of discrimination, bullying or harassment. Everyone has the same chance to get ahead at EMFI irrespective of their ethnicity, gender, national origin, age, ability, sexual orientation or religion.</p> <p><b>Whistle-blowing policy</b><br>We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.</p>"
     ],
     image: "/ourvalues.svg",
   },

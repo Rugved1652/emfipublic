@@ -2,7 +2,8 @@ import React from "react";
 import HeroSearch from "../../../../../Components/HeroSearch/HeroSearch";
 import styles from "../../../../../styles/Details.module.scss";
 import LinkedInIconWhite from "../../../../../Components/Icons/LinkedInIconWhite";
-import MessageIconWhite from "../../../../../Components/Icons/MessageIconWhite";
+import FacebookIconWhite from "../../../../../Components/Icons/FacebookIconWhite";
+import TwiterIconWhite from "../../../../../Components/Icons/TwiterIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
 import { fetchData } from "../../../../../Services/apiFunction";
@@ -79,7 +80,8 @@ const index = ({ blogPost, blogPostList, recentReport }: Props) => {
               <h3>Share On</h3>
               <div className={styles.socialIconGroupList}>
                 <LinkedInIconWhite />
-                <MessageIconWhite />
+                <FacebookIconWhite />
+                <TwiterIconWhite />
               </div>
             </div>
             <div

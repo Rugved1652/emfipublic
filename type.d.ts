@@ -1,3 +1,5 @@
+import src from "react-select/dist/declarations/src";
+
 declare type AboutEmfiContent = {
   id: string;
   title: string;
@@ -31,7 +33,8 @@ declare type infoSectionContent = {
   id: string;
   isImage: boolean;
   title: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  content?:string;
 };
 declare type AsSeenContent = {
   id: string;

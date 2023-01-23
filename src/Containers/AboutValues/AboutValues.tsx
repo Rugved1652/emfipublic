@@ -37,9 +37,10 @@ const AboutValues = ({ infoSectionContent }: Props) => {
                     />
                   ) : null}
                 </h2>
-                {content.paragraphs.map((paragraph) => (
+                {/* {content.paragraphs.map((paragraph) => (
                   <p>{paragraph}</p>
-                ))}
+                ))} */}
+                <div dangerouslySetInnerHTML={{ __html: content.content }}></div>
               </div>
               <div className={styles.imageContainer}>
                 <Image
