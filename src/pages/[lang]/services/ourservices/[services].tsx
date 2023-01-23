@@ -25,6 +25,12 @@ type Props = {
 };
 
 const Services = ({ content, servicePageInfo }: Props) => {
+  const data = {
+    title: "London",
+    cordinate: { lat: -0.1479572, long: 51.514359 },
+    mailto: "contact@emfi.uk",
+    tel: "+442039833634",
+  };
   return (
     <>
       <div className="container">
@@ -43,7 +49,7 @@ const Services = ({ content, servicePageInfo }: Props) => {
         SildeComponent={ServiceHero}
       ></SwiperCarousel>
       <div className="container">
-        <MapContainer />
+        <MapContainer data={data} />
       </div>
     </>
   );

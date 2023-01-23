@@ -20,12 +20,15 @@ import {
   OurValuesES,
 } from "../../constants/aboutContent";
 import AsSeenIn from "../../Containers/AsSeenIn/AsSeenIn";
-import { aboutHeroInformation } from "../../constants/productDetailsContent";
 import {
   AsSeenContentEN,
   AsSeenContentES,
 } from "../../constants/globalContent";
 import MapContainer from "../../Containers/MapContainer/MapContainer";
+import {
+  aboutHeroInformationEN,
+  aboutHeroInformationES,
+} from "../../constants/productDetailsContent";
 
 type Props = {
   ourClient: OurClientsSection;
@@ -34,6 +37,8 @@ type Props = {
   infoSection: infoSectionContent[];
   AsSeenContent: AsSeenSection;
   AboutEmfiContent: AboutEmfiContent;
+  slideContent: any;
+  res: any;
 };
 
 const About = ({
@@ -43,14 +48,25 @@ const About = ({
   infoSection,
   AsSeenContent,
   AboutEmfiContent,
+  slideContent,
+  res,
 }: Props) => {
+  console.log(res);
+
+  const data = {
+    title: "London",
+    cordinate: { lat: -0.1479572, long: 51.514359 },
+    mailto: "contact@emfi.uk",
+    tel: "+442039833634",
+  };
+
   return (
     <>
       <SwiperCarousel
         page="aboutPage"
         SildeComponent={ProductHero}
-        data={aboutHeroInformation.data}
-        image={aboutHeroInformation.image}
+        data={slideContent.data}
+        image={slideContent.image}
       />
       <div className="container">
         <AboutEmfi aboutData={AboutEmfiContent} />
@@ -114,7 +130,7 @@ const About = ({
         </div>
         <AboutValues infoSectionContent={infoSection} />
         <AsSeenIn AsSeenContent={AsSeenContent} />
-        <MapContainer />
+        <MapContainer data={data} />
       </div>
     </>
   );
@@ -128,6 +144,7 @@ export async function getStaticPaths() {
 }
 export async function getStaticProps(context: any) {
   const res = await fetchData(`about/${context.params.lang}`);
+
   return {
     props: {
       ourClient:
@@ -144,6 +161,11 @@ export async function getStaticProps(context: any) {
         context.params.lang === "espanol"
           ? AboutEmfiContentES
           : AboutEmfiContentEN,
+      slideContent:
+        context.params.lang === "espanol"
+          ? aboutHeroInformationES
+          : aboutHeroInformationEN,
+      res: res || null,
     },
   };
 }

@@ -29,6 +29,12 @@ type Props = {
 };
 
 const Products = ({ content, AsSeenContent }: Props) => {
+  const data = {
+    title: "London",
+    cordinate: { lat: -0.1479572, long: 51.514359 },
+    mailto: "contact@emfi.uk",
+    tel: "+442039833634",
+  };
   const [imagePosition, setImagePosition] = useState(false);
   const [greyImage, setGreyImage] = useState(-1);
 
@@ -56,7 +62,7 @@ const Products = ({ content, AsSeenContent }: Props) => {
       ></SwiperCarousel>
       <div className="container">
         <AsSeenIn AsSeenContent={AsSeenContent} />
-        <MapContainer />
+        <MapContainer data={data} />
       </div>
     </>
   );

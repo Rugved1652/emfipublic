@@ -6,7 +6,6 @@ import {
   scamalertEN,
   scamalertES,
 } from "../../constants/policies";
-import { HeroSearchInfo } from "../../constants/serviceContent";
 
 type Props = {
   scamAlert: string;

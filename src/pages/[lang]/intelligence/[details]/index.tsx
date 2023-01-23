@@ -7,7 +7,8 @@ import styles from "../../../../styles/inteligenceCountry.module.scss";
 
 type Props = {};
 
-const index = ({ blogPostList }: any) => {
+const index = ({ blogPostList, PostbyCountries }: any) => {
+  // console.log(PostbyCountries.data.reports_list);
   return (
     <div className="container">
       <HeroSearch
@@ -17,13 +18,36 @@ const index = ({ blogPostList }: any) => {
         searchKeyname="title"
         data={blogPostList?.data?.reports_list}
       />
-      <div className="d-flex" style={{ margin: "30px 0" }}>
+      <div className="d-flex gap-5" style={{ margin: "30px 0" }}>
         <div className=" col-lg-10">
-          {Array.from(Array(25).keys()).map((key) => (
-            <li>
-              <Link href="/english/intelligence/details">
-                <div>
-                  <p>Country Report: Nothing New Under The Sun</p>
+          {PostbyCountries.data.reports_list.map((post: any) => (
+            <li
+              key={post.id}
+              style={{
+                listStyle: "none",
+                border: "1px solid #F5F6F7",
+                borderRadius: "24px",
+                color: "white",
+              }}
+            >
+              <Link
+                style={{ textDecoration: "none" }}
+                href={`/english/intelligence/details/${post.report_slug}?id=${post.id}`}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    listStyle: "none",
+                    border: "1px solid #F5F6F7",
+                    borderRadius: "24px",
+                    backgroundColor: "white",
+                    padding: "30px 20px",
+                    color: "#444444",
+                  }}
+                >
+                  <p>{post.report_slug}</p>
                   <span>April 27, 2021</span>
                 </div>
               </Link>
@@ -65,13 +89,11 @@ const index = ({ blogPostList }: any) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  let blogPost = await fetchData(
-    `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
-  );
   let blogPostList = await fetchData(`intelligence/espanol`);
+  let PostbyCountries = await fetchData(`intelligence/espanol/search/angola`);
   return {
     props: {
-      blogPost: blogPost || null,
+      PostbyCountries: PostbyCountries || null,
       blogPostList: blogPostList || null,
     },
   };

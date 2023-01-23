@@ -30,7 +30,7 @@ const MapContainer = ({ data }: Props) => {
           <div className="col-sm-12 col-md-9">
             {" "}
             {/* <Wrapper }> */}
-            <SimpleMap />
+            <SimpleMap cordinates={data.cordinate} />
             {/* </Wrapper> */}
           </div>
         </div>

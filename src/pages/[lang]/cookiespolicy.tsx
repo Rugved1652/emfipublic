@@ -6,7 +6,6 @@ import {
   LegalHerosearchEN,
   LegalHeroSearchES,
 } from "../../constants/policies";
-import { HeroSearchInfo } from "../../constants/serviceContent";
 
 type Props = {
   cookiespolicy: any[];

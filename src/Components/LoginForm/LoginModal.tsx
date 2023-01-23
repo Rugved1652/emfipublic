@@ -241,8 +241,6 @@ function LoginModal({}: Props) {
                               {...register("email")}
                               placeholder="Email"
                             />
-
-                            <a>Forget Password ?</a>
                           </div>
                           <div>
                             <span onClick={() => setEmail(0)}>Back</span>
@@ -262,11 +260,18 @@ function LoginModal({}: Props) {
                           ? `next`
                           : `  ${waitAuth ? "auth from mobile" : "submit"}`}
                       </button>
-                      <span onClick={() => sendOTP(middledata)}>send OTP</span>
-                      <span onClick={() => formSubmit(middledata)}>
-                        resend Auth
-                      </span>
-                      <a>Forget Password ?</a>
+                      {waitAuth ? (
+                        <>
+                          <span onClick={() => sendOTP(middledata)}>
+                            send OTP
+                          </span>
+                          <span onClick={() => formSubmit(middledata)}>
+                            resend Auth
+                          </span>
+                        </>
+                      ) : (
+                        <a>Forget Password ?</a>
+                      )}
                     </div>
                   </form>
                 ) : (

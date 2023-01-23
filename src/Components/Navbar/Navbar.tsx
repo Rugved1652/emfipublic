@@ -48,7 +48,13 @@ const NavbarComponent = (props: Props) => {
               {NavbarRoutes.map((i) => (
                 <li key={i.key}>
                   <Link
-                    className={styles.navBarMenuItem}
+                    className={`${styles.navBarMenuItem} ${
+                      Router.asPath === i.path ? styles.activeNav : ""
+                    } ${
+                      Router.asPath.includes(i.path) && i.key !== "home"
+                        ? styles.activeNav
+                        : ""
+                    } `}
                     href={Router.query.lang === "espanol" ? i.es_path : i.path}
                   >
                     {Router.query.lang === "espanol" ? i.es_label : i.en_label}
