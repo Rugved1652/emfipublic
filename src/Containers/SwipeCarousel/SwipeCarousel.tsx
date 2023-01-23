@@ -16,15 +16,12 @@ type Props = {
 
 const SwiperCarousel = ({
   image,
-  children,
   data,
   SildeComponent,
   className = "",
   page,
   setImagePosition = () => {},
 }: Props) => {
-  const router = useRouter();
-  console.log("data", data);
   return (
     <div>
       <Swiper
@@ -47,12 +44,12 @@ const SwiperCarousel = ({
           sensitivity: 1,
           releaseOnEdges: true,
         }}
-        // speed={1}
-        // autoplay={{
-        //   delay: 10500,
-        //   disableOnInteraction: false,
-        // }}
-        autoplay={false}
+        speed={1}
+        autoplay={{
+          delay: 10500,
+          disableOnInteraction: false,
+        }}
+        // autoplay={false}
         className={`vh-100 home-slider ${
           page === "aboutPage" ? "about-service-slider" : ""
         } ${page === "product" ? "about-service-slider" : ""} ${className}`}

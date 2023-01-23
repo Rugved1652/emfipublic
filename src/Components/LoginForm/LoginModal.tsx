@@ -227,7 +227,7 @@ function LoginModal({}: Props) {
                         }}
                       >
                         <div
-                          className={email ? "change" : "back"}
+                          className={!email ? "change" : "back"}
                           style={{
                             display: "flex",
                             maxWidth: "300px",

@@ -20,9 +20,11 @@ function ChartContainer({
             <span className={styles.PriceOne}>
               - {priceone} {displaySubTitle}
             </span>
-            <span className={styles.PriceTwo}>
-              - {pricetwo} {displaySubTitle}
-            </span>
+            {pricetwo !== "" || pricetwo ? (
+              <span className={styles.PriceTwo}>
+                - {pricetwo} {displaySubTitle}
+              </span>
+            ) : null}
           </div>
         </div>
       </div>

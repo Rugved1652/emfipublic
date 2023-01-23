@@ -1,42 +1,33 @@
-import { Wrapper } from "@googlemaps/react-wrapper";
 import React from "react";
-import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import SimpleMap from "./MapWrapper";
 type Props = {
   data?: any;
 };
 
-const MapContainer = ({ data }: Props) => {
-  return (    
+const MapContainer = ({ MapData }: any) => {
+  console.log(MapData, "Maps");
+  return (
       <div className="locationGroup">
         <div className="row">
           <div className="col-sm-12 col-md-3">
-          <Fade triggerOnce={true} direction="left" damping={0.1}>
+          <Fade triggerOnce={true} direction="up" duration={1500}>
             <div>
-            <h2>{data?.title}</h2>
-            <h3>{data?.subTitle}</h3>
-            <h3>EMFI Securities Limited</h3>
-            <p>
-              25-26 Dering St, Third Floor
+            <h2>{MapData?.title}</h2>
+            <h3>{MapData?.subTitle}</h3>
+            <p>25-26 Dering St, Third Floor
               <br /> Mayfair, London W1S 1AW
               <br /> United Kingdom
             </p>
-            {/* {data?.address.map((i: any) => (
-              <p>{i}</p>
-            ))} */}
-
-            <a href={`tel:${data?.tel}`}>{data?.tel}</a>
-            <a href={`mailto:${data?.mailto}`}>{data?.mailto}</a>
+            <a href={`tel:${MapData?.tel}`}>{MapData?.tel}</a>
+            <a href={`mailto:${MapData?.mailto}`}>{MapData?.mailto}</a>
             </div>
             </Fade>
           </div>
           <div className="col-sm-12 col-md-9">
-            {" "}
-            {/* <Wrapper }> */}
-            <Fade triggerOnce={true} direction="right" duration={700} >
-              <SimpleMap cordinates={data.cordinate} />
+          <Fade triggerOnce={true} direction="right" duration={700} >
+            <SimpleMap />
             </Fade>
-            {/* </Wrapper> */}
           </div>
         </div>
       </div>    

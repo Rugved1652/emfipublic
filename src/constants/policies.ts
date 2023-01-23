@@ -1222,9 +1222,25 @@ export const globalEmpEN = `<div class="infoblock">
 <p>This Privacy Notice may be subject to amendments. Any future changes or additions to the processing of personal data as described in this notice affecting you can be viewed on the EMFI website at <a href="https://www.emfi.uk/english/privacy-policy" target="_blank">https://www.emfi.uk/english/privacy-policy</a></p>
 </div>`;
 
-type HeroSearchInfo = {
-  heading: string;
-  subHeading: string;
-  placeholderText?: string;
-  serviceList: any[];
+export const regulatorypageEN: HeroSearchInfo = {
+  heading: "Regulatory",
+  subHeading: "EMFI Group",
+  placeholderText: "Regulatory Documents",
+  serviceList: [
+    { label: "Regulatory Documents", value: 1 },
+    { label: "Standardised Costs", value: 2 },
+    { label: "Execution Venues", value: 3 },
+    { label: "Pillar 3 Disclosure", value: 4 },
+  ],
+};
+export const regulatorypageES: HeroSearchInfo = {
+  heading: "Reguladora",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Documentos Reglamentarios",
+  serviceList: [
+    { label: "Documentos Reglamentarios", value: 1 },
+    { label: "Costos estandarizados", value: 2 },
+    { label: "Lugares de ejecución", value: 3 },
+    { label: "Pillar 3 Disclosure", value: 4 },
+  ],
 };

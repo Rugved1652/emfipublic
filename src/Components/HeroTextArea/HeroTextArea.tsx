@@ -16,6 +16,7 @@ function HeroTextArea({
   subHeading,
   reportSlug,
   id,
+  formatType,
 }: any) {
   const Router = useRouter();
   return (
@@ -24,7 +25,10 @@ function HeroTextArea({
         <h2 className={styles.heroHeadText}>
           {title} <span>{moment(date).format("MMMM DD, YYYY")}</span>
         </h2>
-        <h4 className={styles.heroHeadSubText}>Flash Note:{subHeading}</h4>
+        <h4 className={styles.heroHeadSubText}>
+          {formatType === "EMFI Monthly Review" ? " " : `${formatType} : `}
+          {subHeading}
+        </h4>
       </div>
       <div
         className={styles.heroPara}
@@ -34,7 +38,7 @@ function HeroTextArea({
         href={`/${Router?.query.lang}/intelligence/details/${reportSlug}?id=${id}`}
         className={styles.heroCTA}
       >
-        Read More{" "}
+        Read More
         <Image
           className={styles.readMoreIcon}
           width={14}
