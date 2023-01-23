@@ -2,12 +2,12 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { Flip } from "react-awesome-reveal";
-import CustomCard from "../../../../Components/Cards/CustomCard/CustomCard";
-import ProductHero from "../../../../Components/HeroSection/ProductHero";
+import CustomCard from "../../../../../Components/Cards/CustomCard/CustomCard";
+import ProductHero from "../../../../../Components/HeroSection/ProductHero";
 import {
   AsSeenContentEN,
   AsSeenContentES,
-} from "../../../../constants/globalContent";
+} from "../../../../../constants/globalContent";
 import {
   ebondHeroInformationEN,
   ebondHeroInformationES,
@@ -17,11 +17,11 @@ import {
   eIntelHeroInformationES,
   eWealthHeroInformationEN,
   eWealthHeroInformationES,
-} from "../../../../constants/productDetailsContent";
-import AsSeenIn from "../../../../Containers/AsSeenIn/AsSeenIn";
+} from "../../../../../constants/productDetailsContent";
+import AsSeenIn from "../../../../../Containers/AsSeenIn/AsSeenIn";
 
-import MapContainer from "../../../../Containers/MapContainer/MapContainer";
-import SwiperCarousel from "../../../../Containers/SwipeCarousel/SwipeCarousel";
+import MapContainer from "../../../../../Containers/MapContainer/MapContainer";
+import SwiperCarousel from "../../../../../Containers/SwipeCarousel/SwipeCarousel";
 
 type Props = {
   content: any;
@@ -89,7 +89,7 @@ export async function getStaticProps({ params }: any) {
   console.log(params);
 
   let content: any;
-  let AsSeenContent =
+  const AsSeenContent: any =
     params?.lang === "espanol" ? AsSeenContentES : AsSeenContentEN;
   if (params?.lang === "english") {
     switch (params?.products) {

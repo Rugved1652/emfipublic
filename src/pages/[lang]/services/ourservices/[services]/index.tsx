@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSearch from "../../../../Components/HeroSearch/HeroSearch";
-import ServiceHero from "../../../../Components/HeroSection/ServiceHero";
+import HeroSearch from "../../../../../Components/HeroSearch/HeroSearch";
+import ServiceHero from "../../../../../Components/HeroSection/ServiceHero";
 import {
   AnalyticslEN,
   AnalyticslES,
@@ -16,15 +16,15 @@ import {
   securitiesES,
   SecuritiespageEN,
   SecuritiespageES,
-} from "../../../../constants/serviceDetailsContent";
-import MapContainer from "../../../../Containers/MapContainer/MapContainer";
-import SwiperCarousel from "../../../../Containers/SwipeCarousel/SwipeCarousel";
+} from "../../../../../constants/serviceDetailsContent";
+import MapContainer from "../../../../../Containers/MapContainer/MapContainer";
+import SwiperCarousel from "../../../../../Containers/SwipeCarousel/SwipeCarousel";
 type Props = {
   content: any;
-  servicePageInfo: HeroSearchInfo;
+  servicePageInfo: any;
 };
 
-const Services = ({ content, servicePageInfo }: Props) => {
+const Services = ({ content, servicePageInfo }: any) => {
   const data = {
     title: "London",
     cordinate: { lat: -0.1479572, long: 51.514359 },
