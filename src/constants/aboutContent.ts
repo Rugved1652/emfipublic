@@ -203,28 +203,28 @@ export const OurValuesEN: OurValuesSection = {
       image: "/customersuitability.svg",
       content:
         "We cherish our clients and take a long term view in managing our relationships. We make sure our products and services are adequate for our clients and are sold in a way that is not detrimental to their interests.",
-      title: "Customer Suitability",
+      title: "Customer suitability",
     },
     {
       id: "2",
       image: "/conflictsofinterest.svg",
       content:
         "We put our clients' best interests before our own and strive to identify and manage potential conflicts of interest. We never let our interests influence our advice to a client, or our dealings with them.",
-      title: "Conflicts of Interest",
+      title: "Conflicts of interest",
     },
     {
       id: "3",
       image: "/clientconfidentiality.svg",
       content:
         "We never share our clients' details with anyone, unless we have their express permission to do so, or where we have a legal duty to share it with the relevant authorities.",
-      title: "Client Confidentiality",
+      title: "Client confidentiality",
     },
     {
       id: "4",
       image: "/customercomplaints.svg",
       content:
         "We take any and all customer complaints very seriously. We appreciate regular feedback from our clients and strive to make it right if we fail to get it right the first time around.",
-      title: "Customer Complaints",
+      title: "Customer complaints",
     },
   ],
 };
