@@ -228,7 +228,9 @@ function LoginModal({}: Props) {
                         }}
                       >
                         <div
-                          className={`${email ? "change " : "back"} loginModalBox `}
+                          className={`${
+                            email ? "change " : "back"
+                          } loginModalBox `}
                         >
                           <div className="inputBox emailInput">
                             <TextInputComponent
@@ -258,7 +260,7 @@ function LoginModal({}: Props) {
                         </div>
                       </div>
                       <button
-                        type={!email ? "button" : "Submit"}
+                        type={!email ? "button" : "submit"}
                         onClick={() => setEmail(1)}
                       >
                         {!email
