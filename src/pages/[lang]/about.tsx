@@ -2,7 +2,11 @@ import Image from "next/image";
 import React from "react";
 import PaperCard from "../../Components/Cards/PaperCard/PaperCard";
 import TeamMemberCard from "../../Components/Cards/TeamMemberCard/TeamMemberCard";
-import { OurTeamEN, OurTeamES } from "../../constants/aboutContent";
+import {
+  AboutMapData,
+  OurTeamEN,
+  OurTeamES,
+} from "../../constants/aboutContent";
 import AboutEmfi from "../../Containers/AboutEmfi/AboutEmfi";
 import SwiperCarousel from "../../Containers/SwipeCarousel/SwipeCarousel";
 import { Fade } from "react-awesome-reveal";
@@ -29,6 +33,11 @@ import {
   aboutHeroInformationEN,
   aboutHeroInformationES,
 } from "../../constants/productDetailsContent";
+import dynamic from "next/dynamic";
+
+const TestDemo = dynamic(import("../../Containers/AboutValues/AboutValues"), {
+  suspense: true,
+});
 
 type Props = {
   ourClient: OurClientsSection;
@@ -39,6 +48,7 @@ type Props = {
   AboutEmfiContent: AboutEmfiContent;
   slideContent: any;
   res: any;
+  MapData: any;
 };
 
 const About = ({
@@ -50,15 +60,9 @@ const About = ({
   AboutEmfiContent,
   slideContent,
   res,
+  MapData,
 }: Props) => {
   console.log(res);
-
-  // const data = {
-  //   title: "London",
-  //   cordinate: { lat: -0.1479572, long: 51.514359 },
-  //   mailto: "contact@emfi.uk",
-  //   tel: "+44 20 3983 3634",
-  // };
 
   return (
     <>
@@ -130,7 +134,7 @@ const About = ({
         </div>
         <AboutValues infoSectionContent={infoSection} />
         <AsSeenIn AsSeenContent={AsSeenContent} />
-        {/* <MapContainer data={Mapdata} /> */}
+        <MapContainer MapData={MapData} />
       </div>
     </>
   );
@@ -166,6 +170,7 @@ export async function getStaticProps(context: any) {
           ? aboutHeroInformationES
           : aboutHeroInformationEN,
       res: res || null,
+      MapData: AboutMapData,
     },
   };
 }

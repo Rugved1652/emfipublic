@@ -10,36 +10,42 @@ export const AsSeenContentES: AsSeenSection = {
       hoverImage: "/bloombergcolor.svg",
       image: "/bloomberggrey.svg",
       alt: "",
+      url: "https://www.bloomberg.com/asia",
     },
     {
       id: "2",
       hoverImage: "/reuterscolor.svg",
       image: "/reutersgrey.svg",
       alt: "",
+      url: "https://www.reuters.com/",
     },
     {
       id: "3",
       image: "/chanthamhousegrey.svg",
       hoverImage: "/chanthamhousecolor.svg",
       alt: "",
+      url: "https://www.chathamhouse.org/",
     },
     {
       id: "4",
       image: "/voagrey.svg",
       hoverImage: "/voacolor.svg",
       alt: "",
+      url: "https://www.voanews.com/",
     },
     {
       id: "5",
       image: "/aljazeeragrey.svg",
       hoverImage: "/aljazeeracolor.svg",
       alt: "",
+      url: "https://www.aljazeera.com/",
     },
     {
       id: "6",
       image: "/france24grey.svg",
       hoverImage: "/france24color.svg",
       alt: "",
+      url: "https://www.france24.com/en/",
     },
   ],
 };
@@ -52,42 +58,42 @@ export const AsSeenContentEN: AsSeenSection = {
       hoverImage: "/bloombergcolor.svg",
       image: "/bloomberggrey.svg",
       alt: "",
-      url: "https://www.bloomberg.com/asia"
+      url: "https://www.bloomberg.com/asia",
     },
     {
       id: "2",
       hoverImage: "/reuterscolor.svg",
       image: "/reutersgrey.svg",
       alt: "",
-      url: "https://www.reuters.com/"
+      url: "https://www.reuters.com/",
     },
     {
       id: "3",
       image: "/chanthamhousegrey.svg",
       hoverImage: "/chanthamhousecolor.svg",
       alt: "",
-      url: "https://www.chathamhouse.org/"
+      url: "https://www.chathamhouse.org/",
     },
     {
       id: "4",
       image: "/voagrey.svg",
       hoverImage: "/voacolor.svg",
       alt: "",
-      url: "https://www.voanews.com/"
+      url: "https://www.voanews.com/",
     },
     {
       id: "5",
       image: "/aljazeeragrey.svg",
       hoverImage: "/aljazeeracolor.svg",
       alt: "",
-      url: "https://www.aljazeera.com/"
+      url: "https://www.aljazeera.com/",
     },
     {
       id: "6",
       image: "/france24grey.svg",
       hoverImage: "/france24color.svg",
       alt: "",
-      url: "https://www.france24.com/en/"
+      url: "https://www.france24.com/en/",
     },
   ],
 };

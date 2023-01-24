@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroSearch from "../../../../../Components/HeroSearch/HeroSearch";
 import styles from "../../../../../styles/Details.module.scss";
 import LinkedInIconWhite from "../../../../../Components/Icons/LinkedInIconWhite";
@@ -6,11 +6,18 @@ import FacebookIconWhite from "../../../../../Components/Icons/FacebookIconWhite
 import TwiterIconWhite from "../../../../../Components/Icons/TwiterIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
-import { fetchData, fetchtDataV3 } from "../../../../../Services/apiFunction";
+import { saveAs } from "file-saver";
+import {
+  fetchData,
+  fetchDataV1,
+  fetchtDataV3,
+  postDataV1,
+} from "../../../../../Services/apiFunction";
 import moment from "moment";
 import { res } from "../../../../../constants/intelligenceRes";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { data } from "jquery";
 
 type Props = {
   blogPost: any;
@@ -21,7 +28,7 @@ type Props = {
   countriesList: any;
 };
 
-const index = ({
+const Index = ({
   blogPost,
   blogPostList,
   recentReport,
@@ -32,7 +39,32 @@ const index = ({
   console.log(Report, "recentReport");
   console.log(countriesList, "recentReport");
 
+  const [showMore, setShowMore] = useState(false);
+  // const [] = useState(true);
+
   const Router = useRouter();
+
+  useEffect(() => {}, []);
+
+  const downLoadReport = async (data: any) => {
+    const res = await postDataV1(`/download-report-pdf`, {
+      lang: "es",
+      report_id: data.id,
+    });
+    if (res.data.status === 1) {
+      console.log(res, "res");
+      window.open(res.data.report_url);
+    }
+    //     msg
+    // :
+    // "Report has been downloaded successfully."
+    // report_url
+    // :
+    // "https://emfi-uat.s3.amazonaws.com/es_pdf/EMFI_Egypt_20230104.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEH8aCXVzLWVhc3QtMSJGMEQCIDTOSfASHgzlZZ9FI7FYGoV4t9Dc2GqFYXcKdUCFRIXkAiBWHxmFA176qFrCcrBEqBluEoKN51cx91R2bFdZlKw1QyrwAwjo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDk0OTAyMDgzMjA4MCIMHKsNmEwllRUUwVM6KsQDZcJof%2BvoylyLv9HNq04eqFkXuz5flQ7yfx2e%2Bhq0IKlTGcoYQ%2BzPVuoheBR2GbT1Pn4eGs3D9%2B3rchhXnoKfOI0Gx%2FINp09qhoY0S%2BLEU%2BfzaHqZXndwkE%2Bq%2FYJyZbMVnPNenSDpXQvObA%2FcO33GetBoUejFZJLJkuJIWNCmhDxuF%2B%2Fsx%2FyP8wGsYYG%2FpNc5fgpbQc4OxXFUaKnFKoQ9oebaPBqficQ41akPueArSiRa8b8RpMomLeRcPPH2QNZvRFMMiQv37EhKxczQP4LFTvUB1%2FRxhkO633Y6pDEoNczPgnx0nyF2ylWgNRgVmHH%2B9nEt47eoIFVQ%2B472p33Gzmr2L9qxG1GGlbdJKDbg8epfQG%2Fceae2MF6z3ZOeS0G%2FyJe%2B9H5ifthjXOYc6ulMaQ0OuBSR5xkgtonOS1PrTtOjhNTWRF9u0EoTca2kUo5Zf6CiR8N8kn0%2BMCt9gK9wcHptkioZZi3eUb%2B1uVKXBAR6SEK5kP4FvbKVVRPm4jDET23v%2BH0D6lslRQxcZ61garZbnfd7bRBT2CzcQN%2Bm%2BS%2BodDnxebyO1SLORwluET95zUbcarr3vxf1peJzZOuV2a9IbXAwp%2Fm9ngY6pgEMsShclIYeEH7Itkt5w0pl1EqQ%2BScaTcGDhE5ywMRnNMspeh7bBDgj2OgUlRCYSuwOXZdJpkv2lndx5%2FW70vp688MiXoE9FgWp%2Fryqpz%2Bw5JkXSC3jQnUOgSe%2FPkGJoFWZnSrdDqYoOhXz%2BQpDd%2FAk4sejCm%2BreaBB3f1jbSvD6xf6TmVD%2F%2BxsZnXYV5XG7Eec2%2BQ2YjuwX4oLRMHZ0Exyf59dtqHJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5Z5QMWFIJLKPU5XO%2F20230124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230124T064433Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=4604af0e99e2d4fed4b39e2588bc87672917abdc2942d37e312959f6bb96e2a4"
+    // status
+    // :
+    // 1
+  };
 
   return (
     <div className="container">
@@ -131,7 +163,15 @@ const index = ({
             </div>
           </div>
           <div className="col-md-12 col-lg-4 col-xl-3 ">
-            <button className={styles.downloadReport}>
+            <button
+              onClick={() =>
+                downLoadReport({
+                  id: IntelligenceReport.data.id,
+                  lang: Router.query.lang === "espanol" ? "es" : "en",
+                })
+              }
+              className={styles.downloadReport}
+            >
               Download Report
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -177,29 +217,57 @@ const index = ({
             >
               <h3>Country</h3>
               <ul>
-                {countriesList.countries.map((country: any) => (
-                  <li>
-                    <Link
-                      href={`/${Router.query.lang}/intelligence/${country.country_name}`}
-                    >
-                      {country.country_name}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        className="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </Link>
-                  </li>
-                ))}
+                {!showMore
+                  ? countriesList?.countries
+                      ?.slice(0, 5)
+                      ?.map((country: any) => (
+                        <li>
+                          <Link
+                            href={`/${Router.query.lang}/intelligence/${country.country_name}`}
+                          >
+                            {country.country_name}
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              className="bi bi-chevron-right"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                              />
+                            </svg>
+                          </Link>
+                        </li>
+                      ))
+                  : countriesList?.countries?.map((country: any) => (
+                      <li>
+                        <Link
+                          href={`/${Router.query.lang}/intelligence/${country.country_name}`}
+                        >
+                          {country.country_name}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-chevron-right"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                            />
+                          </svg>
+                        </Link>
+                      </li>
+                    ))}
               </ul>
+              <span onClick={() => setShowMore((prev) => !prev)}>
+                {!showMore ? "Show More" : "Show Less"}
+              </span>
             </div>
           </div>
         </div>
@@ -227,4 +295,4 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
   };
 };
 
-export default index;
+export default Index;
