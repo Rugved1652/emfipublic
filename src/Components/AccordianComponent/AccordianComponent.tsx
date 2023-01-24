@@ -3,6 +3,7 @@ import { Accordion } from "react-bootstrap";
 import AccordianItemComponent from "./AccordianItemComponent.tsx/AccordianItemComponent";
 import { Fade } from "react-awesome-reveal";
 import InfiniteScroll from "react-infinite-scroll-component";
+import moment from "moment";
 
 type Props = {
   data: any;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
+  console.log(data, "AcData");
   return (
     <>
       <Accordion
@@ -34,12 +36,28 @@ const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
                 className="accordionItems"
                 eventKey={String(index)}
               >
-                <Accordion.Header>{i.report_title}</Accordion.Header>
+                <Accordion.Header>
+                  <div
+                    style={{
+                      display: "block",
+                      whiteSpace: "nowrap",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
+                    {i.title}
+                    {i.slider_data.format_type}
+                    {i.report_title}
+                    {moment(i.display_date).format("MMMM DD, YYYY")}
+                  </div>
+                </Accordion.Header>
                 <Accordion.Body>
                   <AccordianItemComponent
+                    chartData={i.chart_data}
                     reportId={i.slider_data.id}
                     reportSlug={i.slider_data.report_slug}
                     data={i.description}
+                    chartDat={i.chart_data}
                   />
                 </Accordion.Body>
               </Accordion.Item>

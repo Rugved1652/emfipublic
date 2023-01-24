@@ -273,10 +273,10 @@ export const CapitalpageES: HeroSearchInfo = {
   subHeading: "EMFI Analytics Limited",
   placeholderText: "EMFI Analytics Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 
@@ -285,10 +285,10 @@ export const CapitalpageEN: HeroSearchInfo = {
   subHeading: "EMFI Fund SPC",
   placeholderText: "EMFI Fund SPC",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 
@@ -297,10 +297,10 @@ export const WealthpageEN: HeroSearchInfo = {
   subHeading: "EMFI Capital Limited",
   placeholderText: "EMFI Capital Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 export const WealthpageES: HeroSearchInfo = {
@@ -308,10 +308,10 @@ export const WealthpageES: HeroSearchInfo = {
   subHeading: "EMFI Capital Limited",
   placeholderText: "EMFI Capital Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 
@@ -320,10 +320,10 @@ export const SecuritiespageEN: HeroSearchInfo = {
   subHeading: "EMFI Securities Limited",
   placeholderText: "EMFI Securities Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 export const SecuritiespageES: HeroSearchInfo = {
@@ -331,10 +331,10 @@ export const SecuritiespageES: HeroSearchInfo = {
   subHeading: "EMFI Fund SPC",
   placeholderText: "EMFI Fund SPC",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    { label: "EMFI Securities Limited", value: 1 },
+    { label: "EMFI Capital Limited", value: 2 },
+    { label: "EMFI Fund SPC", value: 3 },
+    { label: "EMFI Analytics Limited", value: 4 },
   ],
 };
 

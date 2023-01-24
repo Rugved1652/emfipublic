@@ -73,7 +73,9 @@ const index = ({ blogPostList, PostbyCountries }: any) => {
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
   let blogPostList = await fetchData(`intelligence/espanol`);
-  let PostbyCountries = await fetchData(`intelligence/espanol/search/angola`);
+  let PostbyCountries = await fetchData(
+    `intelligence/espanol/search/${context?.params.details}`
+  );
   return {
     props: {
       PostbyCountries: PostbyCountries || null,

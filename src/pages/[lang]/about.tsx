@@ -53,12 +53,12 @@ const About = ({
 }: Props) => {
   console.log(res);
 
-  const data = {
-    title: "London",
-    cordinate: { lat: -0.1479572, long: 51.514359 },
-    mailto: "contact@emfi.uk",
-    tel: "+44 20 3983 3634",
-  };
+  // const data = {
+  //   title: "London",
+  //   cordinate: { lat: -0.1479572, long: 51.514359 },
+  //   mailto: "contact@emfi.uk",
+  //   tel: "+442039833634",
+  // };
 
   return (
     <>
@@ -130,7 +130,7 @@ const About = ({
         </div>
         <AboutValues infoSectionContent={infoSection} />
         <AsSeenIn AsSeenContent={AsSeenContent} />
-        <MapContainer data={data} />
+        {/* <MapContainer data={Mapdata} /> */}
       </div>
     </>
   );

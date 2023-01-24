@@ -18,15 +18,15 @@ const HeroSection = ({ data }: Props) => {
   console.log("data", data);
   const [first, setfirst] = useState([]);
 
-  useEffect(() => {
-    data?.display_title_second === "" || data?.graph_type === "global"
-      ? []
-      : console.log(
-          ...Object.values(data?.chart_data?.benchmark_history_data).map(
-            (data: any) => data.map((i: any) => i)
-          )
-        );
-  }, []);
+  // useEffect(() => {
+  //   data?.display_title_second === "" || data?.graph_type === "global"
+  //     ? []
+  //     : console.log(
+  //         ...Object.values(data?.chart_data?.benchmark_history_data).map(
+  //           (data: any) => data.map((i: any) => i)
+  //         )
+  //       );
+  // }, []);
 
   console.log("Graph", data);
   return (

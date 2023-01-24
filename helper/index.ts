@@ -9,7 +9,9 @@
 export function search(array: any[], key: string, prop: string) {
   // Optional, but fallback to key['name'] if not selected
   prop = typeof prop === "undefined" ? "name" : prop;
-  const searchResault = array.filter((i: any) => i[prop].includes(key));
+  const searchResault = array.filter((i: any) =>
+    i[prop].toLowerCase().includes(key.toLowerCase())
+  );
   return searchResault;
 }
 

@@ -12,6 +12,7 @@ import { postDataV2 } from "../../Services/apiFunction";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
+import TextInputComponent from "../InputComponent/TextInputComponent";
 
 type Props = {};
 
@@ -227,28 +228,37 @@ function LoginModal({}: Props) {
                         }}
                       >
                         <div
-                          className={!email ? "change" : "back"}
+                          className={email ? "change" : "back"}
                           style={{
                             display: "flex",
                             maxWidth: "300px",
                             transition: "all 0.8s ease-in-out",
-                            // gap: "16px",
                           }}
                         >
                           <div>
-                            <input
+                            <TextInputComponent
+                              label={"Email"}
+                              register={register}
+                              inputRef="email"
+                            />
+                            {/* <input
                               style={{ width: "300px" }}
                               {...register("email")}
                               placeholder="Email"
-                            />
+                            /> */}
                           </div>
                           <div>
                             <span onClick={() => setEmail(0)}>Back</span>
-                            <input
+                            <TextInputComponent
+                              label={"Password"}
+                              register={register}
+                              inputRef="password"
+                            />
+                            {/* <input
                               style={{ width: "300px" }}
                               {...register("password")}
                               placeholder="Password"
-                            />
+                            /> */}
                           </div>
                         </div>
                       </div>
