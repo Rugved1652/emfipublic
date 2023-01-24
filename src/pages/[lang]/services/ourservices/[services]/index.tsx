@@ -31,8 +31,7 @@ type Props = {
   servicePageInfo: any;
 };
 
-const Services = ({ content, servicePageInfo, MapData, MetaTitle }: any) => {
-  console.log(MapData, "map");
+const Services = ({ content, servicePageInfo, MapData, MetaTitle }: any) => {  
   return (
     <>
       <Head>

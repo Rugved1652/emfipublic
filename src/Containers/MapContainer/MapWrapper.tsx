@@ -17,11 +17,14 @@ const AnyReactComponent = ({ text }: any) => {
       />
       <div className="map">
         {showToolTip ? (
-          <div className="mapTooltip">
-            EMFI Securities Limited <br />
-            25-26 Dering St, Third Floor Mayfair, London W1S 1AW <br />
-            United Kingdom
-          </div>
+          <div className="mapTooltipMani">
+            <div className="mapTooltip">
+              <h3>EMFI Securities Limited</h3>
+              <p>25-26 Dering St, Third Floor Mayfair, London W1S 1AW
+              United Kingdom</p>
+            </div>
+            <div className="gm-style-iw-tc"></div>
+            </div>
         ) : null}
       </div>
     </>
@@ -38,7 +41,7 @@ export default function SimpleMap({ cordinates }: any) {
   };
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: "30vh", width: "100%" }}>
+    <div style={{ height: "30vh", width: "100%",   filter: "grayscale(100%)"}}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyA4se7HxOqOpUPcelVjD7Odc_BBP4qdqHE" }}
         defaultCenter={defaultProps.center}

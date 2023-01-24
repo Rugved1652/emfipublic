@@ -31,7 +31,8 @@ declare type infoSectionContent = {
   id: string;
   isImage: boolean;
   title: string;
-  paragraphs: string[];
+  paragraphs?: string[];
+  content?: string;
 };
 declare type AsSeenContent = {
   id: string;

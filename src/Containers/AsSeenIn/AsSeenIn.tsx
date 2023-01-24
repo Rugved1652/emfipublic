@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { Flip } from "react-awesome-reveal";
 import CustomCard from "../../Components/Cards/CustomCard/CustomCard";
@@ -16,7 +17,7 @@ const AsSeenIn = ({ AsSeenContent }: Props) => {
       </div>
       <div className="AsSeenIn">
         {AsSeenContent.data.map((brand: any, index: any) => (
-          <Flip key={index} direction={"vertical"} duration={1500}>
+          <Flip className="AsSeenInLogoBox" key={index} direction={"vertical"} duration={1500}>
             <div
               className="border-ani"
               onMouseEnter={() => setGreyImage(index)}
@@ -24,12 +25,14 @@ const AsSeenIn = ({ AsSeenContent }: Props) => {
             >
               <span>
                 <CustomCard className="AsSeenInCard">
+                 <Link href={brand.url} target="_blank" rel="noopener noreferrer">
                   <Image
-                    src={greyImage === index ? brand.hoverImage : brand?.image}
-                    alt={"img"}
-                    width={280}
-                    height={100}
-                  />
+                      src={greyImage === index ? brand.hoverImage : brand?.image}
+                      alt={"img"}
+                      width={280}
+                      height={100}
+                    />
+                 </Link>
                 </CustomCard>
               </span>
             </div>
