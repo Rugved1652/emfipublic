@@ -5,23 +5,40 @@ import LinkedInIconWhite from "../../../../../Components/Icons/LinkedInIconWhite
 import MessageIconWhite from "../../../../../Components/Icons/MessageIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
-import { fetchData } from "../../../../../Services/apiFunction";
+import { fetchData, fetchtDataV3 } from "../../../../../Services/apiFunction";
 import moment from "moment";
+import { res } from "../../../../../constants/intelligenceRes";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 type Props = {
   blogPost: any;
   blogPostList?: any;
   recentReport: any;
+  IntelligenceReport: any;
+  Report: any;
+  countriesList: any;
 };
 
-const index = ({ blogPost, blogPostList, recentReport }: Props) => {
-  console.log(recentReport, "recentReport");
+const index = ({
+  blogPost,
+  blogPostList,
+  recentReport,
+  IntelligenceReport,
+  Report,
+  countriesList,
+}: Props) => {
+  console.log(Report, "recentReport");
+  console.log(countriesList, "recentReport");
+
+  const Router = useRouter();
+
   return (
     <div className="container">
       <HeroSearch
-        heading="Angola"
-        subHeading={moment(blogPostList?.data?.last_report_date).format(
-          "MM/DD/YYYY"
+        heading={IntelligenceReport.data.title}
+        subHeading={moment(IntelligenceReport.data.report_date).format(
+          "MMMM DD, YYYY"
         )}
         placeholder="Search"
         searchKeyname="title"
@@ -31,30 +48,84 @@ const index = ({ blogPost, blogPostList, recentReport }: Props) => {
         <div className="row">
           <div className="col-md-12 col-lg-8 col-xl-9">
             <div className={styles.inteligenceDetails}>
-              {/* <h3>{blogPost?.data?.report_rows?.report_title}</h3> */}
               <div>
-                {blogPost?.data?.report_data?.report_bullet_desc?.map(
-                  (i: any) => (
-                    <>
-                      <h3>{i.title}</h3>
-                      <div
-                        dangerouslySetInnerHTML={{ __html: i.description }}
-                      />
-                    </>
-                  )
-                )}
+                <h3>{IntelligenceReport.data.report_title}</h3>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: IntelligenceReport.data.description,
+                  }}
+                />
               </div>
               <div>
-                {blogPost?.data?.report_data?.reports_translations?.map(
-                  (i: any) => (
-                    <>
-                      <h3>{i.title}</h3>
-                      <div
-                        dangerouslySetInnerHTML={{ __html: i.long_description }}
+                {IntelligenceReport.data.report_data.map((report: any) => (
+                  <>
+                    {report.type === "image" ? (
+                      <Image
+                        src={
+                          report.report_img
+                            ? report.report_img
+                            : "/placeholder.jpg"
+                        }
+                        alt=""
+                        width={300}
+                        height={300}
                       />
-                    </>
-                  )
-                )}
+                    ) : (
+                      <></>
+                    )}
+                    {report.type === "description" ? (
+                      <>
+                        <h3>{report.title}</h3>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: report.long_description
+                              ? report.long_description
+                              : "",
+                          }}
+                        />
+                      </>
+                    ) : (
+                      <></>
+                    )}
+                    {report.type === "performance" ? (
+                      <>
+                        <h3>{report.performance_main_title}</h3>
+                        <h3>{report.performance_title}</h3>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: report.performance_description
+                              ? report.performance_description
+                              : "",
+                          }}
+                        />
+                      </>
+                    ) : (
+                      <></>
+                    )}
+                  </>
+                ))}
+                <div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Security</th>
+                        <th>Ask Price</th>
+                        <th>Bid</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {IntelligenceReport.data.sovereign_data.map(
+                        (data: any) => (
+                          <tr>
+                            <td>{data.security_name}</td>
+                            <td>{data.ask_price}</td>
+                            <td>{data.bid_price}</td>
+                          </tr>
+                        )
+                      )}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
@@ -104,10 +175,12 @@ const index = ({ blogPost, blogPostList, recentReport }: Props) => {
             >
               <h3>Country</h3>
               <ul>
-                {Array.from(Array(5).keys()).map((key) => (
+                {countriesList.countries.map((country: any) => (
                   <li>
-                    <Link href="/english/intelligence/details">
-                      Angola
+                    <Link
+                      href={`/${Router.query.lang}/intelligence/${country.country_name}`}
+                    >
+                      {country.country_name}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -134,16 +207,20 @@ const index = ({ blogPost, blogPostList, recentReport }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  let blogPost = await fetchData(
-    `intelligence/${context?.params.lang}/get-report-details/${context?.query.id}`
-  );
   let recentReport = await fetchData(`home/latest-report-list`);
+  let CountryList = await fetchData(`home/countries-list`);
   let blogPostList = await fetchData(`intelligence/espanol`);
+  let Report = await fetchtDataV3(
+    `/api/workstation/research-details/${context?.query.id}`
+  );
   return {
     props: {
-      blogPost: blogPost || null,
+      // blogPost: blogPost || null,
       blogPostList: blogPostList || null,
       recentReport: recentReport,
+      IntelligenceReport: Report.data,
+      Report: Report.data || null,
+      countriesList: CountryList.data || null,
     },
   };
 };

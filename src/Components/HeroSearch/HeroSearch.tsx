@@ -60,7 +60,7 @@ const HeroSearch = ({
               placeholder={placeholder}
               handleChange={handleChange}
             />
-            {viewList.length !== 0 && show ? (
+            {show ? (
               <ul className="searchBoxList">
                 {viewList?.map((i: any, index: any) => (
                   <li key={index}>

@@ -70,6 +70,8 @@ const Intelligence = ({ intelligenceList }: Props) => {
         heading="Intelligence"
         subHeading="November 17, 2022"
         placeholder="Search by Keyword"
+        data={intelligenceList.data.reports_list}
+        searchKeyname="title"
       />
       <div className="intelligenceBoxCustom row">
         <AccordianComponent
@@ -88,19 +90,11 @@ const Intelligence = ({ intelligenceList }: Props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
-  // let otherReports = await fetchData(
-  //   `intelligence/${context?.params.lang}/get-other-report?page=1`
-  // );
-  // let specialReports = await fetchData(
-  //   `intelligence/${context?.params.lang}/get-spacial-report?page=1`
-  // );
   let intelligenceList = await fetchData(
     `intelligence/${context?.params.lang}`
   );
   return {
     props: {
-      // otherReports: otherReports,
-      // specialReports: specialReports,
       intelligenceList: intelligenceList || null,
     },
   };

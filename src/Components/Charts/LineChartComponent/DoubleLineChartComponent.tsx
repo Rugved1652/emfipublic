@@ -12,13 +12,13 @@ import {
 type Props = {};
 
 const DoubleLineChartComponent = ({ chartData }: any) => {
-  console.log("chartData", chartData);
-  console.log(
-    Object.values(chartData).map((data: any) =>
-      Object.assign(data[1], data[0])
-    ),
-    "DLC"
-  );
+  // console.log("chartData", chartData);
+  // console.log(
+  //   Object.values(chartData).map((data: any) =>
+  //     Object.assign(data[1], data[0])
+  //   ),
+  //   "DLC"
+  // );
   const [Arrdata, setArrData] = useState([]);
   useEffect(() => {}, []);
 
@@ -73,12 +73,12 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
         <AreaChart
           width={730}
           height={250}
-          data={data}
+          data={chartData}
           margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
         >
           <XAxis
             tickLine={false}
-            dataKey="name"
+            dataKey="date"
             style={{
               fontSize: "13px",
               fontFamily: "Inter",
@@ -94,7 +94,7 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
               fill: "var(--brand-primary)",
             }}
           />
-          {/* <Tooltip active={true} /> */}
+          <Tooltip active={true} />
           {/* <Legend /> */}
           <CartesianGrid vertical={false} stroke="#e5e7eb" />
           <defs>
@@ -125,14 +125,14 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
           </defs>
           <Area
             type="monotone"
-            dataKey="pv"
+            dataKey="column1"
             stroke="var(--brand-primary)"
             fillOpacity={1}
             fill="url(#colorUv)"
           />
           <Area
             type="monotone"
-            dataKey="uv"
+            dataKey="column2"
             stroke="var(--dark-gray-color)"
             fillOpacity={1}
             fill="url(#colorPv)"
