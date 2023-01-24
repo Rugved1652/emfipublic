@@ -258,6 +258,7 @@ function LoginModal({}: Props) {
                         </div>
                       </div>
                       <button
+                      className="loginModalBttn"
                         type={!email ? "button" : "Submit"}
                         onClick={() => setEmail(1)}
                       >
@@ -275,7 +276,7 @@ function LoginModal({}: Props) {
                           </span>
                         </>
                       ) : (
-                        <a>Forget Password ?</a>
+                        <a className="loginFormBoxLink">Forget Password ?</a>
                       )}
                     </div>
                   </form>

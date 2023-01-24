@@ -94,6 +94,7 @@ body {
   .inputBox {
     &.emailInput {
     visibility: hidden;
+    opacity: 0;
     }
   }
 }
@@ -101,7 +102,8 @@ body {
   transform: translateX(0%);
   .inputBox {
     &.passInput, span {
-    visibility: hidden;
+      visibility: hidden;
+      opacity: 0;
     }
   }
 }
@@ -438,6 +440,7 @@ body .swiper {
 .intelligenceBoxCustom {
   margin-top: 30px;
   margin-bottom: 30px;
+  min-height: 80vh;
   @media (max-width: 991px) {
     flex-direction: column;
     margin-bottom: 0;
@@ -2456,5 +2459,30 @@ body {
         font-weight: 500;
       }
     }
+  }
+}
+.loginFormBoxLink {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  color: var(--brand-primary);
+  margin-top: 5px;
+  &:hover {
+    color: var(--brand-primary);
+    text-decoration: underline;
+  }
+}
+.loginModalBttn {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--brand-primary);
+  &:hover {
+    background-color: transparent;
+    border-color:var(--brand-primary);
+    color: var(--brand-primary);
   }
 }
