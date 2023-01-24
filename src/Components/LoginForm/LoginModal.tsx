@@ -228,14 +228,9 @@ function LoginModal({}: Props) {
                         }}
                       >
                         <div
-                          className={email ? "change" : "back"}
-                          style={{
-                            display: "flex",
-                            maxWidth: "300px",
-                            transition: "all 0.8s ease-in-out",
-                          }}
+                          className={`${email ? "change " : "back"} loginModalBox `}
                         >
-                          <div>
+                          <div className="inputBox emailInput">
                             <TextInputComponent
                               label={"Email"}
                               register={register}
@@ -247,7 +242,7 @@ function LoginModal({}: Props) {
                               placeholder="Email"
                             /> */}
                           </div>
-                          <div>
+                          <div className="inputBox passInput">
                             <span onClick={() => setEmail(0)}>Back</span>
                             <TextInputComponent
                               label={"Password"}
@@ -263,20 +258,20 @@ function LoginModal({}: Props) {
                         </div>
                       </div>
                       <button
-                        type={!email ? "button" : "submit"}
+                        type={!email ? "button" : "Submit"}
                         onClick={() => setEmail(1)}
                       >
                         {!email
-                          ? `next`
-                          : `  ${waitAuth ? "auth from mobile" : "submit"}`}
+                          ? `Next`
+                          : `  ${waitAuth ? "auth from mobile" : "Submit"}`}
                       </button>
                       {waitAuth ? (
                         <>
                           <span onClick={() => sendOTP(middledata)}>
-                            send OTP
+                            Send OTP
                           </span>
                           <span onClick={() => formSubmit(middledata)}>
-                            resend Auth
+                            Resend Auth
                           </span>
                         </>
                       ) : (
