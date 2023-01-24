@@ -45,10 +45,12 @@ const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {i.title}
-                    {i.slider_data.format_type}
-                    {i.report_title}
-                    {moment(i.display_date).format("MMMM DD, YYYY")}
+                    <div>
+                      {i.title}
+                      {i.slider_data.format_type}
+                      {i.report_title}
+                    </div>
+                    <div>{moment(i.display_date).format("MMMM DD, YYYY")}</div>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>
