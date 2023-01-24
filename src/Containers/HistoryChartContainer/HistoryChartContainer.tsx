@@ -127,7 +127,7 @@ const HistoryChartContainer = (props: Props) => {
                 fill: "var(--brand-primary)",
               }}
             />
-            <Tooltip active={true} />
+            {/* <Tooltip active={true} /> */}
             <Area
               type="monotone"
               dataKey="pv"

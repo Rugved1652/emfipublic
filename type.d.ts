@@ -32,13 +32,14 @@ declare type infoSectionContent = {
   isImage: boolean;
   title: string;
   paragraphs?: string[];
-  content?: string;
+  content: string;
 };
 declare type AsSeenContent = {
   id: string;
   image: string;
   hoverImage: string;
   alt: string;
+  url?: string;
 };
 declare type HeroSearchInfo = {
   heading: string;

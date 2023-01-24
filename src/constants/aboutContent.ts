@@ -420,15 +420,13 @@ export const infoSectionContentEN: infoSectionContent[] = [
     title: "Candidates",
     isImage: false,
     image: "/candidates.svg",
-    content: `<p>We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.</p><p>Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.</p><p>Does that sound like you? Discover our many career opportunities by clicking <a href='http://web.emfi.local/english/contact/careers'>here</a>.</p>`
+    content: `<p>We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.</p><p>Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.</p><p>Does that sound like you? Discover our many career opportunities by clicking <a href='http://web.emfi.local/english/contact/careers'>here</a>.</p>`,
   },
   {
     id: "2",
     isImage: false,
     title: "Our Values",
-    content: [
-      "<p><b>Health and safety</b><br>We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.</p><p><b>Equal opportunity</b><br>We do not tolerate any kind of discrimination, bullying or harassment. Everyone has the same chance to get ahead at EMFI irrespective of their ethnicity, gender, national origin, age, ability, sexual orientation or religion.</p> <p><b>Whistle-blowing policy</b><br>We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.</p>"
-    ],
+    content: `<p><b>Health and safety</b><br>We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.</p><p><b>Equal opportunity</b><br>We do not tolerate any kind of discrimination, bullying or harassment. Everyone has the same chance to get ahead at EMFI irrespective of their ethnicity, gender, national origin, age, ability, sexual orientation or religion.</p> <p><b>Whistle-blowing policy</b><br>We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.</p>`,
     image: "/ourvalues.svg",
   },
 ];
@@ -437,25 +435,40 @@ export const infoSectionContentES: infoSectionContent[] = [
   {
     id: "1",
     title: "Búsquedas Laborales",
+    content: `<p><b>Health and safety</b><br>We keep our workplaces safe by following health and safety rules. Doing this makes sure we have safe and healthy working conditions in which our dignity is respected.</p><p><b>Equal opportunity</b><br>We do not tolerate any kind of discrimination, bullying or harassment. Everyone has the same chance to get ahead at EMFI irrespective of their ethnicity, gender, national origin, age, ability, sexual orientation or religion.</p> <p><b>Whistle-blowing policy</b><br>We encourage each other to speak up and report potential violations without fear of reprisals. EMFI will never punish or reprimand anyone who reports breaches or violations in good faith.</p>`,
+    // content: `<p>Ofrecemos a las personas de todo el mundo un entorno de trabajo de apoyo, desafiante y diverso. Valoramos su pasión y compromiso, y recompensamos su desempeño.</p>
+    // <p>Triunfar en EMFI significa respetar, comprender y confiar en colegas y clientes. Desafiando a los demás y siendo desafiados. Siendo apasionado por lo que haces. Ir  hacia adelante, siempre queriendo hacer las cosas de la manera correcta.</p>
+    // <p>¿Eso suena como tu? Descubre nuestras muchas oportunidades de carrera haciendo clic <a href="https://uat.emfi.uk/espanol/contact/careers">aquí</a>.</p>`,
     isImage: false,
-    paragraphs: [
-      "Ofrecemos a las personas de todo el mundo un entorno de trabajo de apoyo, desafiante y diverso. Valoramos su pasión y compromiso, y recompensamos su desempeño.",
-      "Triunfar en EMFI significa respetar, comprender y confiar en colegas y clientes. Desafiando a los demás y siendo desafiados. Siendo apasionado por lo que haces. Ir hacia adelante, siempre queriendo hacer las cosas de la manera correcta.",
-      "¿Eso suena como tu? Descubre nuestras muchas oportunidades de carrera haciendo clic aquí.",
-    ],
     image: "/candidates.svg",
   },
   {
     id: "2",
     isImage: false,
     title: "Nuestros Valores",
-    paragraphs: [
-      "Mantenemos nuestros lugares de trabajo seguros siguiendo las reglas de salud y seguridad. Hacer esto asegura que tener condiciones de trabajo seguras y saludables en las que se respete nuestra dignidad.",
-      "No toleramos ningún tipo de discriminación, intimidación o acoso. Todos tienen lo mismo oportunidad de salir adelante en EMFI independientemente de su origen étnico, género, nacionalidad, edad, capacidad, orientación sexual o religión",
-      "Nos alentamos unos a otros a que hablen y denuncien posibles violaciones sin temor a represalias. EMFI nunca castigará ni reprenderá a nadie que informe infracciones o violaciones de buena fe.",
-    ],
+    content: `<p>We offer people around the world a supportive, challenging and diverse working environment. We value your passion and commitment, and reward your performance.</p><p>Succeeding at EMFI means respecting, understanding and trusting colleagues and clients. Challenging others and being challenged in return. Being passionate about what you do. Driving yourself forward, always wanting to do things the right way.</p><p>Does that sound like you? Discover our many career opportunities by clicking <a href='http://web.emfi.local/english/contact/careers'>here</a>.</p>`,
+    //   content: `<h3>Salud y seguridad</h3>
+    //   <p>Mantenemos nuestros lugares de trabajo seguros siguiendo las reglas de salud y seguridad. Hacer esto asegura que tener condiciones de trabajo seguras y saludables en las que se respete nuestra dignidad.</p></div><div class="text-justify">
+    //   h3>Igualdad de oportunidades</h3>
+    //   <p>No toleramos ningún tipo de discriminación, intimidación o acoso. Todos tienen lo mismo oportunidad de salir adelante en EMFI independientemente de su origen étnico, género, nacionalidad, edad, capacidad, orientación sexual o religión.
+    // </p>
+    // </div>
+    // <div class="text-justify">
+    //   <h3>Política de denuncia</h3>
+    //   <p>Nos alentamos unos a otros a que hablen y denuncien posibles violaciones sin temor a represalias. EMFI nunca castigará ni reprenderá a nadie que informe infracciones o violaciones de buena fe.</p>`,
+
     image: "/ourvalues.svg",
   },
 ];
+
+export const AboutMapData = {
+  title: "London",
+  subTitle: "EMFI Group Limited",
+  address:
+    "25-26 Dering St, Third Floor Mayfair, London W1S 1AW United Kingdom",
+  cordinate: { lat: -0.1479572, long: 51.514359 },
+  mailto: "contact@emfi.uk",
+  tel: "+44 20 3983 3634",
+};
 
 //  about content above

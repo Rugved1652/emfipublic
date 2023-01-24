@@ -40,7 +40,9 @@ const AboutValues = ({ infoSectionContent }: Props) => {
                 {/* {content.paragraphs.map((paragraph) => (
                   <p>{paragraph}</p>
                 ))} */}
-                <div dangerouslySetInnerHTML={{ __html: content.content }}></div>
+                <div
+                  dangerouslySetInnerHTML={{ __html: content.content }}
+                ></div>
               </div>
               <div className={styles.imageContainer}>
                 <Image

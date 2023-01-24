@@ -38,7 +38,7 @@ const LineChartComponent = ({ chartData }: any) => {
               fill: "var(--brand-primary)",
             }}
           />
-          <Tooltip active={true} />
+          {/* <Tooltip active={true} /> */}
           {/* <Legend /> */}
           <CartesianGrid vertical={false} stroke="#e5e7eb" />
           <defs>

@@ -37,7 +37,7 @@ const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
                 eventKey={String(index)}
               >
                 <Accordion.Header>
-                  <div
+                  <div className="intelligenceItemTitle"
                     style={{
                       display: "block",
                       whiteSpace: "nowrap",
@@ -45,10 +45,12 @@ const AccordianComponent = ({ data, fetchMore, hasMore }: any) => {
                       textOverflow: "ellipsis",
                     }}
                   >
-                    {i.title}
-                    {i.slider_data.format_type}
-                    {i.report_title}
-                    {moment(i.display_date).format("MMMM DD, YYYY")}
+                    <p>
+                      {i.title}
+                      {i.slider_data.format_type}
+                      {i.report_title}
+                    </p>
+                    <span>{moment(i.display_date).format("MMMM DD, YYYY")}</span>
                   </div>
                 </Accordion.Header>
                 <Accordion.Body>

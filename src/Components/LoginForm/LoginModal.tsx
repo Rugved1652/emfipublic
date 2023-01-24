@@ -13,7 +13,8 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
 import TextInputComponent from "../InputComponent/TextInputComponent";
-
+import Image from "next/image";
+import loderGif from "../../Assets/loader-white.gif"
 type Props = {};
 
 function LoginModal({}: Props) {
@@ -228,7 +229,9 @@ function LoginModal({}: Props) {
                         }}
                       >
                         <div
-                          className={`${email ? "change " : "back"} loginModalBox `}
+                          className={`${
+                            email ? "change " : "back"
+                          } loginModalBox `}
                         >
                           <div className="inputBox emailInput">
                             <TextInputComponent
@@ -258,22 +261,24 @@ function LoginModal({}: Props) {
                         </div>
                       </div>
                       <button
-                      className="loginModalBttn"
-                        type={!email ? "button" : "Submit"}
+                        className="loginModalBttn"
+                        type={!email ? "button" : "submit"}
                         onClick={() => setEmail(1)}
                       >
                         {!email
                           ? `Next`
-                          : `  ${waitAuth ? "auth from mobile" : "Submit"}`}
+                          : `  ${waitAuth ? <>Waiting For Mobile Authorization <Image src={loderGif} alt="loader" /> </> : "Submit"}`}
                       </button>
                       {waitAuth ? (
                         <>
-                          <span onClick={() => sendOTP(middledata)}>
-                            Send OTP
-                          </span>
-                          <span onClick={() => formSubmit(middledata)}>
-                            Resend Auth
-                          </span>
+                          <div className="otpAuth">
+                            <a onClick={() => sendOTP(middledata)}>
+                              Send OTP
+                            </a>
+                            <a onClick={() => formSubmit(middledata)}>
+                              Resend Approval
+                            </a>
+                          </div>
                         </>
                       ) : (
                         <a className="loginFormBoxLink">Forget Password ?</a>

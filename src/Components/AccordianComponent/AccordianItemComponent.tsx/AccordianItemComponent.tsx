@@ -17,7 +17,7 @@ const AccordianItemComponent = ({
   return (
     <div>
       <div>
-        <div className="mb-4" style={{ width: "100%", height: "40vh" }}>
+        <div className="mb-4" style={{ width: "100%" }}>
           {/* <LineChartComponent chartData={data.chart_data?.history_data} /> */}
 
           <DoubleLineChartComponent

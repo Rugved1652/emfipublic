@@ -68,7 +68,7 @@
     }
   }
   &CTA {
-    font-weight: 700;
+    font-weight: 600;
     padding: 0;
     color: var(--brand-primary);
     font-family: var(--brand-font);
@@ -76,6 +76,10 @@
     line-height: 1.5;
     margin-bottom:14px;
     cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      color: var(--brand-primary);
+    }
     @media (min-width: 1200px) {
       font-size: 0.8333vw; 
       margin-bottom: 1.0416vw;
@@ -83,7 +87,7 @@
     .readMoreIcon {
       width: 12px;
       height: 10px;
-      margin-right:7px ;
+      margin-left:7px ;
       @media (min-width: 1200px) {
         width: 0.7291vw;
         height: 0.625vw;
