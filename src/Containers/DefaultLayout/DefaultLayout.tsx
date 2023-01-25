@@ -24,7 +24,7 @@ export default function Layout({ children }: Props) {
   console.log(Router);
 
   return (
-    <>
+    <div style={{ minHeight: "100vh" }}>
       <div className="">
         <Navbar />
       </div>
@@ -32,7 +32,7 @@ export default function Layout({ children }: Props) {
       {/* <React.Suspense fallback={<></>}>
         <TestDemo />
       </React.Suspense> */}
-      {children}
+      <div style={{ marginTop: "70px" }}>{children}</div>
       <Footer />
       {Router?.pathname !== "/[lang]/contact" ? (
         <Link
@@ -45,6 +45,6 @@ export default function Layout({ children }: Props) {
             : ReequestDemoTextEN}
         </Link>
       ) : null}
-    </>
+    </div>
   );
 }

@@ -34,9 +34,12 @@ const NavbarComponent = (props: Props) => {
               <Link href={`/${Router.query.lang}`}>
                 <Image
                   className={styles.navBarBrandLogo}
-                  src={Logo}
+                  src="/emfi-logo.svg"
+                  // src={Logo}
                   alt="logo"
                   height={52}
+                  width={128}
+                  style={{ width: "auto" }}
                 />
               </Link>
             </div>

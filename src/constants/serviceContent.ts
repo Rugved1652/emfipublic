@@ -60,7 +60,7 @@ export const ServicesContentEN: ServiceProductContent[] = [
   {
     id: "04",
     image: "/FintechAsAService.svg",
-    heading: "Fintech As-A-Service",
+    heading: "Fintech as-a-Service",
     subheading: "EMFI Analytics Limited",
     sup: "5",
     link: "/english/services/ourservices/fintech",
