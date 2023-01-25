@@ -48,8 +48,7 @@ const AccordianItemComponent = ({
   return (
     <div>
       <div>
-<<<<<<< HEAD
-        <div className="mb-4" style={{ width: "100%", height: "40vh" }}>
+        <div className="mb-4" style={{ width: "100%" }}>
           <div className={styles.SubText}>
             <span className={styles.PriceOne}>
               - {priceone} {displaySubTitle}
@@ -81,14 +80,6 @@ const AccordianItemComponent = ({
           ) : (
             <></>
           )}
-=======
-        <div className="mb-4" style={{ width: "100%" }}>
-          {/* <LineChartComponent chartData={data.chart_data?.history_data} /> */}
-
-          <DoubleLineChartComponent
-            chartData={chartData?.benchmark_history_data}
-          />
->>>>>>> 866cbccca8927b5dc61fc5ef41146496f2171999
         </div>
         <div dangerouslySetInnerHTML={{ __html: data.slice(0, 650) }}></div>
         <Link
