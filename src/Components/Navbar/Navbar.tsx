@@ -31,12 +31,14 @@ const NavbarComponent = (props: Props) => {
         <div className="container-md">
           <div className={styles.navBarList}>
             <div className={styles.navBarBrand}>
-              <Image
-                className={styles.navBarBrandLogo}
-                src={Logo}
-                alt="logo"
-                height={52}
-              />
+              <Link href={`/${Router.query.lang}`}>
+                <Image
+                  className={styles.navBarBrandLogo}
+                  src={Logo}
+                  alt="logo"
+                  height={52}
+                />
+              </Link>
             </div>
             <ul
               className={

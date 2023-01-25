@@ -86,6 +86,20 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
             }}
           />
           <YAxis
+            yAxisId="left"
+            axisLine={false}
+            tickLine={false}
+            // dataKey={"column1"}
+            // yAxisId={"Left"}
+            style={{
+              fontSize: "13px",
+              fontFamily: "Inter",
+              fill: "var(--brand-primary)",
+            }}
+          />
+          <YAxis
+            orientation="right"
+            yAxisId="right"
             axisLine={false}
             tickLine={false}
             style={{
@@ -124,6 +138,7 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
             </linearGradient>
           </defs>
           <Area
+            yAxisId="left"
             type="monotone"
             dataKey="column1"
             stroke="var(--brand-primary)"
@@ -131,6 +146,7 @@ const DoubleLineChartComponent = ({ chartData }: any) => {
             fill="url(#colorUv)"
           />
           <Area
+            yAxisId="right"
             type="monotone"
             dataKey="column2"
             stroke="var(--dark-gray-color)"

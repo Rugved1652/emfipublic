@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   LineChart,
   CartesianGrid,
@@ -10,7 +10,8 @@ import {
   AreaChart,
 } from "recharts";
 
-const LineChartComponent = ({ chartData }: any) => {
+const LineChartComponent = ({ chartData, newChartData, reportId }: any) => {
+  console.log("newChartDatain", newChartData, reportId);
   return (
     <div className="d-flex justify-content-center" style={{ height: "400px" }}>
       <ResponsiveContainer>
@@ -38,7 +39,7 @@ const LineChartComponent = ({ chartData }: any) => {
               fill: "var(--brand-primary)",
             }}
           />
-          {/* <Tooltip active={true} /> */}
+          <Tooltip active={true} />
           {/* <Legend /> */}
           <CartesianGrid vertical={false} stroke="#e5e7eb" />
           <defs>

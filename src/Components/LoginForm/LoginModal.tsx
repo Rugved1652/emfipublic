@@ -114,11 +114,13 @@ function LoginModal({}: Props) {
     verifyOTPForm.append("check_auth_app", "4");
     verifyOTPForm.append("check_auth_otp", checkAuthOTP);
     const res = await postDataV2("/user_login", verifyOTPForm);
-    if (res.data?.auth_status === 1) {
+    if (res.data?.status === 1) {
       router.push(res.data?.to);
       console.log("ss");
+      notifySuccess(res.data.msg);
     }
     if (res.data?.status === 0) {
+      notifyError(res.data.msg);
     }
   };
   const sendOTP = async (data: any) => {

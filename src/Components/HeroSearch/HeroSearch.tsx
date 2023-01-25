@@ -21,9 +21,8 @@ const HeroSearch = ({
   searchKeyname = "",
   sup,
 }: Props) => {
-  const [viewList, setViewList] = useState(data);
+  const [viewList, setViewList] = useState([]);
   const [searchValue, setSearchValue] = useState("");
-  const [show, setShow] = useState(false);
 
   useEffect(() => {
     if (searchValue !== undefined && searchValue !== "") {
@@ -35,8 +34,7 @@ const HeroSearch = ({
 
   const refinst = useRef<any>();
   useOnClickOutside(refinst, () => {
-    // setViewList([]);
-    setShow(false);
+    setViewList([]);
   });
 
   const handleChange = (e: any) => {
@@ -56,11 +54,10 @@ const HeroSearch = ({
         {placeholder ? (
           <div style={{ position: "relative", width: "100%" }}>
             <InputComponent
-              focus={setShow}
               placeholder={placeholder}
               handleChange={handleChange}
             />
-            {show ? (
+            {viewList.length !== 0 ? (
               <ul className="searchBoxList">
                 {viewList?.map((i: any, index: any) => (
                   <li key={index}>

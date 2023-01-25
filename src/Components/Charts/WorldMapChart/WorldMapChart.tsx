@@ -11,12 +11,12 @@ export default function WorldMapChart({ chartData }: any) {
               <Geography
                 key={geo.rsmKey}
                 fill={
-                  chartData.some(
+                  chartData?.some(
                     (chartData: any) =>
                       chartData.country_code === geo.id.slice(0, 2)
                   )
                     ? "#f0f0f0"
-                    : "#f4f5f6"
+                    : "#4D4D4D"
                 }
                 geography={geo}
               />

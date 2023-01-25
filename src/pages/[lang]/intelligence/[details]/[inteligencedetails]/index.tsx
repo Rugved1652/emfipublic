@@ -44,7 +44,13 @@ const Index = ({
 
   const Router = useRouter();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const storage = localStorage.getItem("gtti");
+    console.log("storage", storage);
+    if (!storage) {
+      window.location.href = "https://login.emfi.uk";
+    }
+  }, []);
 
   const downLoadReport = async (data: any) => {
     const res = await postDataV1(`/download-report-pdf`, {

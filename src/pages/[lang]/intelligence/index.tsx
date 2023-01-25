@@ -75,11 +75,13 @@ const Intelligence = ({ intelligenceList }: Props) => {
       />
       <div className="intelligenceBoxCustom row">
         <AccordianComponent
+          isOpen={false}
           data={otherReportsData}
           fetchMore={fetchMoreOtherReports}
           hasMore={otherReportsHasMore}
         />
         <AccordianComponent
+          isOpen={true}
           data={specialReportsData}
           fetchMore={fetchMoreSpecialReports}
           hasMore={specialReportsHasMore}
