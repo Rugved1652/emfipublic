@@ -25,6 +25,12 @@ const SwiperCarousel = ({
   return (
     <div>
       <Swiper
+      touchRatio={page === "product" ? 0 : 1}
+      
+      loop={true}
+      noSwiping={page === "product" ? true : false}
+      
+      draggable={page === "product" ? false : true}
         style={{ position: "relative" }}
         spaceBetween={50}
         slidesPerView={1}
@@ -44,7 +50,7 @@ const SwiperCarousel = ({
           sensitivity: 1,
           releaseOnEdges: true,
         }}
-        speed={1}
+        speed={page === "home"?  300 : 1}
         autoplay={{
           delay: 10500,
           disableOnInteraction: false,
@@ -54,7 +60,7 @@ const SwiperCarousel = ({
           page === "aboutPage" ? "about-service-slider" : ""
         } ${page === "product" ? "about-service-slider" : ""} ${className}`}
         pagination={{
-          clickable: true,
+          clickable: page === "product" ? false : true ,
           dynamicBullets: true,
           dynamicMainBullets: 8,
           renderBullet: function (index, className) {

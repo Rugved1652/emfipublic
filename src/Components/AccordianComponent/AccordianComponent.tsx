@@ -34,7 +34,14 @@ const AccordianComponent = ({ data, fetchMore, hasMore, isOpen }: any) => {
         alwaysOpen={isOpen ? true : false}
       >
         <InfiniteScroll
-          loader={<>Loading...</>}
+          loader={<div className="loading-main full-page">
+          <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>}
           dataLength={Accordiandata?.length}
           next={() => fetchMore()}
           hasMore={hasMore}

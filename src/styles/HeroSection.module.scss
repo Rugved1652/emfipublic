@@ -25,4 +25,21 @@
       padding: auto;
       gap: 30px;
   }
+  .HeroMain {
+    width: 100%;
+    height: auto;
+    @media screen and (min-width: 960px) {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .HeroMapContainer {
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+    @media screen and (min-width: 992px) {
+      width: 50%;
+      height: 50%;
+    }
+  }
 }

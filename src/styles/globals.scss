@@ -1959,8 +1959,10 @@ canvas {
 
 .emfi-switched-on {
   display: block;
+  height: calc(100vh - 70px);
   &.animated {
     position: fixed;
+    top: 70px;
     width: 100vw;
     z-index: 999;
     overflow: hidden;

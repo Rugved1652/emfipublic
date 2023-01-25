@@ -2,6 +2,8 @@
   background-color: #071932;
   width: 100%;
   z-index: 3;
+  position: fixed;
+  top: 0;
   .activeNav {
     color: var(--menu-color-hover);
   }
