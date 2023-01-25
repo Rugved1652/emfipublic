@@ -4,10 +4,19 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import Layout from "../Containers/DefaultLayout/DefaultLayout";
 import { SSRProvider } from "react-bootstrap";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import SwitchOn from "../Components/SwitchOn";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) { 
+  const [isSwitchOn, setisSwitchOn] = useState(true)
+  useEffect(() => {
+    const switchCheck = localStorage.getItem('cookies')
+    if(switchCheck) {
+      setisSwitchOn(false)
+    }
+  }, [])
+  
   const Router = useRouter();
   const [loading, setLoading] = React.useState(false);
   React.useEffect(() => {
@@ -32,10 +41,18 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       {loading ? (
-        <>Loading</>
+       <div className="loading-main full-page">
+       <div>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+   </div>
       ) : (
         <SSRProvider>
           <Layout>
+            {isSwitchOn ?  <SwitchOn /> : null}
             <Component {...pageProps} />
           </Layout>
         </SSRProvider>

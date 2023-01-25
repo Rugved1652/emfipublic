@@ -9,7 +9,8 @@ import topArrow from "../../Assets/topArrow.svg";
 import dynamic from "next/dynamic";
 import { isEmpty } from "../../../helper";
 import DoubleLineChartComponent from "../Charts/LineChartComponent/DoubleLineChartComponent";
-
+import { Fade, Reveal } from "react-awesome-reveal"
+import { keyframes } from "@emotion/react";
 type Props = {
   data: any;
 };
@@ -17,6 +18,28 @@ type Props = {
 const HeroSection = ({ data }: Props) => {
   console.log("data", data);
   const [first, setfirst] = useState([]);
+  const leftAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
+const rightAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
   // useEffect(() => {
   //   data?.display_title_second === "" || data?.graph_type === "global"
@@ -31,82 +54,88 @@ const HeroSection = ({ data }: Props) => {
   console.log("Graph", data);
   return (
     <div className={styles.HeroWrapper}>
-      <HeroTextArea
-        id={data.id}
-        reportSlug={data.report_slug}
-        title={data.title}
-        date={data.display_date}
-        graphType={data.graphType}
-        description={data.description}
-        subHeading={data.report_title}
-        formatType={data.format_type}
-      />
-      <MapContainer
-        country={data.title}
-        priceone={data.display_title_first}
-        pricetwo={data.display_title_second}
-        displaySubTitle={data.display_sub_title}
-      >
-        {data?.graph_type === "global" ? (
-          <WorldMapChart chartData={data.chart_data.countries} />
-        ) : null}
+      <Reveal keyframes={leftAnimation} fraction={1} className={styles.HeroMain} triggerOnce={true}  duration={1500}>
+        <HeroTextArea 
+          id={data.id}
+          reportSlug={data.report_slug}
+          title={data.title}
+          date={data.display_date}
+          graphType={data.graphType}
+          description={data.description}
+          subHeading={data.report_title}
+          formatType={data.format_type}
+        />
+      </Reveal>
+      <Reveal keyframes={rightAnimation} fraction={1} className={styles.HeroMain} triggerOnce={true}  duration={1500}>
+        <>
+        <MapContainer
+          country={data.title}
+          priceone={data.display_title_first}
+          pricetwo={data.display_title_second}
+          displaySubTitle={data.display_sub_title}
+        >
+          {data?.graph_type === "global" ? (
+            <WorldMapChart chartData={data.chart_data.countries} />
+          ) : null}
 
-        {data?.graph_type === "market_history" &&
-        data?.display_title_second === "" ? (
-          <LineChartComponent chartData={data.chart_data?.history_data} />
-        ) : null}
+          {data?.graph_type === "market_history" &&
+          data?.display_title_second === "" ? (
+            <LineChartComponent chartData={data.chart_data?.history_data} />
+          ) : null}
 
-        {data?.graph_type === "market_history" &&
-        data?.display_title_second !== "" ? (
-          <DoubleLineChartComponent
-            chartData={data.chart_data?.benchmark_history_data}
-          />
-        ) : null}
-      </MapContainer>
-      <div className="tilteRoundBox">
-        <div id="circle">
-          <svg
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xlinkHref="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            width="160px"
-            height="160px"
-            viewBox="0 0 160 160"
-            enableBackground="new 0 0 160 160"
-            xmlSpace="preserve"
-          >
-            <defs>
-              <path
-                id="circlePath"
-                d=" M 81, 81 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-              />
-            </defs>
-            <circle cx="81" cy="100" r="75" fill="none" />
-            <g>
-              <use xlinkHref="#circlePath" fill="none" />
-              <text fill="#000">
-                <textPath
-                  style={{ display: "flex", justifyContent: "flex-end" }}
-                  xlinkHref="#circlePath"
-                >
-                  {data.title}
-                </textPath>
-              </text>
-            </g>
-          </svg>
-          <div className="TopArrow">
-            <Image
-              className="TopArrowIcon"
-              src={topArrow}
-              width={16}
-              height={16}
-              alt={"Top arrow icon"}
+          {data?.graph_type === "market_history" &&
+          data?.display_title_second !== "" ? (
+            <DoubleLineChartComponent
+              chartData={data.chart_data?.benchmark_history_data}
             />
+          ) : null}
+        </MapContainer>
+        <div className="tilteRoundBox">
+          <div id="circle">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xlinkHref="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="160px"
+              height="160px"
+              viewBox="0 0 160 160"
+              enableBackground="new 0 0 160 160"
+              xmlSpace="preserve"
+            >
+              <defs>
+                <path
+                  id="circlePath"
+                  d=" M 81, 81 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                />
+              </defs>
+              <circle cx="81" cy="100" r="75" fill="none" />
+              <g>
+                <use xlinkHref="#circlePath" fill="none" />
+                <text fill="#000">
+                  <textPath
+                    style={{ display: "flex", justifyContent: "flex-end" }}
+                    xlinkHref="#circlePath"
+                  >
+                    {data.title}
+                  </textPath>
+                </text>
+              </g>
+            </svg>
+            <div className="TopArrow">
+              <Image
+                className="TopArrowIcon"
+                src={topArrow}
+                width={16}
+                height={16}
+                alt={"Top arrow icon"}
+              />
+            </div>
           </div>
         </div>
-      </div>
+        </>
+      </Reveal>
     </div>
   );
 };

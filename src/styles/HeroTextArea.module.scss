@@ -3,10 +3,6 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  @media screen and (min-width: 960px) {
-    width: 50%;
-    height: 50%;
-  }
   &Head {
     &Text {
       font-weight: 700;
