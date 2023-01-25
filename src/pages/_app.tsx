@@ -6,7 +6,7 @@ import Layout from "../Containers/DefaultLayout/DefaultLayout";
 import { SSRProvider } from "react-bootstrap";
 import React from "react";
 import { useRouter } from "next/router";
-
+ 
 export default function App({ Component, pageProps }: AppProps) {
   const Router = useRouter();
   const [loading, setLoading] = React.useState(false);
