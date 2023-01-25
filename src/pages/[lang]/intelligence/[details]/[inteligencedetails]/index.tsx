@@ -7,6 +7,7 @@ import TwiterIconWhite from "../../../../../Components/Icons/TwiterIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
 import { saveAs } from "file-saver";
+import { Fade } from "react-awesome-reveal";
 import {
   fetchData,
   fetchDataV1,
@@ -86,6 +87,11 @@ const Index = ({
       <div className={styles.inteligenceDetailsGroup}>
         <div className="row">
           <div className="col-md-12 col-lg-8 col-xl-9">
+          <Fade
+              triggerOnce={true}
+              direction="up"
+              duration={1500}
+            >
             <div className={styles.inteligenceDetails}>
               <div>
                 <h3>{IntelligenceReport.data.report_title}</h3>
@@ -167,66 +173,94 @@ const Index = ({
                 </div>
               </div>
             </div>
+            </Fade>
           </div>
           <div className="col-md-12 col-lg-4 col-xl-3 ">
-            <button
-              onClick={() =>
-                downLoadReport({
-                  id: IntelligenceReport.data.id,
-                  lang: Router.query.lang === "espanol" ? "es" : "en",
-                })
-              }
-              className={styles.downloadReport}
+          <Fade
+              triggerOnce={true}
+              direction="right"
+              duration={1500}
             >
-              Download Report
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-download"
-                viewBox="0 0 16 16"
+              <button
+                onClick={() =>
+                  downLoadReport({
+                    id: IntelligenceReport.data.id,
+                    lang: Router.query.lang === "espanol" ? "es" : "en",
+                  })
+                }
+                className={styles.downloadReport}
               >
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-              </svg>
-            </button>
-            <div
-              className={`${styles.socialIconGroup} ${styles.inteligenceDetailSidebar}`}
-            >
-              <h3>Share On</h3>
-              <div className={styles.socialIconGroupList}>
-                <LinkedInIconWhite />
-                <FacebookIconWhite />
-                <TwiterIconWhite />
-              </div>
-            </div>
-            <div
-              className={`${styles.recentGroup} ${styles.inteligenceDetailSidebar}`}
-            >
-              <h3>Recent</h3>
-              {recentReport.data.latest_report.map((report: any) => (
-                <Link
-                  key={report.id}
-                  href={`/english/intelligence/details/${report.report_slug}?id=${report.id}`}
-                  className={styles.recentGroup}
+                Download Report
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-download"
+                  viewBox="0 0 16 16"
                 >
-                  <p>{report.report_ttl}</p>
-                  <span>
-                    {moment(report.report_date).format("MMMM DD, YYYY")}
-                  </span>
-                </Link>
-              ))}
-            </div>
-            <div
-              className={`${styles.countryGroup} ${styles.inteligenceDetailSidebar}`}
-            >
-              <h3>Country</h3>
-              <ul>
-                {!showMore
-                  ? countriesList?.countries
-                      ?.slice(0, 5)
-                      ?.map((country: any) => (
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                </svg>
+              </button>
+              <div
+                className={`${styles.socialIconGroup} ${styles.inteligenceDetailSidebar}`}
+              >
+                <h3>Share On</h3>
+                <div className={styles.socialIconGroupList}>
+                  <LinkedInIconWhite />
+                  <FacebookIconWhite />
+                  <TwiterIconWhite />
+                </div>
+              </div>
+              <div
+                className={`${styles.recentGroup} ${styles.inteligenceDetailSidebar}`}
+              >
+                <h3>Recent</h3>
+                {recentReport.data.latest_report.map((report: any) => (
+                  <Link
+                    key={report.id}
+                    href={`/english/intelligence/details/${report.report_slug}?id=${report.id}`}
+                    className={styles.recentGroup}
+                  >
+                    <p>{report.report_ttl}</p>
+                    <span>
+                      {moment(report.report_date).format("MMMM DD, YYYY")}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              <div
+                className={`${styles.countryGroup} ${styles.inteligenceDetailSidebar}`}
+              >
+                <h3>Country</h3>
+                <ul>
+                  {!showMore
+                    ? countriesList?.countries
+                        ?.slice(0, 5)
+                        ?.map((country: any) => (
+                          <li>
+                            <Link
+                              href={`/${Router.query.lang}/intelligence/${country.country_name}`}
+                            >
+                              {country.country_name}
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                className="bi bi-chevron-right"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fillRule="evenodd"
+                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                                />
+                              </svg>
+                            </Link>
+                          </li>
+                        ))
+                    : countriesList?.countries?.map((country: any) => (
                         <li>
                           <Link
                             href={`/${Router.query.lang}/intelligence/${country.country_name}`}
@@ -247,34 +281,13 @@ const Index = ({
                             </svg>
                           </Link>
                         </li>
-                      ))
-                  : countriesList?.countries?.map((country: any) => (
-                      <li>
-                        <Link
-                          href={`/${Router.query.lang}/intelligence/${country.country_name}`}
-                        >
-                          {country.country_name}
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            className="bi bi-chevron-right"
-                            viewBox="0 0 16 16"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                            />
-                          </svg>
-                        </Link>
-                      </li>
-                    ))}
-              </ul>
-              <span onClick={() => setShowMore((prev) => !prev)}>
-                {!showMore ? "Show More" : "Show Less"}
-              </span>
-            </div>
+                      ))}
+                </ul>
+                <span className="showMoreDetails" onClick={() => setShowMore((prev) => !prev)}>
+                  {!showMore ? "Show More" : "Show Less"}
+                </span>
+              </div>
+            </Fade>
           </div>
         </div>
       </div>

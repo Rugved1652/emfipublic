@@ -1,5 +1,6 @@
 .inteligenceDetailsGroup {
   margin: 30px 0;
+  overflow: hidden;
   @media (min-width: 1200px) {
     margin: 2.6041vw 0;
   }
@@ -220,6 +221,7 @@
           cursor: pointer;
           @media (min-width: 1200px) {
             font-size: 0.8333vw;
+            
           }
           svg {
             color: var(--brand-primary);
@@ -230,6 +232,7 @@
           &:hover,
           &:focus {
             color: var(--block-color);
+            text-decoration: underline;
             svg {
               color: var(--block-color);
               path {
