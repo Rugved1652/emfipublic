@@ -85,6 +85,8 @@ const Footer = (props: Props) => {
                       {FooterRoutes.Regulatory.Routes.map((i) => (
                         <li className={styles.sectionListItem} key={i.id}>
                           <Link
+                            target={i.downloadLink ? "_blank" : "_self"}
+                            download={i.downloadLink ? true : false}
                             href={
                               Router.query.lang === "espanol"
                                 ? i.es_Link
