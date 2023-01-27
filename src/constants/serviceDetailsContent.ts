@@ -16,7 +16,7 @@ export const securitiesES: SalesNTradingContent[] = [
       "Desde la distribución hasta la gestión del riesgo y la provisión de liquidez, ayudamos a los clientes a alcanzar sus objetivos financieros.",
       "No solo ofrecemos a nuestros clientes una amplia gama de servicios de ventas, negociación, ejecución y compensación; tratamos de hacer que dichos servicios sean simples, intuitivos y flexibles para que los usen nuestros clientes.",
       "Brindamos a nuestros clientes acceso a plataformas tecnológicas y electrónicas líderes en la industria con la velocidad y flexibilidad para tener éxito en los mercados actuales.",
-      "Sean cuales sean las estrategias de inversión y comercialización de nuestros clientes, los ayudamos a involucrarse efectivamente con los mercados que más les importan."
+      "Sean cuales sean las estrategias de inversión y comercialización de nuestros clientes, los ayudamos a involucrarse efectivamente con los mercados que más les importan.",
     ],
   },
   {
@@ -35,10 +35,10 @@ export const securitiesEN: SalesNTradingContent[] = [
     title: "Our Services",
     img: "/ourservice.svg",
     paragraph: [
-      "EMFI Securities provides corporate, institutional, and wealth management clients with expert advice, innovative financial solutions, outstanding execution and comprehensive access to the world\'s capital markets.",
+      "EMFI Securities provides corporate, institutional, and wealth management clients with expert advice, innovative financial solutions, outstanding execution and comprehensive access to the world's capital markets.",
       "EMFI Securities is an active participant in capital markets flow activities, including sales, trading and market-making across a range of securities.",
       "From cash equities to credit, we give our clients access to the products and liquidity they need. Not only do we help our clients to spot market trends, we also help our clients to act on them.",
-      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their assets worldwide."
+      "We offer bespoke solutions for public and private clients. Whether for portfolio building, hedging, yield enhancement, or disposal, we help our clients to manage their assets worldwide.",
     ],
   },
   {
@@ -46,9 +46,9 @@ export const securitiesEN: SalesNTradingContent[] = [
     img: "/ouraproach.svg",
     paragraph: [
       "From distribution to managing risk and providing liquidity, we help clients realize their financial goals.",
-      "We don\'t just offer our clients a wide range of sales, trading, execution and clearing services; we try to make such services simple, intuitive and flexible for our clients to use.",
-      "We give our clients access to industry-leading technology and electronic platforms with the speed and flexibility to succeed in today\'s markets.",
-      "Whatever our clients\' investment and trading strategies, we help them to engage effectively with the markets that matter most to them."
+      "We don't just offer our clients a wide range of sales, trading, execution and clearing services; we try to make such services simple, intuitive and flexible for our clients to use.",
+      "We give our clients access to industry-leading technology and electronic platforms with the speed and flexibility to succeed in today's markets.",
+      "Whatever our clients' investment and trading strategies, we help them to engage effectively with the markets that matter most to them.",
     ],
   },
   {
@@ -58,7 +58,7 @@ export const securitiesEN: SalesNTradingContent[] = [
       "EMFI Securities provides access to global capital markets to corporate and institutional clients.",
       "We recognize that our clients have an intimate understanding of their own business. We complement their insights by offering them access to some of the best minds in capital markets, financing as well as transactional expertise.",
       "Client needs vary, but our focus is constant – to provide nimble, innovative and bespoke access to solutions, from market and insight tools, to trading strategies and execution.",
-      "We work with our clients to understand their business needs and provide ideas that help power growth."
+      "We work with our clients to understand their business needs and provide ideas that help power growth.",
     ],
   },
 ];
@@ -108,7 +108,7 @@ export const CapitalEN: SalesNTradingContent[] = [
     img: "/ouraproach.svg",
     paragraph: [
       "EMFI takes a holistic wealth management approach to carefully understanding your overall financial situation, unique needs and goals, and deliver an optimal investment solution to meet them.",
-      "EMFI Capital approach is based on the trusted relationship of our Financial Advisors and their clients. Our experienced Advisors are committed to understanding clients\' needs and delivering insightful, informed advice to help them realize their dreams.",
+      "EMFI Capital approach is based on the trusted relationship of our Financial Advisors and their clients. Our experienced Advisors are committed to understanding clients' needs and delivering insightful, informed advice to help them realize their dreams.",
       "Consider partnering with investment professionals whose experience, insights and relationship you trust. We are committed to learning about your individual needs and offering custom investment solutions to help you address them.",
     ],
   },
@@ -172,7 +172,7 @@ export const FundsEN: SalesNTradingContent[] = [
     paragraph: [
       "EMFI Capital offers discretionary programs designed to provide you with the opportunity to entrust the management of your assets to the investment management professionals who specialize in asset allocation, security selection and sophisticated risk management.",
       "The portfolios include stocks, bonds, mutual funds and exchange traded funds and are designed to align with your investment objectives and risk tolerance.",
-      "The team leverages all of EMFI\'s global resources to deliver a comprehensive investment solution to help you pursue your goals.",
+      "The team leverages all of EMFI's global resources to deliver a comprehensive investment solution to help you pursue your goals.",
       "If you are looking for a multi-asset approach, our traditional and alternative offerings can be combined to create a custom solution. We can also support you with investment and risk advisory services.",
     ],
   },
@@ -183,7 +183,7 @@ export const FundsEN: SalesNTradingContent[] = [
       "EMFI Capital offers investment capabilities for private clients, intermediaries and institutional investors.",
       "Our strategies and services are offered to a broad range of clients including corporate, pension plans, insurance companies, and financial institutions.",
       "We also provide dedicated advisory and investment solutions for sovereign clients such as governments and central banks.",
-      "Working together with clients, we believe the combination of our local focus and global reach puts EMFI Capital in a unique position to create meaningful solutions to our clients\' most pressing investment challenges.",
+      "Working together with clients, we believe the combination of our local focus and global reach puts EMFI Capital in a unique position to create meaningful solutions to our clients' most pressing investment challenges.",
     ],
   },
 ];
@@ -205,7 +205,7 @@ export const AnalyticslES: SalesNTradingContent[] = [
       "La oferta fintech de EMFI incluye la personalización, lo que permite a las instituciones financieras utilizar sus propias API, logotipos e imágenes. Los clientes finales interactúan de esta manera con la marca de su institución financiera al completar sus transacciones.",
       "Para los proveedores de servicios financieros, fintech ofrece soluciones que van desde la incorporación de clientes, la reserva de operaciones, la valoración de carteras y los sistemas de ejecución y custodia.",
     ],
-  },  
+  },
   {
     title: "Nuestros Clientes",
     img: "/ourclients.svg",
@@ -231,9 +231,9 @@ export const AnalyticslEN: SalesNTradingContent[] = [
     paragraph: [
       "Financial institutions are engaging with EMFI to expand their products and service delivery. These improvements are aimed at the digitisation of all or part of their financial services and activities.",
       "EMFI’s fintech offering includes customization, allowing financial institutions to use their own API’s, logos, and images. End customers in this way interface with their financial institution’s branding when completing their transactions.",
-      "For financial service providers, fintech offers solutions ranging from client onboarding, trade booking, portfolio valuation and execution & custody systems."
+      "For financial service providers, fintech offers solutions ranging from client onboarding, trade booking, portfolio valuation and execution & custody systems.",
     ],
-  },  
+  },
   {
     title: "Our Clients",
     img: "/ourclients.svg",
@@ -250,10 +250,17 @@ export const fintechpageES: HeroSearchInfo = {
   subHeading: "EMFI Analytics Limited",
   placeholderText: "EMFI Analytics Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
   ],
 };
 
@@ -262,10 +269,17 @@ export const fintechpageEN: HeroSearchInfo = {
   subHeading: "EMFI Analytics Limited",
   placeholderText: "EMFI Analytics Limited",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
   ],
 };
 export const CapitalpageES: HeroSearchInfo = {
@@ -273,10 +287,22 @@ export const CapitalpageES: HeroSearchInfo = {
   subHeading: "EMFI Analytics Limited",
   placeholderText: "EMFI Analytics Limited",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 
@@ -285,10 +311,21 @@ export const CapitalpageEN: HeroSearchInfo = {
   subHeading: "EMFI Fund SPC",
   placeholderText: "EMFI Fund SPC",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 
@@ -297,10 +334,18 @@ export const WealthpageEN: HeroSearchInfo = {
   subHeading: "EMFI Capital Limited",
   placeholderText: "EMFI Capital Limited",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 export const WealthpageES: HeroSearchInfo = {
@@ -308,10 +353,18 @@ export const WealthpageES: HeroSearchInfo = {
   subHeading: "EMFI Capital Limited",
   placeholderText: "EMFI Capital Limited",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 
@@ -320,10 +373,17 @@ export const SecuritiespageEN: HeroSearchInfo = {
   subHeading: "EMFI Securities Limited",
   placeholderText: "EMFI Securities Limited",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 export const SecuritiespageES: HeroSearchInfo = {
@@ -331,21 +391,20 @@ export const SecuritiespageES: HeroSearchInfo = {
   subHeading: "EMFI Fund SPC",
   placeholderText: "EMFI Fund SPC",
   serviceList: [
-    { label: "EMFI Securities Limited", value: 1 },
-    { label: "EMFI Capital Limited", value: 2 },
-    { label: "EMFI Fund SPC", value: 3 },
-    { label: "EMFI Analytics Limited", value: 4 },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 
-// London
-// EMFI Securities Limited
-
-// 25-26 Dering St, Third Floor
-// Mayfair, London W1S 1AW
-// United Kingdom
-// +44 20 3983 3634
-// securities@emfi.uk
 export const SecuritiesMapData = {
   title: "London",
   subTitle: "EMFI Securities Limited",

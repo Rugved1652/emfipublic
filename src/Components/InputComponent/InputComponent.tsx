@@ -16,7 +16,7 @@ const InputComponent = ({
   return (
     <div className={styles.inputContainer}>
       <input
-        onBlur={() => focus(false)}
+        // onBlur={() => focus(false)}
         onFocus={() => focus(true)}
         onChange={(e) => handleChange(e)}
         type="text"

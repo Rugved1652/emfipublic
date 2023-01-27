@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 import { useRouter } from "next/router";
 type Props = {};
 
-const index = ({ blogPostList, PostbyCountries, countriesList }: any) => {
+const Index = ({ blogPostList, PostbyCountries, countriesList }: any) => {
   const Router = useRouter();
   const [showMore, setShowMore] = useState(false);
   // console.log(PostbyCountries.data.reports_list);
@@ -119,4 +119,4 @@ export const getServerSideProps: GetServerSideProps = async (context: any) => {
   };
 };
 
-export default index;
+export default Index;

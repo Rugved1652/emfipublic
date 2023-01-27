@@ -3,6 +3,8 @@ import InputComponent from "../InputComponent/InputComponent";
 import styles from "../../styles/HeroSearch.module.scss";
 import { search } from "../../../helper";
 import { useOnClickOutside } from "../../hooks/useOnclickOutSide";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 type Props = {
   heading: string;
@@ -34,13 +36,12 @@ const HeroSearch = ({
   }, [searchValue]);
 
   const refinst = useRef<any>();
-  useOnClickOutside(refinst, () => {
-    // setViewList([]);
-  });
 
   const handleChange = (e: any) => {
     setSearchValue(e.target.value);
   };
+
+  const Router = useRouter();
 
   return (
     <div className={styles.HeroSearchWrapper}>
@@ -63,7 +64,9 @@ const HeroSearch = ({
               <ul className="searchBoxList">
                 {viewList?.map((i: any, index: any) => (
                   <li key={index}>
-                    <a href="javascript:void(0);">{i[searchKeyname]}</a>
+                    <Link href={`/${Router.query.lang}/${i.Link}`}>
+                      {i[searchKeyname]}
+                    </Link>
                   </li>
                 ))}
               </ul>

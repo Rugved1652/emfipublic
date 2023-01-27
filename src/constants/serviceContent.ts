@@ -148,10 +148,22 @@ export const servicepageES: HeroSearchInfo = {
   subHeading: "Reino Unido",
   placeholderText: "Servicios",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
 
@@ -160,9 +172,21 @@ export const servicepageEN: HeroSearchInfo = {
   subHeading: "United Kingdom",
   placeholderText: "Services",
   serviceList: [
-    { label: "EMFI Securities Limited 2", value: 1 },
-    { label: "EMFI Capital Limited 3", value: 2 },
-    { label: "EMFI Fund SPC 4", value: 3 },
-    { label: "EMFI Analytics Limited 5", value: 4 },
+    {
+      label: "EMFI Securities Limited",
+      value: 1,
+      Link: "/services/ourservices/securities",
+    },
+    {
+      label: "EMFI Capital Limited",
+      value: 2,
+      Link: "/services/ourservices/wealth",
+    },
+    { label: "EMFI Fund SPC", value: 3, Link: "/services/ourservices/capital" },
+    {
+      label: "EMFI Analytics Limited",
+      value: 4,
+      Link: "/services/ourservices/fintech",
+    },
   ],
 };
