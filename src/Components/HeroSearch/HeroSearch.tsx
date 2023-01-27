@@ -36,6 +36,9 @@ const HeroSearch = ({
   }, [searchValue]);
 
   const refinst = useRef<any>();
+  useOnClickOutside(refinst, () => {
+    setShow(false);
+  });
 
   const handleChange = (e: any) => {
     setSearchValue(e.target.value);

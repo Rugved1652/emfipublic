@@ -1,10 +1,10 @@
 import React from "react";
 import HeroSearch from "../../Components/HeroSearch/HeroSearch";
 import {
-  LegalHerosearchEN,
-  LegalHeroSearchES,
   scamalertEN,
   scamalertES,
+  ScamAlertHerosearchEN,
+  ScamAlertHeroSearchES,
 } from "../../constants/policies";
 
 type Props = {
@@ -89,7 +89,9 @@ export async function getStaticProps({ params }: any) {
     props: {
       scamAlert: params?.lang === "espanol" ? scamalertES : scamalertEN,
       LegalHeroSearch:
-        params?.lang === "espanol" ? LegalHeroSearchES : LegalHerosearchEN,
+        params?.lang === "espanol"
+          ? ScamAlertHeroSearchES
+          : ScamAlertHerosearchEN,
     },
   };
 }

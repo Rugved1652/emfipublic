@@ -473,29 +473,6 @@ we will execute your order in accordance with your instructions. Our best execut
 <p>We will monitor the effectiveness of our policy and assess on a regular basis whether the execution venues we have selected provide the best possible result for orders we execute.</p>
 <p>We will review this policy and our best execution arrangements at least annually. We may amend this policy from time to time. We will notify you of any material changes to this policy and our execution arrangements by publishing an updated version on our website at the following link:<a href="https://emfi.uk/english/legal/">https://emfi.uk/english/legal/</a></p>`;
 
-export const LegalHeroSearchES: HeroSearchInfo = {
-  heading: "Legales",
-  subHeading: "Grupo EMFI",
-  placeholderText: "Alerta De Estafas",
-  serviceList: [
-    { label: "Términos De Uso", value: 1 },
-    { label: "Política De Privacidad", value: 2 },
-    { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
-  ],
-};
-export const LegalHerosearchEN: HeroSearchInfo = {
-  heading: "Legal",
-  subHeading: "EMFI Group",
-  placeholderText: "Scam Alert",
-  serviceList: [
-    { label: "Terms of Use", value: 1 },
-    { label: "Privacy Policy", value: 2 },
-    { label: "Cookies Policy", value: 3 },
-    { label: "Scam Alert", value: 4 },
-  ],
-};
-
 export const EEAEmpES = `<div class="infoblock">
 <p><strong>Aviso de privacidad: Protección de datos en virtud del Reglamento general de protección de datos de la UE (EU GDPR)</strong>
 </p><p>EMFI toma su privacidad en serio. Este aviso de privacidad contiene información sobre qué datos personales recopila EMFI y las compañías de su grupo ("EMFI", "nosotros", "nuestro" o "nos"), qué hacen con esa información y qué derechos tiene. Si tiene alguna pregunta o comentario sobre este aviso, comuníquese con nuestro Oficial de Protección de Datos usando la siguiente dirección de correo electrónico: <a href="mailto:compliance@emfi.uk">compliance@emfi.uk</a></p>
@@ -1221,6 +1198,92 @@ export const globalEmpEN = `<div class="infoblock">
 <p>The application form, all Information contained in it and any information you provide to us during or after the application process will be transmitted over the Internet, which is openly accessible to all. As such, you acknowledge that such means of transmission is not secure and the data in question may be transmitted across national boundaries without restriction, irrespective of the location of the sender and recipient. Neither EMFI nor any of our third-party service providers accept any liability whatsoever (whether for injury, loss or damage or howsoever incurred) to Employees as a result of transmission of their personal data (including any errors, delays or failure in transmission) via the Internet.</p>
 <p>This Privacy Notice may be subject to amendments. Any future changes or additions to the processing of personal data as described in this notice affecting you can be viewed on the EMFI website at <a href="https://www.emfi.uk/english/privacy-policy" target="_blank">https://www.emfi.uk/english/privacy-policy</a></p>
 </div>`;
+
+export const ScamAlertHeroSearchES: HeroSearchInfo = {
+  heading: "Legales",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Alerta De Estafas",
+  serviceList: [
+    { label: "Términos De Uso", value: 1 },
+    { label: "Política De Privacidad", value: 2 },
+    { label: "Política De Cookies", value: 3 },
+    { label: " Alerta De Estafas", value: 4 },
+  ],
+};
+export const ScamAlertHerosearchEN: HeroSearchInfo = {
+  heading: "Legal",
+  subHeading: "EMFI Group",
+  placeholderText: "Scam Alert",
+  serviceList: [
+    { label: "Terms of Use", value: 1 },
+    { label: "Privacy Policy", value: 2 },
+    { label: "Cookies Policy", value: 3 },
+  ],
+};
+export const termOfUseHeroSearchES: HeroSearchInfo = {
+  heading: "Legales",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Términos De Uso",
+  serviceList: [
+    { label: "Política De Privacidad", value: 2 },
+    { label: "Política De Cookies", value: 3 },
+    { label: " Alerta De Estafas", value: 4 },
+  ],
+};
+export const termOfUseHeroSearchEN: HeroSearchInfo = {
+  heading: "Legal",
+  subHeading: "EMFI Group",
+  placeholderText: "Terms of Use",
+  serviceList: [
+    { label: "Privacy Policy", value: 2 },
+    { label: "Cookies Policy", value: 3 },
+    { label: "Scam Alert", value: 3 },
+  ],
+};
+export const CookiesPolicyHeroSearchES: HeroSearchInfo = {
+  heading: "Legales",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Términos De Uso",
+  serviceList: [
+    { label: "Términos De Uso", value: 1 },
+    { label: "Política De Privacidad", value: 2 },
+    // { label: "Política De Cookies", value: 3 },
+    { label: " Alerta De Estafas", value: 4 },
+  ],
+};
+export const CookiesPolicyHeroSearchEN: HeroSearchInfo = {
+  heading: "Legal",
+  subHeading: "EMFI Group",
+  placeholderText: "Terms of Use",
+  serviceList: [
+    { label: "Terms of Use", value: 1 },
+    { label: "Privacy Policy", value: 2 },
+    { label: "Scam Alert", value: 3 },
+    // { label: "Cookies Policy", value: 3 },
+  ],
+};
+export const PrivacyPolicyHeroSearchES: HeroSearchInfo = {
+  heading: "Legales",
+  subHeading: "Grupo EMFI",
+  placeholderText: "Términos De Uso",
+  serviceList: [
+    { label: "Términos De Uso", value: 1 },
+    // { label: "Política De Privacidad", value: 2 },
+    { label: "Política De Cookies", value: 3 },
+    { label: " Alerta De Estafas", value: 4 },
+  ],
+};
+export const PrivacyPolicyHeroSearchEN: HeroSearchInfo = {
+  heading: "Legal",
+  subHeading: "EMFI Group",
+  placeholderText: "Terms of Use",
+  serviceList: [
+    { label: "Terms of Use", value: 1 },
+    // { label: "Privacy Policy", value: 2 },
+    { label: "Cookies Policy", value: 3 },
+    { label: "Scam Alert", value: 4 },
+  ],
+};
 
 export const regulatorypageEN: HeroSearchInfo = {
   heading: "Regulatory",
