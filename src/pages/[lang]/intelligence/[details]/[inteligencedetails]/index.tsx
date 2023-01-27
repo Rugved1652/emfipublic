@@ -6,7 +6,6 @@ import FacebookIconWhite from "../../../../../Components/Icons/FacebookIconWhite
 import TwiterIconWhite from "../../../../../Components/Icons/TwiterIconWhite";
 import Link from "next/link";
 import { GetServerSideProps } from "next";
-import { saveAs } from "file-saver";
 import { Fade } from "react-awesome-reveal";
 import {
   fetchData,
@@ -15,10 +14,8 @@ import {
   postDataV1,
 } from "../../../../../Services/apiFunction";
 import moment from "moment";
-import { res } from "../../../../../constants/intelligenceRes";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { data } from "jquery";
 
 type Props = {
   blogPost: any;
@@ -41,17 +38,16 @@ const Index = ({
   console.log(countriesList, "recentReport");
 
   const [showMore, setShowMore] = useState(false);
-  // const [] = useState(true);
 
   const Router = useRouter();
 
-  useEffect(() => {
-    const storage = localStorage.getItem("gtti");
-    console.log("storage", storage);
-    if (!storage) {
-      window.location.href = "https://login.emfi.uk";
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storage = localStorage.getItem("gtti");
+  //   console.log("storage", storage);
+  //   if (!storage) {
+  //     window.location.href = "https://login.emfi.uk";
+  //   }
+  // }, []);
 
   const downLoadReport = async (data: any) => {
     const res = await postDataV1(`/download-report-pdf`, {
@@ -62,15 +58,6 @@ const Index = ({
       console.log(res, "res");
       window.open(res.data.report_url);
     }
-    //     msg
-    // :
-    // "Report has been downloaded successfully."
-    // report_url
-    // :
-    // "https://emfi-uat.s3.amazonaws.com/es_pdf/EMFI_Egypt_20230104.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEH8aCXVzLWVhc3QtMSJGMEQCIDTOSfASHgzlZZ9FI7FYGoV4t9Dc2GqFYXcKdUCFRIXkAiBWHxmFA176qFrCcrBEqBluEoKN51cx91R2bFdZlKw1QyrwAwjo%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAMaDDk0OTAyMDgzMjA4MCIMHKsNmEwllRUUwVM6KsQDZcJof%2BvoylyLv9HNq04eqFkXuz5flQ7yfx2e%2Bhq0IKlTGcoYQ%2BzPVuoheBR2GbT1Pn4eGs3D9%2B3rchhXnoKfOI0Gx%2FINp09qhoY0S%2BLEU%2BfzaHqZXndwkE%2Bq%2FYJyZbMVnPNenSDpXQvObA%2FcO33GetBoUejFZJLJkuJIWNCmhDxuF%2B%2Fsx%2FyP8wGsYYG%2FpNc5fgpbQc4OxXFUaKnFKoQ9oebaPBqficQ41akPueArSiRa8b8RpMomLeRcPPH2QNZvRFMMiQv37EhKxczQP4LFTvUB1%2FRxhkO633Y6pDEoNczPgnx0nyF2ylWgNRgVmHH%2B9nEt47eoIFVQ%2B472p33Gzmr2L9qxG1GGlbdJKDbg8epfQG%2Fceae2MF6z3ZOeS0G%2FyJe%2B9H5ifthjXOYc6ulMaQ0OuBSR5xkgtonOS1PrTtOjhNTWRF9u0EoTca2kUo5Zf6CiR8N8kn0%2BMCt9gK9wcHptkioZZi3eUb%2B1uVKXBAR6SEK5kP4FvbKVVRPm4jDET23v%2BH0D6lslRQxcZ61garZbnfd7bRBT2CzcQN%2Bm%2BS%2BodDnxebyO1SLORwluET95zUbcarr3vxf1peJzZOuV2a9IbXAwp%2Fm9ngY6pgEMsShclIYeEH7Itkt5w0pl1EqQ%2BScaTcGDhE5ywMRnNMspeh7bBDgj2OgUlRCYSuwOXZdJpkv2lndx5%2FW70vp688MiXoE9FgWp%2Fryqpz%2Bw5JkXSC3jQnUOgSe%2FPkGJoFWZnSrdDqYoOhXz%2BQpDd%2FAk4sejCm%2BreaBB3f1jbSvD6xf6TmVD%2F%2BxsZnXYV5XG7Eec2%2BQ2YjuwX4oLRMHZ0Exyf59dtqHJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5Z5QMWFIJLKPU5XO%2F20230124%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230124T064433Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=4604af0e99e2d4fed4b39e2588bc87672917abdc2942d37e312959f6bb96e2a4"
-    // status
-    // :
-    // 1
   };
 
   return (
@@ -87,100 +74,101 @@ const Index = ({
       <div className={styles.inteligenceDetailsGroup}>
         <div className="row">
           <div className="col-md-12 col-lg-8 col-xl-9">
-          <Fade
-              triggerOnce={true}
-              direction="up"
-              duration={1500}
-            >
-            <div className={styles.inteligenceDetails}>
-              <div>
-                <h3>{IntelligenceReport.data.report_title}</h3>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: IntelligenceReport.data.description,
-                  }}
-                />
-              </div>
-              <div>
-                {IntelligenceReport.data.report_data.map((report: any) => (
-                  <>
-                    {report.type === "image" ? (
-                      <Image
-                        src={
-                          report.report_img
-                            ? report.report_img
-                            : "/placeholder.jpg"
-                        }
-                        alt=""
-                        width={300}
-                        height={300}
-                      />
-                    ) : (
-                      <></>
-                    )}
-                    {report.type === "description" ? (
-                      <>
-                        <h3>{report.title}</h3>
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: report.long_description
-                              ? report.long_description
-                              : "",
-                          }}
-                        />
-                      </>
-                    ) : (
-                      <></>
-                    )}
-                    {report.type === "performance" ? (
-                      <>
-                        <h3>{report.performance_main_title}</h3>
-                        <h3>{report.performance_title}</h3>
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: report.performance_description
-                              ? report.performance_description
-                              : "",
-                          }}
-                        />
-                      </>
-                    ) : (
-                      <></>
-                    )}
-                  </>
-                ))}
+            <Fade triggerOnce={true} direction="up" duration={1500}>
+              <div className={styles.inteligenceDetails}>
                 <div>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Security</th>
-                        <th>Ask Price</th>
-                        <th>Bid</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {IntelligenceReport.data.sovereign_data.map(
-                        (data: any) => (
-                          <tr>
-                            <td>{data.security_name}</td>
-                            <td>{data.ask_price}</td>
-                            <td>{data.bid_price}</td>
-                          </tr>
-                        )
+                  <h3>{IntelligenceReport.data.report_title}</h3>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: IntelligenceReport.data.description,
+                    }}
+                  />
+                </div>
+                <div>
+                  {IntelligenceReport.data.report_data.map((report: any) => (
+                    <>
+                      {report.type === "image" ? (
+                        <Image
+                          src={
+                            report.report_img
+                              ? report.report_img
+                              : "/placeholder.jpg"
+                          }
+                          alt=""
+                          width={300}
+                          height={300}
+                        />
+                      ) : (
+                        <></>
                       )}
-                    </tbody>
-                  </table>
+                      {report.type === "description" ? (
+                        <>
+                          <h3>{report.title}</h3>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: report.long_description
+                                ? report.long_description
+                                : "",
+                            }}
+                          />
+                        </>
+                      ) : (
+                        <></>
+                      )}
+                      {report.type === "performance" ? (
+                        <>
+                          <h3>{report.performance_main_title}</h3>
+                          <h3>{report.performance_title}</h3>
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: report.performance_description
+                                ? report.performance_description
+                                : "",
+                            }}
+                          />
+                        </>
+                      ) : (
+                        <></>
+                      )}
+                    </>
+                  ))}
+                  <div>
+                    {/* Yield		Change	52 WK Low	52 WK High */}
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Security</th>
+                          <th>Ask</th>
+                          <th>Bid</th>
+                          <th>Yield</th>
+                          <th>Spread</th>
+                          <th>52 WK Low</th>
+                          <th>52 WK High</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {IntelligenceReport.data.sovereign_data.map(
+                          (data: any) => (
+                            <tr>
+                              <td>{data.security_name}</td>
+                              <td>{data.ask_price}</td>
+                              <td>{data.bid_price}</td>
+                              <td>{data.yld_ytm_mid}</td>
+                              <td>{data.z_sprd_mid}</td>
+                              <td>{data.low_52_week}</td>
+                              <td>{data.high_52_week}</td>
+                            </tr>
+                          )
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-            </div>
             </Fade>
           </div>
           <div className="col-md-12 col-lg-4 col-xl-3 ">
-          <Fade
-              triggerOnce={true}
-              direction="right"
-              duration={1500}
-            >
+            <Fade triggerOnce={true} direction="right" duration={1500}>
               <button
                 onClick={() =>
                   downLoadReport({
@@ -283,7 +271,10 @@ const Index = ({
                         </li>
                       ))}
                 </ul>
-                <span className="showMoreDetails" onClick={() => setShowMore((prev) => !prev)}>
+                <span
+                  className="showMoreDetails"
+                  onClick={() => setShowMore((prev) => !prev)}
+                >
                   {!showMore ? "Show More" : "Show Less"}
                 </span>
               </div>

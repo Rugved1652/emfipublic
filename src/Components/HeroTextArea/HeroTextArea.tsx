@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/HeroTextArea.module.scss";
 import readMoreArrow from "../../Assets/read-more-arrow.png";
 import moment from "moment";
@@ -18,6 +18,15 @@ function HeroTextArea({
   id,
   formatType,
 }: any) {
+  const [isLogin, setIsLogin] = useState(false);
+
+  useEffect(() => {
+    const isLoginToken = localStorage.getItem("true");
+    if (isLoginToken === "true") {
+      setIsLogin(true);
+    }
+  }, []);
+
   const Router = useRouter();
   return (
     <div className={styles.hero}>
@@ -35,7 +44,11 @@ function HeroTextArea({
         dangerouslySetInnerHTML={{ __html: description.slice(0, 600) + "..." }}
       ></div>
       <Link
-        href={`/${Router?.query.lang}/intelligence/details/${reportSlug}?id=${id}`}
+        href={
+          !isLogin
+            ? `/${Router?.query.lang}/intelligence/details/${reportSlug}?id=${id}`
+            : `https://login.emfi.uk?query=https://emfi.uk/${Router?.query.lang}/intelligence/details/${reportSlug}?id=${id}`
+        }
         className={styles.heroCTA}
       >
         Read More
