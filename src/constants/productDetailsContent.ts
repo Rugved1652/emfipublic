@@ -332,3 +332,40 @@ export const eIntelHeroInformationES = {
     },
   ],
 };
+
+export const ProductMapData = {
+  title: "London",
+  subTitle: "EMFI Group Limited",
+  address:
+    "25-26 Dering St, Third Floor Mayfair, London W1S 1AW United Kingdom",
+  cordinate: { lat: -0.1479572, long: 51.514359 },
+  mailto: "contact@emfi.uk",
+  tel: "+44 20 3983 3634",
+};
+export const WealthMapData = {
+  title: "London",
+  subTitle: "EMFI Capital Limited",
+  address:
+    "25-26 Dering St, Third Floor Mayfair, London W1S 1AW United Kingdom",
+  cordinate: { lat: -0.1479572, long: 51.514359 },
+  mailto: "wealth@emfi.uk",
+  tel: "+44 20 3983 3634",
+};
+export const CapitalMapData = {
+  title: "London",
+  subTitle: "EMFI Fund SPC",
+  address:
+    "25-26 Dering St, Third Floor Mayfair, London W1S 1AW United Kingdom",
+  cordinate: { lat: -0.1479572, long: 51.514359 },
+  mailto: "capital@emfi.uk",
+  tel: "+44 20 3983 3634",
+};
+export const FintechMapData = {
+  title: "London",
+  subTitle: "EMFI Analytics Limited",
+  address:
+    "25-26 Dering St, Third Floor Mayfair, London W1S 1AW United Kingdom",
+  cordinate: { lat: -0.1479572, long: 51.514359 },
+  mailto: "analytics@emfi.uk",
+  tel: "+44 20 3983 3634",
+};

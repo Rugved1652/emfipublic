@@ -17,6 +17,7 @@ import {
   eIntelHeroInformationES,
   eWealthHeroInformationEN,
   eWealthHeroInformationES,
+  ProductMapData,
 } from "../../../../../constants/productDetailsContent";
 import AsSeenIn from "../../../../../Containers/AsSeenIn/AsSeenIn";
 
@@ -26,9 +27,10 @@ import SwiperCarousel from "../../../../../Containers/SwipeCarousel/SwipeCarouse
 type Props = {
   content: any;
   AsSeenContent: AsSeenSection;
+  ProductMapData: any;
 };
 
-const Products = ({ content, AsSeenContent }: Props) => {
+const Products = ({ content, AsSeenContent, ProductMapData }: Props) => {
   const data = {
     title: "London",
     cordinate: { lat: -0.1479572, long: 51.514359 },
@@ -62,7 +64,7 @@ const Products = ({ content, AsSeenContent }: Props) => {
       ></SwiperCarousel>
       <div className="container">
         <AsSeenIn AsSeenContent={AsSeenContent} />
-        <MapContainer data={data} />
+        <MapContainer MapData={ProductMapData} />
       </div>
     </>
   );
@@ -129,7 +131,11 @@ export async function getStaticProps({ params }: any) {
 
   return {
     // Passed to the page component as props
-    props: { content: content, AsSeenContent: AsSeenContent },
+    props: {
+      content: content,
+      AsSeenContent: AsSeenContent,
+      ProductMapData: ProductMapData,
+    },
   };
 }
 
