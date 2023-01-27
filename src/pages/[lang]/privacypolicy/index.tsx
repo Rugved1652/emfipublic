@@ -1,16 +1,26 @@
 import React from "react";
 import HeroSearch from "../../../Components/HeroSearch/HeroSearch";
-import { privacypolicyEN, privacypolicyES } from "../../../constants/policies";
+import {
+  privacypolicyEN,
+  privacypolicyES,
+  PrivacyPolicyHeroSearchEN,
+  PrivacyPolicyHeroSearchES,
+} from "../../../constants/policies";
 
-type Props = {};
+type Props = {
+  privacypolicy: string;
+  LegalHeroSearch: HeroSearchInfo;
+};
 
-const privacypolicy = ({ privacypolicy }: any) => {
+const privacypolicy = ({ privacypolicy, LegalHeroSearch }: Props) => {
   return (
     <div className="container">
       <HeroSearch
-        heading="LEGAL"
-        subHeading="EMFI group"
-        placeholder="Privacy Policy - Global Users"
+        heading={LegalHeroSearch.heading}
+        subHeading={LegalHeroSearch.subHeading}
+        placeholder={LegalHeroSearch.placeholderText}
+        data={LegalHeroSearch.serviceList}
+        searchKeyname={"label"}
       />
       <div
         dangerouslySetInnerHTML={{ __html: privacypolicy }}
@@ -31,6 +41,10 @@ export async function getStaticProps({ params }: any) {
     props: {
       privacypolicy:
         params?.lang === "espanol" ? privacypolicyES : privacypolicyEN,
+      LegalHeroSearch:
+        params?.lang === "espanol"
+          ? PrivacyPolicyHeroSearchES
+          : PrivacyPolicyHeroSearchEN,
     },
   };
 }

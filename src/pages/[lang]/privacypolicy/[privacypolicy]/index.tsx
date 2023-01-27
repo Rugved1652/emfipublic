@@ -36,8 +36,8 @@ export async function getStaticPaths() {
       { params: { lang: "espanol", privacypolicy: "EEAEmp" } },
       { params: { lang: "english", privacypolicy: "EEAUser" } },
       { params: { lang: "espanol", privacypolicy: "EEAUser" } },
-      { params: { lang: "english", privacypolicy: "globalUser" } },
-      { params: { lang: "espanol", privacypolicy: "globalUser" } },
+      // { params: { lang: "english", privacypolicy: "globalUser" } },
+      // { params: { lang: "espanol", privacypolicy: "globalUser" } },
       { params: { lang: "english", privacypolicy: "globalEmp" } },
       { params: { lang: "espanol", privacypolicy: "globalEmp" } },
     ],
@@ -54,9 +54,6 @@ export async function getStaticProps({ params }: any) {
       case "EEAUser":
         content = EEAUserEN;
         break;
-      case "globalUser":
-        content = globalUserEN;
-        break;
       case "globalEmp":
         content = globalEmpEN;
         break;
@@ -71,9 +68,6 @@ export async function getStaticProps({ params }: any) {
         break;
       case "EEAUser":
         content = EEAUserES;
-        break;
-      case "globalUser":
-        content = globalUserES;
         break;
       case "globalEmp":
         content = globalEmpES;

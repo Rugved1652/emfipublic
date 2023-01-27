@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {isSwitchOn ? <SwitchOn /> : null}
+      {isSwitchOn ? <SwitchOn setisSwitchOn={setisSwitchOn} /> : null}
       {loading ? (
         <>
           <Navbar />

@@ -3,8 +3,8 @@ import HeroSearch from "../../Components/HeroSearch/HeroSearch";
 import {
   cookiespolicyEN,
   cookiespolicyES,
-  LegalHerosearchEN,
-  LegalHeroSearchES,
+  CookiesPolicyHeroSearchEN,
+  CookiesPolicyHeroSearchES,
 } from "../../constants/policies";
 
 type Props = {
@@ -24,6 +24,8 @@ const cookiespolicy = ({
         heading={LegalHeroSearch.heading}
         subHeading={LegalHeroSearch.subHeading}
         placeholder={LegalHeroSearch.placeholderText}
+        data={LegalHeroSearch.serviceList}
+        searchKeyname={"label"}
       />
       <div className="legalGroup">
         {cookiespolicy.map((cookie: any) => (
@@ -60,7 +62,9 @@ export async function getStaticProps({ params }: any) {
       cookiespolicy:
         params?.lang === "espanol" ? cookiespolicyES : cookiespolicyEN,
       LegalHeroSearch:
-        params?.lang === "espanol" ? LegalHeroSearchES : LegalHerosearchEN,
+        params?.lang === "espanol"
+          ? CookiesPolicyHeroSearchES
+          : CookiesPolicyHeroSearchEN,
       SaveBtnText: params?.lang === "espanol" ? "Envio" : "Save",
     },
   };

@@ -1204,10 +1204,9 @@ export const ScamAlertHeroSearchES: HeroSearchInfo = {
   subHeading: "Grupo EMFI",
   placeholderText: "Alerta De Estafas",
   serviceList: [
-    { label: "Términos De Uso", value: 1 },
-    { label: "Política De Privacidad", value: 2 },
-    { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
+    { label: "Términos De Uso", value: 1, Link: "/termsofuse" },
+    { label: "Política De Privacidad", value: 2, Link: "/privacypolicy" },
+    { label: "Política De Cookies", value: 3, Link: "/cookiespolicy" },
   ],
 };
 export const ScamAlertHerosearchEN: HeroSearchInfo = {
@@ -1215,9 +1214,9 @@ export const ScamAlertHerosearchEN: HeroSearchInfo = {
   subHeading: "EMFI Group",
   placeholderText: "Scam Alert",
   serviceList: [
-    { label: "Terms of Use", value: 1 },
-    { label: "Privacy Policy", value: 2 },
-    { label: "Cookies Policy", value: 3 },
+    { label: "Terms of Use", value: 1, Link: "/termsofuse" },
+    { label: "Privacy Policy", value: 2, Link: "/privacypolicy" },
+    { label: "Cookies Policy", value: 3, Link: "/cookiespolicy" },
   ],
 };
 export const termOfUseHeroSearchES: HeroSearchInfo = {
@@ -1225,9 +1224,9 @@ export const termOfUseHeroSearchES: HeroSearchInfo = {
   subHeading: "Grupo EMFI",
   placeholderText: "Términos De Uso",
   serviceList: [
-    { label: "Política De Privacidad", value: 2 },
-    { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
+    { label: "Política De Privacidad", value: 2, Link: "/privacypolicy" },
+    { label: "Política De Cookies", value: 3, Link: "/cookiespolicy" },
+    { label: " Alerta De Estafas", value: 4, Link: "/scamalert" },
   ],
 };
 export const termOfUseHeroSearchEN: HeroSearchInfo = {
@@ -1235,9 +1234,9 @@ export const termOfUseHeroSearchEN: HeroSearchInfo = {
   subHeading: "EMFI Group",
   placeholderText: "Terms of Use",
   serviceList: [
-    { label: "Privacy Policy", value: 2 },
-    { label: "Cookies Policy", value: 3 },
-    { label: "Scam Alert", value: 3 },
+    { label: "Privacy Policy", value: 2, Link: "/privacypolicy" },
+    { label: "Cookies Policy", value: 3, Link: "/cookiespolicy" },
+    { label: "Scam Alert", value: 3, Link: "/scamalert" },
   ],
 };
 export const CookiesPolicyHeroSearchES: HeroSearchInfo = {
@@ -1245,43 +1244,69 @@ export const CookiesPolicyHeroSearchES: HeroSearchInfo = {
   subHeading: "Grupo EMFI",
   placeholderText: "Términos De Uso",
   serviceList: [
-    { label: "Términos De Uso", value: 1 },
-    { label: "Política De Privacidad", value: 2 },
-    // { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
+    { label: "Términos De Uso", value: 1, Link: "/termsofuse" },
+    { label: "Política De Privacidad", value: 2, Link: "/privacypolicy" },
+    { label: " Alerta De Estafas", value: 4, Link: "/scamalert" },
   ],
 };
 export const CookiesPolicyHeroSearchEN: HeroSearchInfo = {
   heading: "Legal",
   subHeading: "EMFI Group",
-  placeholderText: "Terms of Use",
+  placeholderText: "Cookies Policy",
   serviceList: [
-    { label: "Terms of Use", value: 1 },
-    { label: "Privacy Policy", value: 2 },
-    { label: "Scam Alert", value: 3 },
-    // { label: "Cookies Policy", value: 3 },
+    { label: "Terms of Use", value: 1, Link: "/termsofuse" },
+    { label: "Privacy Policy", value: 2, Link: "/privacypolicy" },
+    { label: "Scam Alert", value: 3, Link: "/scamalert" },
   ],
 };
 export const PrivacyPolicyHeroSearchES: HeroSearchInfo = {
   heading: "Legales",
   subHeading: "Grupo EMFI",
-  placeholderText: "Términos De Uso",
+  placeholderText: "Política De Privacidad: Global User",
   serviceList: [
-    { label: "Términos De Uso", value: 1 },
-    // { label: "Política De Privacidad", value: 2 },
-    { label: "Política De Cookies", value: 3 },
-    { label: " Alerta De Estafas", value: 4 },
+    { label: "Términos De Uso", value: 1, Link: "/termsofuse" },
+    {
+      label: "Política De Privacidad: EEA Users",
+      value: 1,
+      Link: "/privacypolicy/EEAUser",
+    },
+    {
+      label: "Política De Privacidad: Global Employees  ",
+      value: 2,
+      Link: "/privacypolicy/globalEmp",
+    },
+    {
+      label: "Política De Privacidad: EEA Employees",
+      value: 3,
+      Link: "/privacypolicy/EEAEmp",
+    },
+    {
+      label: "Política De Cookies",
+      value: 3,
+      Link: "/cookiespolicy",
+    },
+    { label: " Alerta De Estafas", value: 4, Link: "/scamalert" },
   ],
 };
 export const PrivacyPolicyHeroSearchEN: HeroSearchInfo = {
   heading: "Legal",
   subHeading: "EMFI Group",
-  placeholderText: "Terms of Use",
+  placeholderText: "Privacy Policy : Global User",
   serviceList: [
-    { label: "Terms of Use", value: 1 },
-    // { label: "Privacy Policy", value: 2 },
-    { label: "Cookies Policy", value: 3 },
-    { label: "Scam Alert", value: 4 },
+    { label: "Terms of Use", value: 1, Link: "/termsofuse" },
+    {
+      label: "Privacy Policy:EEA Users",
+      value: 1,
+      Link: "/privacypolicy/EEAUser",
+    },
+    {
+      label: "Privacy Policy:Global Employees  ",
+      value: 2,
+      Link: "/privacypolicy/globalEmp",
+    },
+    { label: "Privacy Policy:EEA Employees", value: 3, Link: "/EEAEmp" },
+    { label: "Cookies Policy", value: 3, Link: "" },
+    { label: "Scam Alert", value: 4, Link: "" },
   ],
 };
 
@@ -1290,10 +1315,10 @@ export const regulatorypageEN: HeroSearchInfo = {
   subHeading: "EMFI Group",
   placeholderText: "Regulatory Documents",
   serviceList: [
-    { label: "Regulatory Documents", value: 1 },
-    { label: "Standardised Costs", value: 2 },
-    { label: "Execution Venues", value: 3 },
-    { label: "Pillar 3 Disclosure", value: 4 },
+    { label: "Regulatory Documents", value: 1, Link: "" },
+    { label: "Standardised Costs", value: 2, Link: "" },
+    { label: "Execution Venues", value: 3, Link: "" },
+    { label: "Pillar 3 Disclosure", value: 4, Link: "" },
   ],
 };
 export const regulatorypageES: HeroSearchInfo = {
@@ -1301,9 +1326,9 @@ export const regulatorypageES: HeroSearchInfo = {
   subHeading: "Grupo EMFI",
   placeholderText: "Documentos Reglamentarios",
   serviceList: [
-    { label: "Documentos Reglamentarios", value: 1 },
-    { label: "Costos estandarizados", value: 2 },
-    { label: "Lugares de ejecución", value: 3 },
-    { label: "Pillar 3 Disclosure", value: 4 },
+    { label: "Documentos Reglamentarios", value: 1, Link: "" },
+    { label: "Costos estandarizados", value: 2, Link: "" },
+    { label: "Lugares de ejecución", value: 3, Link: "" },
+    { label: "Pillar 3 Disclosure", value: 4, Link: "" },
   ],
 };
